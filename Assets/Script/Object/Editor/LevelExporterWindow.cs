@@ -1143,9 +1143,11 @@ public class LevelExporterWindow : EditorWindow
         public string initStateId;
         public string initSprite;
         public string initSpineAnim;
-        // ObjectData.initSpineLoop defaults to true; mirror it so default-
-        // true values are dropped while explicit false values still serialize.
-        [System.ComponentModel.DefaultValue(true)]
+        // Always write initSpineLoop — LibGDX treats a missing bool as
+        // false (its type default), but the authored default for idle
+        // animations is true. Force-include so the loop intent is always
+        // explicit on both sides.
+        [Newtonsoft.Json.JsonProperty(DefaultValueHandling = Newtonsoft.Json.DefaultValueHandling.Include)]
         public bool initSpineLoop;
         public string initSfx;
         public List<ObjectStateJson> states;
@@ -1282,8 +1284,8 @@ public class LevelExporterWindow : EditorWindow
         public string sprite;
         public string spineBasePath;
         public string initSpineAnim;
-        // B_StaticObject.initSpineLoop defaults to true.
-        [System.ComponentModel.DefaultValue(true)]
+        // Always write — see note on ObjectDataJson.initSpineLoop.
+        [Newtonsoft.Json.JsonProperty(DefaultValueHandling = Newtonsoft.Json.DefaultValueHandling.Include)]
         public bool initSpineLoop;
         public List<string> initialSkins;
         public Vec2Json position;

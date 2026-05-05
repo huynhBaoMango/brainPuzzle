@@ -236,6 +236,7 @@
       "data": {
         "initStateId": "init",
         "initSpineAnim": "Nam_giagai",
+        "initSpineLoop": true,
         "states": [
           {
             "stateId": "toc",
@@ -489,6 +490,7 @@
       "data": {
         "initStateId": "init",
         "initSpineAnim": "Thuyen_trannuoc",
+        "initSpineLoop": true,
         "states": [
           {
             "stateId": "done_all",
@@ -669,6 +671,7 @@
       "data": {
         "initStateId": "init",
         "initSpineAnim": "nutocdai",
+        "initSpineLoop": true,
         "states": [
           {
             "stateId": "toc",
@@ -807,7 +810,7 @@
                 "duration": 0.0,
                 "fadeOut": false,
                 "destroyOnDisappear": false,
-                "actionTargetId": "tui"
+                "actionTargetId": "tui2"
               },
               {
                 "type": "Appear",
@@ -872,6 +875,7 @@
       "data": {
         "initStateId": "init",
         "initSpineAnim": "onglao1",
+        "initSpineLoop": true,
         "states": [
           {
             "stateId": "tre",
@@ -1177,6 +1181,7 @@
       "data": {
         "initStateId": "init",
         "initSpineAnim": "Cho_idle",
+        "initSpineLoop": true,
         "states": [
           {
             "stateId": "done",
@@ -1243,6 +1248,7 @@
       "data": {
         "initStateId": "init",
         "initSpineAnim": "Caube_Idle",
+        "initSpineLoop": true,
         "states": [
           {
             "stateId": "kimco",
@@ -1407,7 +1413,7 @@
       "sortOrder": 7
     },
     {
-      "objectId": "tui",
+      "objectId": "tui2",
       "visualMode": "Sprite",
       "sprite": "assets/levels/lv4/images/tui1.png",
       "initSpineLoop": false,
@@ -1489,6 +1495,7 @@
       "startHidden": true,
       "visualMode": "Spine",
       "spineBasePath": "assets/levels/lv4/anim/Nam_TatNuoc",
+      "initSpineLoop": true,
       "position": {},
       "sortOrder": 38
     },
@@ -1533,6 +1540,7 @@
       "visualMode": "Spine",
       "spineBasePath": "assets/levels/lv4/anim/Song2",
       "initSpineAnim": "Song2_idle",
+      "initSpineLoop": true,
       "position": {},
       "sortOrder": 42
     }
