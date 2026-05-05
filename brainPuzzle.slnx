@@ -5,7 +5,6 @@
   <Project Path="Unity.2D.Aseprite.Editor.csproj" />
   <Project Path="Unity.Services.Core.Internal.csproj" />
   <Project Path="Unity.Localization.csproj" />
-  <Project Path="Assembly-CSharp.csproj" />
   <Project Path="Unity.ShaderGraph.Editor.csproj" />
   <Project Path="Unity.Purchasing.csproj" />
   <Project Path="Unity.RenderPipelines.Core.Runtime.csproj" />
@@ -58,6 +57,7 @@
   <Project Path="Unity.2D.Tilemap.Extras.Editor.csproj" />
   <Project Path="spine-unity.csproj" />
   <Project Path="Unity.InternalAPIEngineBridge.013.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
   <Project Path="Unity.TextMeshPro.csproj" />
   <Project Path="UnityEditor.Purchasing.csproj" />
   <Project Path="Unity.TextMeshPro.Editor.csproj" />
