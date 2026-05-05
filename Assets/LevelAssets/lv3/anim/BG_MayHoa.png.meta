@@ -1,0 +1,871 @@
+fileFormatVersion: 2
+guid: 85d1cda2547476c44bef2fcc949ec9bb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 20226066908177871
+    second: BG_MayHoa_0
+  - first:
+      213: -8116098653212204131
+    second: BG_MayHoa_1
+  - first:
+      213: 5336744121439229975
+    second: BG_MayHoa_2
+  - first:
+      213: -1376934811936767919
+    second: BG_MayHoa_3
+  - first:
+      213: 5090107126001597870
+    second: BG_MayHoa_4
+  - first:
+      213: 7088998970226035656
+    second: BG_MayHoa_5
+  - first:
+      213: 4089233578494068111
+    second: BG_MayHoa_6
+  - first:
+      213: -928649687840444321
+    second: BG_MayHoa_7
+  - first:
+      213: -1859482077888487550
+    second: BG_MayHoa_8
+  - first:
+      213: -5189069664708289262
+    second: BG_MayHoa_9
+  - first:
+      213: 3968333668720798732
+    second: BG_MayHoa_10
+  - first:
+      213: -2751203963463150837
+    second: BG_MayHoa_11
+  - first:
+      213: 4880164648287821325
+    second: BG_MayHoa_12
+  - first:
+      213: -414333887642037314
+    second: BG_MayHoa_13
+  - first:
+      213: -6611558755209059567
+    second: BG_MayHoa_14
+  - first:
+      213: 2549458879025910778
+    second: BG_MayHoa_15
+  - first:
+      213: -1107365597560754533
+    second: BG_MayHoa_16
+  - first:
+      213: -8874204394945562241
+    second: BG_MayHoa_17
+  - first:
+      213: 6433552341999385537
+    second: BG_MayHoa_18
+  - first:
+      213: 3718385833789311769
+    second: BG_MayHoa_19
+  - first:
+      213: 6230951322629334585
+    second: BG_MayHoa_20
+  - first:
+      213: 1710722274966672820
+    second: BG_MayHoa_21
+  - first:
+      213: 2372335935161324357
+    second: BG_MayHoa_22
+  - first:
+      213: -1216471760660481691
+    second: BG_MayHoa_23
+  - first:
+      213: -3671672621513545406
+    second: BG_MayHoa_24
+  - first:
+      213: -8404327191274421778
+    second: BG_MayHoa_25
+  - first:
+      213: -7074442766563502605
+    second: BG_MayHoa_26
+  - first:
+      213: -7187295582282195664
+    second: BG_MayHoa_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 0
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BG_MayHoa_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 167
+        width: 308
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc5e34d208bd74000800000000000000
+      internalID: 20226066908177871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_MayHoa_1
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 133
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d93a24d9643dd5f80800000000000000
+      internalID: -8116098653212204131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_MayHoa_2
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 63
+        width: 309
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7181a8fc08cef0a40800000000000000
+      internalID: 5336744121439229975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_MayHoa_3
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 68
+        width: 309
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 150c3a7751524ece0800000000000000
+      internalID: -1376934811936767919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_MayHoa_4
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 111
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ead720a6671b3a640800000000000000
+      internalID: 5090107126001597870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_MayHoa_5
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 100
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cbce69110f216260800000000000000
+      internalID: 7088998970226035656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_MayHoa_6
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 127
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f850db12640efb830800000000000000
+      internalID: 4089233578494068111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_MayHoa_7
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 114
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f503e737706cc13f0800000000000000
+      internalID: -928649687840444321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_MayHoa_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 79
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28f5041f6eac136e0800000000000000
+      internalID: -1859482077888487550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_MayHoa_9
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 57
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21d9e4002a8bcf7b0800000000000000
+      internalID: -5189069664708289262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_MayHoa_10
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 84
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0c6352527a521730800000000000000
+      internalID: 3968333668720798732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_MayHoa_11
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 84
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b03d12d5292c1d9d0800000000000000
+      internalID: -2751203963463150837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_MayHoa_12
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 57
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0e5d9234e3d9b340800000000000000
+      internalID: 4880164648287821325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_MayHoa_13
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 57
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb390b0468dff3af0800000000000000
+      internalID: -414333887642037314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_MayHoa_14
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 55
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 113e32877560f34a0800000000000000
+      internalID: -6611558755209059567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_MayHoa_15
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 62
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af31ec5c75f716320800000000000000
+      internalID: 2549458879025910778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_MayHoa_16
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 49
+        width: 11
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9e27e82bd8d1a0f0800000000000000
+      internalID: -1107365597560754533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_MayHoa_17
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 52
+        width: 10
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f793f0fce1e78d480800000000000000
+      internalID: -8874204394945562241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_MayHoa_18
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 38
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cb71c4c4c1984950800000000000000
+      internalID: 6433552341999385537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_MayHoa_19
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 39
+        width: 10
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91b4bd8073c5a9330800000000000000
+      internalID: 3718385833789311769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_MayHoa_20
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 39
+        width: 10
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93662160739c87650800000000000000
+      internalID: 6230951322629334585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_MayHoa_21
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 39
+        width: 11
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b59cb468d4bdb710800000000000000
+      internalID: 1710722274966672820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_MayHoa_22
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 43
+        width: 11
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5435f2fb6fa3ce020800000000000000
+      internalID: 2372335935161324357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_MayHoa_23
+      rect:
+        serializedVersion: 2
+        x: 1429
+        y: 40
+        width: 10
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 569b98af0693e1fe0800000000000000
+      internalID: -1216471760660481691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_MayHoa_24
+      rect:
+        serializedVersion: 2
+        x: 1487
+        y: 41
+        width: 11
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 249682f34399b0dc0800000000000000
+      internalID: -3671672621513545406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_MayHoa_25
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 48
+        width: 10
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee18ee392f4dd5b80800000000000000
+      internalID: -8404327191274421778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_MayHoa_26
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 42
+        width: 11
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f5962b29c782dd90800000000000000
+      internalID: -7074442766563502605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_MayHoa_27
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 39
+        width: 11
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03dd5527fb8914c90800000000000000
+      internalID: -7187295582282195664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BG_MayHoa_0: 20226066908177871
+      BG_MayHoa_1: -8116098653212204131
+      BG_MayHoa_10: 3968333668720798732
+      BG_MayHoa_11: -2751203963463150837
+      BG_MayHoa_12: 4880164648287821325
+      BG_MayHoa_13: -414333887642037314
+      BG_MayHoa_14: -6611558755209059567
+      BG_MayHoa_15: 2549458879025910778
+      BG_MayHoa_16: -1107365597560754533
+      BG_MayHoa_17: -8874204394945562241
+      BG_MayHoa_18: 6433552341999385537
+      BG_MayHoa_19: 3718385833789311769
+      BG_MayHoa_2: 5336744121439229975
+      BG_MayHoa_20: 6230951322629334585
+      BG_MayHoa_21: 1710722274966672820
+      BG_MayHoa_22: 2372335935161324357
+      BG_MayHoa_23: -1216471760660481691
+      BG_MayHoa_24: -3671672621513545406
+      BG_MayHoa_25: -8404327191274421778
+      BG_MayHoa_26: -7074442766563502605
+      BG_MayHoa_27: -7187295582282195664
+      BG_MayHoa_3: -1376934811936767919
+      BG_MayHoa_4: 5090107126001597870
+      BG_MayHoa_5: 7088998970226035656
+      BG_MayHoa_6: 4089233578494068111
+      BG_MayHoa_7: -928649687840444321
+      BG_MayHoa_8: -1859482077888487550
+      BG_MayHoa_9: -5189069664708289262
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

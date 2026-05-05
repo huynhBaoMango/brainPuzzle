@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: 250ec23839325ef48abca0f5661d2c68
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4966024566214422469
+    second: Nam_TatNuoc_0
+  - first:
+      213: -5056693691103478247
+    second: Nam_TatNuoc_1
+  - first:
+      213: -5695443880132960385
+    second: Nam_TatNuoc_2
+  - first:
+      213: 7148091952037771456
+    second: Nam_TatNuoc_3
+  - first:
+      213: 3714621040987532744
+    second: Nam_TatNuoc_4
+  - first:
+      213: 1971159685809566596
+    second: Nam_TatNuoc_5
+  - first:
+      213: -7075856728752626362
+    second: Nam_TatNuoc_6
+  - first:
+      213: -671917737071456286
+    second: Nam_TatNuoc_7
+  - first:
+      213: 4666875005436186896
+    second: Nam_TatNuoc_8
+  - first:
+      213: 2940820057752519494
+    second: Nam_TatNuoc_9
+  - first:
+      213: -2190630614373811353
+    second: Nam_TatNuoc_10
+  - first:
+      213: -1485843826451654330
+    second: Nam_TatNuoc_11
+  - first:
+      213: 4660370588313595129
+    second: Nam_TatNuoc_12
+  - first:
+      213: 6157027874870277037
+    second: Nam_TatNuoc_13
+  - first:
+      213: -5223001217778614585
+    second: Nam_TatNuoc_14
+  - first:
+      213: -6316167364620662732
+    second: Nam_TatNuoc_15
+  - first:
+      213: 931070906306801041
+    second: Nam_TatNuoc_16
+  - first:
+      213: -7562902840337566590
+    second: Nam_TatNuoc_17
+  - first:
+      213: 5158571308906551054
+    second: Nam_TatNuoc_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 0
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Nam_TatNuoc_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 449
+        width: 664
+        height: 564
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b301de8d7f2251bb0800000000000000
+      internalID: -4966024566214422469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nam_TatNuoc_1
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 1006
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91e71d321e303d9b0800000000000000
+      internalID: -5056693691103478247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nam_TatNuoc_2
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 990
+        width: 44
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7f908e77f7b5f0b0800000000000000
+      internalID: -5695443880132960385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nam_TatNuoc_3
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 814
+        width: 40
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c83a0712cf133360800000000000000
+      internalID: 7148091952037771456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nam_TatNuoc_4
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 449
+        width: 443
+        height: 490
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cde047e72cfc8330800000000000000
+      internalID: 3714621040987532744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nam_TatNuoc_5
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 787
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 483ff346a47fa5b10800000000000000
+      internalID: 1971159685809566596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nam_TatNuoc_6
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 766
+        width: 54
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64564217bc18dcd90800000000000000
+      internalID: -7075856728752626362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nam_TatNuoc_7
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 407
+        width: 392
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ef429bc06edca6f0800000000000000
+      internalID: -671917737071456286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nam_TatNuoc_8
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 760
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0115c2e571214c040800000000000000
+      internalID: 4666875005436186896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nam_TatNuoc_9
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 760
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 643ceaae244efc820800000000000000
+      internalID: 2940820057752519494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nam_TatNuoc_10
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 594
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76b372c00115991e0800000000000000
+      internalID: -2190630614373811353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nam_TatNuoc_11
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 567
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64954a489e8316be0800000000000000
+      internalID: -1485843826451654330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nam_TatNuoc_12
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 506
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fc2c1ebb56fca040800000000000000
+      internalID: 4660370588313595129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nam_TatNuoc_13
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 535
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da332d91b38227550800000000000000
+      internalID: 6157027874870277037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nam_TatNuoc_14
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 526
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ce7fd8a01c2487b0800000000000000
+      internalID: -5223001217778614585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nam_TatNuoc_15
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 479
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 438ced11f377858a0800000000000000
+      internalID: -6316167364620662732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nam_TatNuoc_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 85
+        width: 1072
+        height: 366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19d2e176e04dbec00800000000000000
+      internalID: 931070906306801041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nam_TatNuoc_17
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 85
+        width: 563
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 284f2eacfeb2b0790800000000000000
+      internalID: -7562902840337566590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nam_TatNuoc_18
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 401
+        width: 20
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0795ef264de69740800000000000000
+      internalID: 5158571308906551054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Nam_TatNuoc_0: -4966024566214422469
+      Nam_TatNuoc_1: -5056693691103478247
+      Nam_TatNuoc_10: -2190630614373811353
+      Nam_TatNuoc_11: -1485843826451654330
+      Nam_TatNuoc_12: 4660370588313595129
+      Nam_TatNuoc_13: 6157027874870277037
+      Nam_TatNuoc_14: -5223001217778614585
+      Nam_TatNuoc_15: -6316167364620662732
+      Nam_TatNuoc_16: 931070906306801041
+      Nam_TatNuoc_17: -7562902840337566590
+      Nam_TatNuoc_18: 5158571308906551054
+      Nam_TatNuoc_2: -5695443880132960385
+      Nam_TatNuoc_3: 7148091952037771456
+      Nam_TatNuoc_4: 3714621040987532744
+      Nam_TatNuoc_5: 1971159685809566596
+      Nam_TatNuoc_6: -7075856728752626362
+      Nam_TatNuoc_7: -671917737071456286
+      Nam_TatNuoc_8: 4666875005436186896
+      Nam_TatNuoc_9: 2940820057752519494
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

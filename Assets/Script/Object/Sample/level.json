@@ -1,0 +1,1948 @@
+{
+  "schemaVersion": 1,
+  "levelId": "1",
+  "title": "Help them",
+  "description": "help them with the money!",
+  "viewport": {
+    "virtualWidth": 1080,
+    "virtualHeight": 1920
+  },
+  "background": {
+    "sprite": null,
+    "music": null
+  },
+  "interactables": [
+    {
+      "objectId": "choi",
+      "startHidden": false,
+      "position": {
+        "x": -455.242126,
+        "y": -30.3157921
+      },
+      "scale": 1.0,
+      "rotation": 0.0,
+      "sortOrder": 3,
+      "collider": {
+        "type": "box",
+        "width": 90.83005,
+        "height": 177.314713,
+        "radius": 0.0
+      },
+      "data": {
+        "initSprite": "Assets/LevelAssets/lv1/images/choi.png",
+        "initSfx": null,
+        "states": [
+          {
+            "stateId": "nice",
+            "stateSprite": null,
+            "stateSfx": null,
+            "trigger": "NONE",
+            "requiredZoneId": null,
+            "requirements": [],
+            "actions": [
+              {
+                "type": "Disappear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": false,
+                "destroyOnDisappear": false,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "Appear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": false,
+                "animTrigger": null,
+                "actionTargetId": "mayhutbui",
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              }
+            ],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null
+          }
+        ]
+      },
+      "dropZones": [
+        {
+          "zoneId": "choi",
+          "sortOrder": 3,
+          "localOffset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "size": {
+            "x": 90.83005,
+            "y": 177.314713
+          },
+          "shape": "box"
+        }
+      ]
+    },
+    {
+      "objectId": "thungcarton",
+      "startHidden": false,
+      "position": {
+        "x": 453.726318,
+        "y": -475.452637
+      },
+      "scale": 1.0,
+      "rotation": 0.0,
+      "sortOrder": 2,
+      "collider": {
+        "type": "box",
+        "width": 185.936859,
+        "height": 245.557938,
+        "radius": 0.0
+      },
+      "data": {
+        "initSprite": "Assets/LevelAssets/lv1/images/thungcarton.png",
+        "initSfx": null,
+        "states": [
+          {
+            "stateId": "nice",
+            "stateSprite": null,
+            "stateSfx": null,
+            "trigger": "NONE",
+            "requiredZoneId": null,
+            "requirements": [],
+            "actions": [
+              {
+                "type": "Disappear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": false,
+                "destroyOnDisappear": false,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": "thungcarton",
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "Appear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": false,
+                "animTrigger": null,
+                "actionTargetId": "cay",
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "Appear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": false,
+                "animTrigger": null,
+                "actionTargetId": "cay_shadow",
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              }
+            ],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null
+          }
+        ]
+      },
+      "dropZones": [
+        {
+          "zoneId": "thungcarton",
+          "sortOrder": 2,
+          "localOffset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "size": {
+            "x": 185.936859,
+            "y": 245.557938
+          },
+          "shape": "box"
+        }
+      ]
+    },
+    {
+      "objectId": "giuong",
+      "startHidden": false,
+      "position": {
+        "x": 217.768433,
+        "y": 3.53684235
+      },
+      "scale": 1.0,
+      "rotation": 0.0,
+      "sortOrder": 2,
+      "collider": {
+        "type": "box",
+        "width": 502.231567,
+        "height": 336.50528,
+        "radius": 0.0
+      },
+      "data": {
+        "initSprite": "Assets/LevelAssets/lv1/images/giuong1.png",
+        "initSfx": null,
+        "states": [
+          {
+            "stateId": "nice",
+            "stateSprite": null,
+            "stateSfx": null,
+            "trigger": "NONE",
+            "requiredZoneId": null,
+            "requirements": [],
+            "actions": [
+              {
+                "type": "Disappear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": false,
+                "destroyOnDisappear": false,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": "giuong",
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "Disappear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": false,
+                "destroyOnDisappear": false,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": "giuong1_shadow",
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "Appear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": false,
+                "animTrigger": null,
+                "actionTargetId": "giuong2",
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "Appear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": false,
+                "animTrigger": null,
+                "actionTargetId": "giuong2_top",
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "Appear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": false,
+                "animTrigger": null,
+                "actionTargetId": "giuong2_shadow",
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              }
+            ],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null
+          }
+        ]
+      },
+      "dropZones": [
+        {
+          "zoneId": "giuong",
+          "sortOrder": 2,
+          "localOffset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "size": {
+            "x": 502.231567,
+            "y": 336.50528
+          },
+          "shape": "box"
+        }
+      ]
+    },
+    {
+      "objectId": "khan",
+      "startHidden": true,
+      "position": {
+        "x": -381.4737,
+        "y": 93.47369
+      },
+      "scale": 1.0,
+      "rotation": 0.0,
+      "sortOrder": 4,
+      "collider": {
+        "type": "box",
+        "width": 108.126312,
+        "height": 49.5157967,
+        "radius": 0.0
+      },
+      "data": {
+        "initSprite": "Assets/LevelAssets/lv1/images/khan.png",
+        "initSfx": null,
+        "states": [
+          {
+            "stateId": "used",
+            "stateSprite": "Assets/LevelAssets/lv1/images/khan.png",
+            "stateSfx": null,
+            "trigger": "DRAG",
+            "requiredZoneId": "embe",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "Disappear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": false,
+                "destroyOnDisappear": false,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": "khan",
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "Appear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": false,
+                "animTrigger": null,
+                "actionTargetId": "chan",
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "ActivateState",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": "khan",
+                "activateTargetObjectId": "embe",
+                "activateStateId": "cold"
+              }
+            ],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "lua",
+      "startHidden": false,
+      "position": {
+        "x": -141.4737,
+        "y": -29.8105259
+      },
+      "scale": 1.0,
+      "rotation": 0.0,
+      "sortOrder": 2,
+      "collider": {
+        "type": "box",
+        "width": 220.294754,
+        "height": 148.547379,
+        "radius": 0.0
+      },
+      "data": {
+        "initSprite": "Assets/LevelAssets/lv1/images/lua.png",
+        "initSfx": null,
+        "states": [
+          {
+            "stateId": "nice",
+            "stateSprite": "Assets/LevelAssets/lv1/images/losuoi.png",
+            "stateSfx": null,
+            "trigger": "NONE",
+            "requiredZoneId": null,
+            "requirements": [],
+            "actions": [],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null
+          }
+        ]
+      },
+      "dropZones": [
+        {
+          "zoneId": "lua",
+          "sortOrder": 2,
+          "localOffset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "size": {
+            "x": 220.294754,
+            "y": 148.547379
+          },
+          "shape": "box"
+        }
+      ]
+    },
+    {
+      "objectId": "sannha",
+      "startHidden": false,
+      "position": {
+        "x": 0.0,
+        "y": 48.5052643
+      },
+      "scale": 1.0,
+      "rotation": 0.0,
+      "sortOrder": 0,
+      "collider": {
+        "type": "box",
+        "width": 1091.36853,
+        "height": 1414.73694,
+        "radius": 0.0
+      },
+      "data": {
+        "initSprite": "Assets/LevelAssets/lv1/images/sannha1.png",
+        "initSfx": null,
+        "states": [
+          {
+            "stateId": "nice",
+            "stateSprite": "Assets/LevelAssets/lv1/images/san2.png",
+            "stateSfx": null,
+            "trigger": "NONE",
+            "requiredZoneId": null,
+            "requirements": [],
+            "actions": [],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null
+          }
+        ]
+      },
+      "dropZones": [
+        {
+          "zoneId": "sannha",
+          "sortOrder": 0,
+          "localOffset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "size": {
+            "x": 1091.36853,
+            "y": 1414.73694
+          },
+          "shape": "box"
+        }
+      ]
+    },
+    {
+      "objectId": "embe",
+      "startHidden": false,
+      "position": {
+        "x": 217.263168,
+        "y": 53.05263
+      },
+      "scale": 1.0,
+      "rotation": 0.0,
+      "sortOrder": 2,
+      "collider": {
+        "type": "box",
+        "width": 230.399979,
+        "height": 130.3579,
+        "radius": 0.0
+      },
+      "data": {
+        "initSprite": "Assets/LevelAssets/lv1/images/embe_khoc.png",
+        "initSfx": null,
+        "states": [
+          {
+            "stateId": "bed",
+            "stateSprite": "Assets/LevelAssets/lv1/images/embe2.png",
+            "stateSfx": null,
+            "trigger": "REQUIREMENT_MET",
+            "requiredZoneId": null,
+            "requirements": [
+              {
+                "objectId": "giuong",
+                "stateId": "nice"
+              }
+            ],
+            "actions": [],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null
+          },
+          {
+            "stateId": "sick",
+            "stateSprite": "Assets/LevelAssets/lv1/images/embe2.png",
+            "stateSfx": null,
+            "trigger": "NONE",
+            "requiredZoneId": null,
+            "requirements": [],
+            "actions": [],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null
+          },
+          {
+            "stateId": "cold",
+            "stateSprite": "Assets/LevelAssets/lv1/images/embe2.png",
+            "stateSfx": null,
+            "trigger": "NONE",
+            "requiredZoneId": null,
+            "requirements": [],
+            "actions": [],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null
+          },
+          {
+            "stateId": "nice",
+            "stateSprite": "Assets/LevelAssets/lv1/images/embe3.png",
+            "stateSfx": null,
+            "trigger": "REQUIREMENT_MET",
+            "requiredZoneId": null,
+            "requirements": [
+              {
+                "objectId": "embe",
+                "stateId": "sick"
+              },
+              {
+                "objectId": "embe",
+                "stateId": "cold"
+              },
+              {
+                "objectId": "embe",
+                "stateId": "bed"
+              }
+            ],
+            "actions": [],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null
+          }
+        ]
+      },
+      "dropZones": [
+        {
+          "zoneId": "embe",
+          "sortOrder": 4,
+          "localOffset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "size": {
+            "x": 230.399979,
+            "y": 130.3579
+          },
+          "shape": "box"
+        }
+      ]
+    },
+    {
+      "objectId": "tucu",
+      "startHidden": false,
+      "position": {
+        "x": -407.747375,
+        "y": -13.6421061
+      },
+      "scale": 1.0,
+      "rotation": 0.0,
+      "sortOrder": 2,
+      "collider": {
+        "type": "box",
+        "width": 197.052612,
+        "height": 269.810547,
+        "radius": 0.0
+      },
+      "data": {
+        "initSprite": "Assets/LevelAssets/lv1/images/tucu.png",
+        "initSfx": null,
+        "states": [
+          {
+            "stateId": "nice",
+            "stateSprite": null,
+            "stateSfx": null,
+            "trigger": "NONE",
+            "requiredZoneId": null,
+            "requirements": [],
+            "actions": [
+              {
+                "type": "Disappear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": false,
+                "destroyOnDisappear": false,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": "tucu",
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "Appear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": false,
+                "animTrigger": null,
+                "actionTargetId": "tu2",
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "Appear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": false,
+                "animTrigger": null,
+                "actionTargetId": "khan",
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              }
+            ],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null
+          }
+        ]
+      },
+      "dropZones": [
+        {
+          "zoneId": "tucu",
+          "sortOrder": 2,
+          "localOffset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "size": {
+            "x": 197.052612,
+            "y": 269.810547
+          },
+          "shape": "box"
+        }
+      ]
+    },
+    {
+      "objectId": "cogai",
+      "startHidden": false,
+      "position": {
+        "x": -310.736847,
+        "y": -112.673691
+      },
+      "scale": 1.0,
+      "rotation": 0.0,
+      "sortOrder": 9,
+      "collider": {
+        "type": "box",
+        "width": 244.106918,
+        "height": 773.0527,
+        "radius": 0.0
+      },
+      "data": {
+        "initSprite": "Assets/LevelAssets/lv1/images/cogai1.png",
+        "initSfx": null,
+        "states": [
+          {
+            "stateId": "nice",
+            "stateSprite": null,
+            "stateSfx": null,
+            "trigger": "NONE",
+            "requiredZoneId": null,
+            "requirements": [],
+            "actions": [
+              {
+                "type": "Disappear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": false,
+                "destroyOnDisappear": false,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": "cogai",
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "Disappear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": false,
+                "destroyOnDisappear": false,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": "cogai1_shadow",
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "Appear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": false,
+                "animTrigger": null,
+                "actionTargetId": "cogai2_shadow",
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "Appear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": false,
+                "animTrigger": null,
+                "actionTargetId": "cogai2",
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              }
+            ],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null
+          }
+        ]
+      },
+      "dropZones": [
+        {
+          "zoneId": "cogai",
+          "sortOrder": 5,
+          "localOffset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "size": {
+            "x": 244.106918,
+            "y": 773.0527
+          },
+          "shape": "box"
+        }
+      ]
+    },
+    {
+      "objectId": "nen",
+      "startHidden": false,
+      "position": {
+        "x": -377.43158,
+        "y": 462.3158
+      },
+      "scale": 1.0,
+      "rotation": 0.0,
+      "sortOrder": 3,
+      "collider": {
+        "type": "box",
+        "width": 63.663147,
+        "height": 156.6316,
+        "radius": 0.0
+      },
+      "data": {
+        "initSprite": "Assets/LevelAssets/lv1/images/nen.png",
+        "initSfx": null,
+        "states": [
+          {
+            "stateId": "nice",
+            "stateSprite": "Assets/LevelAssets/lv1/images/den.png",
+            "stateSfx": null,
+            "trigger": "NONE",
+            "requiredZoneId": null,
+            "requirements": [],
+            "actions": [],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null
+          }
+        ]
+      },
+      "dropZones": [
+        {
+          "zoneId": "nen",
+          "sortOrder": 3,
+          "localOffset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "size": {
+            "x": 63.663147,
+            "y": 156.6316
+          },
+          "shape": "box"
+        }
+      ]
+    },
+    {
+      "objectId": "cuaso2",
+      "startHidden": false,
+      "position": {
+        "x": -491.1158,
+        "y": 327.9158
+      },
+      "scale": 1.0,
+      "rotation": 0.0,
+      "sortOrder": 2,
+      "collider": {
+        "type": "box",
+        "width": 111.157936,
+        "height": 401.179,
+        "radius": 0.0
+      },
+      "data": {
+        "initSprite": "Assets/LevelAssets/lv1/images/cua4.png",
+        "initSfx": null,
+        "states": [
+          {
+            "stateId": "nice",
+            "stateSprite": "Assets/LevelAssets/lv1/images/cua1.png",
+            "stateSfx": null,
+            "trigger": "NONE",
+            "requiredZoneId": null,
+            "requirements": [],
+            "actions": [],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null
+          }
+        ]
+      },
+      "dropZones": [
+        {
+          "zoneId": "cuaso",
+          "sortOrder": 1,
+          "localOffset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "size": {
+            "x": 111.157936,
+            "y": 401.179
+          },
+          "shape": "box"
+        }
+      ]
+    },
+    {
+      "objectId": "thuoc",
+      "startHidden": true,
+      "position": {
+        "x": -414.3158,
+        "y": 131.873688
+      },
+      "scale": 1.0,
+      "rotation": 0.0,
+      "sortOrder": 3,
+      "collider": {
+        "type": "box",
+        "width": 36.3789368,
+        "height": 85.8947449,
+        "radius": 0.0
+      },
+      "data": {
+        "initSprite": "Assets/LevelAssets/lv1/images/thuoc.png",
+        "initSfx": null,
+        "states": [
+          {
+            "stateId": "used",
+            "stateSprite": null,
+            "stateSfx": null,
+            "trigger": "DRAG",
+            "requiredZoneId": "embe",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "Disappear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": false,
+                "destroyOnDisappear": false,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "ActivateState",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": "embe",
+                "activateStateId": "sick"
+              }
+            ],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "cuaso1",
+      "startHidden": false,
+      "position": {
+        "x": 67.2000046,
+        "y": 311.747375
+      },
+      "scale": 1.0,
+      "rotation": 0.0,
+      "sortOrder": 1,
+      "collider": {
+        "type": "box",
+        "width": 435.536865,
+        "height": 277.894745,
+        "radius": 0.0
+      },
+      "data": {
+        "initSprite": "Assets/LevelAssets/lv1/images/cua3.png",
+        "initSfx": null,
+        "states": [
+          {
+            "stateId": "nice",
+            "stateSprite": "Assets/LevelAssets/lv1/images/cua2.png",
+            "stateSfx": null,
+            "trigger": "NONE",
+            "requiredZoneId": null,
+            "requirements": [],
+            "actions": [],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null
+          }
+        ]
+      },
+      "dropZones": [
+        {
+          "zoneId": "cuaso",
+          "sortOrder": 1,
+          "localOffset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "size": {
+            "x": 435.536865,
+            "y": 277.894745
+          },
+          "shape": "box"
+        }
+      ]
+    },
+    {
+      "objectId": "tu2",
+      "startHidden": true,
+      "position": {
+        "x": -373.894745,
+        "y": -44.4631577
+      },
+      "scale": 1.0,
+      "rotation": 0.0,
+      "sortOrder": 2,
+      "collider": {
+        "type": "box",
+        "width": 199.28244,
+        "height": 268.519073,
+        "radius": 0.0
+      },
+      "data": {
+        "initSprite": "Assets/LevelAssets/lv1/images/tu_2.png",
+        "initSfx": null,
+        "states": [
+          {
+            "stateId": "nice",
+            "stateSprite": null,
+            "stateSfx": null,
+            "trigger": "NONE",
+            "requiredZoneId": null,
+            "requirements": [],
+            "actions": [
+              {
+                "type": "Appear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": false,
+                "animTrigger": null,
+                "actionTargetId": "thuoc",
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              }
+            ],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null
+          }
+        ]
+      },
+      "dropZones": [
+        {
+          "zoneId": "tu2",
+          "sortOrder": 2,
+          "localOffset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "size": {
+            "x": 199.28244,
+            "y": 268.519073
+          },
+          "shape": "box"
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "position": {
+        "x": 310.2316,
+        "y": -519.4105
+      },
+      "sortOrder": 0,
+      "pickMode": "Random",
+      "collider": {
+        "type": "box",
+        "width": 299.109436,
+        "height": 260.9516,
+        "radius": 0.0
+      },
+      "data": {
+        "initSprite": null,
+        "initSfx": null,
+        "states": [
+          {
+            "stateId": "fix_cogai",
+            "stateSprite": null,
+            "stateSfx": null,
+            "trigger": "DRAG",
+            "requiredZoneId": "cogai",
+            "requirements": [
+              {
+                "objectId": "cogai",
+                "stateId": "init"
+              }
+            ],
+            "actions": [
+              {
+                "type": "Disappear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": false,
+                "destroyOnDisappear": false,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "ActivateState",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": "cogai",
+                "activateStateId": "nice"
+              }
+            ],
+            "successMessageKey": "dodep",
+            "failMessageKey": null,
+            "onStartHook": null
+          },
+          {
+            "stateId": "fix_tucu",
+            "stateSprite": null,
+            "stateSfx": null,
+            "trigger": "DRAG",
+            "requiredZoneId": "tucu",
+            "requirements": [
+              {
+                "objectId": "tucu",
+                "stateId": "init"
+              }
+            ],
+            "actions": [
+              {
+                "type": "Disappear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": false,
+                "destroyOnDisappear": false,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "ActivateState",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": "tucu",
+                "activateStateId": "nice"
+              }
+            ],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null
+          },
+          {
+            "stateId": "fix_thuoc",
+            "stateSprite": null,
+            "stateSfx": null,
+            "trigger": "DRAG",
+            "requiredZoneId": "tu2",
+            "requirements": [
+              {
+                "objectId": "tu2",
+                "stateId": "init"
+              }
+            ],
+            "actions": [
+              {
+                "type": "Disappear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": false,
+                "destroyOnDisappear": false,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "ActivateState",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": "tu2",
+                "activateStateId": "nice"
+              }
+            ],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null
+          },
+          {
+            "stateId": "fix_choi",
+            "stateSprite": null,
+            "stateSfx": null,
+            "trigger": "DRAG",
+            "requiredZoneId": "choi",
+            "requirements": [
+              {
+                "objectId": "choi",
+                "stateId": "init"
+              }
+            ],
+            "actions": [
+              {
+                "type": "Disappear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": false,
+                "destroyOnDisappear": false,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "ActivateState",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": "choi",
+                "activateStateId": "nice"
+              }
+            ],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null
+          },
+          {
+            "stateId": "fix_sannha",
+            "stateSprite": null,
+            "stateSfx": null,
+            "trigger": "DRAG",
+            "requiredZoneId": "sannha",
+            "requirements": [
+              {
+                "objectId": "sannha",
+                "stateId": "init"
+              }
+            ],
+            "actions": [
+              {
+                "type": "Disappear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": false,
+                "destroyOnDisappear": false,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "ActivateState",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": "sannha",
+                "activateStateId": "nice"
+              }
+            ],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null
+          },
+          {
+            "stateId": "fix_lua",
+            "stateSprite": null,
+            "stateSfx": null,
+            "trigger": "DRAG",
+            "requiredZoneId": "lua",
+            "requirements": [
+              {
+                "objectId": "lua",
+                "stateId": "init"
+              }
+            ],
+            "actions": [
+              {
+                "type": "Disappear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": false,
+                "destroyOnDisappear": false,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "ActivateState",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": "lua",
+                "activateStateId": "nice"
+              }
+            ],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null
+          },
+          {
+            "stateId": "fix_nen",
+            "stateSprite": null,
+            "stateSfx": null,
+            "trigger": "DRAG",
+            "requiredZoneId": "nen",
+            "requirements": [
+              {
+                "objectId": "nen",
+                "stateId": "init"
+              }
+            ],
+            "actions": [
+              {
+                "type": "Disappear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": false,
+                "destroyOnDisappear": false,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "ActivateState",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": "nen",
+                "activateStateId": "nice"
+              }
+            ],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null
+          },
+          {
+            "stateId": "fix_cuaso",
+            "stateSprite": null,
+            "stateSfx": null,
+            "trigger": "DRAG",
+            "requiredZoneId": "cuaso",
+            "requirements": [
+              {
+                "objectId": "cuaso1",
+                "stateId": "init"
+              }
+            ],
+            "actions": [
+              {
+                "type": "Disappear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": false,
+                "destroyOnDisappear": false,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "ActivateState",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": "cuaso1",
+                "activateStateId": "nice"
+              },
+              {
+                "type": "ActivateState",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": "cuaso2",
+                "activateStateId": "nice"
+              }
+            ],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null
+          },
+          {
+            "stateId": "fix_giuong",
+            "stateSprite": null,
+            "stateSfx": null,
+            "trigger": "DRAG",
+            "requiredZoneId": "giuong",
+            "requirements": [
+              {
+                "objectId": "giuong",
+                "stateId": "init"
+              }
+            ],
+            "actions": [
+              {
+                "type": "Disappear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": false,
+                "destroyOnDisappear": false,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "ActivateState",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": "giuong",
+                "activateStateId": "nice"
+              }
+            ],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null
+          },
+          {
+            "stateId": "fix_thungcarton",
+            "stateSprite": null,
+            "stateSfx": null,
+            "trigger": "DRAG",
+            "requiredZoneId": "thungcarton",
+            "requirements": [
+              {
+                "objectId": "thungcarton",
+                "stateId": "init"
+              }
+            ],
+            "actions": [
+              {
+                "type": "Disappear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": false,
+                "destroyOnDisappear": false,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "ActivateState",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": "thungcarton",
+                "activateStateId": "nice"
+              }
+            ],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null
+          }
+        ]
+      },
+      "members": [
+        {
+          "sprite": "Assets/LevelAssets/lv1/images/tien1.png",
+          "position": {
+            "x": 254.652634,
+            "y": -535.0737
+          },
+          "sortOrder": 13
+        },
+        {
+          "sprite": "Assets/LevelAssets/lv1/images/tien2.png",
+          "position": {
+            "x": 372.884216,
+            "y": -569.431641
+          },
+          "sortOrder": 14
+        },
+        {
+          "sprite": "Assets/LevelAssets/lv1/images/tien6.png",
+          "position": {
+            "x": 203.1158,
+            "y": -557.3053
+          },
+          "sortOrder": 15
+        },
+        {
+          "sprite": "Assets/LevelAssets/lv1/images/tien3.png",
+          "position": {
+            "x": 301.136841,
+            "y": -593.6842
+          },
+          "sortOrder": 16
+        },
+        {
+          "sprite": "Assets/LevelAssets/lv1/images/tien4.png",
+          "position": {
+            "x": 301.136841,
+            "y": -479.494751
+          },
+          "sortOrder": 17
+        },
+        {
+          "sprite": "Assets/LevelAssets/lv1/images/tien5.png",
+          "position": {
+            "x": 259.705261,
+            "y": -511.8316
+          },
+          "sortOrder": 18
+        },
+        {
+          "sprite": "Assets/LevelAssets/lv1/images/tien7.png",
+          "position": {
+            "x": 259.705261,
+            "y": -447.157928
+          },
+          "sortOrder": 19
+        },
+        {
+          "sprite": "Assets/LevelAssets/lv1/images/tien8.png",
+          "position": {
+            "x": 385.010529,
+            "y": -505.768463
+          },
+          "sortOrder": 20
+        },
+        {
+          "sprite": "Assets/LevelAssets/lv1/images/tien9.png",
+          "position": {
+            "x": 331.452637,
+            "y": -538.1053
+          },
+          "sortOrder": 21
+        },
+        {
+          "sprite": "Assets/LevelAssets/lv1/images/tien10.png",
+          "position": {
+            "x": 376.926331,
+            "y": -475.452637
+          },
+          "sortOrder": 22
+        }
+      ]
+    }
+  ],
+  "staticObjects": [
+    {
+      "objectId": "giuong1_shadow",
+      "startHidden": false,
+      "sprite": "Assets/LevelAssets/lv1/images/giuong1_shadow.png",
+      "position": {
+        "x": 226.35791,
+        "y": -122.273689
+      },
+      "scale": 1.0,
+      "rotation": 0.0,
+      "sortOrder": 2,
+      "collider": null,
+      "blocks": false
+    },
+    {
+      "objectId": "mayhutbui",
+      "startHidden": true,
+      "sprite": "Assets/LevelAssets/lv1/images/mayhutbui.png",
+      "position": {
+        "x": -453.221069,
+        "y": -206.652649
+      },
+      "scale": 1.0,
+      "rotation": 0.0,
+      "sortOrder": 3,
+      "collider": null,
+      "blocks": false
+    },
+    {
+      "objectId": "chan",
+      "startHidden": true,
+      "sprite": "Assets/LevelAssets/lv1/images/chan.png",
+      "position": {
+        "x": 289.010529,
+        "y": 23.74737
+      },
+      "scale": 1.0,
+      "rotation": 0.0,
+      "sortOrder": 3,
+      "collider": null,
+      "blocks": false
+    },
+    {
+      "objectId": "cay",
+      "startHidden": true,
+      "sprite": "Assets/LevelAssets/lv1/images/cay.png",
+      "position": {
+        "x": 429.4737,
+        "y": -351.1579
+      },
+      "scale": 1.0,
+      "rotation": 0.0,
+      "sortOrder": 3,
+      "collider": null,
+      "blocks": false
+    },
+    {
+      "objectId": "cay_shadow",
+      "startHidden": true,
+      "sprite": "Assets/LevelAssets/lv1/images/cay_shadow.png",
+      "position": {
+        "x": 472.926331,
+        "y": -583.0737
+      },
+      "scale": 1.0,
+      "rotation": 0.0,
+      "sortOrder": 2,
+      "collider": null,
+      "blocks": false
+    },
+    {
+      "objectId": "giuong2_top",
+      "startHidden": true,
+      "sprite": "Assets/LevelAssets/lv1/images/giuong2_top.png",
+      "position": {
+        "x": 217.768433,
+        "y": 9.094737
+      },
+      "scale": 1.0,
+      "rotation": 0.0,
+      "sortOrder": 4,
+      "collider": null,
+      "blocks": false
+    },
+    {
+      "objectId": "giuong2_shadow",
+      "startHidden": true,
+      "sprite": "Assets/LevelAssets/lv1/images/giuong2_shadow.png",
+      "position": {
+        "x": 214.736847,
+        "y": -138.442108
+      },
+      "scale": 1.0,
+      "rotation": 0.0,
+      "sortOrder": 2,
+      "collider": null,
+      "blocks": false
+    },
+    {
+      "objectId": "giuong2",
+      "startHidden": true,
+      "sprite": "Assets/LevelAssets/lv1/images/giuong2.png",
+      "position": {
+        "x": 217.768433,
+        "y": -13.6421061
+      },
+      "scale": 1.0,
+      "rotation": 0.0,
+      "sortOrder": 2,
+      "collider": null,
+      "blocks": false
+    },
+    {
+      "objectId": "cogai2_shadow",
+      "startHidden": true,
+      "sprite": "Assets/LevelAssets/lv1/images/cogai2_shadow.png",
+      "position": {
+        "x": -235.9579,
+        "y": -481.010559
+      },
+      "scale": 1.0,
+      "rotation": 0.0,
+      "sortOrder": 5,
+      "collider": null,
+      "blocks": false
+    },
+    {
+      "objectId": "cogai1_shadow",
+      "startHidden": false,
+      "sprite": "Assets/LevelAssets/lv1/images/cogai1_shadow.png",
+      "position": {
+        "x": -313.768433,
+        "y": -485.5579
+      },
+      "scale": 1.0,
+      "rotation": 0.0,
+      "sortOrder": 8,
+      "collider": null,
+      "blocks": false
+    },
+    {
+      "objectId": "cogai2",
+      "startHidden": true,
+      "sprite": "Assets/LevelAssets/lv1/images/cogai2.png",
+      "position": {
+        "x": -240.000015,
+        "y": -83.87369
+      },
+      "scale": 1.0,
+      "rotation": 0.0,
+      "sortOrder": 5,
+      "collider": null,
+      "blocks": false
+    }
+  ],
+  "dropZones": [],
+  "win": [
+    {
+      "type": "stateActivated",
+      "objectId": "embe",
+      "stateId": "nice"
+    },
+    {
+      "type": "stateActivated",
+      "objectId": "choi",
+      "stateId": "nice"
+    },
+    {
+      "type": "stateActivated",
+      "objectId": "cogai",
+      "stateId": "nice"
+    },
+    {
+      "type": "stateActivated",
+      "objectId": "cuaso1",
+      "stateId": "nice"
+    },
+    {
+      "type": "stateActivated",
+      "objectId": "giuong",
+      "stateId": "nice"
+    },
+    {
+      "type": "stateActivated",
+      "objectId": "lua",
+      "stateId": "nice"
+    },
+    {
+      "type": "stateActivated",
+      "objectId": "nen",
+      "stateId": "nice"
+    },
+    {
+      "type": "stateActivated",
+      "objectId": "sannha",
+      "stateId": "nice"
+    },
+    {
+      "type": "stateActivated",
+      "objectId": "thungcarton",
+      "stateId": "nice"
+    },
+    {
+      "type": "stateActivated",
+      "objectId": "thungcarton",
+      "stateId": "nice"
+    }
+  ],
+  "lose": []
+}

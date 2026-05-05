@@ -1,0 +1,7 @@
+Nu8.png
+size:1024,512
+filter:Linear,Linear
+Nu8_
+bounds:1,1,350,268
+Nu8_quaydau
+bounds:353,2,351,267

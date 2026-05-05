@@ -1,0 +1,1639 @@
+{
+  "schemaVersion": 1,
+  "levelId": "lv4",
+  "title": "title",
+  "description": "des",
+  "assetPathPrefix": "assets/levels/",
+  "viewport": {
+    "virtualWidth": 1080,
+    "virtualHeight": 1920
+  },
+  "interactables": [
+    {
+      "objectId": "bangkeo",
+      "visualMode": "Sprite",
+      "position": {
+        "x": 194.021057,
+        "y": -197.052643
+      },
+      "sortOrder": 37,
+      "collider": {
+        "type": "box",
+        "width": 94.98947,
+        "height": 70.73684,
+        "offsetX": -1.20464128E-05
+      },
+      "data": {
+        "initStateId": "init",
+        "initSprite": "assets/levels/lv4/images/bangkeo1.png",
+        "initSpineLoop": false,
+        "states": [
+          {
+            "stateId": "used",
+            "trigger": "DRAG",
+            "requiredZoneId": "bangkeo_drop",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "sfxClip": "assets/levels/lv4/sounds/bangkeo_success.mp3"
+              },
+              {
+                "type": "Appear",
+                "runInParallel": true,
+                "duration": 0.5,
+                "fadeIn": true,
+                "actionTargetId": "keo2"
+              },
+              {
+                "type": "Appear",
+                "runInParallel": true,
+                "duration": 0.5,
+                "fadeIn": true,
+                "actionTargetId": "keo1"
+              },
+              {
+                "type": "Disappear",
+                "runInParallel": true,
+                "duration": 0.0,
+                "fadeOut": false,
+                "destroyOnDisappear": false
+              }
+            ],
+            "successMessageKey": "bangkeo_success",
+            "hintMessageKey": "bangkeo_hint"
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "sieunhan2",
+      "startHidden": true,
+      "visualMode": "Sprite",
+      "position": {
+        "x": 284.9684,
+        "y": 113.178955
+      },
+      "sortOrder": 6,
+      "collider": {
+        "type": "box",
+        "width": 323.368469,
+        "height": 704.336853,
+        "offsetY": 1.20464128E-05
+      },
+      "data": {
+        "initStateId": "init",
+        "initSprite": "assets/levels/lv4/images/sieunhan2.png",
+        "initSpineLoop": false,
+        "states": [
+          {
+            "stateId": "fly",
+            "stateSprite": "assets/levels/lv4/images/sieunhan3.png",
+            "trigger": "NONE",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "MoveTo",
+                "runInParallel": true,
+                "duration": 0.5,
+                "moveTargetPosition": {
+                  "x": -421.3895,
+                  "y": 614.4
+                },
+                "ease": "Unset"
+              },
+              {
+                "type": "Disappear",
+                "runInParallel": true,
+                "duration": 0.5,
+                "fadeOut": true,
+                "destroyOnDisappear": false
+              }
+            ]
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "tui_zone",
+      "visualMode": "Sprite",
+      "position": {
+        "x": 73.768425,
+        "y": -232.421051
+      },
+      "sortOrder": 19,
+      "collider": {
+        "type": "box",
+        "width": 106.107529,
+        "height": 136.165375,
+        "offsetX": 86.16569,
+        "offsetY": 139.942139
+      },
+      "data": {
+        "initStateId": "init",
+        "initSpineLoop": false,
+        "states": [
+          {
+            "stateId": "used",
+            "trigger": "SWIPE_UP",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "cogai",
+                "activateStateId": "tui"
+              }
+            ]
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "cho",
+      "visualMode": "Spine",
+      "position": {},
+      "sortOrder": 35,
+      "collider": {
+        "type": "box",
+        "width": 136.26796,
+        "height": 159.170013,
+        "offsetX": 421.235931,
+        "offsetY": -39.6063957
+      },
+      "spineBasePath": "assets/levels/lv4/anim/Cho",
+      "data": {
+        "initStateId": "init",
+        "initSpineAnim": "Cho_idle",
+        "states": [
+          {
+            "stateId": "done",
+            "trigger": "SWIPE_UP",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "sfxClip": "assets/levels/lv4/sounds/cho_success.mp3"
+              },
+              {
+                "type": "Disappear",
+                "runInParallel": true,
+                "duration": 0.5,
+                "fadeOut": true,
+                "destroyOnDisappear": false
+              },
+              {
+                "type": "MoveTo",
+                "runInParallel": true,
+                "duration": 0.5,
+                "moveTargetPosition": {
+                  "x": 415.831573,
+                  "y": 146.526321
+                },
+                "ease": "Unset"
+              },
+              {
+                "type": "Wait",
+                "duration": 1.0
+              },
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "sfxClip": "assets/levels/lv4/sounds/dog.mp3"
+              },
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "sfxClip": "assets/levels/lv4/sounds/water.mp3"
+              }
+            ],
+            "successMessageKey": "cho_success",
+            "hintMessageKey": "cho_hint"
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "aokhoac_zone",
+      "visualMode": "Sprite",
+      "position": {},
+      "sortOrder": 16,
+      "collider": {
+        "type": "box",
+        "width": 144.127213,
+        "height": 179.945557,
+        "offsetX": 86.7417755,
+        "offsetY": 134.181625
+      },
+      "data": {
+        "initStateId": "init",
+        "initSpineLoop": false,
+        "states": [
+          {
+            "stateId": "used",
+            "trigger": "SWIPE_UP",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "cogai",
+                "activateStateId": "ao"
+              }
+            ]
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "vali",
+      "visualMode": "Sprite",
+      "position": {
+        "x": 278.905273,
+        "y": -6.568421
+      },
+      "sortOrder": 5,
+      "collider": {
+        "type": "box",
+        "width": 151.578949,
+        "height": 156.631577
+      },
+      "data": {
+        "initStateId": "init",
+        "initSprite": "assets/levels/lv4/images/vali.png",
+        "initSpineLoop": false,
+        "states": [
+          {
+            "stateId": "done",
+            "trigger": "SWIPE_UP",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "sfxClip": "assets/levels/lv4/sounds/vali_success.mp3"
+              },
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "sfxClip": "assets/levels/lv4/sounds/water.mp3"
+              },
+              {
+                "type": "Disappear",
+                "runInParallel": true,
+                "duration": 0.5,
+                "fadeOut": true,
+                "destroyOnDisappear": false
+              },
+              {
+                "type": "MoveTo",
+                "runInParallel": true,
+                "duration": 0.5,
+                "moveTargetPosition": {
+                  "x": 267.7895,
+                  "y": 270.821075
+                },
+                "ease": "Unset"
+              }
+            ],
+            "successMessageKey": "vali_success",
+            "hintMessageKey": "vali_hint"
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "kimco",
+      "visualMode": "Sprite",
+      "position": {
+        "x": -156.126312,
+        "y": -234.947388
+      },
+      "sortOrder": 29,
+      "collider": {
+        "type": "box",
+        "width": 114.250061,
+        "height": 117.829674,
+        "offsetX": 32.3065643,
+        "offsetY": -1.2114836
+      },
+      "data": {
+        "initStateId": "init",
+        "initSprite": "assets/levels/lv4/images/mu.png",
+        "initSpineLoop": false,
+        "states": [
+          {
+            "stateId": "used",
+            "trigger": "DRAG",
+            "requiredZoneId": "caube",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "caube",
+                "activateStateId": "kimco"
+              },
+              {
+                "type": "Disappear",
+                "duration": 0.0,
+                "fadeOut": false,
+                "destroyOnDisappear": false
+              }
+            ]
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "cheo",
+      "visualMode": "Sprite",
+      "position": {
+        "x": 361.768433,
+        "y": -235.9579
+      },
+      "sortOrder": 43,
+      "collider": {
+        "type": "box",
+        "width": 264.282745,
+        "height": 158.17778,
+        "offsetX": 17.4760933,
+        "offsetY": -64.91113
+      },
+      "data": {
+        "initStateId": "init",
+        "initSprite": "assets/levels/lv4/images/cheo.png",
+        "initSpineLoop": false,
+        "states": [
+          {
+            "stateId": "used_lose",
+            "trigger": "SWIPE_UP",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "sfxClip": "assets/levels/lv4/sounds/cheo_lose.mp3"
+              },
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "sfxClip": "assets/levels/lv4/sounds/water.mp3"
+              },
+              {
+                "type": "MoveTo",
+                "runInParallel": true,
+                "duration": 0.5,
+                "moveTargetPosition": {
+                  "x": 415.831573,
+                  "y": 146.526321
+                },
+                "ease": "Unset"
+              },
+              {
+                "type": "Disappear",
+                "runInParallel": true,
+                "duration": 0.5,
+                "fadeOut": true,
+                "destroyOnDisappear": false
+              }
+            ],
+            "successMessageKey": "cheo_used_lose",
+            "hintMessageKey": "cheo_lose_hint"
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "thungphi",
+      "visualMode": "Sprite",
+      "position": {
+        "x": 415.831573,
+        "y": -180.884216
+      },
+      "sortOrder": 39,
+      "collider": {
+        "type": "box",
+        "width": 180.884216,
+        "height": 163.705261
+      },
+      "data": {
+        "initStateId": "init",
+        "initSprite": "assets/levels/lv4/images/thungphi.png",
+        "initSpineLoop": false,
+        "states": [
+          {
+            "stateId": "used_lose",
+            "trigger": "SWIPE_UP",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "sfxClip": "assets/levels/lv4/sounds/thungphi_lose.mp3"
+              },
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "sfxClip": "assets/levels/lv4/sounds/water.mp3"
+              },
+              {
+                "type": "MoveTo",
+                "runInParallel": true,
+                "duration": 0.5,
+                "moveTargetPosition": {
+                  "x": 415.831573,
+                  "y": 146.526321
+                },
+                "ease": "Unset"
+              },
+              {
+                "type": "Disappear",
+                "runInParallel": true,
+                "duration": 0.5,
+                "fadeOut": true,
+                "destroyOnDisappear": false
+              }
+            ],
+            "successMessageKey": "thungphi_lose",
+            "hintMessageKey": "thungphi_lose_hint"
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "caube",
+      "visualMode": "Spine",
+      "position": {},
+      "sortOrder": 30,
+      "collider": {
+        "type": "box",
+        "width": 113.553871,
+        "height": 417.47287,
+        "offsetX": -225.244644,
+        "offsetY": -121.646317
+      },
+      "spineBasePath": "assets/levels/lv4/anim/CauBe",
+      "data": {
+        "initStateId": "init",
+        "initSpineAnim": "Caube_Idle",
+        "states": [
+          {
+            "stateId": "kimco",
+            "stateSpineAnim": "NgoKhong_Idle",
+            "stateSpineLoop": true,
+            "trigger": "NONE",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "sfxClip": "assets/levels/lv4/sounds/kimco_success.mp3"
+              }
+            ],
+            "successMessageKey": "kimco_success",
+            "hintMessageKey": "kimco_hint"
+          },
+          {
+            "stateId": "may",
+            "trigger": "NONE",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "actionTargetId": "caube",
+                "sfxClip": "assets/levels/lv4/sounds/may_success.mp3"
+              },
+              {
+                "type": "Appear",
+                "duration": 0.0,
+                "fadeIn": false,
+                "actionTargetId": "xo"
+              },
+              {
+                "type": "DoAnimation",
+                "duration": 0.0,
+                "spineAnim": "NgoKhong_bay",
+                "actionTargetId": "caube"
+              },
+              {
+                "type": "Wait",
+                "duration": 1.5,
+                "actionTargetId": "caube"
+              },
+              {
+                "type": "Disappear",
+                "duration": 0.0,
+                "fadeOut": false,
+                "destroyOnDisappear": false,
+                "actionTargetId": "caube"
+              }
+            ],
+            "successMessageKey": "may_success",
+            "hintMessageKey": "may_hint"
+          }
+        ]
+      },
+      "dropZones": [
+        {
+          "zoneId": "caube",
+          "sortOrder": 31,
+          "localOffset": {
+            "x": -225.244644,
+            "y": -121.646317
+          },
+          "size": {
+            "x": 113.553871,
+            "y": 417.47287
+          },
+          "shape": "box"
+        }
+      ]
+    },
+    {
+      "objectId": "giagai",
+      "visualMode": "Spine",
+      "position": {
+        "y": -2.0210526
+      },
+      "sortOrder": 22,
+      "collider": {
+        "type": "box",
+        "width": 134.419,
+        "height": 702.179932,
+        "offsetX": -102.050232,
+        "offsetY": 54.0668068
+      },
+      "spineBasePath": "assets/levels/lv4/anim/Nam_GiaGai",
+      "data": {
+        "initStateId": "init",
+        "initSpineAnim": "Nam_giagai",
+        "states": [
+          {
+            "stateId": "toc",
+            "stateSpineAnim": "Nam_giagai_ktoc",
+            "stateSpineLoop": true,
+            "trigger": "SWIPE_UP",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "actionTargetId": "tocnam",
+                "sfxClip": "assets/levels/lv4/sounds/tocnam_success.mp3"
+              },
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "actionTargetId": "tocnam",
+                "sfxClip": "assets/levels/lv4/sounds/water.mp3"
+              },
+              {
+                "type": "Appear",
+                "runInParallel": true,
+                "duration": 0.0,
+                "fadeIn": false,
+                "actionTargetId": "tocnam"
+              },
+              {
+                "type": "MoveTo",
+                "runInParallel": true,
+                "duration": 0.5,
+                "moveTargetPosition": {
+                  "x": -106.105263,
+                  "y": 450.694763
+                },
+                "ease": "Unset",
+                "actionTargetId": "tocnam"
+              },
+              {
+                "type": "Disappear",
+                "runInParallel": true,
+                "duration": 0.5,
+                "fadeOut": true,
+                "destroyOnDisappear": false,
+                "actionTargetId": "tocnam"
+              }
+            ],
+            "successMessageKey": "tocnam_success",
+            "hintMessageKey": "tocnam_hint"
+          },
+          {
+            "stateId": "vay",
+            "stateSpineAnim": "Nam_giagai_kvay",
+            "stateSpineLoop": true,
+            "trigger": "SWIPE_UP",
+            "requirements": [
+              {
+                "objectId": "giagai",
+                "stateId": "toc"
+              }
+            ],
+            "actions": [
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "actionTargetId": "damnam",
+                "sfxClip": "assets/levels/lv4/sounds/vaynam_success.mp3"
+              },
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "actionTargetId": "damnam",
+                "sfxClip": "assets/levels/lv4/sounds/water.mp3"
+              },
+              {
+                "type": "Appear",
+                "duration": 0.0,
+                "fadeIn": false,
+                "actionTargetId": "damnam"
+              },
+              {
+                "type": "MoveTo",
+                "runInParallel": true,
+                "duration": 0.5,
+                "moveTargetPosition": {
+                  "x": -106.105263,
+                  "y": 450.694763
+                },
+                "ease": "Unset",
+                "actionTargetId": "damnam"
+              },
+              {
+                "type": "Disappear",
+                "runInParallel": true,
+                "duration": 0.5,
+                "fadeOut": true,
+                "destroyOnDisappear": false,
+                "actionTargetId": "damnam"
+              }
+            ],
+            "successMessageKey": "vaynam_success",
+            "hintMessageKey": "vaynam_hint"
+          },
+          {
+            "stateId": "tatnuoc",
+            "stateSpineAnim": "Nam_tatnuoc",
+            "stateSpineLoop": true,
+            "trigger": "NONE",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "actionTargetId": "namtatnuoc",
+                "sfxClip": "assets/levels/lv4/sounds/tatnuoc_success.mp3"
+              },
+              {
+                "type": "Disappear",
+                "duration": 0.0,
+                "fadeOut": false,
+                "destroyOnDisappear": false
+              },
+              {
+                "type": "Appear",
+                "duration": 0.0,
+                "fadeIn": false,
+                "actionTargetId": "namtatnuoc"
+              },
+              {
+                "type": "DoAnimation",
+                "duration": 0.0,
+                "spineAnim": "namtatnuoc",
+                "spineLoop": true,
+                "actionTargetId": "namtatnuoc"
+              }
+            ],
+            "successMessageKey": "tatnuoc_success",
+            "hintMessageKey": "tatnuoc_hint"
+          }
+        ]
+      },
+      "dropZones": [
+        {
+          "zoneId": "giagai",
+          "sortOrder": 23,
+          "localOffset": {
+            "x": -102.050232,
+            "y": 54.0668068
+          },
+          "size": {
+            "x": 134.419,
+            "y": 702.179932
+          },
+          "shape": "box"
+        }
+      ]
+    },
+    {
+      "objectId": "may",
+      "visualMode": "Sprite",
+      "position": {
+        "x": -317.3053,
+        "y": 508.294769
+      },
+      "sortOrder": 45,
+      "collider": {
+        "type": "box",
+        "width": 323.4685,
+        "height": 205.197632,
+        "offsetX": -1.78038752,
+        "offsetY": 46.2903633
+      },
+      "data": {
+        "initStateId": "init",
+        "initSprite": "assets/levels/lv4/images/may.png",
+        "initSpineLoop": false,
+        "states": [
+          {
+            "stateId": "used",
+            "trigger": "DRAG",
+            "requiredZoneId": "caube",
+            "requirements": [
+              {
+                "objectId": "caube",
+                "stateId": "kimco"
+              }
+            ],
+            "actions": [
+              {
+                "type": "Disappear",
+                "duration": 0.0,
+                "fadeOut": false,
+                "destroyOnDisappear": false
+              },
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "caube",
+                "activateStateId": "may"
+              }
+            ]
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "xo",
+      "startHidden": true,
+      "visualMode": "Sprite",
+      "position": {
+        "x": -222.82106,
+        "y": -165.726318
+      },
+      "sortOrder": 20,
+      "collider": {
+        "type": "box",
+        "width": 87.91578,
+        "height": 131.368423
+      },
+      "data": {
+        "initStateId": "init",
+        "initSprite": "assets/levels/lv4/images/xo.png",
+        "initSpineLoop": false,
+        "states": [
+          {
+            "stateId": "used",
+            "trigger": "DRAG",
+            "requiredZoneId": "giagai",
+            "requirements": [
+              {
+                "objectId": "giagai",
+                "stateId": "toc"
+              },
+              {
+                "objectId": "giagai",
+                "stateId": "vay"
+              }
+            ],
+            "actions": [
+              {
+                "type": "Disappear",
+                "duration": 0.0,
+                "fadeOut": false,
+                "destroyOnDisappear": false
+              },
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "giagai",
+                "activateStateId": "tatnuoc"
+              }
+            ]
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "onggia",
+      "visualMode": "Spine",
+      "position": {},
+      "sortOrder": 6,
+      "collider": {
+        "type": "box",
+        "width": 151.737579,
+        "height": 636.3185,
+        "offsetX": 273.916046,
+        "offsetY": 79.67883
+      },
+      "spineBasePath": "assets/levels/lv4/anim/Ong_Lao",
+      "data": {
+        "initStateId": "init",
+        "initSpineAnim": "onglao1",
+        "states": [
+          {
+            "stateId": "tre",
+            "stateSpineAnim": "Sieunhan1",
+            "stateSpineLoop": true,
+            "trigger": "NONE",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "sfxClip": "assets/levels/lv4/sounds/onggiatre_success.mp3"
+              }
+            ],
+            "successMessageKey": "onggiatre_success",
+            "hintMessageKey": "onggiatre_hint"
+          },
+          {
+            "stateId": "coido",
+            "stateSpineLoop": true,
+            "trigger": "SWIPE_UP",
+            "requirements": [
+              {
+                "objectId": "onggia",
+                "stateId": "tre"
+              }
+            ],
+            "actions": [
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "actionTargetId": "sieunhan2",
+                "sfxClip": "assets/levels/lv4/sounds/onggiacoido_success.mp3"
+              },
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "actionTargetId": "sieunhan2",
+                "sfxClip": "assets/levels/lv4/sounds/water.mp3"
+              },
+              {
+                "type": "Appear",
+                "duration": 0.0,
+                "fadeIn": false,
+                "actionTargetId": "dosieunhan"
+              },
+              {
+                "type": "MoveTo",
+                "runInParallel": true,
+                "duration": 0.5,
+                "moveTargetPosition": {
+                  "x": 267.7895,
+                  "y": 270.821075
+                },
+                "ease": "Unset",
+                "actionTargetId": "dosieunhan"
+              },
+              {
+                "type": "Disappear",
+                "runInParallel": true,
+                "duration": 0.5,
+                "fadeOut": true,
+                "destroyOnDisappear": false,
+                "actionTargetId": "dosieunhan"
+              },
+              {
+                "type": "Disappear",
+                "runInParallel": true,
+                "duration": 0.0,
+                "fadeOut": false,
+                "destroyOnDisappear": false
+              },
+              {
+                "type": "Appear",
+                "runInParallel": true,
+                "duration": 0.0,
+                "fadeIn": false,
+                "actionTargetId": "sieunhan2"
+              },
+              {
+                "type": "Wait",
+                "duration": 1.0,
+                "actionTargetId": "sieunhan2"
+              },
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "actionTargetId": "sieunhan2",
+                "activateTargetObjectId": "sieunhan2",
+                "activateStateId": "fly"
+              }
+            ],
+            "successMessageKey": "onggiacoido_success",
+            "hintMessageKey": "onggiacoido_hint"
+          },
+          {
+            "stateId": "coido_lose",
+            "stateSpineAnim": "onglao2",
+            "stateSpineLoop": true,
+            "trigger": "SWIPE_UP",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "actionTargetId": "doonggia",
+                "sfxClip": "assets/levels/lv4/sounds/onggia_lose.mp3"
+              },
+              {
+                "type": "Appear",
+                "duration": 0.0,
+                "fadeIn": false,
+                "actionTargetId": "doonggia"
+              },
+              {
+                "type": "MoveTo",
+                "runInParallel": true,
+                "duration": 0.5,
+                "moveTargetPosition": {
+                  "x": 267.7895,
+                  "y": 270.821075
+                },
+                "ease": "Unset",
+                "actionTargetId": "doonggia"
+              },
+              {
+                "type": "Disappear",
+                "runInParallel": true,
+                "duration": 0.5,
+                "fadeOut": true,
+                "destroyOnDisappear": false,
+                "actionTargetId": "doonggia"
+              }
+            ],
+            "successMessageKey": "onggia_lose",
+            "hintMessageKey": "onggia_lose_hint"
+          }
+        ]
+      },
+      "dropZones": [
+        {
+          "zoneId": "onggia",
+          "sortOrder": 6,
+          "localOffset": {
+            "x": 273.916046,
+            "y": 79.67883
+          },
+          "size": {
+            "x": 151.737579,
+            "y": 636.3185
+          },
+          "shape": "box"
+        }
+      ]
+    },
+    {
+      "objectId": "keo",
+      "visualMode": "Sprite",
+      "position": {
+        "x": -351.663177,
+        "y": -233.43158
+      },
+      "sortOrder": 36,
+      "collider": {
+        "type": "box",
+        "width": 113.17894,
+        "height": 60.6315727
+      },
+      "data": {
+        "initStateId": "init",
+        "initSprite": "assets/levels/lv4/images/keo.png",
+        "initSpineLoop": false,
+        "states": [
+          {
+            "stateId": "used",
+            "trigger": "DRAG",
+            "requiredZoneId": "cogai",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "Disappear",
+                "duration": 0.0,
+                "fadeOut": false,
+                "destroyOnDisappear": false
+              },
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "cogai",
+                "activateStateId": "toc"
+              }
+            ]
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "cogai",
+      "visualMode": "Spine",
+      "position": {},
+      "sortOrder": 15,
+      "collider": {
+        "type": "box",
+        "width": 128.173187,
+        "height": 629.558167,
+        "offsetX": 90.36767,
+        "offsetY": 34.106575
+      },
+      "spineBasePath": "assets/levels/lv4/anim/Nu_",
+      "initialSkins": [
+        "Ao/Ao",
+        "Tui/Tui",
+        "Toc/Toc"
+      ],
+      "data": {
+        "initStateId": "init",
+        "initSpineAnim": "nutocdai",
+        "states": [
+          {
+            "stateId": "toc",
+            "trigger": "NONE",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "PlaySFX",
+                "runInParallel": true,
+                "duration": 0.5,
+                "actionTargetId": "tocdai",
+                "sfxClip": "assets/levels/lv4/sounds/tocnu_success.mp3"
+              },
+              {
+                "type": "PlaySFX",
+                "runInParallel": true,
+                "duration": 0.5,
+                "actionTargetId": "tocdai",
+                "sfxClip": "assets/levels/lv4/sounds/water.mp3"
+              },
+              {
+                "type": "SkinChange",
+                "duration": 0.0,
+                "skinTargetObjectId": "cogai",
+                "skinName": "Toc/Toc",
+                "skinOp": "Remove"
+              },
+              {
+                "type": "Appear",
+                "duration": 0.0,
+                "fadeIn": false,
+                "actionTargetId": "tocdai"
+              },
+              {
+                "type": "MoveTo",
+                "runInParallel": true,
+                "duration": 0.5,
+                "moveTargetPosition": {
+                  "x": 95.64986,
+                  "y": 421.3895
+                },
+                "ease": "Unset",
+                "actionTargetId": "tocdai"
+              },
+              {
+                "type": "Disappear",
+                "runInParallel": true,
+                "duration": 0.5,
+                "fadeOut": true,
+                "destroyOnDisappear": false,
+                "actionTargetId": "tocdai"
+              }
+            ],
+            "successMessageKey": "tocnu_success",
+            "hintMessageKey": "tocnu_hint"
+          },
+          {
+            "stateId": "ao",
+            "trigger": "NONE",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "actionTargetId": "ao",
+                "sfxClip": "assets/levels/lv4/sounds/aonu_success.mp3"
+              },
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "actionTargetId": "ao",
+                "sfxClip": "assets/levels/lv4/sounds/water.mp3"
+              },
+              {
+                "type": "SkinChange",
+                "duration": 0.0,
+                "skinTargetObjectId": "cogai",
+                "skinName": "Ao/Ao",
+                "skinOp": "Remove"
+              },
+              {
+                "type": "Appear",
+                "duration": 0.0,
+                "fadeIn": false,
+                "actionTargetId": "ao"
+              },
+              {
+                "type": "MoveTo",
+                "runInParallel": true,
+                "duration": 0.5,
+                "moveTargetPosition": {
+                  "x": 95.64986,
+                  "y": 421.3895
+                },
+                "ease": "Unset",
+                "actionTargetId": "ao"
+              },
+              {
+                "type": "Disappear",
+                "runInParallel": true,
+                "duration": 0.5,
+                "fadeOut": true,
+                "destroyOnDisappear": false,
+                "actionTargetId": "ao"
+              }
+            ],
+            "successMessageKey": "aonu_success",
+            "hintMessageKey": "aonu_hint"
+          },
+          {
+            "stateId": "tui",
+            "trigger": "NONE",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "actionTargetId": "tui",
+                "sfxClip": "assets/levels/lv4/sounds/tuinu_success.mp3"
+              },
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "actionTargetId": "tui",
+                "sfxClip": "assets/levels/lv4/sounds/water.mp3"
+              },
+              {
+                "type": "SkinChange",
+                "duration": 0.0,
+                "skinTargetObjectId": "cogai",
+                "skinName": "Tui/Tui",
+                "skinOp": "Remove"
+              },
+              {
+                "type": "Disappear",
+                "duration": 0.0,
+                "fadeOut": false,
+                "destroyOnDisappear": false,
+                "actionTargetId": "tui"
+              },
+              {
+                "type": "Appear",
+                "duration": 0.0,
+                "fadeIn": false,
+                "actionTargetId": "tui"
+              },
+              {
+                "type": "MoveTo",
+                "runInParallel": true,
+                "duration": 0.5,
+                "moveTargetPosition": {
+                  "x": 162.99791,
+                  "y": 64.67368
+                },
+                "ease": "Unset",
+                "actionTargetId": "tui"
+              },
+              {
+                "type": "Disappear",
+                "runInParallel": true,
+                "duration": 0.5,
+                "fadeOut": true,
+                "destroyOnDisappear": false,
+                "actionTargetId": "tui"
+              }
+            ],
+            "successMessageKey": "tuinu_success",
+            "hintMessageKey": "tuinu_hint"
+          }
+        ]
+      },
+      "dropZones": [
+        {
+          "zoneId": "cogai",
+          "sortOrder": 19,
+          "localOffset": {
+            "x": 90.36767,
+            "y": 34.106575
+          },
+          "size": {
+            "x": 128.173187,
+            "y": 629.558167
+          },
+          "shape": "box"
+        }
+      ]
+    },
+    {
+      "objectId": "dongho",
+      "visualMode": "Sprite",
+      "position": {
+        "x": -300.126343,
+        "y": -192.0
+      },
+      "sortOrder": 28,
+      "collider": {
+        "type": "box",
+        "width": 97.01054,
+        "height": 109.136864
+      },
+      "data": {
+        "initStateId": "init",
+        "initSprite": "assets/levels/lv4/images/dongho.png",
+        "initSpineLoop": false,
+        "states": [
+          {
+            "stateId": "used",
+            "trigger": "DRAG",
+            "requiredZoneId": "onggia",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "Disappear",
+                "duration": 0.0,
+                "fadeOut": false,
+                "destroyOnDisappear": false
+              },
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "onggia",
+                "activateStateId": "tre"
+              }
+            ]
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "thuyen",
+      "visualMode": "Spine",
+      "position": {},
+      "sortOrder": 4,
+      "collider": {
+        "type": "box",
+        "width": 1080.25269,
+        "height": 446.6527,
+        "offsetX": -4.205017,
+        "offsetY": -171.689987
+      },
+      "spineBasePath": "assets/levels/lv4/anim/Thuyen",
+      "data": {
+        "initStateId": "init",
+        "initSpineAnim": "Thuyen_trannuoc",
+        "states": [
+          {
+            "stateId": "done_all",
+            "stateSpineAnim": "Thuyen_hettran",
+            "trigger": "REQUIREMENT_MET",
+            "requirements": [
+              {
+                "objectId": "caube",
+                "stateId": "may"
+              },
+              {
+                "objectId": "cogai",
+                "stateId": "tui"
+              },
+              {
+                "objectId": "cogai",
+                "stateId": "toc"
+              },
+              {
+                "objectId": "cogai",
+                "stateId": "ao"
+              },
+              {
+                "objectId": "cho",
+                "stateId": "done"
+              },
+              {
+                "objectId": "giagai",
+                "stateId": "tatnuoc"
+              },
+              {
+                "objectId": "sieunhan2",
+                "stateId": "fly"
+              },
+              {
+                "objectId": "vali",
+                "stateId": "done"
+              },
+              {
+                "objectId": "bangkeo",
+                "stateId": "used"
+              }
+            ],
+            "actions": []
+          }
+        ]
+      },
+      "dropZones": []
+    }
+  ],
+  "groups": [],
+  "queues": [],
+  "staticObjects": [
+    {
+      "objectId": "tui",
+      "visualMode": "Sprite",
+      "sprite": "assets/levels/lv4/images/tui1.png",
+      "initSpineLoop": false,
+      "position": {
+        "x": 162.99791,
+        "y": -92.4631653
+      },
+      "sortOrder": 18
+    },
+    {
+      "objectId": "tocnam",
+      "startHidden": true,
+      "visualMode": "Sprite",
+      "sprite": "assets/levels/lv4/images/tocnam.png",
+      "initSpineLoop": false,
+      "position": {
+        "x": -106.105263,
+        "y": 335.494751
+      },
+      "sortOrder": 22
+    },
+    {
+      "objectId": "keo1",
+      "startHidden": true,
+      "visualMode": "Sprite",
+      "sprite": "assets/levels/lv4/images/bangkeo3.png",
+      "initSpineLoop": false,
+      "position": {
+        "x": -382.484222,
+        "y": -171.284225
+      },
+      "sortOrder": 31
+    },
+    {
+      "objectId": "zz",
+      "visualMode": "Sprite",
+      "sprite": "assets/levels/lv4/images/thuyen_2.png",
+      "initSpineLoop": false,
+      "position": {
+        "x": -351.1579,
+        "y": -232.926331
+      },
+      "sortOrder": 34
+    },
+    {
+      "objectId": "tocdai",
+      "startHidden": true,
+      "visualMode": "Sprite",
+      "sprite": "assets/levels/lv4/images/tocdai.png",
+      "initSpineLoop": false,
+      "position": {
+        "x": 85.8947449,
+        "y": 251.621063
+      },
+      "sortOrder": 15
+    },
+    {
+      "objectId": "namtatnuoc",
+      "startHidden": true,
+      "visualMode": "Spine",
+      "spineBasePath": "assets/levels/lv4/anim/Nam_TatNuoc",
+      "position": {},
+      "sortOrder": 38
+    },
+    {
+      "objectId": "dosieunhan",
+      "startHidden": true,
+      "visualMode": "Sprite",
+      "sprite": "assets/levels/lv4/images/dosieunhan.png",
+      "initSpineLoop": false,
+      "position": {
+        "x": 267.7895,
+        "y": 84.88421
+      },
+      "sortOrder": 7
+    },
+    {
+      "objectId": "damnam",
+      "startHidden": true,
+      "visualMode": "Sprite",
+      "sprite": "assets/levels/lv4/images/damnam.png",
+      "initSpineLoop": false,
+      "position": {
+        "x": -113.178955,
+        "y": 47.49474
+      },
+      "sortOrder": 22
+    },
+    {
+      "objectId": "song",
+      "visualMode": "Spine",
+      "spineBasePath": "assets/levels/lv4/anim/Song2",
+      "initSpineAnim": "Song2_idle",
+      "position": {},
+      "sortOrder": 42
+    },
+    {
+      "objectId": "ao",
+      "startHidden": true,
+      "visualMode": "Sprite",
+      "sprite": "assets/levels/lv4/images/ao.png",
+      "initSpineLoop": false,
+      "position": {
+        "x": 95.64986,
+        "y": 120.645645
+      },
+      "sortOrder": 15
+    },
+    {
+      "objectId": "keo2",
+      "startHidden": true,
+      "visualMode": "Sprite",
+      "sprite": "assets/levels/lv4/images/bangkeo2.png",
+      "initSpineLoop": false,
+      "position": {
+        "x": 38.905262,
+        "y": -319.326324
+      },
+      "sortOrder": 40
+    },
+    {
+      "objectId": "tui",
+      "startHidden": true,
+      "visualMode": "Sprite",
+      "sprite": "assets/levels/lv4/images/tui2.png",
+      "initSpineLoop": false,
+      "position": {
+        "x": 162.99791,
+        "y": -92.4631653
+      },
+      "sortOrder": 18
+    },
+    {
+      "objectId": "doonggia",
+      "startHidden": true,
+      "visualMode": "Sprite",
+      "sprite": "assets/levels/lv4/images/doonglao.png",
+      "initSpineLoop": false,
+      "position": {
+        "x": 267.7895,
+        "y": 30.3157921
+      },
+      "sortOrder": 7
+    },
+    {
+      "objectId": "bg",
+      "visualMode": "Sprite",
+      "sprite": "assets/levels/lv4/images/bg.png",
+      "initSpineLoop": false,
+      "position": {
+        "y": 24.2526321
+      }
+    },
+    {
+      "objectId": "thuyentop",
+      "visualMode": "Sprite",
+      "sprite": "assets/levels/lv4/images/thuyen_1.png",
+      "initSpineLoop": false,
+      "position": {
+        "x": -5.55789471,
+        "y": -214.231583
+      },
+      "sortOrder": 38
+    }
+  ],
+  "dropZones": [
+    {
+      "zoneId": "bangkeo_drop",
+      "sortOrder": 5,
+      "position": {
+        "x": 36.37895,
+        "y": -320.336853
+      },
+      "size": {
+        "x": 101.052635,
+        "y": 101.052635
+      },
+      "shape": "box"
+    }
+  ],
+  "win": [
+    {
+      "type": "stateActivated",
+      "objectId": "caube",
+      "stateId": "kimco"
+    },
+    {
+      "type": "stateActivated",
+      "objectId": "caube",
+      "stateId": "may"
+    },
+    {
+      "type": "stateActivated",
+      "objectId": "cho",
+      "stateId": "done"
+    },
+    {
+      "type": "stateActivated",
+      "objectId": "cogai",
+      "stateId": "toc"
+    },
+    {
+      "type": "stateActivated",
+      "objectId": "cogai",
+      "stateId": "ao"
+    },
+    {
+      "type": "stateActivated",
+      "objectId": "cogai",
+      "stateId": "tui"
+    },
+    {
+      "type": "stateActivated",
+      "objectId": "giagai",
+      "stateId": "toc"
+    },
+    {
+      "type": "stateActivated",
+      "objectId": "giagai",
+      "stateId": "vay"
+    },
+    {
+      "type": "stateActivated",
+      "objectId": "giagai",
+      "stateId": "tatnuoc"
+    },
+    {
+      "type": "stateActivated",
+      "objectId": "onggia",
+      "stateId": "tre"
+    },
+    {
+      "type": "stateActivated",
+      "objectId": "onggia",
+      "stateId": "coido"
+    },
+    {
+      "type": "stateActivated",
+      "objectId": "vali",
+      "stateId": "done"
+    },
+    {
+      "type": "stateActivated",
+      "objectId": "bangkeo",
+      "stateId": "used"
+    }
+  ],
+  "lose": [
+    {
+      "type": "stateActivated",
+      "objectId": "cheo",
+      "stateId": "used_lose"
+    },
+    {
+      "type": "stateActivated",
+      "objectId": "thungphi",
+      "stateId": "used_lose"
+    },
+    {
+      "type": "stateActivated",
+      "objectId": "onggia",
+      "stateId": "coido_lose"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+Song2.png
+size:2048,2048
+filter:Linear,Linear
+song1
+bounds:1,1,1080,489
+song2
+bounds:1,492,1080,550
+offsets:0,19,1080,597

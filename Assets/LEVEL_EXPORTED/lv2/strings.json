@@ -1,0 +1,102 @@
+[
+  {
+    "key": "title",
+    "en": "Fateful flight",
+    "vn": "Chuyến bay định mệnh"
+  },
+  {
+    "key": "banghieu_hint",
+    "en": "Swipe the sign left",
+    "vn": "Vuốt bảng hiệu qua trái"
+  },
+  {
+    "key": "tuong_hint",
+    "en": "Swipe the brick wall upwards",
+    "vn": "Vuốt tường gạch lên trên"
+  },
+  {
+    "key": "baidat_hint",
+    "en": "Drag the shovel into the dirt",
+    "vn": "Kéo xẻng vào bãi đất"
+  },
+  {
+    "key": "cat_hint",
+    "en": "Drag the shovel into the sand pile",
+    "vn": "Kéo xẻng vào đống cát"
+  },
+  {
+    "key": "chest_lose_hint",
+    "en": "Don't touch the cursed chest!",
+    "vn": "Đừng chạm vào rương bị nguyền!"
+  },
+  {
+    "key": "wanted_hint",
+    "en": "Pull the wanted poster into the ghost",
+    "vn": "Kéo tờ truy nã vào ma"
+  },
+  {
+    "key": "muoi_hint",
+    "en": "Drag the pile of salt into the ghost",
+    "vn": "Kéo đống muối vào ma"
+  },
+  {
+    "key": "thanhgia_hint",
+    "en": "Drag the cross into the ghost",
+    "vn": "Kéo chữ thậo vào ma"
+  },
+  {
+    "key": "banner_hint",
+    "en": "Drag the banner into the ghost",
+    "vn": "Kéo banner vào ma"
+  },
+  {
+    "key": "troisang_hint",
+    "en": "Click on the sky to make it bright",
+    "vn": "Bấm vào trời để trời sáng"
+  },
+  {
+    "key": "meo_hint",
+    "en": "Drag the cat into the ghost",
+    "vn": "Kéo mèo vào ma"
+  },
+  {
+    "key": "buicay_success",
+    "en": "There is a strange chest",
+    "vn": "Có 1 chiếc rương kì lạ"
+  },
+  {
+    "key": "troisang_success",
+    "en": "Ghosts hate light",
+    "vn": "Ma ghét ánh sáng"
+  },
+  {
+    "key": "wanted_success",
+    "en": "This person killed me",
+    "vn": "Kẻ này đã giết ta"
+  },
+  {
+    "key": "muoi_success",
+    "en": "Ghosts are afraid of salt",
+    "vn": "Ma sợ muối"
+  },
+  {
+    "key": "thanhgia_success",
+    "en": "Ghosts are afraid of the cross",
+    "vn": "Ma sợ thánh giá"
+  },
+  {
+    "key": "banner_success",
+    "en": "What a beautiful girl",
+    "vn": "Một cô gái đẹp"
+  },
+  {
+    "key": "meo_success",
+    "en": "Black cats can see ghosts",
+    "vn": "Mèo đen có thể thấy được ma"
+  },
+  {
+    "key": "couple_success",
+    "en": "My lost lover",
+    "vn": "Người yêu thất lạc của ta"
+  }
+]

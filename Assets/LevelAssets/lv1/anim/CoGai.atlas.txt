@@ -1,0 +1,14 @@
+CoGai.png
+size:2048,512
+filter:Linear,Linear
+cogai1
+bounds:1,8,397,763
+rotate:90
+cogai1_shadow
+bounds:766,1,459,129
+cogai2
+bounds:766,132,273,858
+offsets:0,0,281,858
+rotate:90
+cogai2_shadow
+bounds:1626,277,285,128

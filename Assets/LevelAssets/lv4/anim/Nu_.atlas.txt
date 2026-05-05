@@ -1,0 +1,18 @@
+Nu_.png
+size:2048,256
+filter:Linear,Linear
+Layer 15
+bounds:1,14,223,623
+rotate:90
+ao
+bounds:626,1,236,242
+rotate:90
+ao_1
+bounds:870,17,202,220
+offsets:1,0,203,220
+tocdai
+bounds:1074,70,167,221
+offsets:1,0,168,221
+rotate:90
+tui1
+bounds:1297,90,113,147

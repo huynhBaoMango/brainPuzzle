@@ -1,0 +1,113 @@
+{
+  "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-openagent/dev/assets/oh-my-opencode.schema.json",
+  "model_fallback" : true,
+  
+  "runtime_fallback": {
+    "enabled": true,
+    "retry_on_errors": [400, 429, 503, 529],
+    "max_fallback_attempts": 3,
+    "cooldown_seconds": 60,
+    "timeout_seconds": 0,
+    "notify_on_fallback": true
+  },
+
+  "agents": {
+    "sisyphus": {
+      "model": "opencode/qwen3.6-plus-free",
+      "fallback_models": [
+        "zai/glm-4.7-flash",
+        "opencode/minimax-m2.5-free",
+        "opencode/gpt-5.4-mini-free"
+      ]
+    },
+    "explore": {
+      "model": "opencode/nemotron-3-super-free",
+      "fallback_models": [
+        "opencode/gpt-5-nano-free",
+        "zai/glm-4.7-flash",
+        "opencode/qwen3.6-plus-free"
+      ]
+    },
+    "librarian": {
+      "model": "zai/glm-4.7-flash",
+      "fallback_models": [
+        "opencode/gpt-5-nano-free",
+        "opencode/qwen3.6-plus-free",
+        "opencode/nemotron-3-super-free"
+      ]
+    },
+    "oracle": {
+      "model": "opencode/qwen3.6-plus-free",
+      "fallback_models": [
+        "opencode/gpt-5.4-free",
+        "opencode/nemotron-3-super-free",
+        "zai/glm-4.7-flash"
+      ]
+    }
+  },
+
+  "categories": {
+    "quick": {
+      "model": "opencode/gpt-5.4-mini-free",
+      "fallback_models": [
+        "zai/glm-4.7-flash",
+        "opencode/qwen3.6-plus-free",
+        "opencode/nemotron-3-super-free"
+      ]
+    },
+    "unspecified-low": {
+      "model": "opencode/qwen3.6-plus-free",
+      "fallback_models": [
+        "zai/glm-4.7-flash",
+        "opencode/minimax-m2.5-free",
+        "opencode/gpt-5-nano-free"
+      ]
+    },
+    "unspecified-high": {
+      "model": "opencode/qwen3.6-plus-free",
+      "fallback_models": [
+        "opencode/gpt-5.4-free",
+        "zai/glm-4.7-flash",
+        "opencode/nemotron-3-super-free"
+      ]
+    },
+    "deep": {
+      "model": "opencode/qwen3.6-plus-free",
+      "fallback_models": [
+        "opencode/gpt-5.4-free",
+        "opencode/nemotron-3-super-free",
+        "zai/glm-4.7-flash",
+        "opencode/minimax-m2.5-free"
+      ]
+    },
+    "ultrabrain": {
+      "model": "opencode/gpt-5.4-free",
+      "fallback_models": [
+        "opencode/nemotron-3-super-free",
+        "opencode/qwen3.6-plus-free",
+        "zai/glm-4.7-flash"
+      ]
+    },
+    "visual-engineering": {
+      "model": "opencode/qwen3.6-plus-free",
+      "fallback_models": [
+        "zai/glm-4.7-flash",
+        "opencode/minimax-m2.5-free"
+      ]
+    },
+    "writing": {
+      "model": "zai/glm-4.7-flash",
+      "fallback_models": [
+        "opencode/qwen3.6-plus-free",
+        "opencode/nemotron-3-super-free"
+      ]
+    }
+  },
+  
+  "background_task": {
+    "providerConcurrency": {
+      "opencode": 10,
+      "zai": 10
+    }
+  }
+}

@@ -1,0 +1,16 @@
+Nam_TatNuoc.png
+size:2048,1024
+filter:Linear,Linear
+nam3
+bounds:1,1,572,667
+rotate:90
+nam4
+bounds:670,86,457,487
+offsets:0,33,459,520
+nam5
+bounds:1072,623,314,559
+rotate:90
+nam_tatnuoc
+bounds:1129,225,400,396
+thuyen_1
+bounds:1,575,1069,362

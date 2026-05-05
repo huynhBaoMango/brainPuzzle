@@ -1,0 +1,17 @@
+Ong_Lao.png
+size:2048,1024
+filter:Linear,Linear
+onglao1
+bounds:1177,377,255,632
+rotate:90
+onglao2
+bounds:1177,167,208,638
+rotate:90
+sieunhan1
+bounds:480,40,272,694
+rotate:90
+sieunhan2
+bounds:480,314,318,695
+rotate:90
+sieunhan3
+bounds:1,1,477,631

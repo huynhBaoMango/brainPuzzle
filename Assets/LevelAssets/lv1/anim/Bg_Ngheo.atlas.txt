@@ -1,0 +1,11 @@
+Bg_Ngheo.png
+size:2048,2048
+filter:Linear,Linear
+BG_Ngheo1
+bounds:1,1,1080,1403
+
+Bg_Ngheo_2.png
+size:2048,2048
+filter:Linear,Linear
+BG_Ngheo2
+bounds:1,1,1080,1403

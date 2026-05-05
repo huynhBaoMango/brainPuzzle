@@ -1,0 +1,225 @@
+{
+  "schemaVersion": 1,
+  "levelId": "level_01_princess_dressup",
+  "title": "Princess Dress Up",
+  "description": "Dress the princess and bring her to the stage. Don't shower her in clothes.",
+
+  "viewport": {
+    "virtualWidth": 1920,
+    "virtualHeight": 1080
+  },
+
+  "background": {
+    "sprite": "sprites/levels/bedroom_bg.png",
+    "music": "audio/music/lullaby_loop.ogg"
+  },
+
+  "interactables": [
+    {
+      "objectId": "princess",
+      "position": { "x": 960, "y": 520 },
+      "scale": 1.0,
+      "rotation": 0,
+      "sortOrder": 5,
+      "collider": { "type": "box", "width": 220, "height": 460 },
+
+      "data": {
+        "initSprite": "sprites/princess/princess_idle.png",
+        "initSfx": null,
+
+        "states": [
+          {
+            "stateId": "in_shower_dirty",
+            "stateSprite": "sprites/princess/princess_wet_dirty.png",
+            "stateSfx": "audio/sfx/splash_sad.ogg",
+            "trigger": "DRAG",
+            "requiredZoneId": "shower",
+            "requirements": [
+              { "objectId": "dress", "stateId": "on_princess" }
+            ],
+            "actions": [
+              {
+                "type": "DoAnimation",
+                "animTrigger": "ShowerFail",
+                "duration": 1.0
+              }
+            ],
+            "onStartHook": "show_lose"
+          },
+
+          {
+            "stateId": "in_shower_clean",
+            "stateSprite": "sprites/princess/princess_clean.png",
+            "stateSfx": "audio/sfx/splash_happy.ogg",
+            "trigger": "DRAG",
+            "requiredZoneId": "shower",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "DoAnimation",
+                "animTrigger": "ShowerHappy",
+                "duration": 1.0
+              }
+            ],
+            "onStartHook": null
+          },
+
+          {
+            "stateId": "on_stage",
+            "stateSprite": "sprites/princess/princess_curtsy.png",
+            "stateSfx": "audio/sfx/cheer.ogg",
+            "trigger": "DRAG",
+            "requiredZoneId": "stage",
+            "requirements": [
+              { "objectId": "dress", "stateId": "on_princess" },
+              { "objectId": "shoes", "stateId": "on_princess" }
+            ],
+            "actions": [
+              {
+                "type": "MoveTo",
+                "moveTargetZoneId": "stage",
+                "duration": 0.6,
+                "ease": "OutQuad"
+              },
+              {
+                "type": "DoAnimation",
+                "animTrigger": "Curtsy",
+                "duration": 1.5
+              }
+            ],
+            "onStartHook": "show_win"
+          }
+        ]
+      },
+
+      "dropZones": [
+        {
+          "zoneId": "princess_body",
+          "localOffset": { "x": 0, "y": 60 },
+          "size": { "x": 200, "y": 220 }
+        },
+        {
+          "zoneId": "princess_feet",
+          "localOffset": { "x": 0, "y": -180 },
+          "size": { "x": 180, "y": 90 }
+        }
+      ]
+    },
+
+    {
+      "objectId": "dress",
+      "position": { "x": 380, "y": 280 },
+      "scale": 1.0,
+      "rotation": 0,
+      "sortOrder": 10,
+      "collider": { "type": "box", "width": 160, "height": 220 },
+
+      "data": {
+        "initSprite": "sprites/wardrobe/dress_floor.png",
+        "initSfx": null,
+
+        "states": [
+          {
+            "stateId": "on_princess",
+            "stateSprite": null,
+            "stateSfx": "audio/sfx/cloth_swoosh.ogg",
+            "trigger": "DRAG",
+            "requiredZoneId": "princess_body",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "MoveTo",
+                "moveTargetObjectId": "princess",
+                "moveTargetZoneId": "princess_body",
+                "duration": 0.4,
+                "ease": "OutQuad"
+              },
+              {
+                "type": "DoAnimation",
+                "animTrigger": "WearDress",
+                "duration": 0.6
+              },
+              {
+                "type": "ActivateState",
+                "activateTargetObjectId": "princess",
+                "activateStateId": "wearing_dress",
+                "runInParallel": true
+              },
+              {
+                "type": "Disappear",
+                "fadeOut": true,
+                "duration": 0.3,
+                "destroyOnDisappear": true
+              }
+            ],
+            "onStartHook": null
+          }
+        ]
+      }
+    },
+
+    {
+      "objectId": "shoes",
+      "position": { "x": 1540, "y": 260 },
+      "scale": 1.0,
+      "rotation": 0,
+      "sortOrder": 10,
+      "collider": { "type": "box", "width": 150, "height": 110 },
+
+      "data": {
+        "initSprite": "sprites/wardrobe/shoes_floor.png",
+        "initSfx": null,
+
+        "states": [
+          {
+            "stateId": "on_princess",
+            "stateSprite": null,
+            "stateSfx": "audio/sfx/cloth_swoosh.ogg",
+            "trigger": "DRAG",
+            "requiredZoneId": "princess_feet",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "MoveTo",
+                "moveTargetObjectId": "princess",
+                "moveTargetZoneId": "princess_feet",
+                "duration": 0.4,
+                "ease": "OutQuad"
+              },
+              {
+                "type": "Disappear",
+                "fadeOut": true,
+                "duration": 0.3,
+                "destroyOnDisappear": true
+              }
+            ],
+            "onStartHook": null
+          }
+        ]
+      }
+    }
+  ],
+
+  "dropZones": [
+    {
+      "zoneId": "shower",
+      "position": { "x": 1700, "y": 800 },
+      "size": { "x": 320, "y": 420 },
+      "shape": "box"
+    },
+    {
+      "zoneId": "stage",
+      "position": { "x": 960, "y": 140 },
+      "size": { "x": 820, "y": 160 },
+      "shape": "box"
+    }
+  ],
+
+  "win": [
+    { "type": "stateActivated", "objectId": "princess", "stateId": "on_stage" }
+  ],
+
+  "lose": [
+    { "type": "stateActivated", "objectId": "princess", "stateId": "in_shower_dirty" }
+  ]
+}

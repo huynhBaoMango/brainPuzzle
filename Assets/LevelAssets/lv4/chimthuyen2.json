@@ -1,0 +1,141 @@
+{	"default": {
+		"bg": {
+			"bg": { "x": 540, "y": -936, "width": 1082, "height": 1402 }
+		},
+		"song2_1": {
+			"song2_1": { "x": 540, "y": -1072, "width": 1082, "height": 264 }
+		},
+		"thuyen1": {
+			"thuyen1": { "x": 534.5, "y": -1132, "width": 1071, "height": 444 }
+		},
+		"thuyen2": {
+			"thuyen2": { "x": 534.5, "y": -1132, "width": 1071, "height": 444 }
+		},
+		"thuyen3": {
+			"thuyen3": { "x": 534.5, "y": -1132, "width": 1071, "height": 444 }
+		},
+		"vali": {
+			"vali": { "x": 816, "y": -966.5, "width": 150, "height": 155 }
+		},
+		"onglao1": {
+			"onglao1": { "x": 812.5, "y": -880, "width": 257, "height": 634 }
+		},
+		"doonglao": {
+			"doonglao": { "x": 819, "y": -902, "width": 250, "height": 510 }
+		},
+		"onglao2": {
+			"onglao2": { "x": 795, "y": -884, "width": 210, "height": 640 }
+		},
+		"sieunhan1": {
+			"sieunhan1": { "x": 807, "y": -846, "width": 274, "height": 696 }
+		},
+		"sieunhan2": {
+			"sieunhan2": { "x": 821, "y": -847.5, "width": 320, "height": 697 }
+		},
+		"dosieunhan": {
+			"dosieunhan": { "x": 808.5, "y": -872, "width": 271, "height": 560 }
+		},
+		"sieunhan3": {
+			"sieunhan3": { "x": 287.5, "y": -485.5, "width": 479, "height": 633 }
+		},
+		"thuyen_3": {
+			"thuyen_3": { "x": 648.5, "y": -1103.5, "width": 265, "height": 125 }
+		},
+		"ao_1": {
+			"ao_1": { "x": 626.5, "y": -825, "width": 203, "height": 220 }
+		},
+		"Layer 15": {
+			"Layer 15": { "x": 625.5, "y": -921.5, "width": 223, "height": 623 }
+		},
+		"ao": {
+			"ao": { "x": 635, "y": -837, "width": 236, "height": 242 }
+		},
+		"tui2": {
+			"tui2": { "x": 699.5, "y": -1049, "width": 113, "height": 148 }
+		},
+		"tui1": {
+			"tui1": { "x": 699.5, "y": -1049.5, "width": 113, "height": 147 }
+		},
+		"tocdai": {
+			"tocdai": { "x": 626, "y": -708.5, "width": 168, "height": 221 }
+		},
+		"xo": {
+			"xo": { "x": 319.5, "y": -1124, "width": 87, "height": 130 }
+		},
+		"nam1": {
+			"nam1": { "x": 431, "y": -913, "width": 220, "height": 686 }
+		},
+		"nam2": {
+			"nam2": { "x": 431.5, "y": -912, "width": 199, "height": 690 }
+		},
+		"damnam": {
+			"damnam": { "x": 431.5, "y": -911, "width": 215, "height": 434 }
+		},
+		"nam3": {
+			"nam3": { "x": 652, "y": -1008.5, "width": 574, "height": 669 }
+		},
+		"nam4": {
+			"nam4": { "x": 471.5, "y": -1086, "width": 461, "height": 522 }
+		},
+		"nam5": {
+			"nam5": { "x": 524, "y": -954.5, "width": 316, "height": 561 }
+		},
+		"tocnam": {
+			"tocnam": { "x": 439.5, "y": -624, "width": 157, "height": 132 }
+		},
+		"dongho": {
+			"dongho": { "x": 243, "y": -1150, "width": 96, "height": 108 }
+		},
+		"mu": {
+			"mu": { "x": 385.5, "y": -1192.5, "width": 177, "height": 119 }
+		},
+		"caube": {
+			"caube": { "x": 305, "y": -1079, "width": 138, "height": 418 }
+		},
+		"bangkeo3": {
+			"bangkeo3": { "x": 161.5, "y": -1129.5, "width": 85, "height": 75 }
+		},
+		"caubetethien1": {
+			"caubetethien1": { "x": 283, "y": -1045.5, "width": 252, "height": 449 }
+		},
+		"caubetethien2": {
+			"caubetethien2": { "x": 283, "y": -1045.5, "width": 252, "height": 449 }
+		},
+		"thuyen_2": {
+			"thuyen_2": { "x": 192.5, "y": -1190.5, "width": 167, "height": 75 }
+		},
+		"cho": {
+			"cho": { "x": 954, "y": -996.5, "width": 138, "height": 163 }
+		},
+		"keo": {
+			"keo": { "x": 192, "y": -1191, "width": 112, "height": 60 }
+		},
+		"bangkeo1": {
+			"bangkeo1": { "x": 732, "y": -1155, "width": 94, "height": 70 }
+		},
+		"thuyen_1": {
+			"thuyen_1": { "x": 534.5, "y": -1172, "width": 1071, "height": 364 }
+		},
+		"thungphi": {
+			"thungphi": { "x": 951.5, "y": -1139, "width": 179, "height": 162 }
+		},
+		"bangkeo2": {
+			"bangkeo2": { "x": 578.5, "y": -1276, "width": 129, "height": 96 }
+		},
+		"song1": {
+			"song1": { "x": 540, "y": -1383.5, "width": 1082, "height": 491 }
+		},
+		"song2": {
+			"song2": { "x": 540, "y": -1361.5, "width": 1082, "height": 553 }
+		},
+		"cheo": {
+			"cheo": { "x": 898, "y": -1193.5, "width": 306, "height": 285 }
+		},
+		"nam3_1": {
+			"nam3_1": { "x": 738, "y": -1144, "width": 402, "height": 398 }
+		},
+		"may": {
+			"may": { "x": 226, "y": -457, "width": 454, "height": 640 }
+		}
+	}
+}

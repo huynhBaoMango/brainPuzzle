@@ -1,0 +1,7 @@
+Keo.png
+size:256,64
+filter:Linear,Linear
+keo1
+bounds:1,1,110,58
+keo2
+bounds:113,11,111,48

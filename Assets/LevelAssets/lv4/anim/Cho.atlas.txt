@@ -1,0 +1,5 @@
+Cho.png
+size:256,256
+filter:Linear,Linear
+cho
+bounds:1,1,136,161

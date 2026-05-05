@@ -1,0 +1,9 @@
+EmBe.png
+size:512,256
+filter:Linear,Linear
+embe2
+bounds:1,1,237,119
+embe3
+bounds:1,122,257,127
+embe_khoc
+bounds:260,118,226,131

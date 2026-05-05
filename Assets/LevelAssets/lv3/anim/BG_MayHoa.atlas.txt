@@ -1,0 +1,14 @@
+BG_MayHoa.png
+size:2048,256
+filter:Linear,Linear
+may1
+bounds:1,1,305,87
+offsets:0,8,305,96
+may2
+bounds:1047,75,305,141
+offsets:0,4,305,146
+may3
+bounds:1354,71,305,145
+offsets:0,0,305,146
+vuonhoa
+bounds:1,90,1044,126

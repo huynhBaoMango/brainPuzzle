@@ -1,0 +1,172 @@
+[
+  {
+    "key": "title",
+    "en": "Boat sinking",
+    "vn": "Chìm thuyền"
+  },
+  {
+    "key": "des",
+    "en": "Rescue them from the sinking boat",
+    "vn": "Giải cứu bọn họ khỏi chiếc thuyền chìm"
+  },
+  {
+    "key": "thungphi_lose",
+    "en": "Without drums, the boat will sink",
+    "vn": "Không có thùng phi, thuyền sẽ chìm"
+  },
+  {
+    "key": "thungphi_lose_hint",
+    "en": "Don't throw away the drum",
+    "vn": "Đừng vứt thùng phi đi"
+  },
+  {
+    "key": "tocnu_success",
+    "en": "Oh my hair :(",
+    "vn": "Ôi tóc của tôi :("
+  },
+  {
+    "key": "tocnu_hint",
+    "en": "Use scissors to cut the girl's hair",
+    "vn": "Dùng kéo để cắt tóc cô gái"
+  },
+  {
+    "key": "aonu_success",
+    "en": "That's my designer jacket!",
+    "vn": "Áo khoác hàng hiệu của tôi đấy!"
+  },
+  {
+    "key": "aonu_hint",
+    "en": "Swipe up to throw away the girl's jacket",
+    "vn": "Vuốt lên để vứt áo khoác của cô gái"
+  },
+  {
+    "key": "tuinu_success",
+    "en": "My 5 kilos of cosmetics!",
+    "vn": "5 kí mỹ phẩm của tôi!"
+  },
+  {
+    "key": "tuinu_hint",
+    "en": "Swipe up to throw away the girl's bag",
+    "vn": "Vuốt lên để vứt túi của cô gái"
+  },
+  {
+    "key": "tocnam_success",
+    "en": "That's my wig",
+    "vn": "Đó là tóc giả của tôi mà"
+  },
+  {
+    "key": "tocnam_hint",
+    "en": "Swipe up to remove the crossdresser's hair",
+    "vn": "Vuốt lên để vứt bỏ tóc của người giả gái"
+  },
+  {
+    "key": "vaynam_success",
+    "en": "It's so embarrassing",
+    "vn": "Thật ngại quá"
+  },
+  {
+    "key": "vaynam_hint",
+    "en": "Swipe up to remove the crossdresser's dress",
+    "vn": "Vuốt lên để vứt bỏ váy của người giả gái"
+  },
+  {
+    "key": "tatnuoc_success",
+    "en": "Let me splash the water out",
+    "vn": "Để tôi tát nước ra"
+  },
+  {
+    "key": "tatnuoc_hint",
+    "en": "Drag the bucket onto the crossdresser after throwing away her hair dress",
+    "vn": "Kéo cái xô vào người giả gái sau khi vứt bỏ váy tóc"
+  },
+  {
+    "key": "onggiatre_success",
+    "en": "I feel full of youthful energy",
+    "vn": "Ta cảm thấy sức trẻ dồi dào"
+  },
+  {
+    "key": "onggiatre_hint",
+    "en": "Drag the clock on the old man",
+    "vn": "Kéo đồng hồ vào ông lão"
+  },
+  {
+    "key": "onggiacoido_success",
+    "en": "I used to be that superhero",
+    "vn": "Ta từng là siêu nhân đó"
+  },
+  {
+    "key": "onggiacoido_hint",
+    "en": "Swipe up to undress the old man after rejuvenation",
+    "vn": "Vuốt lên để cởi đồ của ông già sau khi trẻ hóa"
+  },
+  {
+    "key": "onggia_lose",
+    "en": "So cold...",
+    "vn": "Lạnh quá..."
+  },
+  {
+    "key": "onggia_lose_hint",
+    "en": "Don't take off the old man's clothes first",
+    "vn": "Đừng cởi đồ của ông già trước tiên"
+  },
+  {
+    "key": "cheo_used_lose",
+    "en": "Without a paddle, how can you get back to shore?",
+    "vn": "Không có cái chèo thì sao về được bờ chứ"
+  },
+  {
+    "key": "cheo_lose_hint",
+    "en": "Don't throw away the oar",
+    "vn": "Đừng vứt bỏ cái chèo"
+  },
+  {
+    "key": "kimco_success",
+    "en": "I watched Journey to the West for more than 180 minutes",
+    "vn": "Tôi đã xem tây du kí hơn 180 phút"
+  },
+  {
+    "key": "kimco_hint",
+    "en": "Drag the mask on the boy",
+    "vn": "Kéo mặt nạ vào cậu bé"
+  },
+  {
+    "key": "may_success",
+    "en": "Goodbye hehehe",
+    "vn": "Tôi đi trước đây hehehe"
+  },
+  {
+    "key": "may_hint",
+    "en": "Drag the cloud onto the boy after putting on the mask",
+    "vn": "Kéo đám mây vào cậu bé sau khi đeo mặt nạ"
+  },
+  {
+    "key": "cho_success",
+    "en": "Dogs can swim on their own",
+    "vn": "Chó có thể tự bơi mà"
+  },
+  {
+    "key": "cho_hint",
+    "en": "Swipe up to throw away the dog",
+    "vn": "Vuốt lên để vứt con chó"
+  },
+  {
+    "key": "bangkeo_success",
+    "en": "The ship is no longer leaking",
+    "vn": "Tàu không lủng nữa"
+  },
+  {
+    "key": "bangkeo_hint",
+    "en": "Drag the tape into the hole",
+    "vn": "Kéo cuộn băng keo vào lỗ lủng"
+  },
+  {
+    "key": "vali_success",
+    "en": "This suitcase weighs as much as my bag!",
+    "vn": "Cái vali này nặng ngang ngửa túi của tôi!"
+  },
+  {
+    "key": "vali_hint",
+    "en": "Swipe up to dispose of the suitcase",
+    "vn": "Vuốt lên để vứt bỏ cái vali"
+  }
+]

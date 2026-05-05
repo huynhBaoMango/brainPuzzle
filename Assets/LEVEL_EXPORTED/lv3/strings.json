@@ -1,0 +1,122 @@
+[
+  {
+    "key": "title",
+    "en": "Girlfriend is angry",
+    "vn": "Bạn gái giận"
+  },
+  {
+    "key": "hat_success",
+    "en": "She likes to listen to me sing",
+    "vn": "Cô ấy thích nghe tôi hát"
+  },
+  {
+    "key": "hat_hint",
+    "en": "Drag the microphone on the guy",
+    "vn": "Kéo micro vào chàng trai"
+  },
+  {
+    "key": "nhan_success",
+    "en": "She'll love the ring",
+    "vn": "Cô ấy sẽ thích nhẫn thôi"
+  },
+  {
+    "key": "nhan_hint",
+    "en": "Drag the ring onto the man",
+    "vn": "Kéo nhẫn vào chàng trai"
+  },
+  {
+    "key": "vit_success",
+    "en": "Play with her to improve her mood",
+    "vn": "Chơi với cô ấy để tâm trạng cô ấy tốt hơn"
+  },
+  {
+    "key": "vit_hint",
+    "en": "Drag the duck on the guy",
+    "vn": "Kéo vịt vào chàng trai"
+  },
+  {
+    "key": "banh_success",
+    "en": "She really likes cake",
+    "vn": "Cô ấy rất thích bánh"
+  },
+  {
+    "key": "banh_hint",
+    "en": "Drag the cake on the guy",
+    "vn": "Kéo bánh vào chàng trai"
+  },
+  {
+    "key": "hoa_success",
+    "en": "Giving her flowers will make her less angry",
+    "vn": "Tặng hoa sẽ làm cô ấy bớt giận"
+  },
+  {
+    "key": "hoa_hint",
+    "en": "Drag the cloud to the bush to make the flowers grow",
+    "vn": "Kéo đám mây vào bụi cây để hoa mọc"
+  },
+  {
+    "key": "long_success_lose",
+    "en": "She's angrier now",
+    "vn": "Cô ấy tức giận hơn rồi"
+  },
+  {
+    "key": "long_lose_hint",
+    "en": "Don't use feathers",
+    "vn": "Đừng sử dụng lông vũ"
+  },
+  {
+    "key": "hun_success",
+    "en": "Who can resist a kiss?",
+    "vn": "Ai mà cưỡng lại một nụ hôn chứ"
+  },
+  {
+    "key": "hun_hint",
+    "en": "Tap the girl's face",
+    "vn": "Chạm vào mặt của cô gái"
+  },
+  {
+    "key": "kem_success",
+    "en": "Rub sunscreen on her",
+    "vn": "Xoa kem chống nắng cho cô ấy"
+  },
+  {
+    "key": "kem_hint",
+    "en": "Drag sunscreen on the guy",
+    "vn": "Kéo kem chống nắng vào chàng trai"
+  },
+  {
+    "key": "chan_success",
+    "en": "She wants a massage",
+    "vn": "Cô ấy muốn được mát xa"
+  },
+  {
+    "key": "chan_hint",
+    "en": "Tap the girl's feet",
+    "vn": "Chạm vào chân của cô gái"
+  },
+  {
+    "key": "nam_doneall_success",
+    "en": "She's temporarily calmed down",
+    "vn": "Cô ấy tạm hết giận rồi"
+  },
+  {
+    "key": "gaidep_lose",
+    "en": "She's angrier now",
+    "vn": "Cô ấy giận hơn rồi"
+  },
+  {
+    "key": "gaidep_lose_hint",
+    "en": "Don't touch the girl in the swimming pool",
+    "vn": "Đừng chạm vào cô gái trong bể bơi"
+  },
+  {
+    "key": "des",
+    "en": "Calm your girlfriend out of her anger",
+    "vn": "Dỗ cho bạn gái hết giận"
+  },
+  {
+    "key": "may_hint",
+    "en": "",
+    "vn": ""
+  }
+]

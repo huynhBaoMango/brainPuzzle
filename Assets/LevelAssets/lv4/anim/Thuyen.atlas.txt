@@ -1,0 +1,9 @@
+Thuyen.png
+size:2048,2048
+filter:Linear,Linear
+thuyen1
+bounds:1,889,1069,442
+thuyen2
+bounds:1,445,1069,442
+thuyen3
+bounds:1,1,1069,442

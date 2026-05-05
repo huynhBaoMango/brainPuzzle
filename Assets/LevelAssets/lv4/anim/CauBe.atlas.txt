@@ -1,0 +1,12 @@
+CauBe.png
+size:2048,512
+filter:Linear,Linear
+caube
+bounds:908,51,136,416
+caubetethien1
+bounds:404,20,250,447
+caubetethien2
+bounds:656,20,250,447
+may
+bounds:1,1,401,466
+offsets:51,0,452,638

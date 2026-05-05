@@ -1,0 +1,11 @@
+Nam_GiaGai.png
+size:2048,256
+filter:Linear,Linear
+nam1
+bounds:1,1,218,684
+rotate:90
+nam2
+bounds:687,22,197,688
+rotate:90
+tocnam
+bounds:1377,89,155,130

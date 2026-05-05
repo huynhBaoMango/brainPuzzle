@@ -1,0 +1,937 @@
+{
+  "schemaVersion": 1,
+  "levelId": "2",
+  "title": "test",
+  "description": "help them with the money!",
+  "viewport": {
+    "virtualWidth": 1080,
+    "virtualHeight": 1920
+  },
+  "background": {
+    "sprite": null,
+    "music": null
+  },
+  "interactables": [
+    {
+      "objectId": "mic",
+      "startHidden": false,
+      "position": {
+        "x": 232.926331,
+        "y": -549.7263
+      },
+      "scale": 1.0,
+      "rotation": 0.0,
+      "sortOrder": 29,
+      "collider": {
+        "type": "box",
+        "width": 98.21812,
+        "height": 123.21524,
+        "radius": 0.0
+      },
+      "data": {
+        "initStateId": "init",
+        "initSprite": "Assets/LevelAssets/lv2/images/hat.png",
+        "initSfx": null,
+        "states": [
+          {
+            "stateId": "used",
+            "dragSprite": null,
+            "stateSprite": null,
+            "stateSfx": null,
+            "trigger": "DRAG",
+            "requiredZoneId": "nam",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "Disappear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": false,
+                "destroyOnDisappear": false,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "ActivateState",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": "nam",
+                "activateStateId": "hat"
+              }
+            ],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null,
+            "repeatable": false
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "intro",
+      "startHidden": false,
+      "position": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "scale": 1.0,
+      "rotation": 0.0,
+      "sortOrder": 0,
+      "collider": {
+        "type": "box",
+        "width": 0.0,
+        "height": 0.0,
+        "radius": 0.0
+      },
+      "data": {
+        "initStateId": null,
+        "initSprite": null,
+        "initSfx": null,
+        "states": [
+          {
+            "stateId": "intro",
+            "dragSprite": null,
+            "stateSprite": null,
+            "stateSfx": null,
+            "trigger": "REQUIREMENT_MET",
+            "requiredZoneId": null,
+            "requirements": [],
+            "actions": [
+              {
+                "type": "Wait",
+                "runInParallel": false,
+                "duration": 1.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "ActivateState",
+                "runInParallel": false,
+                "duration": 0.5,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": "nam",
+                "activateStateId": "coloi"
+              },
+              {
+                "type": "ActivateState",
+                "runInParallel": true,
+                "duration": 0.5,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": "nu",
+                "activateStateId": "doi"
+              },
+              {
+                "type": "Disappear",
+                "runInParallel": false,
+                "duration": 0.5,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": true,
+                "destroyOnDisappear": false,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": "lua",
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              }
+            ],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null,
+            "repeatable": false
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "nu",
+      "startHidden": false,
+      "position": {
+        "x": 187.9579,
+        "y": -120.757904
+      },
+      "scale": 1.0,
+      "rotation": 0.0,
+      "sortOrder": 6,
+      "collider": {
+        "type": "box",
+        "width": 221.92952,
+        "height": 608.141968,
+        "radius": 0.0
+      },
+      "data": {
+        "initStateId": null,
+        "initSprite": "Assets/LevelAssets/lv2/images/nvn_tucgian.png",
+        "initSfx": null,
+        "states": [
+          {
+            "stateId": "vui",
+            "dragSprite": null,
+            "stateSprite": "Assets/LevelAssets/lv2/images/nvn_hp2.png",
+            "stateSfx": null,
+            "trigger": "REQUIREMENT_MET",
+            "requiredZoneId": null,
+            "requirements": [
+              {
+                "objectId": "nu",
+                "stateId": "hoa"
+              },
+              {
+                "objectId": "nu",
+                "stateId": "hat"
+              }
+            ],
+            "actions": [],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null,
+            "repeatable": false
+          },
+          {
+            "stateId": "doi",
+            "dragSprite": null,
+            "stateSprite": "Assets/LevelAssets/lv2/images/nvn_doi.png",
+            "stateSfx": null,
+            "trigger": "NONE",
+            "requiredZoneId": null,
+            "requirements": [],
+            "actions": [],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null,
+            "repeatable": true
+          },
+          {
+            "stateId": "hoa",
+            "dragSprite": null,
+            "stateSprite": "Assets/LevelAssets/lv2/images/nvn_hp.png",
+            "stateSfx": null,
+            "trigger": "NONE",
+            "requiredZoneId": null,
+            "requirements": [],
+            "actions": [
+              {
+                "type": "Wait",
+                "runInParallel": false,
+                "duration": 1.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "ActivateState",
+                "runInParallel": false,
+                "duration": 1.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": "nu",
+                "activateStateId": "doi"
+              }
+            ],
+            "successMessageKey": "nu_hoa",
+            "failMessageKey": null,
+            "onStartHook": null,
+            "repeatable": false
+          },
+          {
+            "stateId": "hat",
+            "dragSprite": null,
+            "stateSprite": "Assets/LevelAssets/lv2/images/nvn_hp.png",
+            "stateSfx": null,
+            "trigger": "NONE",
+            "requiredZoneId": null,
+            "requirements": [],
+            "actions": [
+              {
+                "type": "Wait",
+                "runInParallel": false,
+                "duration": 1.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "ActivateState",
+                "runInParallel": false,
+                "duration": 1.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": "nu",
+                "activateStateId": "doi"
+              }
+            ],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null,
+            "repeatable": false
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "vuonhoa",
+      "startHidden": true,
+      "position": {
+        "x": -0.5962106,
+        "y": 364.7596
+      },
+      "scale": 1.02448368,
+      "rotation": 0.0,
+      "sortOrder": 2,
+      "collider": {
+        "type": "box",
+        "width": 1082.89014,
+        "height": 130.692886,
+        "radius": 0.0
+      },
+      "data": {
+        "initStateId": "init",
+        "initSprite": "Assets/LevelAssets/lv2/images/vuonhoa.png",
+        "initSfx": null,
+        "states": [
+          {
+            "stateId": "bohoa",
+            "dragSprite": "Assets/LevelAssets/lv2/images/hoa.png",
+            "stateSprite": null,
+            "stateSfx": null,
+            "trigger": "DRAG",
+            "requiredZoneId": "nam",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "Disappear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": false,
+                "destroyOnDisappear": false,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "ActivateState",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": "nam",
+                "activateStateId": "hoa"
+              }
+            ],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null,
+            "repeatable": false
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "may",
+      "startHidden": false,
+      "position": {
+        "x": -216.7579,
+        "y": 543.6632
+      },
+      "scale": 1.0,
+      "rotation": 0.0,
+      "sortOrder": 1,
+      "collider": {
+        "type": "box",
+        "width": 310.231567,
+        "height": 99.03154,
+        "radius": 0.0
+      },
+      "data": {
+        "initStateId": "init",
+        "initSprite": "Assets/LevelAssets/lv2/images/may.png",
+        "initSfx": null,
+        "states": [
+          {
+            "stateId": "rain",
+            "dragSprite": null,
+            "stateSprite": null,
+            "stateSfx": null,
+            "trigger": "DRAG",
+            "requiredZoneId": "vuonhoa",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "Disappear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": false,
+                "destroyOnDisappear": false,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "Appear",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": false,
+                "animTrigger": null,
+                "actionTargetId": "maymua",
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "Wait",
+                "runInParallel": false,
+                "duration": 1.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": "vuonhoa",
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "Disappear",
+                "runInParallel": false,
+                "duration": 0.5,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": true,
+                "destroyOnDisappear": false,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": "maymua",
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "Appear",
+                "runInParallel": true,
+                "duration": 0.5,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": true,
+                "animTrigger": null,
+                "actionTargetId": "vuonhoa",
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              }
+            ],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null,
+            "repeatable": false
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "nam",
+      "startHidden": false,
+      "position": {
+        "x": -191.494736,
+        "y": -97.01053
+      },
+      "scale": 1.0,
+      "rotation": 0.0,
+      "sortOrder": 3,
+      "collider": {
+        "type": "box",
+        "width": 307.756348,
+        "height": 584.340454,
+        "radius": 0.0
+      },
+      "data": {
+        "initStateId": "init",
+        "initSprite": "Assets/LevelAssets/lv2/images/nvnm_bamdt.png",
+        "initSfx": null,
+        "states": [
+          {
+            "stateId": "coloi",
+            "dragSprite": null,
+            "stateSprite": "Assets/LevelAssets/lv2/images/nvnm_coloi.png",
+            "stateSfx": null,
+            "trigger": "NONE",
+            "requiredZoneId": null,
+            "requirements": [],
+            "actions": [],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null,
+            "repeatable": true
+          },
+          {
+            "stateId": "hat",
+            "dragSprite": null,
+            "stateSprite": "Assets/LevelAssets/lv2/images/nvnm_hoa.png",
+            "stateSfx": null,
+            "trigger": "NONE",
+            "requiredZoneId": null,
+            "requirements": [],
+            "actions": [
+              {
+                "type": "ActivateState",
+                "runInParallel": false,
+                "duration": 1.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": "nu",
+                "activateStateId": "hat"
+              },
+              {
+                "type": "Wait",
+                "runInParallel": false,
+                "duration": 1.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "ActivateState",
+                "runInParallel": false,
+                "duration": 1.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": "nam",
+                "activateStateId": "coloi"
+              }
+            ],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null,
+            "repeatable": false
+          },
+          {
+            "stateId": "hoa",
+            "dragSprite": null,
+            "stateSprite": "Assets/LevelAssets/lv2/images/nvnm_hoa.png",
+            "stateSfx": null,
+            "trigger": "NONE",
+            "requiredZoneId": null,
+            "requirements": [],
+            "actions": [
+              {
+                "type": "ActivateState",
+                "runInParallel": false,
+                "duration": 1.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": "nu",
+                "activateStateId": "hoa"
+              },
+              {
+                "type": "Wait",
+                "runInParallel": false,
+                "duration": 1.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "ActivateState",
+                "runInParallel": false,
+                "duration": 1.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": "nam",
+                "activateStateId": "coloi"
+              }
+            ],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null,
+            "repeatable": false
+          },
+          {
+            "stateId": "banh",
+            "dragSprite": null,
+            "stateSprite": "Assets/LevelAssets/lv2/images/nvnm_banh.png",
+            "stateSfx": null,
+            "trigger": "NONE",
+            "requiredZoneId": null,
+            "requirements": [],
+            "actions": [
+              {
+                "type": "Wait",
+                "runInParallel": false,
+                "duration": 1.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": null,
+                "activateStateId": null
+              },
+              {
+                "type": "ActivateState",
+                "runInParallel": false,
+                "duration": 0.0,
+                "moveTargetObjectId": null,
+                "moveTargetZoneId": null,
+                "moveTargetPosition": null,
+                "ease": null,
+                "fadeOut": null,
+                "destroyOnDisappear": null,
+                "fadeIn": null,
+                "animTrigger": null,
+                "actionTargetId": null,
+                "activateTargetObjectId": "nam",
+                "activateStateId": "coloi"
+              }
+            ],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null,
+            "repeatable": false
+          },
+          {
+            "stateId": "nhan",
+            "dragSprite": null,
+            "stateSprite": "Assets/LevelAssets/lv2/images/nvnm_banh.png",
+            "stateSfx": null,
+            "trigger": "NONE",
+            "requiredZoneId": null,
+            "requirements": [],
+            "actions": [],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null,
+            "repeatable": false
+          },
+          {
+            "stateId": "vit",
+            "dragSprite": null,
+            "stateSprite": "Assets/LevelAssets/lv2/images/nvnm_banh.png",
+            "stateSfx": null,
+            "trigger": "NONE",
+            "requiredZoneId": null,
+            "requirements": [],
+            "actions": [],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null,
+            "repeatable": false
+          },
+          {
+            "stateId": "hun",
+            "dragSprite": null,
+            "stateSprite": "Assets/LevelAssets/lv2/images/nvnm_hung.png",
+            "stateSfx": null,
+            "trigger": "NONE",
+            "requiredZoneId": null,
+            "requirements": [],
+            "actions": [],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null,
+            "repeatable": false
+          },
+          {
+            "stateId": "kem",
+            "dragSprite": null,
+            "stateSprite": "Assets/LevelAssets/lv2/images/nvnm_hung.png",
+            "stateSfx": null,
+            "trigger": "NONE",
+            "requiredZoneId": null,
+            "requirements": [],
+            "actions": [],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null,
+            "repeatable": false
+          },
+          {
+            "stateId": "hatxi",
+            "dragSprite": null,
+            "stateSprite": "Assets/LevelAssets/lv2/images/nvnm_hung.png",
+            "stateSfx": null,
+            "trigger": "NONE",
+            "requiredZoneId": null,
+            "requirements": [],
+            "actions": [],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null,
+            "repeatable": false
+          },
+          {
+            "stateId": "nhingai",
+            "dragSprite": null,
+            "stateSprite": "Assets/LevelAssets/lv2/images/nvnm_hung.png",
+            "stateSfx": null,
+            "trigger": "NONE",
+            "requiredZoneId": null,
+            "requirements": [],
+            "actions": [],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null,
+            "repeatable": false
+          },
+          {
+            "stateId": "vui",
+            "dragSprite": null,
+            "stateSprite": "Assets/LevelAssets/lv2/images/nvnm_hung.png",
+            "stateSfx": null,
+            "trigger": "REQUIREMENT_MET",
+            "requiredZoneId": null,
+            "requirements": [
+              {
+                "objectId": "nu",
+                "stateId": "vui"
+              }
+            ],
+            "actions": [],
+            "successMessageKey": null,
+            "failMessageKey": null,
+            "onStartHook": null,
+            "repeatable": false
+          }
+        ]
+      },
+      "dropZones": [
+        {
+          "zoneId": "nam",
+          "sortOrder": 3,
+          "localOffset": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "size": {
+            "x": 307.756348,
+            "y": 584.340454
+          },
+          "shape": "box"
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "staticObjects": [
+    {
+      "objectId": "maymua",
+      "startHidden": true,
+      "sprite": "Assets/LevelAssets/lv2/images/maymua.png",
+      "position": {
+        "x": -216.7579,
+        "y": 518.4
+      },
+      "scale": 1.0,
+      "rotation": 0.0,
+      "sortOrder": 1,
+      "collider": null,
+      "blocks": false
+    },
+    {
+      "objectId": "bg",
+      "startHidden": false,
+      "sprite": "Assets/LevelAssets/lv2/images/bg.png",
+      "position": {
+        "x": 0.0,
+        "y": 24.2526321
+      },
+      "scale": 1.0,
+      "rotation": 0.0,
+      "sortOrder": 0,
+      "collider": null,
+      "blocks": false
+    },
+    {
+      "objectId": "lua",
+      "startHidden": false,
+      "sprite": "Assets/LevelAssets/lv2/images/lua.png",
+      "position": {
+        "x": 167.747375,
+        "y": 268.294739
+      },
+      "scale": 1.0,
+      "rotation": 0.0,
+      "sortOrder": 5,
+      "collider": null,
+      "blocks": false
+    }
+  ],
+  "dropZones": [
+    {
+      "zoneId": "vuonhoa",
+      "sortOrder": 1,
+      "position": {
+        "x": -86.33937,
+        "y": 381.817261
+      },
+      "size": {
+        "x": 1080.97266,
+        "y": 151.250153
+      },
+      "shape": "box"
+    }
+  ],
+  "win": [
+    {
+      "type": "stateActivated",
+      "objectId": "nu",
+      "stateId": "vui"
+    }
+  ],
+  "lose": []
+}
