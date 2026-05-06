@@ -5,8 +5,8 @@
   <Project Path="Unity.2D.Aseprite.Editor.csproj" />
   <Project Path="Unity.Services.Core.Internal.csproj" />
   <Project Path="Unity.Localization.csproj" />
-  <Project Path="Unity.ShaderGraph.Editor.csproj" />
   <Project Path="Unity.Purchasing.csproj" />
+  <Project Path="Unity.ShaderGraph.Editor.csproj" />
   <Project Path="Unity.RenderPipelines.Core.Runtime.csproj" />
   <Project Path="Unity.ScriptableBuildPipeline.Editor.csproj" />
   <Project Path="NaughtyAttributes.Test.csproj" />

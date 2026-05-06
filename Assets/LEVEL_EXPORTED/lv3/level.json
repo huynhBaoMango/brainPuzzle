@@ -4,315 +4,1203 @@
   "title": "title",
   "description": "des",
   "assetPathPrefix": "assets/levels/",
-  "defaultHintMessageKey": null,
   "viewport": {
     "virtualWidth": 1080,
     "virtualHeight": 1920
   },
   "interactables": [
     {
-      "objectId": "gaidep",
-      "startHidden": false,
+      "objectId": "nam",
       "visualMode": "Spine",
       "position": {
-        "x": -4.042105,
-        "y": 29.3052635
+        "y": 28.2947388
       },
-      "scale": 1.0,
-      "rotation": 0.0,
-      "sortOrder": 1,
+      "sortOrder": 5,
       "collider": {
         "type": "box",
-        "width": 353.684235,
-        "height": 270.821045,
-        "radius": 0.0,
-        "offsetX": -411.332367,
-        "offsetY": 161.087646
+        "width": 249.0446,
+        "height": 699.284241,
+        "offsetX": -133.084961,
+        "offsetY": -97.8884048
       },
-      "spineBasePath": "assets/levels/lv3/anim/Nu8",
+      "spineBasePath": "assets/levels/lv3/anim/Na9",
       "data": {
         "initStateId": "init",
-        "initSprite": null,
-        "initSpineAnim": null,
+        "initSpineAnim": "1Nam_Xemdt",
         "initSpineLoop": true,
-        "initSfx": null,
         "states": [
           {
-            "stateId": "gaidep_lose",
-            "dragSprite": null,
-            "stateSprite": null,
-            "stateSpineAnim": null,
-            "stateSpineLoop": false,
-            "stateSfx": null,
-            "trigger": "TAP",
-            "requiredZoneId": null,
+            "stateId": "start",
+            "trigger": "REQUIREMENT_MET",
             "requirements": [],
             "actions": [
               {
-                "type": "DoAnimation",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": "Nu8_Quaydau",
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
+                "type": "Wait",
+                "duration": 3.0
               },
               {
                 "type": "DoAnimation",
-                "runInParallel": false,
                 "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": "11Nam_MeGai",
-                "spineLoop": true,
-                "actionTargetId": "nam",
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
+                "spineAnim": "2Nam_coloi",
+                "spineLoop": true
+              },
+              {
+                "type": "Appear",
+                "runInParallel": true,
+                "duration": 0.0,
+                "fadeIn": false,
+                "actionTargetId": "1"
+              }
+            ]
+          },
+          {
+            "stateId": "mic",
+            "stateSpineAnim": "4Nam_Cahat",
+            "stateSpineLoop": true,
+            "trigger": "NONE",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "sfxClip": "assets/levels/lv3/sounds/hat_success.mp3"
+              },
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "sfxClip": "assets/levels/lv3/sounds/sing.mp3"
+              },
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nu",
+                "activateStateId": "thich"
               },
               {
                 "type": "Wait",
-                "runInParallel": false,
-                "duration": 1.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": "nu",
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
+                "duration": 2.0
+              },
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nam",
+                "activateStateId": "recheck",
+                "chainGuards": [
+                  {
+                    "objectId": "nam",
+                    "stateId": "nhan"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "vit"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "banh"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "hoa"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "hun"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "kem"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "chan"
+                  }
+                ]
+              }
+            ],
+            "successMessageKey": "hat_success",
+            "hintMessageKey": "hat_hint"
+          },
+          {
+            "stateId": "nhan",
+            "stateSpineAnim": "5Nam_Tangnhan",
+            "stateSpineLoop": true,
+            "trigger": "NONE",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "sfxClip": "assets/levels/lv3/sounds/nhan_success.mp3"
+              },
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nu",
+                "activateStateId": "thich3"
+              },
+              {
+                "type": "Wait",
+                "duration": 2.0
+              },
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nam",
+                "activateStateId": "recheck",
+                "chainGuards": [
+                  {
+                    "objectId": "nam",
+                    "stateId": "mic"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "vit"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "banh"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "hoa"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "hun"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "kem"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "chan"
+                  }
+                ]
+              }
+            ],
+            "successMessageKey": "nhan_success",
+            "hintMessageKey": "nhan_hint"
+          },
+          {
+            "stateId": "vit",
+            "stateSpineAnim": "6Nam_Nhay",
+            "stateSpineLoop": true,
+            "trigger": "NONE",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "sfxClip": "assets/levels/lv3/sounds/vit_success.mp3"
+              },
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nu",
+                "activateStateId": "thich"
+              },
+              {
+                "type": "Wait",
+                "duration": 2.0
+              },
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nam",
+                "activateStateId": "recheck",
+                "chainGuards": [
+                  {
+                    "objectId": "nam",
+                    "stateId": "nhan"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "mic"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "banh"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "hoa"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "hun"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "kem"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "chan"
+                  }
+                ]
+              }
+            ],
+            "successMessageKey": "vit_success",
+            "hintMessageKey": "vit_hint"
+          },
+          {
+            "stateId": "banh",
+            "stateSpineAnim": "3Nam_Tangbanh",
+            "stateSpineLoop": true,
+            "trigger": "NONE",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "sfxClip": "assets/levels/lv3/sounds/banh_success.mp3"
+              },
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nu",
+                "activateStateId": "thich"
+              },
+              {
+                "type": "Wait",
+                "duration": 2.0
+              },
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nam",
+                "activateStateId": "recheck",
+                "chainGuards": [
+                  {
+                    "objectId": "nam",
+                    "stateId": "nhan"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "mic"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "vit"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "hoa"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "hun"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "kem"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "chan"
+                  }
+                ]
+              }
+            ],
+            "successMessageKey": "banh_success",
+            "hintMessageKey": "banh_hint"
+          },
+          {
+            "stateId": "hoa",
+            "stateSpineAnim": "7Nam_Tanghoa",
+            "stateSpineLoop": true,
+            "trigger": "NONE",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "sfxClip": "assets/levels/lv3/sounds/hoa_success.mp3"
+              },
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nu",
+                "activateStateId": "thich"
+              },
+              {
+                "type": "Wait",
+                "duration": 2.0
+              },
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nam",
+                "activateStateId": "recheck",
+                "chainGuards": [
+                  {
+                    "objectId": "nam",
+                    "stateId": "nhan"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "mic"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "banh"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "vit"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "hun"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "kem"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "chan"
+                  }
+                ]
+              }
+            ],
+            "successMessageKey": "hoa_success",
+            "hintMessageKey": "hoa_hint"
+          },
+          {
+            "stateId": "long",
+            "stateSpineAnim": "8Nam_Hacxi",
+            "trigger": "NONE",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "sfxClip": "assets/levels/lv3/sounds/lose.mp3"
+              },
+              {
+                "type": "Wait",
+                "duration": 1.0
+              },
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nam",
+                "activateStateId": "recheck"
+              }
+            ],
+            "successMessageKey": "long_success_lose",
+            "hintMessageKey": "long_lose_hint"
+          },
+          {
+            "stateId": "hun",
+            "trigger": "NONE",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "sfxClip": "assets/levels/lv3/sounds/kiss_success.mp3"
+              },
+              {
+                "type": "Disappear",
+                "duration": 0.0,
+                "fadeOut": false,
+                "destroyOnDisappear": false
+              },
+              {
+                "type": "Appear",
+                "duration": 0.0,
+                "fadeIn": false,
+                "actionTargetId": "nam2"
               },
               {
                 "type": "DoAnimation",
-                "runInParallel": false,
                 "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": "1Nu_gian",
+                "spineAnim": "8Nam_Hon1",
                 "spineLoop": true,
-                "actionTargetId": "nu",
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
+                "actionTargetId": "nam2"
+              },
+              {
+                "type": "Wait",
+                "duration": 1.0,
+                "actionTargetId": "nam2"
+              },
+              {
+                "type": "DoAnimation",
+                "duration": 0.0,
+                "spineAnim": "8Nam_Hon2",
+                "spineLoop": true,
+                "actionTargetId": "nam2"
+              },
+              {
+                "type": "Wait",
+                "duration": 1.0,
+                "actionTargetId": "nam2"
+              },
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nam",
+                "activateStateId": "recheck",
+                "chainGuards": [
+                  {
+                    "objectId": "nam",
+                    "stateId": "nhan"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "mic"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "banh"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "hoa"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "vit"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "kem"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "chan"
+                  }
+                ]
               }
             ],
-            "successMessageKey": "gaidep_lose",
-            "failMessageKey": null,
-            "hintMessageKey": "gaidep_lose_hint",
-            "onStartHook": null,
-            "repeatable": false
+            "successMessageKey": "hun_success",
+            "hintMessageKey": "hun_hint"
+          },
+          {
+            "stateId": "kem",
+            "stateSpineLoop": true,
+            "trigger": "NONE",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "sfxClip": "assets/levels/lv3/sounds/kem_success.mp3"
+              },
+              {
+                "type": "Disappear",
+                "duration": 0.0,
+                "fadeOut": false,
+                "destroyOnDisappear": false
+              },
+              {
+                "type": "Appear",
+                "duration": 0.0,
+                "fadeIn": false,
+                "actionTargetId": "nam2"
+              },
+              {
+                "type": "DoAnimation",
+                "duration": 0.0,
+                "spineAnim": "10Nam_BoiKem",
+                "spineLoop": true,
+                "actionTargetId": "nam2"
+              },
+              {
+                "type": "Wait",
+                "duration": 2.0
+              },
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nam",
+                "activateStateId": "recheck",
+                "chainGuards": [
+                  {
+                    "objectId": "nam",
+                    "stateId": "nhan"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "mic"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "banh"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "hoa"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "hun"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "vit"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "chan"
+                  }
+                ]
+              }
+            ],
+            "successMessageKey": "kem_success",
+            "hintMessageKey": "kem_hint"
+          },
+          {
+            "stateId": "chan",
+            "stateSpineLoop": true,
+            "trigger": "NONE",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "sfxClip": "assets/levels/lv3/sounds/chan_success.mp3"
+              },
+              {
+                "type": "Disappear",
+                "duration": 0.0,
+                "fadeOut": false,
+                "destroyOnDisappear": false
+              },
+              {
+                "type": "Appear",
+                "duration": 0.0,
+                "fadeIn": false,
+                "actionTargetId": "nam2"
+              },
+              {
+                "type": "DoAnimation",
+                "duration": 0.0,
+                "spineAnim": "9Nam_Bopchan",
+                "spineLoop": true,
+                "actionTargetId": "nam2"
+              },
+              {
+                "type": "Wait",
+                "duration": 2.0
+              },
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nam",
+                "activateStateId": "recheck",
+                "chainGuards": [
+                  {
+                    "objectId": "nam",
+                    "stateId": "nhan"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "mic"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "banh"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "hoa"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "hun"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "kem"
+                  },
+                  {
+                    "objectId": "nam",
+                    "stateId": "vit"
+                  }
+                ]
+              }
+            ],
+            "successMessageKey": "chan_success",
+            "hintMessageKey": "chan_hint"
+          },
+          {
+            "stateId": "recheck",
+            "stateSpineAnim": "2Nam_coloi",
+            "stateSpineLoop": true,
+            "trigger": "NONE",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "Disappear",
+                "duration": 0.0,
+                "fadeOut": false,
+                "destroyOnDisappear": false,
+                "actionTargetId": "nam2"
+              },
+              {
+                "type": "Appear",
+                "duration": 0.0,
+                "fadeIn": false
+              },
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nu",
+                "activateStateId": "doi"
+              }
+            ],
+            "repeatable": true
+          },
+          {
+            "stateId": "done_all",
+            "stateSpineLoop": true,
+            "trigger": "NONE",
+            "requirements": [
+              {
+                "objectId": "nam",
+                "stateId": "mic"
+              },
+              {
+                "objectId": "nam",
+                "stateId": "nhan"
+              },
+              {
+                "objectId": "nam",
+                "stateId": "vit"
+              },
+              {
+                "objectId": "nam",
+                "stateId": "banh"
+              },
+              {
+                "objectId": "nam",
+                "stateId": "hoa"
+              },
+              {
+                "objectId": "nam",
+                "stateId": "hun"
+              },
+              {
+                "objectId": "nam",
+                "stateId": "kem"
+              },
+              {
+                "objectId": "nam",
+                "stateId": "chan"
+              }
+            ],
+            "actions": [
+              {
+                "type": "PlaySFX",
+                "duration": 0.0,
+                "sfxClip": "assets/levels/lv3/sounds/doneall_success.mp3"
+              }
+            ],
+            "successMessageKey": "nam_doneall_success"
+          }
+        ]
+      },
+      "dropZones": [
+        {
+          "zoneId": "nam",
+          "sortOrder": 6,
+          "localOffset": {
+            "x": -133.084961,
+            "y": -97.8884048
+          },
+          "size": {
+            "x": 249.0446,
+            "y": 699.284241
+          },
+          "shape": "box"
+        }
+      ]
+    },
+    {
+      "objectId": "feet",
+      "visualMode": "Sprite",
+      "position": {
+        "x": 148.547379,
+        "y": -382.989471
+      },
+      "collider": {
+        "type": "box",
+        "width": 223.692825,
+        "height": 169.770432,
+        "offsetX": 66.5486,
+        "offsetY": 88.3753738
+      },
+      "data": {
+        "initStateId": "init",
+        "initSpineLoop": false,
+        "states": [
+          {
+            "stateId": "used",
+            "trigger": "TAP",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nu",
+                "activateStateId": "chan"
+              },
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nam",
+                "activateStateId": "chan"
+              }
+            ]
           }
         ]
       },
       "dropZones": []
     },
     {
-      "objectId": "may",
-      "startHidden": false,
+      "objectId": "kiss",
       "visualMode": "Sprite",
       "position": {
-        "x": -216.7579,
-        "y": 570.9474
+        "x": 201.094742,
+        "y": 154.610535
       },
-      "scale": 1.0,
-      "rotation": 0.0,
-      "sortOrder": 2,
       "collider": {
         "type": "box",
-        "width": 310.231567,
-        "height": 99.03163,
-        "radius": 0.0,
-        "offsetX": 0.0,
-        "offsetY": 0.0
+        "width": 213.238037,
+        "height": 127.5911,
+        "offsetX": 9.047217,
+        "offsetY": 13.2692318
       },
-      "spineBasePath": null,
       "data": {
         "initStateId": "init",
-        "initSprite": "assets/levels/lv3/images/may.png",
-        "initSpineAnim": null,
         "initSpineLoop": false,
-        "initSfx": null,
         "states": [
           {
             "stateId": "used",
-            "dragSprite": null,
-            "stateSprite": null,
-            "stateSpineAnim": null,
-            "stateSpineLoop": false,
-            "stateSfx": null,
+            "trigger": "TAP",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nu",
+                "activateStateId": "thich2"
+              },
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nam",
+                "activateStateId": "hun"
+              }
+            ]
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "nam2",
+      "visualMode": "Spine",
+      "position": {
+        "x": -2.0210526,
+        "y": 26.2736835
+      },
+      "sortOrder": 5,
+      "collider": {
+        "type": "box"
+      },
+      "spineBasePath": "assets/levels/lv3/anim/Na9_Hon_BopChan_BoiKem",
+      "data": {
+        "initStateId": "init",
+        "initSpineLoop": true,
+        "states": []
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "longvu",
+      "visualMode": "Sprite",
+      "position": {
+        "x": 433.010529,
+        "y": 689.6842
+      },
+      "sortOrder": 25,
+      "collider": {
+        "type": "box",
+        "width": 195.031586,
+        "height": 65.68417
+      },
+      "data": {
+        "initStateId": "init",
+        "initSprite": "assets/levels/lv3/images/longvu.png",
+        "initSpineLoop": false,
+        "states": [
+          {
+            "stateId": "used",
             "trigger": "DRAG",
-            "requiredZoneId": "hoa",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nam",
+                "activateStateId": "long"
+              },
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nu",
+                "activateStateId": "so"
+              },
+              {
+                "type": "Disappear",
+                "duration": 0.0,
+                "fadeOut": false,
+                "destroyOnDisappear": false
+              }
+            ]
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "banh",
+      "visualMode": "Sprite",
+      "position": {
+        "x": 447.157928,
+        "y": -499.7053
+      },
+      "sortOrder": 31,
+      "collider": {
+        "type": "box",
+        "width": 180.884216,
+        "height": 140.4632
+      },
+      "data": {
+        "initStateId": "init",
+        "initSprite": "assets/levels/lv3/images/banh.png",
+        "initSpineLoop": false,
+        "states": [
+          {
+            "stateId": "used",
+            "trigger": "DRAG",
+            "requiredZoneId": "nam",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nam",
+                "activateStateId": "banh"
+              },
+              {
+                "type": "Disappear",
+                "duration": 0.0,
+                "fadeOut": false,
+                "destroyOnDisappear": false
+              }
+            ]
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "vit",
+      "visualMode": "Sprite",
+      "position": {
+        "x": 327.410553,
+        "y": 256.168427
+      },
+      "sortOrder": 3,
+      "collider": {
+        "type": "box",
+        "width": 192.0,
+        "height": 118.23159
+      },
+      "data": {
+        "initStateId": "init",
+        "initSprite": "assets/levels/lv3/images/vit.png",
+        "initSpineLoop": false,
+        "states": [
+          {
+            "stateId": "used",
+            "trigger": "DRAG",
+            "requiredZoneId": "nam",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nam",
+                "activateStateId": "vit"
+              },
+              {
+                "type": "Disappear",
+                "duration": 0.0,
+                "fadeOut": false,
+                "destroyOnDisappear": false
+              }
+            ]
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "kem",
+      "visualMode": "Sprite",
+      "position": {
+        "x": 488.084229,
+        "y": -221.810532
+      },
+      "sortOrder": 26,
+      "collider": {
+        "type": "box",
+        "width": 99.03154,
+        "height": 63.66317
+      },
+      "data": {
+        "initStateId": "init",
+        "initSprite": "assets/levels/lv3/images/kem.png",
+        "initSpineLoop": false,
+        "states": [
+          {
+            "stateId": "used",
+            "trigger": "DRAG",
+            "requiredZoneId": "nam",
             "requirements": [],
             "actions": [
               {
                 "type": "Disappear",
-                "runInParallel": false,
                 "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
                 "fadeOut": false,
-                "destroyOnDisappear": false,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
+                "destroyOnDisappear": false
               },
               {
-                "type": "Appear",
-                "runInParallel": false,
+                "type": "ActivateState",
                 "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": false,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": "vuonhoa_anim",
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
+                "activateTargetObjectId": "nam",
+                "activateStateId": "kem"
               },
               {
-                "type": "DoAnimation",
-                "runInParallel": false,
+                "type": "ActivateState",
                 "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": "NoHoa",
-                "spineLoop": false,
-                "actionTargetId": "vuonhoa_anim",
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
+                "activateTargetObjectId": "nu",
+                "activateStateId": "chan"
+              }
+            ]
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "mic",
+      "visualMode": "Sprite",
+      "position": {
+        "x": 232.926331,
+        "y": -522.442139
+      },
+      "sortOrder": 29,
+      "collider": {
+        "type": "box",
+        "width": 166.736862,
+        "height": 127.32634
+      },
+      "data": {
+        "initStateId": "init",
+        "initSprite": "assets/levels/lv3/images/hat.png",
+        "initSpineLoop": false,
+        "states": [
+          {
+            "stateId": "used",
+            "trigger": "DRAG",
+            "requiredZoneId": "nam",
+            "requirements": [],
+            "actions": [
               {
-                "type": "Wait",
-                "runInParallel": false,
-                "duration": 1.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": "vuonhoa",
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nam",
+                "activateStateId": "mic"
               },
               {
                 "type": "Disappear",
-                "runInParallel": false,
                 "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
                 "fadeOut": false,
-                "destroyOnDisappear": false,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": "vuonhoa_anim",
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
+                "destroyOnDisappear": false
+              }
+            ]
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "nhan",
+      "visualMode": "Sprite",
+      "position": {
+        "x": 324.884216,
+        "y": -446.147369
+      },
+      "sortOrder": 30,
+      "collider": {
+        "type": "box",
+        "width": 104.084236,
+        "height": 122.273689
+      },
+      "data": {
+        "initStateId": "init",
+        "initSprite": "assets/levels/lv3/images/nhan.png",
+        "initSpineLoop": false,
+        "states": [
+          {
+            "stateId": "used",
+            "trigger": "DRAG",
+            "requiredZoneId": "nam",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nam",
+                "activateStateId": "nhan"
               },
               {
-                "type": "Appear",
-                "runInParallel": false,
+                "type": "Disappear",
                 "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": false,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": "vuonhoa",
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
+                "fadeOut": false,
+                "destroyOnDisappear": false
+              }
+            ]
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "nu",
+      "visualMode": "Spine",
+      "position": {
+        "x": -1.0105263,
+        "y": 28.2947388
+      },
+      "sortOrder": 3,
+      "collider": {
+        "type": "box"
+      },
+      "spineBasePath": "assets/levels/lv3/anim/Nu9",
+      "data": {
+        "initStateId": "init",
+        "initSpineAnim": "1Nu_gian",
+        "initSpineLoop": true,
+        "states": [
+          {
+            "stateId": "start",
+            "trigger": "REQUIREMENT_MET",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "Wait",
+                "duration": 3.0
+              },
+              {
+                "type": "DoAnimation",
+                "duration": 0.0,
+                "spineAnim": "2Nu_doi",
+                "spineLoop": true
+              }
+            ]
+          },
+          {
+            "stateId": "doi",
+            "stateSpineAnim": "2Nu_doi",
+            "stateSpineLoop": true,
+            "trigger": "NONE",
+            "requirements": [],
+            "actions": [],
+            "repeatable": true
+          },
+          {
+            "stateId": "chan",
+            "stateSpineAnim": "6Nu_Bopchan",
+            "stateSpineLoop": true,
+            "trigger": "NONE",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "Wait",
+                "duration": 2.0
               }
             ],
-            "successMessageKey": null,
-            "failMessageKey": null,
-            "hintMessageKey": "may_hint",
-            "onStartHook": null,
-            "repeatable": false
+            "repeatable": true
+          },
+          {
+            "stateId": "thich",
+            "stateSpineAnim": "3Nu_vuve",
+            "stateSpineLoop": true,
+            "trigger": "NONE",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "Wait",
+                "duration": 2.0
+              }
+            ],
+            "repeatable": true
+          },
+          {
+            "stateId": "thich2",
+            "stateSpineAnim": "5Nu_Hanhphuc2",
+            "stateSpineLoop": true,
+            "trigger": "NONE",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "Wait",
+                "duration": 2.0
+              }
+            ],
+            "repeatable": true
+          },
+          {
+            "stateId": "thich3",
+            "stateSpineAnim": "4Nu_Hanhphuc",
+            "stateSpineLoop": true,
+            "trigger": "NONE",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "Wait",
+                "duration": 2.0
+              }
+            ],
+            "repeatable": true
+          },
+          {
+            "stateId": "so",
+            "stateSpineAnim": "7Nu_So",
+            "trigger": "NONE",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "Wait",
+                "duration": 1.5
+              },
+              {
+                "type": "DoAnimation",
+                "duration": 0.0,
+                "spineAnim": "1Nu_gian",
+                "spineLoop": true
+              }
+            ],
+            "repeatable": true
           }
         ]
       },
@@ -327,2976 +1215,229 @@
         "y": 382.848022
       },
       "scale": 1.02993238,
-      "rotation": 0.0,
       "sortOrder": 2,
       "collider": {
         "type": "box",
-        "width": 1021.84418,
-        "height": 113.643448,
-        "radius": 0.0,
-        "offsetX": -28.1522827,
-        "offsetY": 0.9273329
+        "width": 1052.43042,
+        "height": 117.045067,
+        "offsetX": -28.99493,
+        "offsetY": 0.9550878
       },
-      "spineBasePath": null,
       "data": {
         "initStateId": "init",
         "initSprite": "assets/levels/lv3/images/vuonhoa.png",
-        "initSpineAnim": null,
         "initSpineLoop": false,
-        "initSfx": null,
         "states": [
           {
             "stateId": "used",
             "dragSprite": "assets/levels/lv3/images/hoa.png",
-            "stateSprite": null,
-            "stateSpineAnim": null,
-            "stateSpineLoop": false,
-            "stateSfx": null,
             "trigger": "DRAG",
             "requiredZoneId": "nam",
             "requirements": [],
             "actions": [
               {
                 "type": "ActivateState",
-                "runInParallel": false,
                 "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
                 "activateTargetObjectId": "nam",
-                "activateStateId": "hoa",
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
+                "activateStateId": "hoa"
               },
               {
                 "type": "ActivateState",
-                "runInParallel": false,
                 "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
                 "activateTargetObjectId": "nu",
-                "activateStateId": "thich",
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
+                "activateStateId": "thich"
               },
               {
                 "type": "Disappear",
-                "runInParallel": false,
                 "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
                 "fadeOut": false,
-                "destroyOnDisappear": false,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
+                "destroyOnDisappear": false
               }
-            ],
-            "successMessageKey": null,
-            "failMessageKey": null,
-            "hintMessageKey": null,
-            "onStartHook": null,
-            "repeatable": false
+            ]
           }
         ]
       },
       "dropZones": []
     },
     {
-      "objectId": "nu",
-      "startHidden": false,
-      "visualMode": "Spine",
+      "objectId": "may",
+      "visualMode": "Sprite",
       "position": {
-        "x": -1.0105263,
-        "y": 28.2947388
+        "x": -216.7579,
+        "y": 570.9474
       },
-      "scale": 1.0,
-      "rotation": 0.0,
-      "sortOrder": 3,
+      "sortOrder": 2,
       "collider": {
         "type": "box",
-        "width": 0.0,
-        "height": 0.0,
-        "radius": 0.0,
-        "offsetX": 0.0,
-        "offsetY": 0.0
+        "width": 310.231567,
+        "height": 99.03163
       },
-      "spineBasePath": "assets/levels/lv3/anim/Nu9",
       "data": {
         "initStateId": "init",
-        "initSprite": null,
-        "initSpineAnim": "1Nu_gian",
-        "initSpineLoop": true,
-        "initSfx": null,
+        "initSprite": "assets/levels/lv3/images/may.png",
+        "initSpineLoop": false,
         "states": [
           {
-            "stateId": "start",
-            "dragSprite": null,
-            "stateSprite": null,
-            "stateSpineAnim": null,
-            "stateSpineLoop": false,
-            "stateSfx": null,
-            "trigger": "REQUIREMENT_MET",
-            "requiredZoneId": null,
+            "stateId": "used",
+            "trigger": "DRAG",
+            "requiredZoneId": "hoa",
             "requirements": [],
             "actions": [
               {
-                "type": "Wait",
-                "runInParallel": false,
-                "duration": 3.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
+                "type": "Disappear",
+                "duration": 0.0,
+                "fadeOut": false,
+                "destroyOnDisappear": false
+              },
+              {
+                "type": "Appear",
+                "duration": 0.0,
+                "fadeIn": false,
+                "actionTargetId": "vuonhoa_anim"
               },
               {
                 "type": "DoAnimation",
-                "runInParallel": false,
                 "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": "2Nu_doi",
-                "spineLoop": true,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              }
-            ],
-            "successMessageKey": null,
-            "failMessageKey": null,
-            "hintMessageKey": null,
-            "onStartHook": null,
-            "repeatable": false
-          },
-          {
-            "stateId": "doi",
-            "dragSprite": null,
-            "stateSprite": null,
-            "stateSpineAnim": "2Nu_doi",
-            "stateSpineLoop": true,
-            "stateSfx": null,
-            "trigger": "NONE",
-            "requiredZoneId": null,
-            "requirements": [],
-            "actions": [],
-            "successMessageKey": null,
-            "failMessageKey": null,
-            "hintMessageKey": null,
-            "onStartHook": null,
-            "repeatable": true
-          },
-          {
-            "stateId": "chan",
-            "dragSprite": null,
-            "stateSprite": null,
-            "stateSpineAnim": "6Nu_Bopchan",
-            "stateSpineLoop": true,
-            "stateSfx": null,
-            "trigger": "NONE",
-            "requiredZoneId": null,
-            "requirements": [],
-            "actions": [
+                "spineAnim": "NoHoa",
+                "actionTargetId": "vuonhoa_anim"
+              },
               {
                 "type": "Wait",
-                "runInParallel": false,
-                "duration": 2.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              }
-            ],
-            "successMessageKey": null,
-            "failMessageKey": null,
-            "hintMessageKey": null,
-            "onStartHook": null,
-            "repeatable": true
-          },
-          {
-            "stateId": "thich",
-            "dragSprite": null,
-            "stateSprite": null,
-            "stateSpineAnim": "3Nu_vuve",
-            "stateSpineLoop": true,
-            "stateSfx": null,
-            "trigger": "NONE",
-            "requiredZoneId": null,
-            "requirements": [],
-            "actions": [
-              {
-                "type": "Wait",
-                "runInParallel": false,
-                "duration": 2.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              }
-            ],
-            "successMessageKey": null,
-            "failMessageKey": null,
-            "hintMessageKey": null,
-            "onStartHook": null,
-            "repeatable": true
-          },
-          {
-            "stateId": "thich2",
-            "dragSprite": null,
-            "stateSprite": null,
-            "stateSpineAnim": "5Nu_Hanhphuc2",
-            "stateSpineLoop": true,
-            "stateSfx": null,
-            "trigger": "NONE",
-            "requiredZoneId": null,
-            "requirements": [],
-            "actions": [
-              {
-                "type": "Wait",
-                "runInParallel": false,
-                "duration": 2.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              }
-            ],
-            "successMessageKey": null,
-            "failMessageKey": null,
-            "hintMessageKey": null,
-            "onStartHook": null,
-            "repeatable": true
-          },
-          {
-            "stateId": "thich3",
-            "dragSprite": null,
-            "stateSprite": null,
-            "stateSpineAnim": "4Nu_Hanhphuc",
-            "stateSpineLoop": true,
-            "stateSfx": null,
-            "trigger": "NONE",
-            "requiredZoneId": null,
-            "requirements": [],
-            "actions": [
-              {
-                "type": "Wait",
-                "runInParallel": false,
-                "duration": 2.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              }
-            ],
-            "successMessageKey": null,
-            "failMessageKey": null,
-            "hintMessageKey": null,
-            "onStartHook": null,
-            "repeatable": true
-          },
-          {
-            "stateId": "so",
-            "dragSprite": null,
-            "stateSprite": null,
-            "stateSpineAnim": "7Nu_So",
-            "stateSpineLoop": false,
-            "stateSfx": null,
-            "trigger": "NONE",
-            "requiredZoneId": null,
-            "requirements": [],
-            "actions": [
-              {
-                "type": "Wait",
-                "runInParallel": false,
-                "duration": 1.5,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "DoAnimation",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": "1Nu_gian",
-                "spineLoop": true,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              }
-            ],
-            "successMessageKey": null,
-            "failMessageKey": null,
-            "hintMessageKey": null,
-            "onStartHook": null,
-            "repeatable": true
-          }
-        ]
-      },
-      "dropZones": []
-    },
-    {
-      "objectId": "nhan",
-      "startHidden": false,
-      "visualMode": "Sprite",
-      "position": {
-        "x": 324.884216,
-        "y": -446.147369
-      },
-      "scale": 1.0,
-      "rotation": 0.0,
-      "sortOrder": 30,
-      "collider": {
-        "type": "box",
-        "width": 104.084236,
-        "height": 122.273689,
-        "radius": 0.0,
-        "offsetX": 0.0,
-        "offsetY": 0.0
-      },
-      "spineBasePath": null,
-      "data": {
-        "initStateId": "init",
-        "initSprite": "assets/levels/lv3/images/nhan.png",
-        "initSpineAnim": null,
-        "initSpineLoop": false,
-        "initSfx": null,
-        "states": [
-          {
-            "stateId": "used",
-            "dragSprite": null,
-            "stateSprite": null,
-            "stateSpineAnim": null,
-            "stateSpineLoop": false,
-            "stateSfx": null,
-            "trigger": "DRAG",
-            "requiredZoneId": "nam",
-            "requirements": [],
-            "actions": [
-              {
-                "type": "ActivateState",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": "nam",
-                "activateStateId": "nhan",
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
+                "duration": 1.0,
+                "actionTargetId": "vuonhoa"
               },
               {
                 "type": "Disappear",
-                "runInParallel": false,
                 "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
                 "fadeOut": false,
                 "destroyOnDisappear": false,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
+                "actionTargetId": "vuonhoa_anim"
+              },
+              {
+                "type": "Appear",
+                "duration": 0.0,
+                "fadeIn": false,
+                "actionTargetId": "vuonhoa"
               }
             ],
-            "successMessageKey": null,
-            "failMessageKey": null,
-            "hintMessageKey": null,
-            "onStartHook": null,
-            "repeatable": false
+            "hintMessageKey": "may_hint"
           }
         ]
       },
       "dropZones": []
     },
     {
-      "objectId": "mic",
-      "startHidden": false,
-      "visualMode": "Sprite",
-      "position": {
-        "x": 232.926331,
-        "y": -522.442139
-      },
-      "scale": 1.0,
-      "rotation": 0.0,
-      "sortOrder": 29,
-      "collider": {
-        "type": "box",
-        "width": 166.736862,
-        "height": 127.32634,
-        "radius": 0.0,
-        "offsetX": 0.0,
-        "offsetY": 0.0
-      },
-      "spineBasePath": null,
-      "data": {
-        "initStateId": "init",
-        "initSprite": "assets/levels/lv3/images/hat.png",
-        "initSpineAnim": null,
-        "initSpineLoop": false,
-        "initSfx": null,
-        "states": [
-          {
-            "stateId": "used",
-            "dragSprite": null,
-            "stateSprite": null,
-            "stateSpineAnim": null,
-            "stateSpineLoop": false,
-            "stateSfx": null,
-            "trigger": "DRAG",
-            "requiredZoneId": "nam",
-            "requirements": [],
-            "actions": [
-              {
-                "type": "ActivateState",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": "nam",
-                "activateStateId": "mic",
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "Disappear",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": false,
-                "destroyOnDisappear": false,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              }
-            ],
-            "successMessageKey": null,
-            "failMessageKey": null,
-            "hintMessageKey": null,
-            "onStartHook": null,
-            "repeatable": false
-          }
-        ]
-      },
-      "dropZones": []
-    },
-    {
-      "objectId": "kem",
-      "startHidden": false,
-      "visualMode": "Sprite",
-      "position": {
-        "x": 488.084229,
-        "y": -221.810532
-      },
-      "scale": 1.0,
-      "rotation": 0.0,
-      "sortOrder": 26,
-      "collider": {
-        "type": "box",
-        "width": 99.03154,
-        "height": 63.66317,
-        "radius": 0.0,
-        "offsetX": 0.0,
-        "offsetY": 0.0
-      },
-      "spineBasePath": null,
-      "data": {
-        "initStateId": "init",
-        "initSprite": "assets/levels/lv3/images/kem.png",
-        "initSpineAnim": null,
-        "initSpineLoop": false,
-        "initSfx": null,
-        "states": [
-          {
-            "stateId": "used",
-            "dragSprite": null,
-            "stateSprite": null,
-            "stateSpineAnim": null,
-            "stateSpineLoop": false,
-            "stateSfx": null,
-            "trigger": "DRAG",
-            "requiredZoneId": "nam",
-            "requirements": [],
-            "actions": [
-              {
-                "type": "Disappear",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": false,
-                "destroyOnDisappear": false,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "ActivateState",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": "nam",
-                "activateStateId": "kem",
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "ActivateState",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": "nu",
-                "activateStateId": "chan",
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              }
-            ],
-            "successMessageKey": null,
-            "failMessageKey": null,
-            "hintMessageKey": null,
-            "onStartHook": null,
-            "repeatable": false
-          }
-        ]
-      },
-      "dropZones": []
-    },
-    {
-      "objectId": "vit",
-      "startHidden": false,
-      "visualMode": "Sprite",
-      "position": {
-        "x": 327.410553,
-        "y": 256.168427
-      },
-      "scale": 1.0,
-      "rotation": 0.0,
-      "sortOrder": 3,
-      "collider": {
-        "type": "box",
-        "width": 192.000015,
-        "height": 118.23159,
-        "radius": 0.0,
-        "offsetX": 0.0,
-        "offsetY": 0.0
-      },
-      "spineBasePath": null,
-      "data": {
-        "initStateId": "init",
-        "initSprite": "assets/levels/lv3/images/vit.png",
-        "initSpineAnim": null,
-        "initSpineLoop": false,
-        "initSfx": null,
-        "states": [
-          {
-            "stateId": "used",
-            "dragSprite": null,
-            "stateSprite": null,
-            "stateSpineAnim": null,
-            "stateSpineLoop": false,
-            "stateSfx": null,
-            "trigger": "DRAG",
-            "requiredZoneId": "nam",
-            "requirements": [],
-            "actions": [
-              {
-                "type": "ActivateState",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": "nam",
-                "activateStateId": "vit",
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "Disappear",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": false,
-                "destroyOnDisappear": false,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              }
-            ],
-            "successMessageKey": null,
-            "failMessageKey": null,
-            "hintMessageKey": null,
-            "onStartHook": null,
-            "repeatable": false
-          }
-        ]
-      },
-      "dropZones": []
-    },
-    {
-      "objectId": "banh",
-      "startHidden": false,
-      "visualMode": "Sprite",
-      "position": {
-        "x": 447.157928,
-        "y": -499.7053
-      },
-      "scale": 1.0,
-      "rotation": 0.0,
-      "sortOrder": 31,
-      "collider": {
-        "type": "box",
-        "width": 180.884216,
-        "height": 140.4632,
-        "radius": 0.0,
-        "offsetX": 0.0,
-        "offsetY": 0.0
-      },
-      "spineBasePath": null,
-      "data": {
-        "initStateId": "init",
-        "initSprite": "assets/levels/lv3/images/banh.png",
-        "initSpineAnim": null,
-        "initSpineLoop": false,
-        "initSfx": null,
-        "states": [
-          {
-            "stateId": "used",
-            "dragSprite": null,
-            "stateSprite": null,
-            "stateSpineAnim": null,
-            "stateSpineLoop": false,
-            "stateSfx": null,
-            "trigger": "DRAG",
-            "requiredZoneId": "nam",
-            "requirements": [],
-            "actions": [
-              {
-                "type": "ActivateState",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": "nam",
-                "activateStateId": "banh",
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "Disappear",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": false,
-                "destroyOnDisappear": false,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              }
-            ],
-            "successMessageKey": null,
-            "failMessageKey": null,
-            "hintMessageKey": null,
-            "onStartHook": null,
-            "repeatable": false
-          }
-        ]
-      },
-      "dropZones": []
-    },
-    {
-      "objectId": "longvu",
-      "startHidden": false,
-      "visualMode": "Sprite",
-      "position": {
-        "x": 433.010529,
-        "y": 689.6842
-      },
-      "scale": 1.0,
-      "rotation": 0.0,
-      "sortOrder": 25,
-      "collider": {
-        "type": "box",
-        "width": 195.031586,
-        "height": 65.68417,
-        "radius": 0.0,
-        "offsetX": 0.0,
-        "offsetY": 0.0
-      },
-      "spineBasePath": null,
-      "data": {
-        "initStateId": "init",
-        "initSprite": "assets/levels/lv3/images/longvu.png",
-        "initSpineAnim": null,
-        "initSpineLoop": false,
-        "initSfx": null,
-        "states": [
-          {
-            "stateId": "used",
-            "dragSprite": null,
-            "stateSprite": null,
-            "stateSpineAnim": null,
-            "stateSpineLoop": false,
-            "stateSfx": null,
-            "trigger": "DRAG",
-            "requiredZoneId": null,
-            "requirements": [],
-            "actions": [
-              {
-                "type": "ActivateState",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": "nam",
-                "activateStateId": "long",
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "ActivateState",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": "nu",
-                "activateStateId": "so",
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "Disappear",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": false,
-                "destroyOnDisappear": false,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              }
-            ],
-            "successMessageKey": null,
-            "failMessageKey": null,
-            "hintMessageKey": null,
-            "onStartHook": null,
-            "repeatable": false
-          }
-        ]
-      },
-      "dropZones": []
-    },
-    {
-      "objectId": "nam2",
-      "startHidden": false,
+      "objectId": "gaidep",
       "visualMode": "Spine",
       "position": {
-        "x": -2.0210526,
-        "y": 26.2736835
+        "x": -4.042105,
+        "y": 29.3052635
       },
-      "scale": 1.0,
-      "rotation": 0.0,
-      "sortOrder": 3,
-      "collider": {
-        "type": "box",
-        "width": 0.0,
-        "height": 0.0,
-        "radius": 0.0,
-        "offsetX": 0.0,
-        "offsetY": 0.0
-      },
-      "spineBasePath": "assets/levels/lv3/anim/Na9_Hon_BopChan_BoiKem",
-      "data": {
-        "initStateId": "init",
-        "initSprite": null,
-        "initSpineAnim": null,
-        "initSpineLoop": true,
-        "initSfx": null,
-        "states": []
-      },
-      "dropZones": []
-    },
-    {
-      "objectId": "kiss",
-      "startHidden": false,
-      "visualMode": "Sprite",
-      "position": {
-        "x": 201.094742,
-        "y": 154.610535
-      },
-      "scale": 1.0,
-      "rotation": 0.0,
-      "sortOrder": 0,
-      "collider": {
-        "type": "box",
-        "width": 213.238037,
-        "height": 127.5911,
-        "radius": 0.0,
-        "offsetX": 9.047217,
-        "offsetY": 13.2692318
-      },
-      "spineBasePath": null,
-      "data": {
-        "initStateId": "init",
-        "initSprite": null,
-        "initSpineAnim": null,
-        "initSpineLoop": false,
-        "initSfx": null,
-        "states": [
-          {
-            "stateId": "used",
-            "dragSprite": null,
-            "stateSprite": null,
-            "stateSpineAnim": null,
-            "stateSpineLoop": false,
-            "stateSfx": null,
-            "trigger": "TAP",
-            "requiredZoneId": null,
-            "requirements": [],
-            "actions": [
-              {
-                "type": "ActivateState",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": "nu",
-                "activateStateId": "thich2",
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "ActivateState",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": "nam",
-                "activateStateId": "hun",
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              }
-            ],
-            "successMessageKey": null,
-            "failMessageKey": null,
-            "hintMessageKey": null,
-            "onStartHook": null,
-            "repeatable": false
-          }
-        ]
-      },
-      "dropZones": []
-    },
-    {
-      "objectId": "feet",
-      "startHidden": false,
-      "visualMode": "Sprite",
-      "position": {
-        "x": 148.547379,
-        "y": -382.989471
-      },
-      "scale": 1.0,
-      "rotation": 0.0,
-      "sortOrder": 0,
-      "collider": {
-        "type": "box",
-        "width": 223.69281,
-        "height": 169.770432,
-        "radius": 0.0,
-        "offsetX": 66.5486,
-        "offsetY": 88.3753738
-      },
-      "spineBasePath": null,
-      "data": {
-        "initStateId": "init",
-        "initSprite": null,
-        "initSpineAnim": null,
-        "initSpineLoop": false,
-        "initSfx": null,
-        "states": [
-          {
-            "stateId": "used",
-            "dragSprite": null,
-            "stateSprite": null,
-            "stateSpineAnim": null,
-            "stateSpineLoop": false,
-            "stateSfx": null,
-            "trigger": "TAP",
-            "requiredZoneId": null,
-            "requirements": [],
-            "actions": [
-              {
-                "type": "ActivateState",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": "nu",
-                "activateStateId": "chan",
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "ActivateState",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": "nam",
-                "activateStateId": "chan",
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              }
-            ],
-            "successMessageKey": null,
-            "failMessageKey": null,
-            "hintMessageKey": null,
-            "onStartHook": null,
-            "repeatable": false
-          }
-        ]
-      },
-      "dropZones": []
-    },
-    {
-      "objectId": "nam",
-      "startHidden": false,
-      "visualMode": "Spine",
-      "position": {
-        "x": 0.0,
-        "y": 28.2947388
-      },
-      "scale": 1.0,
-      "rotation": 0.0,
       "sortOrder": 1,
       "collider": {
         "type": "box",
-        "width": 249.0446,
-        "height": 699.284241,
-        "radius": 0.0,
-        "offsetX": -133.084961,
-        "offsetY": -97.88841
+        "width": 353.684235,
+        "height": 270.821045,
+        "offsetX": -411.332367,
+        "offsetY": 161.087646
       },
-      "spineBasePath": "assets/levels/lv3/anim/Na9",
+      "spineBasePath": "assets/levels/lv3/anim/Nu8",
       "data": {
         "initStateId": "init",
-        "initSprite": null,
-        "initSpineAnim": "1Nam_Xemdt",
         "initSpineLoop": true,
-        "initSfx": null,
         "states": [
           {
-            "stateId": "start",
-            "dragSprite": null,
-            "stateSprite": null,
-            "stateSpineAnim": null,
-            "stateSpineLoop": false,
-            "stateSfx": null,
-            "trigger": "REQUIREMENT_MET",
-            "requiredZoneId": null,
+            "stateId": "gaidep_lose",
+            "trigger": "TAP",
             "requirements": [],
             "actions": [
               {
-                "type": "Wait",
-                "runInParallel": false,
-                "duration": 3.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
+                "type": "DoAnimation",
+                "duration": 0.0,
+                "spineAnim": "Nu8_Quaydau"
               },
               {
                 "type": "DoAnimation",
-                "runInParallel": false,
                 "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": "2Nam_coloi",
+                "spineAnim": "11Nam_MeGai",
                 "spineLoop": true,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "Appear",
-                "runInParallel": true,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": false,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": "1",
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              }
-            ],
-            "successMessageKey": null,
-            "failMessageKey": null,
-            "hintMessageKey": null,
-            "onStartHook": null,
-            "repeatable": false
-          },
-          {
-            "stateId": "mic",
-            "dragSprite": null,
-            "stateSprite": null,
-            "stateSpineAnim": "4Nam_Cahat",
-            "stateSpineLoop": true,
-            "stateSfx": null,
-            "trigger": "NONE",
-            "requiredZoneId": null,
-            "requirements": [],
-            "actions": [
-              {
-                "type": "PlaySFX",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": "assets/levels/lv3/sounds/hat_success.mp3"
-              },
-              {
-                "type": "PlaySFX",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": "assets/levels/lv3/sounds/sing.mp3"
-              },
-              {
-                "type": "ActivateState",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": "nu",
-                "activateStateId": "thich",
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
+                "actionTargetId": "nam"
               },
               {
                 "type": "Wait",
-                "runInParallel": false,
-                "duration": 2.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "ActivateState",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": "nam",
-                "activateStateId": "recheck",
-                "chainGuards": [
-                  {
-                    "objectId": "nam",
-                    "stateId": "nhan",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "vit",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "banh",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "hoa",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "hun",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "kem",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "chan",
-                    "requireNotDone": false
-                  }
-                ],
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              }
-            ],
-            "successMessageKey": "hat_success",
-            "failMessageKey": null,
-            "hintMessageKey": "hat_hint",
-            "onStartHook": null,
-            "repeatable": false
-          },
-          {
-            "stateId": "nhan",
-            "dragSprite": null,
-            "stateSprite": null,
-            "stateSpineAnim": "5Nam_Tangnhan",
-            "stateSpineLoop": true,
-            "stateSfx": null,
-            "trigger": "NONE",
-            "requiredZoneId": null,
-            "requirements": [],
-            "actions": [
-              {
-                "type": "PlaySFX",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": "assets/levels/lv3/sounds/nhan_success.mp3"
-              },
-              {
-                "type": "ActivateState",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": "nu",
-                "activateStateId": "thich3",
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "Wait",
-                "runInParallel": false,
-                "duration": 2.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "ActivateState",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": "nam",
-                "activateStateId": "recheck",
-                "chainGuards": [
-                  {
-                    "objectId": "nam",
-                    "stateId": "mic",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "vit",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "banh",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "hoa",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "hun",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "kem",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "chan",
-                    "requireNotDone": false
-                  }
-                ],
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              }
-            ],
-            "successMessageKey": "nhan_success",
-            "failMessageKey": null,
-            "hintMessageKey": "nhan_hint",
-            "onStartHook": null,
-            "repeatable": false
-          },
-          {
-            "stateId": "vit",
-            "dragSprite": null,
-            "stateSprite": null,
-            "stateSpineAnim": "6Nam_Nhay",
-            "stateSpineLoop": true,
-            "stateSfx": null,
-            "trigger": "NONE",
-            "requiredZoneId": null,
-            "requirements": [],
-            "actions": [
-              {
-                "type": "PlaySFX",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": "assets/levels/lv3/sounds/vit_success.mp3"
-              },
-              {
-                "type": "ActivateState",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": "nu",
-                "activateStateId": "thich",
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "Wait",
-                "runInParallel": false,
-                "duration": 2.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "ActivateState",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": "nam",
-                "activateStateId": "recheck",
-                "chainGuards": [
-                  {
-                    "objectId": "nam",
-                    "stateId": "nhan",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "mic",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "banh",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "hoa",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "hun",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "kem",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "chan",
-                    "requireNotDone": false
-                  }
-                ],
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              }
-            ],
-            "successMessageKey": "vit_success",
-            "failMessageKey": null,
-            "hintMessageKey": "vit_hint",
-            "onStartHook": null,
-            "repeatable": false
-          },
-          {
-            "stateId": "banh",
-            "dragSprite": null,
-            "stateSprite": null,
-            "stateSpineAnim": "3Nam_Tangbanh",
-            "stateSpineLoop": true,
-            "stateSfx": null,
-            "trigger": "NONE",
-            "requiredZoneId": null,
-            "requirements": [],
-            "actions": [
-              {
-                "type": "PlaySFX",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": "assets/levels/lv3/sounds/banh_success.mp3"
-              },
-              {
-                "type": "ActivateState",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": "nu",
-                "activateStateId": "thich",
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "Wait",
-                "runInParallel": false,
-                "duration": 2.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "ActivateState",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": "nam",
-                "activateStateId": "recheck",
-                "chainGuards": [
-                  {
-                    "objectId": "nam",
-                    "stateId": "nhan",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "mic",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "vit",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "hoa",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "hun",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "kem",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "chan",
-                    "requireNotDone": false
-                  }
-                ],
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              }
-            ],
-            "successMessageKey": "banh_success",
-            "failMessageKey": null,
-            "hintMessageKey": "banh_hint",
-            "onStartHook": null,
-            "repeatable": false
-          },
-          {
-            "stateId": "hoa",
-            "dragSprite": null,
-            "stateSprite": null,
-            "stateSpineAnim": "7Nam_Tanghoa",
-            "stateSpineLoop": true,
-            "stateSfx": null,
-            "trigger": "NONE",
-            "requiredZoneId": null,
-            "requirements": [],
-            "actions": [
-              {
-                "type": "PlaySFX",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": "assets/levels/lv3/sounds/hoa_success.mp3"
-              },
-              {
-                "type": "ActivateState",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": "nu",
-                "activateStateId": "thich",
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "Wait",
-                "runInParallel": false,
-                "duration": 2.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "ActivateState",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": "nam",
-                "activateStateId": "recheck",
-                "chainGuards": [
-                  {
-                    "objectId": "nam",
-                    "stateId": "nhan",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "mic",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "banh",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "vit",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "hun",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "kem",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "chan",
-                    "requireNotDone": false
-                  }
-                ],
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              }
-            ],
-            "successMessageKey": "hoa_success",
-            "failMessageKey": null,
-            "hintMessageKey": "hoa_hint",
-            "onStartHook": null,
-            "repeatable": false
-          },
-          {
-            "stateId": "long",
-            "dragSprite": null,
-            "stateSprite": null,
-            "stateSpineAnim": "8Nam_Hacxi",
-            "stateSpineLoop": false,
-            "stateSfx": null,
-            "trigger": "NONE",
-            "requiredZoneId": null,
-            "requirements": [],
-            "actions": [
-              {
-                "type": "PlaySFX",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": "assets/levels/lv3/sounds/lose.mp3"
-              },
-              {
-                "type": "Wait",
-                "runInParallel": false,
                 "duration": 1.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "ActivateState",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": "nam",
-                "activateStateId": "recheck",
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              }
-            ],
-            "successMessageKey": "long_success_lose",
-            "failMessageKey": null,
-            "hintMessageKey": "long_lose_hint",
-            "onStartHook": null,
-            "repeatable": false
-          },
-          {
-            "stateId": "hun",
-            "dragSprite": null,
-            "stateSprite": null,
-            "stateSpineAnim": null,
-            "stateSpineLoop": false,
-            "stateSfx": null,
-            "trigger": "NONE",
-            "requiredZoneId": null,
-            "requirements": [],
-            "actions": [
-              {
-                "type": "PlaySFX",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": "assets/levels/lv3/sounds/kiss_success.mp3"
-              },
-              {
-                "type": "Disappear",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": false,
-                "destroyOnDisappear": false,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "Appear",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": false,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": "nam2",
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
+                "actionTargetId": "nu"
               },
               {
                 "type": "DoAnimation",
-                "runInParallel": false,
                 "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": "8Nam_Hon1",
+                "spineAnim": "1Nu_gian",
                 "spineLoop": true,
-                "actionTargetId": "nam2",
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "Wait",
-                "runInParallel": false,
-                "duration": 1.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": "nam2",
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "DoAnimation",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": "8Nam_Hon2",
-                "spineLoop": true,
-                "actionTargetId": "nam2",
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "Wait",
-                "runInParallel": false,
-                "duration": 1.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": "nam2",
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "ActivateState",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": "nam",
-                "activateStateId": "recheck",
-                "chainGuards": [
-                  {
-                    "objectId": "nam",
-                    "stateId": "nhan",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "mic",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "banh",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "hoa",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "vit",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "kem",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "chan",
-                    "requireNotDone": false
-                  }
-                ],
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
+                "actionTargetId": "nu"
               }
             ],
-            "successMessageKey": "hun_success",
-            "failMessageKey": null,
-            "hintMessageKey": "hun_hint",
-            "onStartHook": null,
-            "repeatable": false
-          },
-          {
-            "stateId": "kem",
-            "dragSprite": null,
-            "stateSprite": null,
-            "stateSpineAnim": null,
-            "stateSpineLoop": true,
-            "stateSfx": null,
-            "trigger": "NONE",
-            "requiredZoneId": null,
-            "requirements": [],
-            "actions": [
-              {
-                "type": "PlaySFX",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": "assets/levels/lv3/sounds/kem_success.mp3"
-              },
-              {
-                "type": "Disappear",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": false,
-                "destroyOnDisappear": false,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "Appear",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": false,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": "nam2",
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "DoAnimation",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": "10Nam_BoiKem",
-                "spineLoop": true,
-                "actionTargetId": "nam2",
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "Wait",
-                "runInParallel": false,
-                "duration": 2.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "ActivateState",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": "nam",
-                "activateStateId": "recheck",
-                "chainGuards": [
-                  {
-                    "objectId": "nam",
-                    "stateId": "nhan",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "mic",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "banh",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "hoa",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "hun",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "vit",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "chan",
-                    "requireNotDone": false
-                  }
-                ],
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              }
-            ],
-            "successMessageKey": "kem_success",
-            "failMessageKey": null,
-            "hintMessageKey": "kem_hint",
-            "onStartHook": null,
-            "repeatable": false
-          },
-          {
-            "stateId": "chan",
-            "dragSprite": null,
-            "stateSprite": null,
-            "stateSpineAnim": null,
-            "stateSpineLoop": true,
-            "stateSfx": null,
-            "trigger": "NONE",
-            "requiredZoneId": null,
-            "requirements": [],
-            "actions": [
-              {
-                "type": "PlaySFX",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": "assets/levels/lv3/sounds/chan_success.mp3"
-              },
-              {
-                "type": "Disappear",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": false,
-                "destroyOnDisappear": false,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "Appear",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": false,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": "nam2",
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "DoAnimation",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": "9Nam_Bopchan",
-                "spineLoop": true,
-                "actionTargetId": "nam2",
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "Wait",
-                "runInParallel": false,
-                "duration": 2.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "ActivateState",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": "nam",
-                "activateStateId": "recheck",
-                "chainGuards": [
-                  {
-                    "objectId": "nam",
-                    "stateId": "nhan",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "mic",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "banh",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "hoa",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "hun",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "kem",
-                    "requireNotDone": false
-                  },
-                  {
-                    "objectId": "nam",
-                    "stateId": "vit",
-                    "requireNotDone": false
-                  }
-                ],
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              }
-            ],
-            "successMessageKey": "chan_success",
-            "failMessageKey": null,
-            "hintMessageKey": "chan_hint",
-            "onStartHook": null,
-            "repeatable": false
-          },
-          {
-            "stateId": "recheck",
-            "dragSprite": null,
-            "stateSprite": null,
-            "stateSpineAnim": "2Nam_coloi",
-            "stateSpineLoop": true,
-            "stateSfx": null,
-            "trigger": "NONE",
-            "requiredZoneId": null,
-            "requirements": [],
-            "actions": [
-              {
-                "type": "Disappear",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": false,
-                "destroyOnDisappear": false,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": "nam2",
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "Appear",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": false,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              },
-              {
-                "type": "ActivateState",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": "nu",
-                "activateStateId": "doi",
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": null
-              }
-            ],
-            "successMessageKey": null,
-            "failMessageKey": null,
-            "hintMessageKey": null,
-            "onStartHook": null,
-            "repeatable": true
-          },
-          {
-            "stateId": "done_all",
-            "dragSprite": null,
-            "stateSprite": null,
-            "stateSpineAnim": null,
-            "stateSpineLoop": true,
-            "stateSfx": null,
-            "trigger": "NONE",
-            "requiredZoneId": null,
-            "requirements": [
-              {
-                "objectId": "nam",
-                "stateId": "mic",
-                "requireNotDone": false
-              },
-              {
-                "objectId": "nam",
-                "stateId": "nhan",
-                "requireNotDone": false
-              },
-              {
-                "objectId": "nam",
-                "stateId": "vit",
-                "requireNotDone": false
-              },
-              {
-                "objectId": "nam",
-                "stateId": "banh",
-                "requireNotDone": false
-              },
-              {
-                "objectId": "nam",
-                "stateId": "hoa",
-                "requireNotDone": false
-              },
-              {
-                "objectId": "nam",
-                "stateId": "hun",
-                "requireNotDone": false
-              },
-              {
-                "objectId": "nam",
-                "stateId": "kem",
-                "requireNotDone": false
-              },
-              {
-                "objectId": "nam",
-                "stateId": "chan",
-                "requireNotDone": false
-              }
-            ],
-            "actions": [
-              {
-                "type": "PlaySFX",
-                "runInParallel": false,
-                "duration": 0.0,
-                "moveTargetObjectId": null,
-                "moveTargetZoneId": null,
-                "moveTargetPosition": null,
-                "ease": null,
-                "fadeOut": null,
-                "destroyOnDisappear": null,
-                "fadeIn": null,
-                "spineAnim": null,
-                "spineLoop": false,
-                "actionTargetId": null,
-                "activateTargetObjectId": null,
-                "activateStateId": null,
-                "chainGuards": null,
-                "queueTargetId": null,
-                "queueServeStateId": null,
-                "sfxClip": "assets/levels/lv3/sounds/doneall_success.mp3"
-              }
-            ],
-            "successMessageKey": "nam_doneall_success",
-            "failMessageKey": null,
-            "hintMessageKey": null,
-            "onStartHook": null,
-            "repeatable": false
+            "successMessageKey": "gaidep_lose",
+            "hintMessageKey": "gaidep_lose_hint"
           }
         ]
       },
-      "dropZones": [
-        {
-          "zoneId": "nam",
-          "sortOrder": 2,
-          "localOffset": {
-            "x": -133.084961,
-            "y": -97.88841
-          },
-          "size": {
-            "x": 249.0446,
-            "y": 699.284241
-          },
-          "shape": "box"
-        }
-      ]
+      "dropZones": []
     }
   ],
   "groups": [],
   "queues": [],
   "staticObjects": [
     {
-      "objectId": "bg",
-      "startHidden": false,
-      "visualMode": "Sprite",
-      "sprite": "assets/levels/lv3/images/bg.png",
-      "spineBasePath": null,
-      "initSpineAnim": null,
-      "initSpineLoop": false,
+      "objectId": "vuonhoa_anim",
+      "startHidden": true,
+      "visualMode": "Spine",
+      "spineBasePath": "assets/levels/lv3/anim/BG_MayHoa",
+      "initSpineLoop": true,
       "position": {
-        "x": 0.0,
-        "y": 51.5368423
+        "x": 2.0210526,
+        "y": 27.2842121
       },
-      "scale": 1.0,
-      "rotation": 0.0,
-      "sortOrder": 0,
-      "collider": null,
-      "blocks": false
-    },
-    {
-      "objectId": "ban",
-      "startHidden": false,
-      "visualMode": "Sprite",
-      "sprite": "assets/levels/lv3/images/ban.png",
-      "spineBasePath": null,
-      "initSpineAnim": null,
-      "initSpineLoop": false,
-      "position": {
-        "x": 327.410553,
-        "y": -532.547363
+      "sortOrder": 1,
+      "collider": {
+        "type": "box",
+        "width": 1084.5542,
+        "height": 136.17009,
+        "offsetX": -2.45414519,
+        "offsetY": 366.2528
       },
-      "scale": 1.0,
-      "rotation": 0.0,
-      "sortOrder": 28,
-      "collider": null,
-      "blocks": false
+      "blocks": true
     },
     {
       "objectId": "1",
       "startHidden": true,
       "visualMode": "Sprite",
       "sprite": "assets/levels/lv3/images/dt.png",
-      "spineBasePath": null,
-      "initSpineAnim": null,
       "initSpineLoop": false,
       "position": {
         "x": -269.810547,
         "y": -140.463165
       },
-      "scale": 1.0,
-      "rotation": 0.0,
-      "sortOrder": 1,
-      "collider": null,
-      "blocks": false
+      "sortOrder": 1
     },
     {
-      "objectId": "vuonhoa_anim",
-      "startHidden": true,
-      "visualMode": "Spine",
-      "sprite": null,
-      "spineBasePath": "assets/levels/lv3/anim/BG_MayHoa",
-      "initSpineAnim": null,
-      "initSpineLoop": true,
+      "objectId": "ban",
+      "visualMode": "Sprite",
+      "sprite": "assets/levels/lv3/images/ban.png",
+      "initSpineLoop": false,
       "position": {
-        "x": 2.0210526,
-        "y": 27.2842121
+        "x": 327.410553,
+        "y": -532.547363
       },
-      "scale": 1.0,
-      "rotation": 0.0,
-      "sortOrder": 1,
-      "collider": {
-        "type": "box",
-        "width": 1084.5542,
-        "height": 136.17009,
-        "radius": 0.0,
-        "offsetX": -2.45414519,
-        "offsetY": 366.2528
-      },
-      "blocks": true
+      "sortOrder": 28
+    },
+    {
+      "objectId": "bg",
+      "visualMode": "Sprite",
+      "sprite": "assets/levels/lv3/images/bg.png",
+      "initSpineLoop": false,
+      "position": {
+        "y": 51.5368423
+      }
     }
   ],
   "dropZones": [
