@@ -628,9 +628,19 @@ public class B_InteractableObject : MonoBehaviour
             return (delta.y > 0f ? InteractType.SWIPE_UP : InteractType.SWIPE_DOWN, null);
         }
 
-        // Drag: find the topmost drop zone at the object's release position.
-        // PickAt handles shadow resolution and nested-zone exposure for us.
-        LayerPick pick = PickAt(transform.position, this);
+        // Drag: find the topmost drop zone where this object's collider
+        // currently sits. Use Collider2D.bounds.center, NOT transform
+        // position — for Spine interactables (and any object whose
+        // BoxCollider2D has a non-zero offset), the visual + collider
+        // float relative to the GameObject, so transform.position lands
+        // somewhere off the actual visual and PickAt never finds the
+        // zone the player dragged onto. Fall back to releaseWorld if the
+        // collider is missing.
+        Collider2D myCol = GetComponent<Collider2D>();
+        Vector2 dropPoint = myCol != null
+            ? (Vector2)myCol.bounds.center
+            : releaseWorld;
+        LayerPick pick = PickAt(dropPoint, this);
         return (InteractType.DRAG, pick.dropZone != null ? pick.dropZone.ZoneId : null);
     }
 

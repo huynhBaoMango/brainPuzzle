@@ -73,3 +73,10 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Puzzle level authoring assets (large PNGs / Spine atlases) and exported JSON output —
+# these live outside source control; the LibGDX project consumes the exports directly.
+/[Aa]ssets/LevelAssets/
+/[Aa]ssets/LevelAssets.meta
+/[Aa]ssets/LEVEL_EXPORTED/
+/[Aa]ssets/LEVEL_EXPORTED.meta
