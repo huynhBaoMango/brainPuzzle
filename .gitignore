@@ -80,3 +80,7 @@ crashlytics-build.properties
 /[Aa]ssets/LevelAssets.meta
 /[Aa]ssets/LEVEL_EXPORTED/
 /[Aa]ssets/LEVEL_EXPORTED.meta
+
+# Per-developer sample scene — diffs are noisy (designer hand-edits per session)
+/[Aa]ssets/[Ss]cenes/SampleScene.unity
+/[Aa]ssets/[Ss]cenes/SampleScene.unity.meta
