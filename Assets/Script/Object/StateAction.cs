@@ -18,6 +18,7 @@ public enum StateActionType
     AdvanceQueue,
     PlaySFX,
     SkinChange,
+    ScaleTo,
 }
 
 /// <summary>
@@ -59,6 +60,14 @@ public class StateAction
 
     [Tooltip("Easing curve for tweens.")]
     public Ease ease = Ease.OutQuad;
+
+    [Tooltip("If true, also tween the subject's Z rotation to match moveTarget.eulerAngles.z over the same Duration with the same Ease. Useful when the destination implies a new facing — e.g. character tilts as it slides into place.")]
+    public bool rotateToMatchTarget;
+
+    // ---- ScaleTo ----
+
+    [Tooltip("Target uniform scale for ScaleTo. 1 = original size, 0.5 = half, 2 = double. Duration and Ease are reused from the MoveTo group above.")]
+    public float scaleTarget = 1f;
 
     // ---- Disappear ----
 

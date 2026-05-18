@@ -179,6 +179,43 @@ public class LevelConfigWindow : EditorWindow
 
         EditorGUILayout.Space(6f);
 
+        // ---- Timer ----
+        DrawSection("Timer");
+        EditorGUILayout.PropertyField(so.FindProperty("timeLimit"),
+            new GUIContent("Time Limit (s)",
+                "Countdown duration in seconds. 0 = no timer."));
+
+        SerializedProperty timeUpTargetProp = so.FindProperty("timeUpTarget");
+        EditorGUILayout.PropertyField(timeUpTargetProp,
+            new GUIContent("Time Up Target",
+                "Interactable whose state fires when LibGDX's countdown hits 0."));
+
+        // State id dropdown filtered by the target's states (same UX as
+        // ActivateState's dropdown).
+        SerializedProperty timeUpStateIdProp = so.FindProperty("timeUpStateId");
+        Rect stateRect = EditorGUILayout.GetControlRect();
+        EditorGUI.LabelField(
+            new Rect(stateRect.x, stateRect.y, EditorGUIUtility.labelWidth, stateRect.height),
+            new GUIContent("Time Up State Id",
+                "State id on the target. Author it with Trigger=NONE so it only runs on timer expiry."));
+        Rect popupRect = new Rect(
+            stateRect.x + EditorGUIUtility.labelWidth, stateRect.y,
+            stateRect.width - EditorGUIUtility.labelWidth, stateRect.height);
+        var timeUpTarget = timeUpTargetProp != null
+            ? timeUpTargetProp.objectReferenceValue as B_InteractableObject : null;
+        if (timeUpTarget != null && !string.IsNullOrEmpty(timeUpTarget.ObjectId))
+        {
+            string[] stateIds = PuzzleEditorHelper.GetStateIds(timeUpTarget.ObjectId);
+            PuzzleEditorHelper.StringPopupField(popupRect, timeUpStateIdProp, stateIds, "(none)");
+        }
+        else
+        {
+            using (new EditorGUI.DisabledScope(true))
+                EditorGUI.TextField(popupRect, "(assign Time Up Target first)");
+        }
+
+        EditorGUILayout.Space(6f);
+
         // ---- Hints ----
         DrawSection("Hints");
         EditorGUILayout.PropertyField(so.FindProperty("defaultHintMessageKey"));

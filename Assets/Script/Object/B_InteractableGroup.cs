@@ -57,6 +57,11 @@ public class B_InteractableGroup : MonoBehaviour
     private Vector3 pointerDownWorld;
     private float pointerDownTime;
     private bool draggingFollow;
+
+    // Lift-to-top during drag (matches B_InteractableObject).
+    private const int DragSortOrderLift = 30000;
+    private int sortOrderBeforeDrag;
+    private bool sortOrderLifted;
     private Vector3 dragGrabOffset;
     private Vector3 dragStartPosition;
     private Sprite spriteBeforeDrag;
@@ -138,6 +143,9 @@ public class B_InteractableGroup : MonoBehaviour
             draggingFollow = true;
             dragGrabOffset = Vector3.zero;
 
+            // Lift the picked child above everything else for the drag.
+            LiftSortOrderForDrag();
+
             // Swap to drag sprite if set on the first DRAG state.
             if (activeRenderer != null && data?.states != null)
             {
@@ -186,7 +194,52 @@ public class B_InteractableGroup : MonoBehaviour
 
         spriteBeforeDrag = null;
         draggingFollow = false;
+
+        // Restore the picked child's original sort order — whether the
+        // drag succeeded (Disappear/MoveTo plays out at its real layer)
+        // or snapped back.
+        RestoreSortOrderAfterDrag();
+
         if (!activated) activeChild = null;
+    }
+
+    private void LiftSortOrderForDrag()
+    {
+        if (sortOrderLifted || activeChild == null) return;
+
+        if (visualMode == VisualMode.Spine && activeSkeleton != null)
+        {
+            MeshRenderer mr = activeSkeleton.GetComponent<MeshRenderer>();
+            if (mr != null)
+            {
+                sortOrderBeforeDrag = mr.sortingOrder;
+                mr.sortingOrder = DragSortOrderLift;
+                sortOrderLifted = true;
+                return;
+            }
+        }
+
+        if (activeRenderer != null)
+        {
+            sortOrderBeforeDrag = activeRenderer.sortingOrder;
+            activeRenderer.sortingOrder = DragSortOrderLift;
+            sortOrderLifted = true;
+        }
+    }
+
+    private void RestoreSortOrderAfterDrag()
+    {
+        if (!sortOrderLifted) return;
+        sortOrderLifted = false;
+
+        if (visualMode == VisualMode.Spine && activeSkeleton != null)
+        {
+            MeshRenderer mr = activeSkeleton.GetComponent<MeshRenderer>();
+            if (mr != null) { mr.sortingOrder = sortOrderBeforeDrag; return; }
+        }
+
+        if (activeRenderer != null)
+            activeRenderer.sortingOrder = sortOrderBeforeDrag;
     }
 
     // ============================================================
@@ -449,10 +502,28 @@ public class B_InteractableGroup : MonoBehaviour
                     Transform t = ActionTransform(a);
                     Vector3 dest = a.moveTarget.position;
                     dest.z = t.position.z;
+                    float targetZ = a.moveTarget.eulerAngles.z;
+
                     if (a.duration > 0f)
-                        yield return t.DOMove(dest, a.duration).SetEase(a.ease).WaitForCompletion();
+                    {
+                        Tween posT = t.DOMove(dest, a.duration).SetEase(a.ease);
+                        Tween rotT = a.rotateToMatchTarget
+                            ? t.DORotate(new Vector3(0f, 0f, targetZ), a.duration,
+                                         RotateMode.Fast).SetEase(a.ease)
+                            : null;
+                        yield return posT.WaitForCompletion();
+                        if (rotT != null) yield return rotT.WaitForCompletion();
+                    }
                     else
+                    {
                         t.position = dest;
+                        if (a.rotateToMatchTarget)
+                        {
+                            Vector3 e = t.eulerAngles;
+                            e.z = targetZ;
+                            t.eulerAngles = e;
+                        }
+                    }
                 }
                 break;
 
@@ -530,6 +601,17 @@ public class B_InteractableGroup : MonoBehaviour
             case StateActionType.SkinChange:
                 ApplySkinChange(a);
                 break;
+
+            case StateActionType.ScaleTo:
+            {
+                Transform t = ActionTransform(a);
+                Vector3 dest = new Vector3(a.scaleTarget, a.scaleTarget, t.localScale.z);
+                if (a.duration > 0f)
+                    yield return t.DOScale(dest, a.duration).SetEase(a.ease).WaitForCompletion();
+                else
+                    t.localScale = dest;
+                break;
+            }
         }
     }
 

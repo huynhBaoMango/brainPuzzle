@@ -386,10 +386,28 @@ public class B_InteractableQueue : MonoBehaviour
                     Transform t = subject.transform;
                     Vector3 dest = a.moveTarget.position;
                     dest.z = t.position.z;
+                    float targetZ = a.moveTarget.eulerAngles.z;
+
                     if (a.duration > 0f)
-                        yield return t.DOMove(dest, a.duration).SetEase(a.ease).WaitForCompletion();
+                    {
+                        Tween posT = t.DOMove(dest, a.duration).SetEase(a.ease);
+                        Tween rotT = a.rotateToMatchTarget
+                            ? t.DORotate(new Vector3(0f, 0f, targetZ), a.duration,
+                                         RotateMode.Fast).SetEase(a.ease)
+                            : null;
+                        yield return posT.WaitForCompletion();
+                        if (rotT != null) yield return rotT.WaitForCompletion();
+                    }
                     else
+                    {
                         t.position = dest;
+                        if (a.rotateToMatchTarget)
+                        {
+                            Vector3 e = t.eulerAngles;
+                            e.z = targetZ;
+                            t.eulerAngles = e;
+                        }
+                    }
                 }
                 break;
 
@@ -461,6 +479,17 @@ public class B_InteractableQueue : MonoBehaviour
             case StateActionType.SkinChange:
                 ApplySkinChange(a);
                 break;
+
+            case StateActionType.ScaleTo:
+            {
+                Transform t = subject.transform;
+                Vector3 dest = new Vector3(a.scaleTarget, a.scaleTarget, t.localScale.z);
+                if (a.duration > 0f)
+                    yield return t.DOScale(dest, a.duration).SetEase(a.ease).WaitForCompletion();
+                else
+                    t.localScale = dest;
+                break;
+            }
         }
     }
 

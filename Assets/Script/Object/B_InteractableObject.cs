@@ -62,6 +62,14 @@ public class B_InteractableObject : MonoBehaviour
     private Vector3 dragStartPosition;
     private Sprite spriteBeforeDrag;
 
+    // Lift-to-top during drag: save current sort order on press, jack the
+    // renderer's sortingOrder to a value higher than any authored layer
+    // so the dragged object draws above everything else. Restored on
+    // release regardless of drag success / snap-back.
+    private const int DragSortOrderLift = 30000;
+    private int sortOrderBeforeDrag;
+    private bool sortOrderLifted;
+
     // ============================================================
     //  GLOBAL ACTION LOCK
     // ============================================================
@@ -70,14 +78,33 @@ public class B_InteractableObject : MonoBehaviour
     // While > 0, all interactables ignore new pointer input.
     private static int actionLockCount;
 
-    /// <summary>True while at least one state somewhere is mid-activation.</summary>
+    /// <summary>
+    /// External "freeze input" flag — set by systems that want to suspend
+    /// new player input WITHOUT also marking the level as ended (which
+    /// would suppress outcome evaluation). Used by B_LevelTimerRunner the
+    /// moment its countdown hits 0: input is blocked immediately so no
+    /// new action chains start, then the lose state is force-activated
+    /// once any in-flight action settles. Reset on each B_LevelConfig.Awake.
+    /// </summary>
+    public static bool InputSuspended;
+
     /// <summary>
     /// True while at least one state somewhere is mid-activation, OR the
-    /// level has ended (win/lose). B_PuzzleInput skips pointer handling
-    /// while this is true — once the outcome fires, all further taps /
-    /// drags / swipes are ignored until the scene reloads via Replay.
+    /// level has ended (win/lose), OR input is externally suspended (e.g.
+    /// waiting for a queued lose to fire). B_PuzzleInput skips pointer
+    /// handling while this is true.
     /// </summary>
-    public static bool ActionsRunning => actionLockCount > 0 || B_LevelConfig.LevelEnded;
+    public static bool ActionsRunning =>
+        actionLockCount > 0 || B_LevelConfig.LevelEnded || InputSuspended;
+
+    /// <summary>
+    /// Read-only view of the raw action-lock counter. True only while a
+    /// state's action chain is in flight — independent of LevelEnded and
+    /// InputSuspended. Used by systems (e.g. B_LevelTimerRunner) that need
+    /// to wait specifically for current actions to finish without their
+    /// own input-block flag confusing the check.
+    /// </summary>
+    public static bool AnyActionChainRunning => actionLockCount > 0;
 
     /// <summary>
     /// Fired whenever a state wants to show a localized message (success or
@@ -370,6 +397,9 @@ public class B_InteractableObject : MonoBehaviour
             draggingFollow = true;
             dragGrabOffset = transform.position - pointerDownWorld;
 
+            // Lift the active renderer above everything else for the drag.
+            LiftSortOrderForDrag();
+
             // Swap to the drag sprite if one is set on the first undone DRAG state.
             if (spriteRenderer != null && data.states != null)
             {
@@ -422,6 +452,52 @@ public class B_InteractableObject : MonoBehaviour
 
         spriteBeforeDrag = null;
         draggingFollow = false;
+
+        // Always restore the original sort order — whether the drag
+        // succeeded (object will Disappear / MoveTo at its real layer)
+        // or snapped back (already at start position, just needs its
+        // original z-order).
+        RestoreSortOrderAfterDrag();
+    }
+
+    private void LiftSortOrderForDrag()
+    {
+        if (sortOrderLifted) return;
+
+        if (visualMode == VisualMode.Spine && skeleton != null)
+        {
+            MeshRenderer mr = skeleton.GetComponent<MeshRenderer>();
+            if (mr != null)
+            {
+                sortOrderBeforeDrag = mr.sortingOrder;
+                mr.sortingOrder = DragSortOrderLift;
+                sortOrderLifted = true;
+                return;
+            }
+        }
+
+        SpriteRenderer sr = spriteRenderer != null ? spriteRenderer : GetComponent<SpriteRenderer>();
+        if (sr != null)
+        {
+            sortOrderBeforeDrag = sr.sortingOrder;
+            sr.sortingOrder = DragSortOrderLift;
+            sortOrderLifted = true;
+        }
+    }
+
+    private void RestoreSortOrderAfterDrag()
+    {
+        if (!sortOrderLifted) return;
+        sortOrderLifted = false;
+
+        if (visualMode == VisualMode.Spine && skeleton != null)
+        {
+            MeshRenderer mr = skeleton.GetComponent<MeshRenderer>();
+            if (mr != null) { mr.sortingOrder = sortOrderBeforeDrag; return; }
+        }
+
+        SpriteRenderer sr = spriteRenderer != null ? spriteRenderer : GetComponent<SpriteRenderer>();
+        if (sr != null) sr.sortingOrder = sortOrderBeforeDrag;
     }
 
     // ============================================================
@@ -964,7 +1040,24 @@ public class B_InteractableObject : MonoBehaviour
             case StateActionType.SkinChange:
                 ApplySkinChange(a);
                 break;
+
+            case StateActionType.ScaleTo:
+                yield return ActionScaleTo(a);
+                break;
         }
+    }
+
+    private IEnumerator ActionScaleTo(StateAction a)
+    {
+        Transform t = ActionTransform(a);
+        Vector3 dest = new Vector3(a.scaleTarget, a.scaleTarget, t.localScale.z);
+        if (a.duration <= 0f)
+        {
+            t.localScale = dest;
+            yield break;
+        }
+        Tween tw = t.DOScale(dest, a.duration).SetEase(a.ease);
+        yield return tw.WaitForCompletion();
     }
 
     private static void ApplySkinChange(StateAction a)
@@ -1003,14 +1096,29 @@ public class B_InteractableObject : MonoBehaviour
         Vector3 destination = a.moveTarget.position;
         destination.z = t.position.z;
 
+        // Optional simultaneous rotation tween to match moveTarget's Z.
+        float targetZ = a.moveTarget.eulerAngles.z;
+
         if (a.duration <= 0f)
         {
             t.position = destination;
+            if (a.rotateToMatchTarget)
+            {
+                Vector3 e = t.eulerAngles;
+                e.z = targetZ;
+                t.eulerAngles = e;
+            }
             yield break;
         }
 
-        Tween tw = t.DOMove(destination, a.duration).SetEase(a.ease);
-        yield return tw.WaitForCompletion();
+        Tween posTween = t.DOMove(destination, a.duration).SetEase(a.ease);
+        Tween rotTween = null;
+        if (a.rotateToMatchTarget)
+            rotTween = t.DORotate(new Vector3(0f, 0f, targetZ), a.duration,
+                                  RotateMode.Fast).SetEase(a.ease);
+
+        yield return posTween.WaitForCompletion();
+        if (rotTween != null) yield return rotTween.WaitForCompletion();
     }
 
     private IEnumerator ActionDisappear(StateAction a)

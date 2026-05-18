@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(awk '/objectId: manled/{found=1} found{print; n++; if\\(n>30\\)exit}' \"G:/PROJECTS/brainPuzzle/Assets/Scenes/SampleScene.unity\")",
+      "Bash(awk '/m_Name: manled/,/m_Father/' \"G:/PROJECTS/brainPuzzle/Assets/Scenes/SampleScene.unity\")",
+      "Bash(awk '/^--- !u!4 &2142352033$/{found=1} found{print; n++; if\\(n>15\\)exit}' \"G:/PROJECTS/brainPuzzle/Assets/Scenes/SampleScene.unity\")",
+      "Bash(python audit_lv13.py)"
+    ]
+  }
+}

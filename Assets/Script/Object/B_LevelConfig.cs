@@ -47,6 +47,7 @@ public class B_LevelConfig : MonoBehaviour
     {
         Current = this;
         levelEnded = false;
+        B_InteractableObject.InputSuspended = false;
     }
 
     private void OnDestroy()
@@ -224,6 +225,16 @@ public class B_LevelConfig : MonoBehaviour
 
     [Tooltip("Level loses when ANY of these conditions become true.")]
     public List<LevelCondition> loseConditions;
+
+    [Header("Timer")]
+    [Tooltip("Countdown duration in seconds. 0 = no timer (LibGDX never fires the time-up state). Exported to JSON for LibGDX to use as its countdown.")]
+    public float timeLimit;
+
+    [Tooltip("Interactable whose state should be ForceActivated when LibGDX's countdown reaches 0. Author your lose sequence as actions on that state (DoAnimation, PlaySFX, fade-outs, etc.). Add a Lose Condition referencing the same state if you want the outcome UI to also trigger.")]
+    public B_InteractableObject timeUpTarget;
+
+    [Tooltip("State id on the time-up target to fire. Pick a state authored with Trigger=NONE so it only runs when the timer expires.")]
+    public string timeUpStateId;
 
     [Header("Strings")]
     [Tooltip("Fallback hint string key shown when no state has a matching hint (or the level is effectively finished). Leave empty for no fallback.")]

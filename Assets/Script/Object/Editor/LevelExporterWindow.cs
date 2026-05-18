@@ -282,6 +282,10 @@ public class LevelExporterWindow : EditorWindow
             description = EmptyToNull(config.description),
             assetPathPrefix = EmptyToNull(outputAssetPrefix),
             defaultHintMessageKey = EmptyToNull(config.defaultHintMessageKey),
+            timeLimit = config.timeLimit,
+            timeUpTargetId = config.timeUpTarget != null
+                ? EmptyToNull(config.timeUpTarget.ObjectId) : null,
+            timeUpStateId = EmptyToNull(config.timeUpStateId),
             viewport = new ViewportJson
             {
                 virtualWidth = config.virtualWidth,
@@ -341,15 +345,21 @@ public class LevelExporterWindow : EditorWindow
             Object.FindObjectsByType<B_StaticObject>(FindObjectsSortMode.InstanceID);
         foreach (B_StaticObject s in allStatics)
         {
-            level.staticObjects.Add(BuildStaticObject(s));
+            level.staticObjects.Add(BuildStaticObject(s, errors));
         }
 
-        // Standalone drop zones (not parented under any interactable)
+        // Standalone drop zones — exclude zones that are nested under an
+        // interactable OR a static (those are written into the parent's
+        // dropZones array instead). Without the static check, a zone on
+        // the same GameObject as a static would be exported twice — once
+        // nested, once standalone — and the importer would split the
+        // authoring back into two separate GameObjects.
         B_DropZone[] allZones =
             Object.FindObjectsByType<B_DropZone>(FindObjectsSortMode.InstanceID);
         foreach (B_DropZone zone in allZones)
         {
             if (zone.GetComponentInParent<B_InteractableObject>() != null) continue;
+            if (zone.GetComponentInParent<B_StaticObject>() != null) continue;
             level.dropZones.Add(BuildStandaloneDropZone(zone, errors));
         }
 
@@ -465,14 +475,14 @@ public class LevelExporterWindow : EditorWindow
 
     // ---- Static object ------------------------------------------------
 
-    private StaticObjectJson BuildStaticObject(B_StaticObject s)
+    private StaticObjectJson BuildStaticObject(B_StaticObject s, List<string> errors)
     {
         Transform t = s.transform;
         SpriteRenderer sr = s.GetComponent<SpriteRenderer>();
         Collider2D col = s.GetComponent<Collider2D>();
         Vector3 visualPos = ResolveVisualPosition(s.gameObject);
 
-        return new StaticObjectJson
+        StaticObjectJson j = new StaticObjectJson
         {
             objectId = EmptyToNull(s.ObjectId),
             startHidden = s.StartHidden,
@@ -492,7 +502,39 @@ public class LevelExporterWindow : EditorWindow
             sortOrder = s.GetSortOrder(),
             collider = BuildCollider(col, visualPos),
             blocks = col != null,
+            dropZones = new List<DropZoneLocalJson>(),
         };
+
+        // Nested drop zones — mirror BuildInteractable. Any B_DropZone whose
+        // nearest puzzle ancestor IS this static gets serialized as a nested
+        // entry (so the round-trip preserves the "one GameObject hosts both"
+        // authoring pattern). These zones are SKIPPED from the standalone
+        // scan in BuildLevel.
+        foreach (B_DropZone zone in s.GetComponentsInChildren<B_DropZone>())
+        {
+            if (zone.GetComponentInParent<B_StaticObject>() != s) continue;
+            // Also skip if the zone is under an interactable nested under
+            // this static (defensive — unusual but possible).
+            if (zone.GetComponentInParent<B_InteractableObject>() != null) continue;
+
+            Collider2D zCol = zone.GetComponent<Collider2D>();
+            Vector3 zoneCenterWorld = zCol != null ? zCol.bounds.center : zone.transform.position;
+            Vector3 worldOffset = zoneCenterWorld - visualPos;
+
+            j.dropZones.Add(new DropZoneLocalJson
+            {
+                zoneId = zone.ZoneId,
+                sortOrder = zone.SortOrder,
+                localOffset = WorldDeltaToPx(worldOffset),
+                size = zCol != null ? WorldDeltaToPx(zCol.bounds.size) : new Vec2Json { x = 0, y = 0 },
+                shape = "box",
+            });
+
+            if (string.IsNullOrEmpty(zone.ZoneId))
+                errors.Add($"Drop zone on '{zone.name}' (child of static '{s.ObjectId}') has empty Zone Id.");
+        }
+
+        return j;
     }
 
     // ---- Interactable ----------------------------------------------
@@ -654,6 +696,21 @@ public class LevelExporterWindow : EditorWindow
         return j;
     }
 
+    private static bool ActionUsesActionTarget(StateActionType type)
+    {
+        switch (type)
+        {
+            case StateActionType.MoveTo:
+            case StateActionType.Disappear:
+            case StateActionType.Appear:
+            case StateActionType.DoAnimation:
+            case StateActionType.ScaleTo:
+                return true;
+            default:
+                return false;
+        }
+    }
+
     private StateActionJson BuildAction(StateAction a, List<string> errors)
     {
         StateActionJson j = new StateActionJson
@@ -663,8 +720,13 @@ public class LevelExporterWindow : EditorWindow
             duration = a.duration,
         };
 
-        // Resolve the optional actionTarget to a string id.
-        if (a.actionTarget != null)
+        // Resolve the optional actionTarget to a string id — but only for
+        // action types that actually consume it at runtime. Without this
+        // gate, designers who change an action's type after assigning
+        // actionTarget leave the field dangling (it gets serialized but
+        // the new action type ignores it), bloating JSON and confusing
+        // LibGDX-side debugging.
+        if (a.actionTarget != null && ActionUsesActionTarget(a.type))
             j.actionTargetId = ResolveObjectId(a.actionTarget, errors);
 
         switch (a.type)
@@ -676,6 +738,7 @@ public class LevelExporterWindow : EditorWindow
             case StateActionType.MoveTo:
                 FillMoveTarget(j, a.moveTarget);
                 j.ease = a.ease.ToString();
+                if (a.rotateToMatchTarget) j.rotateToMatchTarget = true;
                 break;
 
             case StateActionType.Disappear:
@@ -728,6 +791,11 @@ public class LevelExporterWindow : EditorWindow
                     j.skinTargetObjectId = EmptyToNull(a.skinTarget.ObjectId);
                 j.skinName = EmptyToNull(a.skinName);
                 j.skinOp = a.skinOp.ToString();
+                break;
+
+            case StateActionType.ScaleTo:
+                j.scaleTarget = a.scaleTarget;
+                j.ease = a.ease.ToString();
                 break;
         }
 
@@ -1106,6 +1174,9 @@ public class LevelExporterWindow : EditorWindow
         public string description;
         public string assetPathPrefix;
         public string defaultHintMessageKey;
+        public float timeLimit;
+        public string timeUpTargetId;
+        public string timeUpStateId;
         public ViewportJson viewport;
         public List<InteractableJson> interactables;
         public List<GroupJson> groups;
@@ -1196,6 +1267,7 @@ public class LevelExporterWindow : EditorWindow
         public string moveTargetZoneId;
         public Vec2Json moveTargetPosition;
         public string ease;
+        public bool rotateToMatchTarget;
 
         // Disappear
         public bool? fadeOut;
@@ -1227,6 +1299,12 @@ public class LevelExporterWindow : EditorWindow
         public string skinTargetObjectId;
         public string skinName;
         public string skinOp;
+
+        // ScaleTo — uniform target scale (1 = original). Nullable so the
+        // field is omitted from every action type that ISN'T ScaleTo. (If
+        // it were a plain float, every action would carry a redundant
+        // "scaleTarget": 0.0 from C#'s zero-init on existing scenes.)
+        public float? scaleTarget;
     }
 
     private class ColliderJson
@@ -1294,6 +1372,7 @@ public class LevelExporterWindow : EditorWindow
         public int sortOrder;
         public ColliderJson collider;
         public bool blocks;
+        public List<DropZoneLocalJson> dropZones;
     }
 
     private class DropZoneJson

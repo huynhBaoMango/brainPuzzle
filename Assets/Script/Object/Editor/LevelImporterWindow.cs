@@ -382,6 +382,21 @@ public class LevelImporterWindow : EditorWindow
         cfg.title = root["title"]?.Value<string>() ?? "";
         cfg.description = root["description"]?.Value<string>() ?? "";
         cfg.defaultHintMessageKey = root["defaultHintMessageKey"]?.Value<string>() ?? "";
+        cfg.timeLimit = root["timeLimit"]?.Value<float>() ?? 0f;
+        cfg.timeUpStateId = root["timeUpStateId"]?.Value<string>() ?? "";
+        // timeUpTarget reference is deferred to pass 2 (target may not be
+        // spawned yet). Stash the id; resolve after all interactables exist.
+        string timeUpTargetId = root["timeUpTargetId"]?.Value<string>();
+        if (!string.IsNullOrEmpty(timeUpTargetId))
+        {
+            pendingRefs.Add(new PendingRef
+            {
+                so = new SerializedObject(cfg),
+                actionPath = "timeUpTarget", // top-level SerializedProperty path
+                fieldName = "timeUpTarget",
+                targetId = timeUpTargetId,
+            });
+        }
         cfg.virtualWidth = vw;
         cfg.virtualHeight = vh;
         cfg.levelCamera = cam;
@@ -878,6 +893,16 @@ public class LevelImporterWindow : EditorWindow
             idMap[id] = go;
 
         ApplyInitialSkins(go, s);
+
+        // Nested drop zones — mirror SpawnInteractable. A drop zone that
+        // lived on the same GameObject as the static at author time gets
+        // re-attached here, so the round-trip preserves "one GO holds both".
+        JArray nestedZones = s["dropZones"] as JArray;
+        if (nestedZones != null)
+        {
+            foreach (JToken nz in nestedZones)
+                SpawnNestedDropZone(nz, go, ppu, warnings);
+        }
     }
 
     // ---- Drop zone (standalone) ----
@@ -908,33 +933,43 @@ public class LevelImporterWindow : EditorWindow
 
     // ---- Nested drop zone ----
 
-    private void SpawnNestedDropZone(JToken nz, GameObject interactableGo, float ppu, List<string> warnings)
+    private void SpawnNestedDropZone(JToken nz, GameObject hostGo, float ppu, List<string> warnings)
     {
         string zoneId = nz["zoneId"]?.Value<string>() ?? "zone";
 
-        // Nested drop zones ALWAYS attach to the interactable's own GameObject
-        // and inherit the interactable's Collider2D — one transform, one
-        // inspector, one hit box. Designers who want a distinct drop area
-        // should author a standalone drop zone instead (separate GameObject,
-        // listed at scene root) rather than nesting.
-        if (interactableGo.GetComponent<B_DropZone>() != null)
+        // Nested drop zones attach to the host GameObject (interactable or
+        // static) and share its Collider2D — one transform, one inspector,
+        // one hit box. Designers who want a distinct drop area should
+        // author a standalone drop zone (separate GameObject) instead.
+        if (hostGo.GetComponent<B_DropZone>() != null)
         {
-            warnings.Add($"'{interactableGo.name}' already has a B_DropZone — nested zone '{zoneId}' skipped.");
+            warnings.Add($"'{hostGo.name}' already has a B_DropZone — nested zone '{zoneId}' skipped.");
             return;
         }
 
         // Warn (but don't fail) if the exported JSON carried a non-zero offset
-        // from the old child-GameObject authoring pattern. The imported zone
-        // will sit on the interactable's own collider; move the interactable
-        // itself if the position needs tweaking.
+        // from the old child-GameObject authoring pattern.
         float offX = nz["localOffset"]?["x"]?.Value<float>() ?? 0f;
         float offY = nz["localOffset"]?["y"]?.Value<float>() ?? 0f;
         if (!Mathf.Approximately(offX, 0f) || !Mathf.Approximately(offY, 0f))
         {
-            warnings.Add($"Nested zone '{zoneId}' on '{interactableGo.name}' had a non-zero offset in JSON ({offX}, {offY}) — merged onto the interactable's collider. Author as a standalone drop zone if you need a distinct drop area.");
+            warnings.Add($"Nested zone '{zoneId}' on '{hostGo.name}' had a non-zero offset in JSON ({offX}, {offY}) — merged onto the host's collider. Author as a standalone drop zone if you need a distinct drop area.");
         }
 
-        B_DropZone dz = interactableGo.AddComponent<B_DropZone>();
+        // If the host has no Collider2D yet (e.g. a static with blocks=false),
+        // add a BoxCollider2D sized per the JSON so the zone has a hit area.
+        // Without this, [RequireComponent(typeof(BoxCollider2D))] on
+        // B_DropZone would auto-add a default 1x1 collider — wrong size.
+        if (hostGo.GetComponent<Collider2D>() == null)
+        {
+            float w = nz["size"]?["x"]?.Value<float>() ?? 100f;
+            float h = nz["size"]?["y"]?.Value<float>() ?? 100f;
+            BoxCollider2D box = hostGo.AddComponent<BoxCollider2D>();
+            box.size = new Vector2(w / ppu, h / ppu);
+            box.isTrigger = true;
+        }
+
+        B_DropZone dz = hostGo.AddComponent<B_DropZone>();
         SerializedObject so = new SerializedObject(dz);
         so.FindProperty("zoneId").stringValue = zoneId;
         so.FindProperty("sortOrder").intValue = nz["sortOrder"]?.Value<int>() ?? 0;
@@ -1143,6 +1178,11 @@ public class LevelImporterWindow : EditorWindow
                     }
                 }
 
+                // rotateToMatchTarget
+                SerializedProperty rotMatchProp = actionProp.FindPropertyRelative("rotateToMatchTarget");
+                if (rotMatchProp != null)
+                    rotMatchProp.boolValue = json["rotateToMatchTarget"]?.Value<bool>() ?? false;
+
                 // moveTarget — deferred to second pass
                 string moveObjId = json["moveTargetObjectId"]?.Value<string>();
                 string moveZoneId = json["moveTargetZoneId"]?.Value<string>();
@@ -1314,6 +1354,24 @@ public class LevelImporterWindow : EditorWindow
                 AssignAudioClip(actionProp, "sfxClip", json["sfxClip"], warnings);
                 break;
             }
+
+            case StateActionType.ScaleTo:
+            {
+                SerializedProperty scaleProp = actionProp.FindPropertyRelative("scaleTarget");
+                if (scaleProp != null)
+                    scaleProp.floatValue = json["scaleTarget"]?.Value<float>() ?? 1f;
+
+                // Ease (shared with MoveTo path).
+                string easeStr = json["ease"]?.Value<string>();
+                if (!string.IsNullOrEmpty(easeStr))
+                {
+                    SerializedProperty easeProp = actionProp.FindPropertyRelative("ease");
+                    if (easeProp != null
+                        && System.Enum.TryParse<DG.Tweening.Ease>(easeStr, out var easeVal))
+                        easeProp.enumValueIndex = (int)easeVal;
+                }
+                break;
+            }
         }
     }
 
@@ -1342,6 +1400,23 @@ public class LevelImporterWindow : EditorWindow
                         p.objectReferenceValue = interactable;
                     else if (interactable == null)
                         warnings.Add($"Queue empty-chain target '{pref.targetId}' has no B_InteractableObject component.");
+                }
+                pref.so.ApplyModifiedPropertiesWithoutUndo();
+                continue;
+            }
+
+            // Top-level timeUpTarget on B_LevelConfig — same pattern.
+            if (pref.fieldName == "timeUpTarget")
+            {
+                GameObject target = FindInIdMap(pref.targetId, warnings);
+                if (target != null)
+                {
+                    B_InteractableObject interactable = target.GetComponent<B_InteractableObject>();
+                    SerializedProperty p = pref.so.FindProperty("timeUpTarget");
+                    if (p != null && interactable != null)
+                        p.objectReferenceValue = interactable;
+                    else if (interactable == null)
+                        warnings.Add($"Time-up target '{pref.targetId}' has no B_InteractableObject component.");
                 }
                 pref.so.ApplyModifiedPropertiesWithoutUndo();
                 continue;

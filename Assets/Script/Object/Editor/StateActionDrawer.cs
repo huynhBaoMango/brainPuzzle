@@ -65,6 +65,7 @@ public class StateActionDrawer : PropertyDrawer
                 DrawField(ref y, position, property, "moveTarget", "Move To", draw);
                 DrawField(ref y, position, property, "duration", "Duration (s)", draw);
                 DrawField(ref y, position, property, "ease", "Ease", draw);
+                DrawField(ref y, position, property, "rotateToMatchTarget", "Rotate To Match", draw);
                 break;
 
             case StateActionType.Disappear:
@@ -104,6 +105,12 @@ public class StateActionDrawer : PropertyDrawer
                 DrawField(ref y, position, property, "skinTarget", "Target Interactable", draw);
                 DrawField(ref y, position, property, "skinOp", "Op", draw);
                 DrawSkinNamePopup(ref y, position, property, draw);
+                break;
+
+            case StateActionType.ScaleTo:
+                DrawField(ref y, position, property, "scaleTarget", "Target Scale", draw);
+                DrawField(ref y, position, property, "duration", "Duration (s)", draw);
+                DrawField(ref y, position, property, "ease", "Ease", draw);
                 break;
         }
 
@@ -265,7 +272,10 @@ public class StateActionDrawer : PropertyDrawer
                 {
                     Object t = property.FindPropertyRelative("moveTarget").objectReferenceValue;
                     string name = t != null ? t.name : "<no target>";
-                    summary = $"MoveTo  →  {name}  ({dur:0.##}s)";
+                    bool rotMatch = property.FindPropertyRelative("rotateToMatchTarget").boolValue;
+                    summary = rotMatch
+                        ? $"MoveTo  →  {name}  ({dur:0.##}s)  +rotate"
+                        : $"MoveTo  →  {name}  ({dur:0.##}s)";
                     break;
                 }
 
@@ -338,6 +348,13 @@ public class StateActionDrawer : PropertyDrawer
                     string targetName = t != null ? t.name : "<no target>";
                     if (string.IsNullOrEmpty(skin)) skin = "<no skin>";
                     summary = $"SkinChange  {op}  '{skin}'  on  {targetName}";
+                    break;
+                }
+
+            case StateActionType.ScaleTo:
+                {
+                    float s = property.FindPropertyRelative("scaleTarget").floatValue;
+                    summary = $"ScaleTo  →  {s:0.##}×  ({dur:0.##}s)";
                     break;
                 }
 
