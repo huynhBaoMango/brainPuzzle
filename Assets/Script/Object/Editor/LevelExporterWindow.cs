@@ -17,11 +17,27 @@ public class LevelExporterWindow : EditorWindow
     private const string PrefKeyAssetPrefix = "LevelExporter.assetPrefix";
     private const string PrefKeyOutputDir = "LevelExporter.outputDir";
     private const string PrefKeyPretty = "LevelExporter.prettyPrint";
+    private const string PrefKeyCapturePreview  = "LevelExporter.capturePreview";
+    private const string PrefKeyPreviewWidth    = "LevelExporter.previewWidth";
+    private const string PrefKeyPreviewHeight   = "LevelExporter.previewHeight";
+    private const string PrefKeyPreviewFilename = "LevelExporter.previewFilename";
+    private const string PrefKeyPreviewTransparent = "LevelExporter.previewTransparent";
+    private const string PrefKeyPreviewMatchAspect = "LevelExporter.previewMatchAspect";
+    private const string PrefKeyPreviewFitObject   = "LevelExporter.previewFitObject";
 
     private string assetRoot = "Assets/LevelAssets/";
     private string outputAssetPrefix = "assets/levels/";
     private string outputDir = "Assets/LevelAssets";
     private bool prettyPrint = true;
+
+    // Preview capture (one-step "Export + Preview" workflow)
+    private bool capturePreview = true;
+    private int previewWidth = 512;
+    private int previewHeight = 768;
+    private string previewFilename = "preview.png";
+    private bool previewTransparent = false;
+    private bool previewMatchAspect = true;
+    private string previewFitObjectId = "bg";
 
     /// <summary>Full path to the last exported level.json (for Reveal button).</summary>
     private string lastExportedPath;
@@ -48,6 +64,13 @@ public class LevelExporterWindow : EditorWindow
         outputAssetPrefix = EditorPrefs.GetString(PrefKeyAssetPrefix, outputAssetPrefix);
         outputDir = EditorPrefs.GetString(PrefKeyOutputDir, outputDir);
         prettyPrint = EditorPrefs.GetBool(PrefKeyPretty, prettyPrint);
+        capturePreview     = EditorPrefs.GetBool(PrefKeyCapturePreview, capturePreview);
+        previewWidth       = EditorPrefs.GetInt(PrefKeyPreviewWidth, previewWidth);
+        previewHeight      = EditorPrefs.GetInt(PrefKeyPreviewHeight, previewHeight);
+        previewFilename    = EditorPrefs.GetString(PrefKeyPreviewFilename, previewFilename);
+        previewTransparent = EditorPrefs.GetBool(PrefKeyPreviewTransparent, previewTransparent);
+        previewMatchAspect = EditorPrefs.GetBool(PrefKeyPreviewMatchAspect, previewMatchAspect);
+        previewFitObjectId = EditorPrefs.GetString(PrefKeyPreviewFitObject, previewFitObjectId);
     }
 
     private void OnDisable()
@@ -56,6 +79,13 @@ public class LevelExporterWindow : EditorWindow
         EditorPrefs.SetString(PrefKeyAssetPrefix, outputAssetPrefix);
         EditorPrefs.SetString(PrefKeyOutputDir, outputDir);
         EditorPrefs.SetBool(PrefKeyPretty, prettyPrint);
+        EditorPrefs.SetBool(PrefKeyCapturePreview, capturePreview);
+        EditorPrefs.SetInt(PrefKeyPreviewWidth, previewWidth);
+        EditorPrefs.SetInt(PrefKeyPreviewHeight, previewHeight);
+        EditorPrefs.SetString(PrefKeyPreviewFilename, previewFilename);
+        EditorPrefs.SetBool(PrefKeyPreviewTransparent, previewTransparent);
+        EditorPrefs.SetBool(PrefKeyPreviewMatchAspect, previewMatchAspect);
+        EditorPrefs.SetString(PrefKeyPreviewFitObject, previewFitObjectId);
     }
 
     private void OnGUI()
@@ -113,6 +143,52 @@ public class LevelExporterWindow : EditorWindow
         prettyPrint = EditorGUILayout.Toggle(
             new GUIContent("Pretty Print", "Human-readable JSON formatting."),
             prettyPrint);
+
+        EditorGUILayout.Space(4f);
+
+        // ---- Preview capture ----
+        capturePreview = EditorGUILayout.ToggleLeft(
+            new GUIContent("Capture preview PNG after export",
+                "Render the level camera to a PNG next to level.json so " +
+                "the menu's thumbnail comes out of the same Export click."),
+            capturePreview);
+
+        if (capturePreview)
+        {
+            using (new EditorGUI.IndentLevelScope())
+            {
+                previewFitObjectId = EditorGUILayout.TextField(
+                    new GUIContent("Fit To Object Id",
+                        "objectId of a static (or interactable) whose visual bounds the capture should frame. " +
+                        "Camera is temporarily moved + sized so the PNG fills exactly that object — no blank " +
+                        "space top/bottom or left/right. Common choice: the background sprite (e.g. \"bg\"). " +
+                        "Leave empty to fall back to the level camera's natural view."),
+                    previewFitObjectId);
+
+                previewMatchAspect = EditorGUILayout.Toggle(
+                    new GUIContent("Match Level Aspect",
+                        "Only used when Fit To Object Id is empty. Auto-fit the PNG's aspect ratio to " +
+                        "B_LevelConfig.virtualWidth / virtualHeight so the camera fills the texture."),
+                    previewMatchAspect);
+
+                using (new EditorGUILayout.HorizontalScope())
+                {
+                    previewWidth  = EditorGUILayout.IntField("Width",  previewWidth);
+                    // Height is auto-computed when fitting to an object or
+                    // matching level aspect — leave the field disabled then.
+                    bool autoH = !string.IsNullOrEmpty(previewFitObjectId) || previewMatchAspect;
+                    using (new EditorGUI.DisabledScope(autoH))
+                    {
+                        previewHeight = EditorGUILayout.IntField("Height", previewHeight);
+                    }
+                }
+                previewFilename = EditorGUILayout.TextField("Filename", previewFilename);
+                previewTransparent = EditorGUILayout.Toggle(
+                    new GUIContent("Transparent BG",
+                        "Render with alpha so the level art floats on the menu's background."),
+                    previewTransparent);
+            }
+        }
 
         EditorGUILayout.Space();
 
@@ -254,18 +330,172 @@ public class LevelExporterWindow : EditorWindow
             AssetDatabase.Refresh();
 
             int strCount = config.strings != null ? config.strings.Count : 0;
-            ShowMessage(
-                $"Exported level \"{level.levelId}\" → {levelDir}/\n" +
+            string msg = $"Exported level \"{level.levelId}\" → {levelDir}/\n" +
                 $"{level.interactables.Count} interactables, {level.groups.Count} groups, " +
                 $"{level.staticObjects.Count} static objects, {level.dropZones.Count} drop zones, " +
-                $"{strCount} strings.",
-                MessageType.Info);
+                $"{strCount} strings.";
+
+            // ---- Optional: capture preview PNG ----
+            if (capturePreview)
+            {
+                string previewPath = CaptureLevelPreview(config, levelDir, out int capturedW, out int capturedH);
+                if (!string.IsNullOrEmpty(previewPath))
+                    msg += $"\nPreview: {Path.GetFileName(previewPath)} " +
+                           $"({capturedW}×{capturedH})";
+                AssetDatabase.Refresh();
+            }
+
+            ShowMessage(msg, MessageType.Info);
         }
         catch (System.Exception e)
         {
             ShowMessage("Export failed: " + e.Message + "\n" + e.StackTrace, MessageType.Error);
             Debug.LogException(e);
         }
+    }
+
+    /// <summary>
+    /// Renders the level camera into a PNG at <c>levelDir/previewFilename</c>
+    /// using the configured width / height / transparency. Returns the
+    /// path on success or null on failure (warnings go to the console so
+    /// export still considers the level a success).
+    /// </summary>
+    private string CaptureLevelPreview(B_LevelConfig cfg, string levelDir,
+                                        out int capturedWidth, out int capturedHeight)
+    {
+        capturedWidth = 0; capturedHeight = 0;
+        Camera cam = cfg.levelCamera != null ? cfg.levelCamera : Camera.main;
+        if (cam == null)
+        {
+            Debug.LogWarning("[LevelExporter] Skipped preview capture: no camera (Level Camera unassigned and Camera.main is null).");
+            return null;
+        }
+
+        // Try to fit on a specific object's bounds (typically the bg sprite)
+        // — gives a tight crop with zero blank space.
+        Bounds? fitBounds = ResolveFitBounds(previewFitObjectId);
+
+        int w = Mathf.Max(16, previewWidth);
+        int h = Mathf.Max(16, previewHeight);
+
+        if (fitBounds.HasValue)
+        {
+            // Height follows the bg's aspect so the capture is fully filled.
+            float bgW = fitBounds.Value.size.x;
+            float bgH = fitBounds.Value.size.y;
+            if (bgW > 0f && bgH > 0f)
+                h = Mathf.Max(16, Mathf.RoundToInt(w * (bgH / bgW)));
+        }
+        else if (previewMatchAspect && cfg.virtualWidth > 0 && cfg.virtualHeight > 0)
+        {
+            // Fall back to virtual viewport aspect when no fit object was
+            // specified / found.
+            h = Mathf.Max(16,
+                Mathf.RoundToInt(w * ((float)cfg.virtualHeight / cfg.virtualWidth)));
+        }
+        capturedWidth = w; capturedHeight = h;
+        RenderTexture rt = RenderTexture.GetTemporary(w, h, 24, RenderTextureFormat.ARGB32);
+        rt.antiAliasing = 1;
+
+        // Snapshot camera state we may mutate during capture.
+        CameraClearFlags prevClear = cam.clearFlags;
+        Color prevBg = cam.backgroundColor;
+        RenderTexture prevTarget = cam.targetTexture;
+        RenderTexture prevActive = RenderTexture.active;
+        float prevOrthoSize = cam.orthographicSize;
+        Vector3 prevCamPos = cam.transform.position;
+
+        try
+        {
+            if (previewTransparent)
+            {
+                cam.clearFlags = CameraClearFlags.SolidColor;
+                cam.backgroundColor = new Color(0, 0, 0, 0);
+            }
+
+            // Frame the camera tightly on the fit object so the PNG fills
+            // edge-to-edge. orthographicSize = half-height of the bounds;
+            // camera position moves to the bounds center (preserving Z so
+            // depth ordering stays the same).
+            if (fitBounds.HasValue)
+            {
+                Bounds b = fitBounds.Value;
+                cam.orthographicSize = Mathf.Max(0.001f, b.size.y * 0.5f);
+                Vector3 framedPos = new Vector3(b.center.x, b.center.y, prevCamPos.z);
+                cam.transform.position = framedPos;
+            }
+
+            cam.targetTexture = rt;
+            cam.Render();
+
+            RenderTexture.active = rt;
+            Texture2D tex = new Texture2D(w, h,
+                previewTransparent ? TextureFormat.RGBA32 : TextureFormat.RGB24, false);
+            tex.ReadPixels(new Rect(0, 0, w, h), 0, 0);
+            tex.Apply();
+
+            byte[] png = tex.EncodeToPNG();
+            Object.DestroyImmediate(tex);
+
+            string fullPath = Path.Combine(levelDir, previewFilename).Replace("\\", "/");
+            File.WriteAllBytes(fullPath, png);
+            return fullPath;
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogWarning("[LevelExporter] Preview capture failed: " + e.Message);
+            return null;
+        }
+        finally
+        {
+            cam.targetTexture = prevTarget;
+            cam.clearFlags = prevClear;
+            cam.backgroundColor = prevBg;
+            cam.orthographicSize = prevOrthoSize;
+            cam.transform.position = prevCamPos;
+            RenderTexture.active = prevActive;
+            RenderTexture.ReleaseTemporary(rt);
+        }
+    }
+
+    /// <summary>
+    /// Find a renderer in the scene whose owning B_StaticObject /
+    /// B_InteractableObject has the given <paramref name="objectId"/> and
+    /// return its world-space bounds. Returns null if id is empty or no
+    /// match is found.
+    /// </summary>
+    private static Bounds? ResolveFitBounds(string objectId)
+    {
+        if (string.IsNullOrEmpty(objectId)) return null;
+
+        // Static first (typical case: "bg" is a static sprite).
+        foreach (var so in Object.FindObjectsByType<B_StaticObject>(
+                     FindObjectsInactive.Include, FindObjectsSortMode.None))
+        {
+            if (so.ObjectId != objectId) continue;
+            return GetRendererBounds(so.gameObject);
+        }
+        // Fall back to interactables.
+        foreach (var io in Object.FindObjectsByType<B_InteractableObject>(
+                     FindObjectsInactive.Include, FindObjectsSortMode.None))
+        {
+            if (io.ObjectId != objectId) continue;
+            return GetRendererBounds(io.gameObject);
+        }
+        Debug.LogWarning(
+            $"[LevelExporter] Fit-to-object: no B_StaticObject / B_InteractableObject " +
+            $"with objectId '{objectId}' found. Falling back to camera default framing.");
+        return null;
+    }
+
+    private static Bounds? GetRendererBounds(GameObject go)
+    {
+        if (go == null) return null;
+        SpriteRenderer sr = go.GetComponentInChildren<SpriteRenderer>();
+        if (sr != null && sr.sprite != null) return sr.bounds;
+        MeshRenderer mr = go.GetComponentInChildren<MeshRenderer>();
+        if (mr != null && mr.bounds.size != Vector3.zero) return mr.bounds;
+        return null;
     }
 
     // ---- Level root ------------------------------------------------
@@ -427,6 +657,7 @@ public class LevelExporterWindow : EditorWindow
                 ? ResolveInitialSkins(q.gameObject) : null,
             data = BuildObjectData(q.Data, q.VisualMode, errors),
             members = new List<GroupMemberJson>(),
+            tailFollowers = null, // populated below if non-empty
             slots = new List<Vec2Json>(),
             shiftDuration = q.ShiftDuration,
             shiftEase = q.ShiftEase.ToString(),
@@ -462,6 +693,55 @@ public class LevelExporterWindow : EditorWindow
                 Transform slot = q.Slots[i];
                 if (slot == null) continue;
                 j.slots.Add(WorldToPx(slot.position));
+            }
+        }
+
+        // Tail followers — characters that trail the line and shift up
+        // with every serve but are never themselves served.
+        if (q.TailFollowers != null && q.TailFollowers.Count > 0)
+        {
+            bool useSprite = q.VisualMode == VisualMode.Sprite;
+            j.tailFollowers = new List<GroupMemberJson>();
+            // Dedupe: skip nulls, duplicates within the followers list, and
+            // any GO that's already a regular member. Re-imports of an
+            // already-imported scene can leave the same follower wired in
+            // multiple times — exporting them all would multiply on each
+            // round-trip.
+            HashSet<GameObject> seen = new HashSet<GameObject>();
+            if (q.Members != null)
+                foreach (var m in q.Members)
+                    if (m != null) seen.Add(m);
+
+            for (int i = 0; i < q.TailFollowers.Count; i++)
+            {
+                GameObject f = q.TailFollowers[i];
+                if (f == null) continue;
+                if (!seen.Add(f)) continue; // duplicate of an earlier entry or a member
+
+                // If the follower is its own top-level B_InteractableObject,
+                // it's already exported (and will be spawned) in the
+                // interactables array. Just store the id reference here so
+                // the importer wires the existing GO into tailFollowers
+                // instead of spawning a duplicate child.
+                B_InteractableObject fObj = f.GetComponent<B_InteractableObject>();
+                if (fObj != null && !string.IsNullOrEmpty(fObj.ObjectId))
+                {
+                    j.tailFollowers.Add(new GroupMemberJson
+                    {
+                        objectIdRef = fObj.ObjectId,
+                    });
+                    continue;
+                }
+
+                SpriteRenderer sr = f.GetComponent<SpriteRenderer>();
+                Spine.Unity.SkeletonAnimation fSkel = f.GetComponent<Spine.Unity.SkeletonAnimation>();
+                j.tailFollowers.Add(new GroupMemberJson
+                {
+                    sprite = useSprite ? ResolveAssetPath(sr != null ? sr.sprite : null) : null,
+                    spineBasePath = useSprite ? null : EmptyToNull(ResolveSpineBasePath(fSkel)),
+                    position = WorldToPx(ResolveVisualPosition(f)),
+                    sortOrder = ResolveSortOrder(f),
+                });
             }
         }
 
@@ -1331,6 +1611,11 @@ public class LevelExporterWindow : EditorWindow
 
     private class GroupMemberJson
     {
+        // For tail followers only: if set, this entry references an existing
+        // top-level interactable by id instead of spawning a fresh child GO
+        // inside the queue. Members never use this (they're always queue
+        // children). Null/empty for anonymous (sprite/spine-only) followers.
+        public string objectIdRef;
         public string sprite;
         public string spineBasePath;
         public Vec2Json position;
@@ -1347,6 +1632,10 @@ public class LevelExporterWindow : EditorWindow
         public List<string> initialSkins;
         public ObjectDataJson data;
         public List<GroupMemberJson> members;
+        // Optional. Followers that trail the line and shift up with every
+        // serve but never get served. Follower i sits at slots[members.Count + i]
+        // at runtime, so as members shrink the followers walk up too.
+        public List<GroupMemberJson> tailFollowers;
         public List<Vec2Json> slots;
         public float shiftDuration;
         public string shiftEase;

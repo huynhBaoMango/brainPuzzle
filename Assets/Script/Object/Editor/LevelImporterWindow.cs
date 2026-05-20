@@ -660,6 +660,7 @@ public class LevelImporterWindow : EditorWindow
                     }
                 }
 
+                ApplyParentInitAnim(memberGo, grp);
                 membersProp.GetArrayElementAtIndex(i).objectReferenceValue = memberGo;
             }
             so.ApplyModifiedPropertiesWithoutUndo();
@@ -764,7 +765,79 @@ public class LevelImporterWindow : EditorWindow
                     }
                 }
 
+                ApplyParentInitAnim(memberGo, q);
                 membersProp.GetArrayElementAtIndex(i).objectReferenceValue = memberGo;
+            }
+            so.ApplyModifiedPropertiesWithoutUndo();
+        }
+
+        // Tail followers: same shape as members (sprite/spine) but stored
+        // in a separate list. They visually trail the line but never serve.
+        JArray followers = q["tailFollowers"] as JArray;
+        if (followers != null && followers.Count > 0)
+        {
+            so.Update();
+            SerializedProperty followersProp = so.FindProperty("tailFollowers");
+            followersProp.arraySize = followers.Count;
+
+            for (int i = 0; i < followers.Count; i++)
+            {
+                JToken m = followers[i];
+
+                // If the JSON points at a top-level interactable by id, wire
+                // the already-spawned GO into tailFollowers — don't spawn a
+                // duplicate child here. (Interactables spawn before queues,
+                // so idMap is already populated.)
+                string idRef = m["objectIdRef"]?.Value<string>();
+                if (!string.IsNullOrEmpty(idRef))
+                {
+                    if (idMap.TryGetValue(idRef, out GameObject existing) && existing != null)
+                    {
+                        followersProp.GetArrayElementAtIndex(i).objectReferenceValue = existing;
+                    }
+                    else
+                    {
+                        warnings.Add($"Tail follower '{idRef}' not found in interactables — queue '{qid}' will reference null.");
+                    }
+                    continue;
+                }
+
+                string mSpritePath = m["sprite"]?.Value<string>();
+                string mSpineBase = m["spineBasePath"]?.Value<string>();
+
+                GameObject fGo = new GameObject($"follower_{i}");
+                Undo.RegisterCreatedObjectUndo(fGo, "Import Queue Follower");
+                fGo.transform.SetParent(go.transform, false);
+
+                float fx = m["position"]?["x"]?.Value<float>() ?? 0f;
+                float fy = m["position"]?["y"]?.Value<float>() ?? 0f;
+                fGo.transform.position = new Vector3(fx / ppu, fy / ppu, 0f);
+
+                if (!string.IsNullOrEmpty(mSpineBase))
+                {
+                    var dataAsset = ResolveSkeletonDataAsset(mSpineBase, warnings);
+                    if (dataAsset != null)
+                    {
+                        Spine.Unity.SkeletonRenderer
+                            .AddSpineComponent<Spine.Unity.SkeletonAnimation>(fGo, dataAsset);
+                        if (fGo.GetComponent<MeshRenderer>() is MeshRenderer mr)
+                            mr.sortingOrder = m["sortOrder"]?.Value<int>() ?? 0;
+                    }
+                }
+                else
+                {
+                    SpriteRenderer msr = fGo.AddComponent<SpriteRenderer>();
+                    msr.sortingOrder = m["sortOrder"]?.Value<int>() ?? 0;
+                    if (!string.IsNullOrEmpty(mSpritePath))
+                    {
+                        string mResolved = ResolveImportPath(mSpritePath);
+                        Sprite sprite = LoadOrFixSprite(mResolved, 100f);
+                        if (sprite != null) msr.sprite = sprite;
+                        else warnings.Add($"Tail follower sprite not found: \"{mSpritePath}\" → looked up at \"{mResolved}\"");
+                    }
+                }
+
+                followersProp.GetArrayElementAtIndex(i).objectReferenceValue = fGo;
             }
             so.ApplyModifiedPropertiesWithoutUndo();
         }
@@ -1598,6 +1671,34 @@ public class LevelImporterWindow : EditorWindow
     /// spawned GameObject and populate its list. Awake on the component
     /// will combine and apply at runtime.
     /// </summary>
+    /// <summary>
+    /// Applies the queue/group's authored init animation (stored on its
+    /// `data` block, since the queue/group itself has no skeleton) to a
+    /// member GameObject. Sets the SkeletonAnimation's inspector fields
+    /// (AnimationName + loop) so the value persists in the scene — calling
+    /// PlaySpineAnim alone would only set runtime state and the field would
+    /// stay blank on next Play. Tail followers are NOT touched here; they
+    /// keep their own authored animation.
+    /// </summary>
+    private static void ApplyParentInitAnim(GameObject memberGo, JToken parent)
+    {
+        if (memberGo == null || parent == null) return;
+        var skel = memberGo.GetComponent<Spine.Unity.SkeletonAnimation>();
+        if (skel == null) return;
+        JToken data = parent["data"];
+        if (data == null) return;
+        string anim = data["initSpineAnim"]?.Value<string>();
+        if (string.IsNullOrEmpty(anim)) return;
+        bool loop = data["initSpineLoop"]?.Value<bool>() ?? true;
+
+        SerializedObject sso = new SerializedObject(skel);
+        SerializedProperty animProp = sso.FindProperty("_animationName");
+        if (animProp != null) animProp.stringValue = anim;
+        SerializedProperty loopProp = sso.FindProperty("loop");
+        if (loopProp != null) loopProp.boolValue = loop;
+        sso.ApplyModifiedPropertiesWithoutUndo();
+    }
+
     private static void ApplyInitialSkins(GameObject go, JToken json)
     {
         if (go == null) return;
@@ -1801,15 +1902,33 @@ public class LevelImporterWindow : EditorWindow
             FindObjectsInactive.Include, FindObjectsSortMode.None))
             Undo.DestroyObjectImmediate(obj.gameObject);
 
-        foreach (var grp in Object.FindObjectsByType<B_InteractableGroup>(
-            FindObjectsInactive.Include, FindObjectsSortMode.None))
-            Undo.DestroyObjectImmediate(grp.gameObject);
-
         // Queues — added to cleanup so re-importing doesn't leave stale
-        // queues alongside freshly-spawned ones.
+        // queues alongside freshly-spawned ones. Members and tail followers
+        // are usually children of the queue GO, but some scenes author them
+        // as top-level siblings referenced via the queue's lists. Destroy
+        // referenced GOs explicitly so siblings don't survive into the
+        // re-import as duplicates.
         foreach (var q in Object.FindObjectsByType<B_InteractableQueue>(
             FindObjectsInactive.Include, FindObjectsSortMode.None))
+        {
+            if (q.Members != null)
+                foreach (var m in q.Members)
+                    if (m != null) Undo.DestroyObjectImmediate(m);
+            if (q.TailFollowers != null)
+                foreach (var f in q.TailFollowers)
+                    if (f != null) Undo.DestroyObjectImmediate(f);
             Undo.DestroyObjectImmediate(q.gameObject);
+        }
+
+        // Groups too — same sibling-vs-child concern for their members.
+        foreach (var grp in Object.FindObjectsByType<B_InteractableGroup>(
+            FindObjectsInactive.Include, FindObjectsSortMode.None))
+        {
+            if (grp.Members != null)
+                foreach (var m in grp.Members)
+                    if (m != null) Undo.DestroyObjectImmediate(m);
+            Undo.DestroyObjectImmediate(grp.gameObject);
+        }
 
         foreach (var st in Object.FindObjectsByType<B_StaticObject>(
             FindObjectsInactive.Include, FindObjectsSortMode.None))

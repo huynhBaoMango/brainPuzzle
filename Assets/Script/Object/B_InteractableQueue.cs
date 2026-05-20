@@ -48,8 +48,17 @@ public class B_InteractableQueue : MonoBehaviour
 
     [Tooltip("Slot anchor transforms. slots[i] is where members[i] stands. " +
              "slots[0] is the 'head' position where the drop zone typically sits. " +
-             "If fewer slots than members, excess members are not auto-repositioned.")]
+             "If you have tail followers, slots must be long enough to cover " +
+             "members.Count + tailFollowers.Count (the followers occupy the " +
+             "trailing slots).")]
     [SerializeField] private List<Transform> slots = new List<Transform>();
+
+    [Tooltip("Optional. GameObjects that sit BEHIND the line and shift up with " +
+             "every serve, but are never themselves served. Use for a character " +
+             "that visually trails the queue (e.g. a princess walking behind a " +
+             "line of beggars). Follower i stands at slots[members.Count + i] " +
+             "at any given time, so as members shrink, followers move up too.")]
+    [SerializeField] private List<GameObject> tailFollowers = new List<GameObject>();
 
     [Tooltip("If true, members snap to their slot positions on Awake so authoring can be sloppy.")]
     [SerializeField] private bool snapMembersToSlotsOnStart = true;
@@ -101,6 +110,7 @@ public class B_InteractableQueue : MonoBehaviour
     public ObjectData Data => data;
     public List<GameObject> Members => members;
     public List<Transform> Slots => slots;
+    public List<GameObject> TailFollowers => tailFollowers;
     public VisualMode VisualMode => visualMode;
     public float ShiftDuration => shiftDuration;
     public Ease ShiftEase => shiftEase;
@@ -117,12 +127,89 @@ public class B_InteractableQueue : MonoBehaviour
         ApplyVisualModeToMembers();
     }
 
+    // Delta-based shift state. Captured once at Awake.
+    // - followerInitialPositions[i]: where the follower's transform was
+    //   when the scene loaded — i.e. wherever the designer placed her.
+    //   We don't move her at start; we just remember this point.
+    // - initialMemberCount: members.Count at Awake (after CleanNulls).
+    //   Used to compute how many "slot steps" the queue has advanced.
+    //
+    // On every shift, the follower's transform moves by exactly
+    // (SlotPosClamped(currentSlotIdx) - SlotPosClamped(initialSlotIdx)) —
+    // so her visual relationship to the line is preserved no matter what
+    // her bone / collider / pivot offset is. Authoring rule: place her
+    // visually where you want her initial position; the queue handles
+    // the rest.
+    private Vector3[] followerInitialPositions;
+    private int initialMemberCount;
+
     private void Awake()
     {
         ApplyVisualModeToMembers();
         CleanNulls();
+        CaptureFollowerOffsets();
         if (snapMembersToSlotsOnStart) SnapToSlots();
         if (!string.IsNullOrEmpty(queueId)) registry[queueId] = this;
+    }
+
+    private void CaptureFollowerOffsets()
+    {
+        initialMemberCount = members != null ? members.Count : 0;
+        if (tailFollowers == null || tailFollowers.Count == 0)
+        {
+            followerInitialPositions = null;
+            return;
+        }
+        followerInitialPositions = new Vector3[tailFollowers.Count];
+        for (int i = 0; i < tailFollowers.Count; i++)
+        {
+            GameObject f = tailFollowers[i];
+            followerInitialPositions[i] = f != null
+                ? f.transform.position : Vector3.zero;
+        }
+    }
+
+    /// <summary>
+    /// Returns the position of slot[idx], extrapolating past the array
+    /// using the last two slots' delta when the index runs out of range.
+    /// </summary>
+    private Vector3 SlotPosClamped(int idx)
+    {
+        if (slots == null || slots.Count == 0) return Vector3.zero;
+        if (idx < 0) idx = 0;
+        if (idx < slots.Count)
+        {
+            Transform s = slots[idx];
+            return s != null ? s.position : Vector3.zero;
+        }
+        Transform last = slots[slots.Count - 1];
+        if (last == null) return Vector3.zero;
+        if (slots.Count < 2) return last.position;
+        Transform prev = slots[slots.Count - 2];
+        if (prev == null) return last.position;
+        Vector3 step = last.position - prev.position;
+        return last.position + step * (idx - (slots.Count - 1));
+    }
+
+    /// <summary>
+    /// Where follower <paramref name="i"/>'s transform should sit RIGHT NOW.
+    /// Returns the authored initial position offset by the slot-delta
+    /// accumulated since Awake. The follower's bone / collider / pivot
+    /// offset is implicitly preserved because we never move her relative
+    /// to her authored position — only by the same vector every member
+    /// would shift.
+    /// </summary>
+    private Vector3 ComputeFollowerTargetPos(int i)
+    {
+        if (followerInitialPositions == null || i >= followerInitialPositions.Length)
+            return Vector3.zero;
+
+        int currentMemberCount = members != null ? members.Count : 0;
+        int initialSlotIdx = initialMemberCount + i;
+        int currentSlotIdx = currentMemberCount + i;
+
+        Vector3 slotDelta = SlotPosClamped(currentSlotIdx) - SlotPosClamped(initialSlotIdx);
+        return followerInitialPositions[i] + slotDelta;
     }
 
     private void OnDestroy()
@@ -182,14 +269,28 @@ public class B_InteractableQueue : MonoBehaviour
 
     private void SnapToSlots()
     {
-        if (members == null || slots == null) return;
-        int n = Mathf.Min(members.Count, slots.Count);
-        for (int i = 0; i < n; i++)
+        if (slots == null) return;
+        int memberN = members != null ? Mathf.Min(members.Count, slots.Count) : 0;
+        for (int i = 0; i < memberN; i++)
         {
             if (members[i] == null || slots[i] == null) continue;
             Vector3 p = slots[i].position;
             p.z = members[i].transform.position.z;
             members[i].transform.position = p;
+        }
+
+        // Tail followers — preserve each one's authored position and
+        // only apply the slot DELTA accumulated since Awake. This keeps
+        // the visual position consistent across spine/sprite/whatever
+        // and tolerates short slot arrays gracefully.
+        if (tailFollowers == null) return;
+        for (int i = 0; i < tailFollowers.Count; i++)
+        {
+            GameObject f = tailFollowers[i];
+            if (f == null) continue;
+            Vector3 p = ComputeFollowerTargetPos(i);
+            p.z = f.transform.position.z;
+            f.transform.position = p;
         }
     }
 
@@ -320,12 +421,11 @@ public class B_InteractableQueue : MonoBehaviour
 
     private IEnumerator ShiftUp()
     {
-        if (members == null || members.Count == 0 || slots == null || slots.Count == 0)
-            yield break;
+        if (slots == null || slots.Count == 0) yield break;
 
         List<Tween> tweens = new List<Tween>();
-        int n = Mathf.Min(members.Count, slots.Count);
-        for (int i = 0; i < n; i++)
+        int memberN = members != null ? Mathf.Min(members.Count, slots.Count) : 0;
+        for (int i = 0; i < memberN; i++)
         {
             GameObject m = members[i];
             Transform dest = slots[i];
@@ -338,6 +438,25 @@ public class B_InteractableQueue : MonoBehaviour
             else
                 m.transform.position = p;
         }
+
+        // Tail followers — delta-based shift from their authored
+        // initial position. Tolerates short slot arrays (clamps to last
+        // valid slot, so they hold position until members thin enough).
+        if (tailFollowers != null)
+        {
+            for (int i = 0; i < tailFollowers.Count; i++)
+            {
+                GameObject f = tailFollowers[i];
+                if (f == null) continue;
+                Vector3 p = ComputeFollowerTargetPos(i);
+                p.z = f.transform.position.z;
+                if (shiftDuration > 0f)
+                    tweens.Add(f.transform.DOMove(p, shiftDuration).SetEase(shiftEase));
+                else
+                    f.transform.position = p;
+            }
+        }
+
         for (int i = 0; i < tweens.Count; i++)
             if (tweens[i] != null) yield return tweens[i].WaitForCompletion();
     }
