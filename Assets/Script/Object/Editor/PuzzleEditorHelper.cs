@@ -145,6 +145,31 @@ public static class PuzzleEditorHelper
         return result;
     }
 
+    /// <summary>
+    /// Returns the bone names of the SkeletonAnimation on <paramref name="go"/>
+    /// or any of its children (e.g. the man's skeleton). Used by the
+    /// AttachToBone action drawer to populate the Bone Name dropdown from the
+    /// referenced Bone Source object. Empty array if no skeleton/bones.
+    /// </summary>
+    public static string[] GetSpineBoneNamesForObject(GameObject go)
+    {
+        if (go == null) return new string[0];
+
+        var skel = go.GetComponentInChildren<Spine.Unity.SkeletonAnimation>();
+        if (skel == null || skel.SkeletonDataAsset == null) return new string[0];
+
+        var sd = skel.SkeletonDataAsset.GetSkeletonData(true);
+        if (sd == null) return new string[0];
+
+        var names = new SortedSet<string>();
+        foreach (var bone in sd.Bones)
+            if (!string.IsNullOrEmpty(bone.Name)) names.Add(bone.Name);
+
+        string[] result = new string[names.Count];
+        names.CopyTo(result);
+        return result;
+    }
+
     // ================================================================
     //  OWNER VISUAL MODE
     // ================================================================

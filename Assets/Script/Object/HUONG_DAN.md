@@ -202,6 +202,26 @@ Lặp với áo (`Ao`) và túi (`Tui`).
 Đổi op thành `Toggle` nếu muốn mặc lại được.
 
 
+### 5b. Gắn vật theo xương Spine (AttachToBone) — "xô nước dính tay người"
+
+Kéo `bucket` thả vào tay người (drop zone trên tay), rồi xô đi theo tay khi
+người cử động:
+
+Object `bucket`, DRAG state (Required Zone = `man_hand`):
+- Action: `AttachToBone`
+  - **Bone Source**: object người (có SkeletonAnimation)
+  - **Bone Name**: chọn xương từ dropdown (vd `hand_R`) — sau khi gán Bone Source
+  - **Keep Offset**: bật để xô giữ đúng vị trí lúc thả (mặc định bật)
+  - **Subject**: để trống = chính `bucket`
+
+Khi muốn thả xô ra (vd người đặt xuống): dùng action `DetachFromBone`
+(Subject để trống = self). Xô về parent cũ, đứng yên tại chỗ.
+
+> Lưu ý: dùng Spine `BoneFollower` ở dưới — runtime tạo anchor tạm, không
+> ghi vào JSON dạng object. Action thì có round-trip. LibGDX cần tự follow
+> xương (Bone.getWorldX/Y + worldRotationX).
+
+
 ## 6. Object tự xuất hiện khi đủ điều kiện
 
 State `flower.bloomed`:
@@ -211,6 +231,22 @@ State `flower.bloomed`:
   - water.poured → done
   - fertilizer.applied → done
 - Actions: `DoAnimation(bloom)`
+
+
+### 6b. Mốc đếm (Required Count) — "cho ăn đủ N món thì lớn lên"
+
+`Required Count` (trên mỗi State):
+- `0` (mặc định) = phải đủ **TẤT CẢ** Requirements (như cũ).
+- `> 0` = fire khi có **ít nhất** N Requirements thỏa.
+
+Ví dụ: ông `man` có drop zone, nhiều món ăn kéo thả vào (mỗi món 1 state
+`eaten` trigger `DRAG`). Trên `man` thêm các state `REQUIREMENT_MET`,
+cùng 1 list Requirements (tất cả món `eaten`) nhưng `Required Count` tăng dần:
+
+- `grow_1`: Required Count = 3 → `ScaleTo(1.3)`
+- `grow_2`: Required Count = 6 → `ScaleTo(1.6)`
+
+Ăn tới món thứ 3 → lớn lần 1; món thứ 6 → lớn lần 2. Mỗi mốc fire 1 lần.
 
 
 ## 7. Win / Lose UI + Replay

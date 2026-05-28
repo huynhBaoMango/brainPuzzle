@@ -267,6 +267,25 @@ public class B_InteractableQueue : MonoBehaviour
         return false;
     }
 
+    /// <summary>
+    /// Raw "has this serve-state fired at least once" check, WITHOUT the
+    /// empty-queue gate that <see cref="IsStateDone"/> applies. Used by
+    /// milestone counting (Required Count > 0) so partial progress is
+    /// visible as members are served one by one — e.g. "after 3 foods fed"
+    /// fires on the 3rd serve instead of only once the whole queue empties.
+    /// </summary>
+    public bool HasStateFired(string stateId)
+    {
+        if (data == null || data.states == null || string.IsNullOrEmpty(stateId))
+            return false;
+        for (int i = 0; i < data.states.Count; i++)
+        {
+            ObjectState st = data.states[i];
+            if (st != null && st.stateId == stateId) return st.isDone;
+        }
+        return false;
+    }
+
     private void SnapToSlots()
     {
         if (slots == null) return;
@@ -609,6 +628,21 @@ public class B_InteractableQueue : MonoBehaviour
                     t.localScale = dest;
                 break;
             }
+
+            case StateActionType.AttachToBone:
+            {
+                if (a.boneSource != null && !string.IsNullOrEmpty(a.boneName))
+                {
+                    var skel = a.boneSource.GetComponentInChildren<Spine.Unity.SkeletonAnimation>();
+                    if (skel != null && subject != null)
+                        B_BoneAttachment.Attach(subject.transform, skel, a.boneName, a.keepBoneOffset);
+                }
+                break;
+            }
+
+            case StateActionType.DetachFromBone:
+                if (subject != null) B_BoneAttachment.Detach(subject.transform);
+                break;
         }
     }
 

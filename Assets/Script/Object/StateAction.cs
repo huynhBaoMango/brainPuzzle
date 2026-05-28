@@ -19,6 +19,8 @@ public enum StateActionType
     PlaySFX,
     SkinChange,
     ScaleTo,
+    AttachToBone,
+    DetachFromBone,
 }
 
 /// <summary>
@@ -125,4 +127,15 @@ public class StateAction
 
     [Tooltip("Operation to apply to the named skin: Add inserts, Remove takes out, Toggle flips current state.")]
     public SkinOp skinOp = SkinOp.Toggle;
+
+    // ---- AttachToBone / DetachFromBone ----
+
+    [Tooltip("AttachToBone: the spine object whose bone the subject follows (e.g. the man). The SUBJECT that gets attached is 'Target Object' if set, otherwise the object owning this state (e.g. the dragged bucket).")]
+    public GameObject boneSource;
+
+    [Tooltip("AttachToBone: bone name on the Bone Source's skeleton to follow (e.g. hand_R). Pick it from the dropdown once Bone Source is assigned.")]
+    public string boneName;
+
+    [Tooltip("AttachToBone: if true, keep the subject's current offset from the bone at attach time (it stays where it was dropped and rides the bone). If false, the subject's pivot snaps exactly onto the bone.")]
+    public bool keepBoneOffset = true;
 }

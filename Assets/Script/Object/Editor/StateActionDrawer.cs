@@ -54,6 +54,12 @@ public class StateActionDrawer : PropertyDrawer
         {
             DrawField(ref y, position, property, "actionTarget", "Target Object (optional)", draw);
         }
+        // Attach/Detach use actionTarget as the optional SUBJECT (default self).
+        else if (type == StateActionType.AttachToBone
+                 || type == StateActionType.DetachFromBone)
+        {
+            DrawField(ref y, position, property, "actionTarget", "Subject (optional, default self)", draw);
+        }
 
         switch (type)
         {
@@ -111,6 +117,16 @@ public class StateActionDrawer : PropertyDrawer
                 DrawField(ref y, position, property, "scaleTarget", "Target Scale", draw);
                 DrawField(ref y, position, property, "duration", "Duration (s)", draw);
                 DrawField(ref y, position, property, "ease", "Ease", draw);
+                break;
+
+            case StateActionType.AttachToBone:
+                DrawField(ref y, position, property, "boneSource", "Bone Source (spine obj)", draw);
+                DrawBoneNamePopup(ref y, position, property, draw);
+                DrawField(ref y, position, property, "keepBoneOffset", "Keep Offset", draw);
+                break;
+
+            case StateActionType.DetachFromBone:
+                // Subject only (drawn above as actionTarget).
                 break;
         }
 
@@ -253,6 +269,44 @@ public class StateActionDrawer : PropertyDrawer
         y += h + EditorGUIUtility.standardVerticalSpacing;
     }
 
+    // Draws a Bone Name popup filtered by the boneSource's skeleton bones.
+    private void DrawBoneNamePopup(ref float y, Rect position,
+                                   SerializedProperty property, bool draw)
+    {
+        SerializedProperty boneNameProp = property.FindPropertyRelative("boneName");
+        if (boneNameProp == null) return;
+
+        float h = EditorGUIUtility.singleLineHeight;
+        if (draw)
+        {
+            Rect rect = new Rect(position.x, y, position.width, h);
+
+            Object srcObj = property.FindPropertyRelative("boneSource").objectReferenceValue;
+            string[] bones = PuzzleEditorHelper.GetSpineBoneNamesForObject(srcObj as GameObject);
+
+            if (bones != null && bones.Length > 0)
+            {
+                EditorGUI.LabelField(
+                    new Rect(rect.x, rect.y, EditorGUIUtility.labelWidth, rect.height),
+                    new GUIContent("Bone Name"));
+                Rect popupRect = new Rect(
+                    rect.x + EditorGUIUtility.labelWidth, rect.y,
+                    rect.width - EditorGUIUtility.labelWidth, rect.height);
+                PuzzleEditorHelper.StringPopupField(popupRect, boneNameProp, bones, "(none)");
+            }
+            else
+            {
+                EditorGUI.BeginDisabledGroup(true);
+                EditorGUI.TextField(rect, "Bone Name",
+                    srcObj == null
+                        ? "(assign Bone Source first)"
+                        : "(no skeleton / no bones on source)");
+                EditorGUI.EndDisabledGroup();
+            }
+        }
+        y += h + EditorGUIUtility.standardVerticalSpacing;
+    }
+
     // Compact summary shown when the action is collapsed.
     private string MakeHeader(SerializedProperty property)
     {
@@ -355,6 +409,24 @@ public class StateActionDrawer : PropertyDrawer
                 {
                     float s = property.FindPropertyRelative("scaleTarget").floatValue;
                     summary = $"ScaleTo  →  {s:0.##}×  ({dur:0.##}s)";
+                    break;
+                }
+
+            case StateActionType.AttachToBone:
+                {
+                    Object src = property.FindPropertyRelative("boneSource").objectReferenceValue;
+                    string bone = property.FindPropertyRelative("boneName").stringValue;
+                    string srcName = src != null ? src.name : "<no source>";
+                    if (string.IsNullOrEmpty(bone)) bone = "<no bone>";
+                    summary = $"AttachToBone  →  {srcName}.{bone}";
+                    break;
+                }
+
+            case StateActionType.DetachFromBone:
+                {
+                    Object subj = property.FindPropertyRelative("actionTarget").objectReferenceValue;
+                    string subjName = subj != null ? subj.name : "self";
+                    summary = $"DetachFromBone  ({subjName})";
                     break;
                 }
 

@@ -943,6 +943,7 @@ public class LevelExporterWindow : EditorWindow
             stateSfx = ResolveAssetPath(s.stateSFX),
             trigger = s.trigger.ToString(),
             requiredZoneId = EmptyToNull(s.requiredZoneId),
+            requiredCount = s.requiredCount,
             requirements = new List<StateRequirementJson>(),
             actions = new List<StateActionJson>(),
             successMessageKey = EmptyToNull(s.successMessageKey),
@@ -985,6 +986,10 @@ public class LevelExporterWindow : EditorWindow
             case StateActionType.Appear:
             case StateActionType.DoAnimation:
             case StateActionType.ScaleTo:
+            // Attach/Detach use actionTarget as the optional SUBJECT override
+            // (default = the object owning the state).
+            case StateActionType.AttachToBone:
+            case StateActionType.DetachFromBone:
                 return true;
             default:
                 return false;
@@ -1076,6 +1081,17 @@ public class LevelExporterWindow : EditorWindow
             case StateActionType.ScaleTo:
                 j.scaleTarget = a.scaleTarget;
                 j.ease = a.ease.ToString();
+                break;
+
+            case StateActionType.AttachToBone:
+                if (a.boneSource != null)
+                    j.boneSourceObjectId = ResolveObjectId(a.boneSource, errors);
+                j.boneName = EmptyToNull(a.boneName);
+                j.keepBoneOffset = a.keepBoneOffset;
+                break;
+
+            case StateActionType.DetachFromBone:
+                // Subject only — carried by actionTargetId (or self).
                 break;
         }
 
@@ -1514,6 +1530,9 @@ public class LevelExporterWindow : EditorWindow
         public string stateSfx;
         public string trigger;
         public string requiredZoneId;
+        // Milestone counter. 0 = require ALL requirements (omitted from JSON).
+        // >0 = fire when at least this many requirements are met.
+        [System.ComponentModel.DefaultValue(0)] public int requiredCount;
         public List<StateRequirementJson> requirements;
         public List<StateActionJson> actions;
         public string successMessageKey;
@@ -1585,6 +1604,13 @@ public class LevelExporterWindow : EditorWindow
         // it were a plain float, every action would carry a redundant
         // "scaleTarget": 0.0 from C#'s zero-init on existing scenes.)
         public float? scaleTarget;
+
+        // AttachToBone — id of the spine object whose bone the subject follows,
+        // the bone name, and whether to keep the subject's offset at attach
+        // time. Nullable keepBoneOffset so it only emits for AttachToBone.
+        public string boneSourceObjectId;
+        public string boneName;
+        public bool? keepBoneOffset;
     }
 
     private class ColliderJson

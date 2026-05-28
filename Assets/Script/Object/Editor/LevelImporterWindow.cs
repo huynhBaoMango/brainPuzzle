@@ -1131,6 +1131,11 @@ public class LevelImporterWindow : EditorWindow
         if (repeatProp != null)
             repeatProp.boolValue = json["repeatable"]?.Value<bool>() ?? false;
 
+        // requiredCount (milestone counter; absent → 0 = require all)
+        SerializedProperty reqCountProp = stateProp.FindPropertyRelative("requiredCount");
+        if (reqCountProp != null)
+            reqCountProp.intValue = json["requiredCount"]?.Value<int>() ?? 0;
+
         // Sprites
         string stateSprPath = json["stateSprite"]?.Value<string>();
         if (!string.IsNullOrEmpty(stateSprPath))
@@ -1445,6 +1450,33 @@ public class LevelImporterWindow : EditorWindow
                 }
                 break;
             }
+
+            case StateActionType.AttachToBone:
+            {
+                SetString(actionProp, "boneName", json["boneName"]);
+
+                SerializedProperty koProp = actionProp.FindPropertyRelative("keepBoneOffset");
+                if (koProp != null)
+                    koProp.boolValue = json["keepBoneOffset"]?.Value<bool>() ?? true;
+
+                // boneSource — deferred (idMap → GameObject) in second pass.
+                string bsId = json["boneSourceObjectId"]?.Value<string>();
+                if (!string.IsNullOrEmpty(bsId))
+                {
+                    pendingRefs.Add(new PendingRef
+                    {
+                        so = parentSo,
+                        actionPath = actionPath,
+                        fieldName = "boneSource",
+                        targetId = bsId,
+                    });
+                }
+                break;
+            }
+
+            case StateActionType.DetachFromBone:
+                // Subject only — carried by actionTargetId (handled above).
+                break;
         }
     }
 
@@ -1590,6 +1622,19 @@ public class LevelImporterWindow : EditorWindow
                             p.objectReferenceValue = interactable;
                         else if (interactable == null)
                             warnings.Add($"SkinChange target '{pref.targetId}' has no B_InteractableObject component.");
+                    }
+                    break;
+                }
+
+                case "boneSource":
+                {
+                    // boneSource is a plain GameObject reference (the spine
+                    // object whose bone we follow — interactable OR static).
+                    GameObject target = FindInIdMap(pref.targetId, warnings);
+                    if (target != null)
+                    {
+                        SerializedProperty p = actionProp.FindPropertyRelative("boneSource");
+                        if (p != null) p.objectReferenceValue = target;
                     }
                     break;
                 }

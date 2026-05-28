@@ -42,6 +42,9 @@ public class ObjectState
     [Tooltip("Other states (on this or any other object) that must already be done before this state can activate. All requirements are AND-ed.")]
     public List<StateRequirement> requirements;
 
+    [Tooltip("Milestone counter. 0 (default) = ALL Requirements must be met (normal AND logic). If > 0, this state fires when AT LEAST this many of the Requirements above are met — use for 'after N foods eaten' style milestones. Add several REQUIREMENT_MET states sharing the same Requirements list but with increasing Required Count for progressive milestones.")]
+    public int requiredCount;
+
     [Header("Actions")]
     [Tooltip("Structured side-effects that run in order when this state activates. Player input is locked until they finish.")]
     public List<StateAction> actions;

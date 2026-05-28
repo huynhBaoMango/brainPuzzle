@@ -818,31 +818,68 @@ public class B_InteractableObject : MonoBehaviour
 
     private bool RequirementsMet(ObjectState target)
     {
-        if (target.requirements == null || target.requirements.Count == 0) return true;
+        List<StateRequirement> reqs = target.requirements;
+        if (reqs == null || reqs.Count == 0) return true;
 
-        for (int i = 0; i < target.requirements.Count; i++)
+        // requiredCount > 0 = milestone mode: fire when AT LEAST that many
+        // of the requirements are met. Otherwise (0) it's the normal AND.
+        bool countMode = target.requiredCount > 0;
+        int met = 0;
+
+        for (int i = 0; i < reqs.Count; i++)
         {
-            StateRequirement req = target.requirements[i];
+            StateRequirement req = reqs[i];
             if (string.IsNullOrEmpty(req.objectId)) continue;
 
-            bool done;
-            B_InteractableObject other = Find(req.objectId);
-            if (other != null)
+            bool isMet = IsRequirementSatisfied(req, countMode);
+            if (countMode)
             {
-                done = other.IsStateDone(req.stateId);
+                if (isMet) met++;
             }
-            else
+            else if (!isMet)
             {
-                // Fall back to queues so requirements can reference queueIds.
-                B_InteractableQueue queue = B_InteractableQueue.Find(req.objectId);
-                if (queue == null) return false;
-                done = queue.IsStateDone(req.stateId);
+                return false; // AND short-circuit (unchanged behavior)
             }
-
-            // requireNotDone=false → must be done. requireNotDone=true → must NOT be done.
-            if (req.requireNotDone ? done : !done) return false;
         }
-        return true;
+
+        return countMode ? met >= target.requiredCount : true;
+    }
+
+    /// <summary>
+    /// Evaluates a single requirement: resolves the referenced state's done
+    /// flag (interactable first, then queue fallback) and applies the
+    /// requireNotDone inversion. A target that can't be found counts as
+    /// "not satisfied".
+    ///
+    /// In <paramref name="countMode"/> (milestone counting), queue
+    /// requirements use the raw per-serve "has fired" flag
+    /// (<see cref="B_InteractableQueue.HasStateFired"/>) instead of the
+    /// empty-gated <see cref="B_InteractableQueue.IsStateDone"/>, so partial
+    /// progress is counted as members are served. Interactable states are
+    /// already raw, so this only affects queue targets.
+    /// </summary>
+    public static bool IsRequirementSatisfied(StateRequirement req, bool countMode = false)
+    {
+        if (string.IsNullOrEmpty(req.objectId)) return false;
+
+        bool done;
+        B_InteractableObject other = Find(req.objectId);
+        if (other != null)
+        {
+            done = other.IsStateDone(req.stateId);
+        }
+        else
+        {
+            // Fall back to queues so requirements can reference queueIds.
+            B_InteractableQueue queue = B_InteractableQueue.Find(req.objectId);
+            if (queue == null) return false;
+            done = countMode
+                ? queue.HasStateFired(req.stateId)
+                : queue.IsStateDone(req.stateId);
+        }
+
+        // requireNotDone=false → must be done. requireNotDone=true → must NOT be done.
+        return req.requireNotDone ? !done : done;
     }
 
     /// <summary>Marks the state as the new visual + starts its action coroutine.</summary>
@@ -1044,7 +1081,28 @@ public class B_InteractableObject : MonoBehaviour
             case StateActionType.ScaleTo:
                 yield return ActionScaleTo(a);
                 break;
+
+            case StateActionType.AttachToBone:
+                ApplyAttachToBone(a);
+                break;
+
+            case StateActionType.DetachFromBone:
+                B_BoneAttachment.Detach(ActionTransform(a));
+                break;
         }
+    }
+
+    /// <summary>
+    /// Attaches the action's subject (actionTarget, else self) to a bone of
+    /// the boneSource's Spine skeleton so it follows the bone. See
+    /// <see cref="B_BoneAttachment"/>.
+    /// </summary>
+    private void ApplyAttachToBone(StateAction a)
+    {
+        if (a.boneSource == null || string.IsNullOrEmpty(a.boneName)) return;
+        var skel = a.boneSource.GetComponentInChildren<Spine.Unity.SkeletonAnimation>();
+        if (skel == null) return;
+        B_BoneAttachment.Attach(ActionTransform(a), skel, a.boneName, a.keepBoneOffset);
     }
 
     private IEnumerator ActionScaleTo(StateAction a)

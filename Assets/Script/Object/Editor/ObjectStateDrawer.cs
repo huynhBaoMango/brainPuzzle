@@ -84,6 +84,7 @@ public class ObjectStateDrawer : PropertyDrawer
             
 
         DrawField(ref y, position, property, "requirements", "Requirements", draw);
+        DrawField(ref y, position, property, "requiredCount", "Required Count (0 = all)", draw);
         y += SectionPadding;
 
         // ---- Actions ----

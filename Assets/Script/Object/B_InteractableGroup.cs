@@ -349,29 +349,31 @@ public class B_InteractableGroup : MonoBehaviour
 
     private bool RequirementsMet(ObjectState target)
     {
-        if (target.requirements == null || target.requirements.Count == 0) return true;
-        for (int i = 0; i < target.requirements.Count; i++)
+        List<StateRequirement> reqs = target.requirements;
+        if (reqs == null || reqs.Count == 0) return true;
+
+        // requiredCount > 0 = milestone mode: fire when AT LEAST that many
+        // of the requirements are met. Otherwise (0) it's the normal AND.
+        bool countMode = target.requiredCount > 0;
+        int met = 0;
+
+        for (int i = 0; i < reqs.Count; i++)
         {
-            StateRequirement req = target.requirements[i];
+            StateRequirement req = reqs[i];
             if (string.IsNullOrEmpty(req.objectId)) continue;
 
-            bool done;
-            B_InteractableObject other = B_InteractableObject.Find(req.objectId);
-            if (other != null)
+            bool isMet = B_InteractableObject.IsRequirementSatisfied(req, countMode);
+            if (countMode)
             {
-                done = other.IsStateDone(req.stateId);
+                if (isMet) met++;
             }
-            else
+            else if (!isMet)
             {
-                // Fall back to queues so requirements can reference queueIds.
-                B_InteractableQueue queue = B_InteractableQueue.Find(req.objectId);
-                if (queue == null) return false;
-                done = queue.IsStateDone(req.stateId);
+                return false; // AND short-circuit (unchanged behavior)
             }
-
-            if (req.requireNotDone ? done : !done) return false;
         }
-        return true;
+
+        return countMode ? met >= target.requiredCount : true;
     }
 
     // ============================================================
@@ -612,6 +614,21 @@ public class B_InteractableGroup : MonoBehaviour
                     t.localScale = dest;
                 break;
             }
+
+            case StateActionType.AttachToBone:
+            {
+                if (a.boneSource != null && !string.IsNullOrEmpty(a.boneName))
+                {
+                    var skel = a.boneSource.GetComponentInChildren<Spine.Unity.SkeletonAnimation>();
+                    if (skel != null)
+                        B_BoneAttachment.Attach(ActionTransform(a), skel, a.boneName, a.keepBoneOffset);
+                }
+                break;
+            }
+
+            case StateActionType.DetachFromBone:
+                B_BoneAttachment.Detach(ActionTransform(a));
+                break;
         }
     }
 
