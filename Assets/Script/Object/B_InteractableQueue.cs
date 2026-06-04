@@ -348,6 +348,34 @@ public class B_InteractableQueue : MonoBehaviour
     }
 
     /// <summary>
+    /// Appends a GameObject to the END of the queue's member list. Reparents
+    /// it under the queue (so cleanup / shifting find it) and tweens it to
+    /// the tail slot. Tail slot index = new members.Count - 1, with
+    /// out-of-range indices extrapolated by <see cref="SlotPosClamped"/> so
+    /// you can keep enqueuing past the authored slot count.
+    /// Counterpart of <see cref="ServeHead"/>.
+    /// </summary>
+    public void AppendMember(GameObject member)
+    {
+        if (member == null) return;
+        if (members == null) members = new List<GameObject>();
+        CleanNulls();
+        if (members.Contains(member)) return; // idempotent
+
+        members.Add(member);
+        member.transform.SetParent(transform, true); // keep current world pose
+
+        int idx = members.Count - 1;
+        Vector3 dest = SlotPosClamped(idx);
+        dest.z = member.transform.position.z;
+
+        if (shiftDuration > 0f)
+            member.transform.DOMove(dest, shiftDuration).SetEase(shiftEase);
+        else
+            member.transform.position = dest;
+    }
+
+    /// <summary>
     /// Serves the head of the queue: plays the named state's visual / SFX /
     /// actions on members[0], removes it from the list, then tweens every
     /// remaining member up one slot. If <paramref name="stateId"/> is empty,
@@ -642,6 +670,11 @@ public class B_InteractableQueue : MonoBehaviour
 
             case StateActionType.DetachFromBone:
                 if (subject != null) B_BoneAttachment.Detach(subject.transform);
+                break;
+
+            case StateActionType.EnqueueMember:
+                if (a.queueTarget != null && subject != null)
+                    a.queueTarget.AppendMember(subject);
                 break;
         }
     }

@@ -990,6 +990,9 @@ public class LevelExporterWindow : EditorWindow
             // (default = the object owning the state).
             case StateActionType.AttachToBone:
             case StateActionType.DetachFromBone:
+            // EnqueueMember: actionTarget = the GameObject to add to the queue
+            // (default = self — the object whose state is firing).
+            case StateActionType.EnqueueMember:
                 return true;
             default:
                 return false;
@@ -1093,6 +1096,12 @@ public class LevelExporterWindow : EditorWindow
             case StateActionType.DetachFromBone:
                 // Subject only — carried by actionTargetId (or self).
                 break;
+
+            case StateActionType.EnqueueMember:
+                if (a.queueTarget != null)
+                    j.queueTargetId = EmptyToNull(a.queueTarget.QueueId);
+                // Subject (the GO to add) — carried by actionTargetId (or self).
+                break;
         }
 
         return j;
@@ -1154,8 +1163,12 @@ public class LevelExporterWindow : EditorWindow
             return;
         }
 
-        // Fall back to a literal viewport position in virtual pixels.
+        // Fall back to a literal viewport position in virtual pixels. Also
+        // capture the Z rotation so `rotateToMatchTarget` has something to
+        // tween toward on re-import (the anchor would otherwise spawn at
+        // identity rotation, making the tween a no-op).
         j.moveTargetPosition = WorldToPx(target.position);
+        j.moveTargetRotation = target.eulerAngles.z;
     }
 
     // ---- Drop zones -------------------------------------------------
@@ -1565,6 +1578,11 @@ public class LevelExporterWindow : EditorWindow
         public string moveTargetObjectId;
         public string moveTargetZoneId;
         public Vec2Json moveTargetPosition;
+        // Z rotation (degrees) of the literal-position anchor. Only written
+        // for the anchor fallback (object/zone refs carry their own rotation
+        // via their transform on import). Nullable so the field is omitted
+        // for every action / MoveTo that doesn't fall back to an anchor.
+        public float? moveTargetRotation;
         public string ease;
         public bool rotateToMatchTarget;
 

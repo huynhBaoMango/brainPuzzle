@@ -56,7 +56,8 @@ public class StateActionDrawer : PropertyDrawer
         }
         // Attach/Detach use actionTarget as the optional SUBJECT (default self).
         else if (type == StateActionType.AttachToBone
-                 || type == StateActionType.DetachFromBone)
+                 || type == StateActionType.DetachFromBone
+                 || type == StateActionType.EnqueueMember)
         {
             DrawField(ref y, position, property, "actionTarget", "Subject (optional, default self)", draw);
         }
@@ -127,6 +128,10 @@ public class StateActionDrawer : PropertyDrawer
 
             case StateActionType.DetachFromBone:
                 // Subject only (drawn above as actionTarget).
+                break;
+
+            case StateActionType.EnqueueMember:
+                DrawField(ref y, position, property, "queueTarget", "Target Queue", draw);
                 break;
         }
 
@@ -381,6 +386,16 @@ public class StateActionDrawer : PropertyDrawer
                     summary = string.IsNullOrEmpty(sid)
                         ? $"AdvanceQueue  {name}"
                         : $"AdvanceQueue  {name}.{sid}";
+                    break;
+                }
+
+            case StateActionType.EnqueueMember:
+                {
+                    Object t = property.FindPropertyRelative("queueTarget").objectReferenceValue;
+                    Object subj = property.FindPropertyRelative("actionTarget").objectReferenceValue;
+                    string qName = t != null ? t.name : "<no queue>";
+                    string subjName = subj != null ? subj.name : "self";
+                    summary = $"EnqueueMember  {subjName}  →  {qName}";
                     break;
                 }
 

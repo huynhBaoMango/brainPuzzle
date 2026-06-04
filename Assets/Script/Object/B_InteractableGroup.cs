@@ -629,6 +629,10 @@ public class B_InteractableGroup : MonoBehaviour
             case StateActionType.DetachFromBone:
                 B_BoneAttachment.Detach(ActionTransform(a));
                 break;
+
+            case StateActionType.EnqueueMember:
+                if (a.queueTarget != null) a.queueTarget.AppendMember(ActionGO(a));
+                break;
         }
     }
 

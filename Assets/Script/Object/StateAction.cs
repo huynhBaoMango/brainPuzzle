@@ -21,6 +21,7 @@ public enum StateActionType
     ScaleTo,
     AttachToBone,
     DetachFromBone,
+    EnqueueMember,
 }
 
 /// <summary>

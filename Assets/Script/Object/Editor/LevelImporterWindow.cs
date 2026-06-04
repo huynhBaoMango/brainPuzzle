@@ -1304,6 +1304,11 @@ public class LevelImporterWindow : EditorWindow
                             : null;
                         anchor.transform.SetParent(ownerParent, false);
                         anchor.transform.position = worldPos;
+                        // Restore the authored Z rotation so `rotateToMatchTarget`
+                        // has a real target angle to tween toward. Absent
+                        // moveTargetRotation → 0° (matches old export behavior).
+                        float rotZ = json["moveTargetRotation"]?.Value<float>() ?? 0f;
+                        anchor.transform.eulerAngles = new Vector3(0f, 0f, rotZ);
 
                         SerializedProperty p = actionProp.FindPropertyRelative("moveTarget");
                         if (p != null)
@@ -1430,6 +1435,23 @@ public class LevelImporterWindow : EditorWindow
             case StateActionType.PlaySFX:
             {
                 AssignAudioClip(actionProp, "sfxClip", json["sfxClip"], warnings);
+                break;
+            }
+
+            case StateActionType.EnqueueMember:
+            {
+                // queueTarget — same deferred resolution path as AdvanceQueue.
+                string qTargetId = json["queueTargetId"]?.Value<string>();
+                if (!string.IsNullOrEmpty(qTargetId))
+                {
+                    pendingRefs.Add(new PendingRef
+                    {
+                        so = parentSo,
+                        actionPath = actionPath,
+                        fieldName = "queueTarget",
+                        targetId = qTargetId,
+                    });
+                }
                 break;
             }
 
