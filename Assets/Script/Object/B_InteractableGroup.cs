@@ -363,7 +363,13 @@ public class B_InteractableGroup : MonoBehaviour
             if (string.IsNullOrEmpty(req.objectId)) continue;
 
             bool isMet = B_InteractableObject.IsRequirementSatisfied(req, countMode);
-            if (countMode)
+
+            if (req.gate)
+            {
+                // Mandatory: must always be met. Does NOT count toward requiredCount.
+                if (!isMet) return false;
+            }
+            else if (countMode)
             {
                 if (isMet) met++;
             }

@@ -85,4 +85,7 @@ public struct StateRequirement
 
     [Tooltip("If true, the requirement passes only when the referenced state is NOT done (inverted check). Default false = requires the state to be done.")]
     public bool requireNotDone;
+
+    [Tooltip("If true, this requirement is a MANDATORY gate — it must always be met regardless of Required Count. Use it to pin one specific condition (e.g. \"lose_pending is done\") while letting the rest be counted by Required Count. No effect in normal AND mode (Required Count = 0).")]
+    public bool gate;
 }

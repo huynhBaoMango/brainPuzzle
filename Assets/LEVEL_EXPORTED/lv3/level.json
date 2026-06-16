@@ -10,6 +10,673 @@
   },
   "interactables": [
     {
+      "objectId": "gaidep",
+      "visualMode": "Spine",
+      "position": {
+        "x": -4.042105,
+        "y": 29.3052635
+      },
+      "sortOrder": 1,
+      "collider": {
+        "type": "box",
+        "width": 353.684235,
+        "height": 270.821045,
+        "offsetX": -411.332367,
+        "offsetY": 161.087646
+      },
+      "spineBasePath": "assets/levels/lv3/anim/Nu8",
+      "data": {
+        "initStateId": "init",
+        "initSpineLoop": true,
+        "states": [
+          {
+            "stateId": "gaidep_lose",
+            "trigger": "TAP",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "DoAnimation",
+                "duration": 0.0,
+                "spineAnim": "Nu8_Quaydau"
+              },
+              {
+                "type": "DoAnimation",
+                "duration": 0.0,
+                "spineAnim": "11Nam_MeGai",
+                "spineLoop": true,
+                "actionTargetId": "nam"
+              },
+              {
+                "type": "Wait",
+                "duration": 1.0
+              },
+              {
+                "type": "DoAnimation",
+                "duration": 0.0,
+                "spineAnim": "1Nu_gian",
+                "spineLoop": true,
+                "actionTargetId": "nu"
+              }
+            ],
+            "successMessageKey": "gaidep_lose",
+            "hintMessageKey": "gaidep_lose_hint"
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "may",
+      "visualMode": "Sprite",
+      "position": {
+        "x": -216.7579,
+        "y": 570.9474
+      },
+      "sortOrder": 2,
+      "collider": {
+        "type": "box",
+        "width": 310.231567,
+        "height": 99.03163
+      },
+      "data": {
+        "initStateId": "init",
+        "initSprite": "assets/levels/lv3/images/may.png",
+        "initSpineLoop": false,
+        "states": [
+          {
+            "stateId": "used",
+            "trigger": "DRAG",
+            "requiredZoneId": "hoa",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "Disappear",
+                "duration": 0.0,
+                "fadeOut": false,
+                "destroyOnDisappear": false
+              },
+              {
+                "type": "Appear",
+                "duration": 0.0,
+                "fadeIn": false,
+                "actionTargetId": "vuonhoa_anim"
+              },
+              {
+                "type": "DoAnimation",
+                "duration": 0.0,
+                "spineAnim": "NoHoa",
+                "actionTargetId": "vuonhoa_anim"
+              },
+              {
+                "type": "Wait",
+                "duration": 1.0
+              },
+              {
+                "type": "Disappear",
+                "duration": 0.0,
+                "fadeOut": false,
+                "destroyOnDisappear": false,
+                "actionTargetId": "vuonhoa_anim"
+              },
+              {
+                "type": "Appear",
+                "duration": 0.0,
+                "fadeIn": false,
+                "actionTargetId": "vuonhoa"
+              }
+            ],
+            "hintMessageKey": "may_hint"
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "vuonhoa",
+      "startHidden": true,
+      "visualMode": "Sprite",
+      "position": {
+        "x": 1.25305271,
+        "y": 382.848022
+      },
+      "scale": 1.02993238,
+      "sortOrder": 2,
+      "collider": {
+        "type": "box",
+        "width": 1083.93213,
+        "height": 120.5485,
+        "offsetX": -29.8628,
+        "offsetY": 0.983686
+      },
+      "data": {
+        "initStateId": "init",
+        "initSprite": "assets/levels/lv3/images/vuonhoa.png",
+        "initSpineLoop": false,
+        "states": [
+          {
+            "stateId": "used",
+            "dragSprite": "assets/levels/lv3/images/hoa.png",
+            "trigger": "DRAG",
+            "requiredZoneId": "nam",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nam",
+                "activateStateId": "hoa"
+              },
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nu",
+                "activateStateId": "thich"
+              },
+              {
+                "type": "Disappear",
+                "duration": 0.0,
+                "fadeOut": false,
+                "destroyOnDisappear": false
+              }
+            ]
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "nu",
+      "visualMode": "Spine",
+      "position": {
+        "x": -1.0105263,
+        "y": 28.2947388
+      },
+      "sortOrder": 3,
+      "collider": {
+        "type": "box",
+        "width": 100.000008,
+        "height": 100.0,
+        "offsetX": -5.646756E-07
+      },
+      "spineBasePath": "assets/levels/lv3/anim/Nu9",
+      "data": {
+        "initStateId": "init",
+        "initSpineAnim": "1Nu_gian",
+        "initSpineLoop": true,
+        "states": [
+          {
+            "stateId": "start",
+            "trigger": "REQUIREMENT_MET",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "Wait",
+                "duration": 3.0
+              },
+              {
+                "type": "DoAnimation",
+                "duration": 0.0,
+                "spineAnim": "2Nu_doi",
+                "spineLoop": true
+              }
+            ]
+          },
+          {
+            "stateId": "doi",
+            "stateSpineAnim": "2Nu_doi",
+            "stateSpineLoop": true,
+            "trigger": "NONE",
+            "requirements": [],
+            "actions": [],
+            "repeatable": true
+          },
+          {
+            "stateId": "chan",
+            "stateSpineAnim": "6Nu_Bopchan",
+            "stateSpineLoop": true,
+            "trigger": "NONE",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "Wait",
+                "duration": 2.0
+              }
+            ],
+            "repeatable": true
+          },
+          {
+            "stateId": "thich",
+            "stateSpineAnim": "3Nu_vuve",
+            "stateSpineLoop": true,
+            "trigger": "NONE",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "Wait",
+                "duration": 2.0
+              }
+            ],
+            "repeatable": true
+          },
+          {
+            "stateId": "thich2",
+            "stateSpineAnim": "5Nu_Hanhphuc2",
+            "stateSpineLoop": true,
+            "trigger": "NONE",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "Wait",
+                "duration": 2.0
+              }
+            ],
+            "repeatable": true
+          },
+          {
+            "stateId": "thich3",
+            "stateSpineAnim": "4Nu_Hanhphuc",
+            "stateSpineLoop": true,
+            "trigger": "NONE",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "Wait",
+                "duration": 2.0
+              }
+            ],
+            "repeatable": true
+          },
+          {
+            "stateId": "so",
+            "stateSpineAnim": "7Nu_So",
+            "trigger": "NONE",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "Wait",
+                "duration": 1.5
+              },
+              {
+                "type": "DoAnimation",
+                "duration": 0.0,
+                "spineAnim": "1Nu_gian",
+                "spineLoop": true
+              }
+            ],
+            "repeatable": true
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "nhan",
+      "visualMode": "Sprite",
+      "position": {
+        "x": 324.884216,
+        "y": -446.147369
+      },
+      "sortOrder": 30,
+      "collider": {
+        "type": "box",
+        "width": 104.084236,
+        "height": 122.273689
+      },
+      "data": {
+        "initStateId": "init",
+        "initSprite": "assets/levels/lv3/images/nhan.png",
+        "initSpineLoop": false,
+        "states": [
+          {
+            "stateId": "used",
+            "trigger": "DRAG",
+            "requiredZoneId": "nam",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nam",
+                "activateStateId": "nhan"
+              },
+              {
+                "type": "Disappear",
+                "duration": 0.0,
+                "fadeOut": false,
+                "destroyOnDisappear": false
+              }
+            ]
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "mic",
+      "visualMode": "Sprite",
+      "position": {
+        "x": 232.926331,
+        "y": -522.442139
+      },
+      "sortOrder": 29,
+      "collider": {
+        "type": "box",
+        "width": 166.736862,
+        "height": 127.32634
+      },
+      "data": {
+        "initStateId": "init",
+        "initSprite": "assets/levels/lv3/images/hat.png",
+        "initSpineLoop": false,
+        "states": [
+          {
+            "stateId": "used",
+            "trigger": "DRAG",
+            "requiredZoneId": "nam",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nam",
+                "activateStateId": "mic"
+              },
+              {
+                "type": "Disappear",
+                "duration": 0.0,
+                "fadeOut": false,
+                "destroyOnDisappear": false
+              }
+            ]
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "kem",
+      "visualMode": "Sprite",
+      "position": {
+        "x": 488.084229,
+        "y": -221.810532
+      },
+      "sortOrder": 26,
+      "collider": {
+        "type": "box",
+        "width": 99.03154,
+        "height": 63.66317
+      },
+      "data": {
+        "initStateId": "init",
+        "initSprite": "assets/levels/lv3/images/kem.png",
+        "initSpineLoop": false,
+        "states": [
+          {
+            "stateId": "used",
+            "trigger": "DRAG",
+            "requiredZoneId": "nam",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "Disappear",
+                "duration": 0.0,
+                "fadeOut": false,
+                "destroyOnDisappear": false
+              },
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nam",
+                "activateStateId": "kem"
+              },
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nu",
+                "activateStateId": "chan"
+              }
+            ]
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "vit",
+      "visualMode": "Sprite",
+      "position": {
+        "x": 327.410553,
+        "y": 256.168427
+      },
+      "sortOrder": 3,
+      "collider": {
+        "type": "box",
+        "width": 192.0,
+        "height": 118.23159
+      },
+      "data": {
+        "initStateId": "init",
+        "initSprite": "assets/levels/lv3/images/vit.png",
+        "initSpineLoop": false,
+        "states": [
+          {
+            "stateId": "used",
+            "trigger": "DRAG",
+            "requiredZoneId": "nam",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nam",
+                "activateStateId": "vit"
+              },
+              {
+                "type": "Disappear",
+                "duration": 0.0,
+                "fadeOut": false,
+                "destroyOnDisappear": false
+              }
+            ]
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "banh",
+      "visualMode": "Sprite",
+      "position": {
+        "x": 447.157928,
+        "y": -499.7053
+      },
+      "sortOrder": 31,
+      "collider": {
+        "type": "box",
+        "width": 180.884216,
+        "height": 140.4632
+      },
+      "data": {
+        "initStateId": "init",
+        "initSprite": "assets/levels/lv3/images/banh.png",
+        "initSpineLoop": false,
+        "states": [
+          {
+            "stateId": "used",
+            "trigger": "DRAG",
+            "requiredZoneId": "nam",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nam",
+                "activateStateId": "banh"
+              },
+              {
+                "type": "Disappear",
+                "duration": 0.0,
+                "fadeOut": false,
+                "destroyOnDisappear": false
+              }
+            ]
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "longvu",
+      "visualMode": "Sprite",
+      "position": {
+        "x": 433.010529,
+        "y": 689.6842
+      },
+      "sortOrder": 25,
+      "collider": {
+        "type": "box",
+        "width": 195.031586,
+        "height": 65.68417
+      },
+      "data": {
+        "initStateId": "init",
+        "initSprite": "assets/levels/lv3/images/longvu.png",
+        "initSpineLoop": false,
+        "states": [
+          {
+            "stateId": "used",
+            "trigger": "DRAG",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nam",
+                "activateStateId": "long"
+              },
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nu",
+                "activateStateId": "so"
+              },
+              {
+                "type": "Disappear",
+                "duration": 0.0,
+                "fadeOut": false,
+                "destroyOnDisappear": false
+              }
+            ]
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "nam2",
+      "visualMode": "Spine",
+      "position": {
+        "x": -2.0210526,
+        "y": 26.2736835
+      },
+      "sortOrder": 5,
+      "collider": {
+        "type": "box",
+        "width": 100.0,
+        "height": 99.99999,
+        "offsetX": -1.12935118E-06
+      },
+      "spineBasePath": "assets/levels/lv3/anim/Na9_Hon_BopChan_BoiKem",
+      "data": {
+        "initStateId": "init",
+        "initSpineLoop": true,
+        "states": []
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "kiss",
+      "visualMode": "Sprite",
+      "position": {
+        "x": 201.094742,
+        "y": 154.610535
+      },
+      "collider": {
+        "type": "box",
+        "width": 213.238037,
+        "height": 127.5911,
+        "offsetX": 9.047217,
+        "offsetY": 13.2692318
+      },
+      "data": {
+        "initStateId": "init",
+        "initSpineLoop": false,
+        "states": [
+          {
+            "stateId": "used",
+            "trigger": "TAP",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nu",
+                "activateStateId": "thich2"
+              },
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nam",
+                "activateStateId": "hun"
+              }
+            ]
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "feet",
+      "visualMode": "Sprite",
+      "position": {
+        "x": 148.547379,
+        "y": -382.989471
+      },
+      "collider": {
+        "type": "box",
+        "width": 223.692825,
+        "height": 169.770432,
+        "offsetX": 66.5486,
+        "offsetY": 88.3753738
+      },
+      "data": {
+        "initStateId": "init",
+        "initSpineLoop": false,
+        "states": [
+          {
+            "stateId": "used",
+            "trigger": "TAP",
+            "requirements": [],
+            "actions": [
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nu",
+                "activateStateId": "chan"
+              },
+              {
+                "type": "ActivateState",
+                "duration": 0.0,
+                "activateTargetObjectId": "nam",
+                "activateStateId": "chan"
+              }
+            ]
+          }
+        ]
+      },
+      "dropZones": []
+    },
+    {
       "objectId": "nam",
       "visualMode": "Spine",
       "position": {
@@ -19,9 +686,9 @@
       "collider": {
         "type": "box",
         "width": 249.0446,
-        "height": 699.284241,
+        "height": 699.2842,
         "offsetX": -133.084961,
-        "offsetY": -97.8884048
+        "offsetY": -97.88838
       },
       "spineBasePath": "assets/levels/lv3/anim/Na9",
       "data": {
@@ -424,8 +1091,7 @@
               },
               {
                 "type": "Wait",
-                "duration": 1.0,
-                "actionTargetId": "nam2"
+                "duration": 1.0
               },
               {
                 "type": "DoAnimation",
@@ -436,8 +1102,7 @@
               },
               {
                 "type": "Wait",
-                "duration": 1.0,
-                "actionTargetId": "nam2"
+                "duration": 1.0
               },
               {
                 "type": "ActivateState",
@@ -710,683 +1375,55 @@
           "sortOrder": 6,
           "localOffset": {
             "x": -133.084961,
-            "y": -97.8884048
+            "y": -97.88838
           },
           "size": {
             "x": 249.0446,
-            "y": 699.284241
+            "y": 699.2842
           },
           "shape": "box"
         }
       ]
-    },
-    {
-      "objectId": "feet",
-      "visualMode": "Sprite",
-      "position": {
-        "x": 148.547379,
-        "y": -382.989471
-      },
-      "collider": {
-        "type": "box",
-        "width": 223.692825,
-        "height": 169.770432,
-        "offsetX": 66.5486,
-        "offsetY": 88.3753738
-      },
-      "data": {
-        "initStateId": "init",
-        "initSpineLoop": false,
-        "states": [
-          {
-            "stateId": "used",
-            "trigger": "TAP",
-            "requirements": [],
-            "actions": [
-              {
-                "type": "ActivateState",
-                "duration": 0.0,
-                "activateTargetObjectId": "nu",
-                "activateStateId": "chan"
-              },
-              {
-                "type": "ActivateState",
-                "duration": 0.0,
-                "activateTargetObjectId": "nam",
-                "activateStateId": "chan"
-              }
-            ]
-          }
-        ]
-      },
-      "dropZones": []
-    },
-    {
-      "objectId": "kiss",
-      "visualMode": "Sprite",
-      "position": {
-        "x": 201.094742,
-        "y": 154.610535
-      },
-      "collider": {
-        "type": "box",
-        "width": 213.238037,
-        "height": 127.5911,
-        "offsetX": 9.047217,
-        "offsetY": 13.2692318
-      },
-      "data": {
-        "initStateId": "init",
-        "initSpineLoop": false,
-        "states": [
-          {
-            "stateId": "used",
-            "trigger": "TAP",
-            "requirements": [],
-            "actions": [
-              {
-                "type": "ActivateState",
-                "duration": 0.0,
-                "activateTargetObjectId": "nu",
-                "activateStateId": "thich2"
-              },
-              {
-                "type": "ActivateState",
-                "duration": 0.0,
-                "activateTargetObjectId": "nam",
-                "activateStateId": "hun"
-              }
-            ]
-          }
-        ]
-      },
-      "dropZones": []
-    },
-    {
-      "objectId": "nam2",
-      "visualMode": "Spine",
-      "position": {
-        "x": -2.0210526,
-        "y": 26.2736835
-      },
-      "sortOrder": 5,
-      "collider": {
-        "type": "box"
-      },
-      "spineBasePath": "assets/levels/lv3/anim/Na9_Hon_BopChan_BoiKem",
-      "data": {
-        "initStateId": "init",
-        "initSpineLoop": true,
-        "states": []
-      },
-      "dropZones": []
-    },
-    {
-      "objectId": "longvu",
-      "visualMode": "Sprite",
-      "position": {
-        "x": 433.010529,
-        "y": 689.6842
-      },
-      "sortOrder": 25,
-      "collider": {
-        "type": "box",
-        "width": 195.031586,
-        "height": 65.68417
-      },
-      "data": {
-        "initStateId": "init",
-        "initSprite": "assets/levels/lv3/images/longvu.png",
-        "initSpineLoop": false,
-        "states": [
-          {
-            "stateId": "used",
-            "trigger": "DRAG",
-            "requirements": [],
-            "actions": [
-              {
-                "type": "ActivateState",
-                "duration": 0.0,
-                "activateTargetObjectId": "nam",
-                "activateStateId": "long"
-              },
-              {
-                "type": "ActivateState",
-                "duration": 0.0,
-                "activateTargetObjectId": "nu",
-                "activateStateId": "so"
-              },
-              {
-                "type": "Disappear",
-                "duration": 0.0,
-                "fadeOut": false,
-                "destroyOnDisappear": false
-              }
-            ]
-          }
-        ]
-      },
-      "dropZones": []
-    },
-    {
-      "objectId": "banh",
-      "visualMode": "Sprite",
-      "position": {
-        "x": 447.157928,
-        "y": -499.7053
-      },
-      "sortOrder": 31,
-      "collider": {
-        "type": "box",
-        "width": 180.884216,
-        "height": 140.4632
-      },
-      "data": {
-        "initStateId": "init",
-        "initSprite": "assets/levels/lv3/images/banh.png",
-        "initSpineLoop": false,
-        "states": [
-          {
-            "stateId": "used",
-            "trigger": "DRAG",
-            "requiredZoneId": "nam",
-            "requirements": [],
-            "actions": [
-              {
-                "type": "ActivateState",
-                "duration": 0.0,
-                "activateTargetObjectId": "nam",
-                "activateStateId": "banh"
-              },
-              {
-                "type": "Disappear",
-                "duration": 0.0,
-                "fadeOut": false,
-                "destroyOnDisappear": false
-              }
-            ]
-          }
-        ]
-      },
-      "dropZones": []
-    },
-    {
-      "objectId": "vit",
-      "visualMode": "Sprite",
-      "position": {
-        "x": 327.410553,
-        "y": 256.168427
-      },
-      "sortOrder": 3,
-      "collider": {
-        "type": "box",
-        "width": 192.0,
-        "height": 118.23159
-      },
-      "data": {
-        "initStateId": "init",
-        "initSprite": "assets/levels/lv3/images/vit.png",
-        "initSpineLoop": false,
-        "states": [
-          {
-            "stateId": "used",
-            "trigger": "DRAG",
-            "requiredZoneId": "nam",
-            "requirements": [],
-            "actions": [
-              {
-                "type": "ActivateState",
-                "duration": 0.0,
-                "activateTargetObjectId": "nam",
-                "activateStateId": "vit"
-              },
-              {
-                "type": "Disappear",
-                "duration": 0.0,
-                "fadeOut": false,
-                "destroyOnDisappear": false
-              }
-            ]
-          }
-        ]
-      },
-      "dropZones": []
-    },
-    {
-      "objectId": "kem",
-      "visualMode": "Sprite",
-      "position": {
-        "x": 488.084229,
-        "y": -221.810532
-      },
-      "sortOrder": 26,
-      "collider": {
-        "type": "box",
-        "width": 99.03154,
-        "height": 63.66317
-      },
-      "data": {
-        "initStateId": "init",
-        "initSprite": "assets/levels/lv3/images/kem.png",
-        "initSpineLoop": false,
-        "states": [
-          {
-            "stateId": "used",
-            "trigger": "DRAG",
-            "requiredZoneId": "nam",
-            "requirements": [],
-            "actions": [
-              {
-                "type": "Disappear",
-                "duration": 0.0,
-                "fadeOut": false,
-                "destroyOnDisappear": false
-              },
-              {
-                "type": "ActivateState",
-                "duration": 0.0,
-                "activateTargetObjectId": "nam",
-                "activateStateId": "kem"
-              },
-              {
-                "type": "ActivateState",
-                "duration": 0.0,
-                "activateTargetObjectId": "nu",
-                "activateStateId": "chan"
-              }
-            ]
-          }
-        ]
-      },
-      "dropZones": []
-    },
-    {
-      "objectId": "mic",
-      "visualMode": "Sprite",
-      "position": {
-        "x": 232.926331,
-        "y": -522.442139
-      },
-      "sortOrder": 29,
-      "collider": {
-        "type": "box",
-        "width": 166.736862,
-        "height": 127.32634
-      },
-      "data": {
-        "initStateId": "init",
-        "initSprite": "assets/levels/lv3/images/hat.png",
-        "initSpineLoop": false,
-        "states": [
-          {
-            "stateId": "used",
-            "trigger": "DRAG",
-            "requiredZoneId": "nam",
-            "requirements": [],
-            "actions": [
-              {
-                "type": "ActivateState",
-                "duration": 0.0,
-                "activateTargetObjectId": "nam",
-                "activateStateId": "mic"
-              },
-              {
-                "type": "Disappear",
-                "duration": 0.0,
-                "fadeOut": false,
-                "destroyOnDisappear": false
-              }
-            ]
-          }
-        ]
-      },
-      "dropZones": []
-    },
-    {
-      "objectId": "nhan",
-      "visualMode": "Sprite",
-      "position": {
-        "x": 324.884216,
-        "y": -446.147369
-      },
-      "sortOrder": 30,
-      "collider": {
-        "type": "box",
-        "width": 104.084236,
-        "height": 122.273689
-      },
-      "data": {
-        "initStateId": "init",
-        "initSprite": "assets/levels/lv3/images/nhan.png",
-        "initSpineLoop": false,
-        "states": [
-          {
-            "stateId": "used",
-            "trigger": "DRAG",
-            "requiredZoneId": "nam",
-            "requirements": [],
-            "actions": [
-              {
-                "type": "ActivateState",
-                "duration": 0.0,
-                "activateTargetObjectId": "nam",
-                "activateStateId": "nhan"
-              },
-              {
-                "type": "Disappear",
-                "duration": 0.0,
-                "fadeOut": false,
-                "destroyOnDisappear": false
-              }
-            ]
-          }
-        ]
-      },
-      "dropZones": []
-    },
-    {
-      "objectId": "nu",
-      "visualMode": "Spine",
-      "position": {
-        "x": -1.0105263,
-        "y": 28.2947388
-      },
-      "sortOrder": 3,
-      "collider": {
-        "type": "box"
-      },
-      "spineBasePath": "assets/levels/lv3/anim/Nu9",
-      "data": {
-        "initStateId": "init",
-        "initSpineAnim": "1Nu_gian",
-        "initSpineLoop": true,
-        "states": [
-          {
-            "stateId": "start",
-            "trigger": "REQUIREMENT_MET",
-            "requirements": [],
-            "actions": [
-              {
-                "type": "Wait",
-                "duration": 3.0
-              },
-              {
-                "type": "DoAnimation",
-                "duration": 0.0,
-                "spineAnim": "2Nu_doi",
-                "spineLoop": true
-              }
-            ]
-          },
-          {
-            "stateId": "doi",
-            "stateSpineAnim": "2Nu_doi",
-            "stateSpineLoop": true,
-            "trigger": "NONE",
-            "requirements": [],
-            "actions": [],
-            "repeatable": true
-          },
-          {
-            "stateId": "chan",
-            "stateSpineAnim": "6Nu_Bopchan",
-            "stateSpineLoop": true,
-            "trigger": "NONE",
-            "requirements": [],
-            "actions": [
-              {
-                "type": "Wait",
-                "duration": 2.0
-              }
-            ],
-            "repeatable": true
-          },
-          {
-            "stateId": "thich",
-            "stateSpineAnim": "3Nu_vuve",
-            "stateSpineLoop": true,
-            "trigger": "NONE",
-            "requirements": [],
-            "actions": [
-              {
-                "type": "Wait",
-                "duration": 2.0
-              }
-            ],
-            "repeatable": true
-          },
-          {
-            "stateId": "thich2",
-            "stateSpineAnim": "5Nu_Hanhphuc2",
-            "stateSpineLoop": true,
-            "trigger": "NONE",
-            "requirements": [],
-            "actions": [
-              {
-                "type": "Wait",
-                "duration": 2.0
-              }
-            ],
-            "repeatable": true
-          },
-          {
-            "stateId": "thich3",
-            "stateSpineAnim": "4Nu_Hanhphuc",
-            "stateSpineLoop": true,
-            "trigger": "NONE",
-            "requirements": [],
-            "actions": [
-              {
-                "type": "Wait",
-                "duration": 2.0
-              }
-            ],
-            "repeatable": true
-          },
-          {
-            "stateId": "so",
-            "stateSpineAnim": "7Nu_So",
-            "trigger": "NONE",
-            "requirements": [],
-            "actions": [
-              {
-                "type": "Wait",
-                "duration": 1.5
-              },
-              {
-                "type": "DoAnimation",
-                "duration": 0.0,
-                "spineAnim": "1Nu_gian",
-                "spineLoop": true
-              }
-            ],
-            "repeatable": true
-          }
-        ]
-      },
-      "dropZones": []
-    },
-    {
-      "objectId": "vuonhoa",
-      "startHidden": true,
-      "visualMode": "Sprite",
-      "position": {
-        "x": 1.25305271,
-        "y": 382.848022
-      },
-      "scale": 1.02993238,
-      "sortOrder": 2,
-      "collider": {
-        "type": "box",
-        "width": 1052.43042,
-        "height": 117.045067,
-        "offsetX": -28.99493,
-        "offsetY": 0.9550878
-      },
-      "data": {
-        "initStateId": "init",
-        "initSprite": "assets/levels/lv3/images/vuonhoa.png",
-        "initSpineLoop": false,
-        "states": [
-          {
-            "stateId": "used",
-            "dragSprite": "assets/levels/lv3/images/hoa.png",
-            "trigger": "DRAG",
-            "requiredZoneId": "nam",
-            "requirements": [],
-            "actions": [
-              {
-                "type": "ActivateState",
-                "duration": 0.0,
-                "activateTargetObjectId": "nam",
-                "activateStateId": "hoa"
-              },
-              {
-                "type": "ActivateState",
-                "duration": 0.0,
-                "activateTargetObjectId": "nu",
-                "activateStateId": "thich"
-              },
-              {
-                "type": "Disappear",
-                "duration": 0.0,
-                "fadeOut": false,
-                "destroyOnDisappear": false
-              }
-            ]
-          }
-        ]
-      },
-      "dropZones": []
-    },
-    {
-      "objectId": "may",
-      "visualMode": "Sprite",
-      "position": {
-        "x": -216.7579,
-        "y": 570.9474
-      },
-      "sortOrder": 2,
-      "collider": {
-        "type": "box",
-        "width": 310.231567,
-        "height": 99.03163
-      },
-      "data": {
-        "initStateId": "init",
-        "initSprite": "assets/levels/lv3/images/may.png",
-        "initSpineLoop": false,
-        "states": [
-          {
-            "stateId": "used",
-            "trigger": "DRAG",
-            "requiredZoneId": "hoa",
-            "requirements": [],
-            "actions": [
-              {
-                "type": "Disappear",
-                "duration": 0.0,
-                "fadeOut": false,
-                "destroyOnDisappear": false
-              },
-              {
-                "type": "Appear",
-                "duration": 0.0,
-                "fadeIn": false,
-                "actionTargetId": "vuonhoa_anim"
-              },
-              {
-                "type": "DoAnimation",
-                "duration": 0.0,
-                "spineAnim": "NoHoa",
-                "actionTargetId": "vuonhoa_anim"
-              },
-              {
-                "type": "Wait",
-                "duration": 1.0,
-                "actionTargetId": "vuonhoa"
-              },
-              {
-                "type": "Disappear",
-                "duration": 0.0,
-                "fadeOut": false,
-                "destroyOnDisappear": false,
-                "actionTargetId": "vuonhoa_anim"
-              },
-              {
-                "type": "Appear",
-                "duration": 0.0,
-                "fadeIn": false,
-                "actionTargetId": "vuonhoa"
-              }
-            ],
-            "hintMessageKey": "may_hint"
-          }
-        ]
-      },
-      "dropZones": []
-    },
-    {
-      "objectId": "gaidep",
-      "visualMode": "Spine",
-      "position": {
-        "x": -4.042105,
-        "y": 29.3052635
-      },
-      "sortOrder": 1,
-      "collider": {
-        "type": "box",
-        "width": 353.684235,
-        "height": 270.821045,
-        "offsetX": -411.332367,
-        "offsetY": 161.087646
-      },
-      "spineBasePath": "assets/levels/lv3/anim/Nu8",
-      "data": {
-        "initStateId": "init",
-        "initSpineLoop": true,
-        "states": [
-          {
-            "stateId": "gaidep_lose",
-            "trigger": "TAP",
-            "requirements": [],
-            "actions": [
-              {
-                "type": "DoAnimation",
-                "duration": 0.0,
-                "spineAnim": "Nu8_Quaydau"
-              },
-              {
-                "type": "DoAnimation",
-                "duration": 0.0,
-                "spineAnim": "11Nam_MeGai",
-                "spineLoop": true,
-                "actionTargetId": "nam"
-              },
-              {
-                "type": "Wait",
-                "duration": 1.0,
-                "actionTargetId": "nu"
-              },
-              {
-                "type": "DoAnimation",
-                "duration": 0.0,
-                "spineAnim": "1Nu_gian",
-                "spineLoop": true,
-                "actionTargetId": "nu"
-              }
-            ],
-            "successMessageKey": "gaidep_lose",
-            "hintMessageKey": "gaidep_lose_hint"
-          }
-        ]
-      },
-      "dropZones": []
     }
   ],
   "groups": [],
   "queues": [],
   "staticObjects": [
+    {
+      "objectId": "bg",
+      "visualMode": "Sprite",
+      "sprite": "assets/levels/lv3/images/bg.png",
+      "initSpineLoop": false,
+      "position": {
+        "y": 51.5368423
+      },
+      "dropZones": []
+    },
+    {
+      "objectId": "ban",
+      "visualMode": "Sprite",
+      "sprite": "assets/levels/lv3/images/ban.png",
+      "initSpineLoop": false,
+      "position": {
+        "x": 327.410553,
+        "y": -532.547363
+      },
+      "sortOrder": 28,
+      "dropZones": []
+    },
+    {
+      "objectId": "1",
+      "startHidden": true,
+      "visualMode": "Sprite",
+      "sprite": "assets/levels/lv3/images/dt.png",
+      "initSpineLoop": false,
+      "position": {
+        "x": -269.810547,
+        "y": -140.463165
+      },
+      "sortOrder": 1,
+      "dropZones": []
+    },
     {
       "objectId": "vuonhoa_anim",
       "startHidden": true,
@@ -1405,39 +1442,8 @@
         "offsetX": -2.45414519,
         "offsetY": 366.2528
       },
-      "blocks": true
-    },
-    {
-      "objectId": "1",
-      "startHidden": true,
-      "visualMode": "Sprite",
-      "sprite": "assets/levels/lv3/images/dt.png",
-      "initSpineLoop": false,
-      "position": {
-        "x": -269.810547,
-        "y": -140.463165
-      },
-      "sortOrder": 1
-    },
-    {
-      "objectId": "ban",
-      "visualMode": "Sprite",
-      "sprite": "assets/levels/lv3/images/ban.png",
-      "initSpineLoop": false,
-      "position": {
-        "x": 327.410553,
-        "y": -532.547363
-      },
-      "sortOrder": 28
-    },
-    {
-      "objectId": "bg",
-      "visualMode": "Sprite",
-      "sprite": "assets/levels/lv3/images/bg.png",
-      "initSpineLoop": false,
-      "position": {
-        "y": 51.5368423
-      }
+      "blocks": true,
+      "dropZones": []
     }
   ],
   "dropZones": [

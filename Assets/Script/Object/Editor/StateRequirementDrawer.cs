@@ -13,7 +13,7 @@ public class StateRequirementDrawer : PropertyDrawer
     private const float StateLabelWidth = 40f;
     private const float ArrowWidth = 14f;
     private const float Spacing = 4f;
-    private const float ModeWidth = 80f;
+    private const float ModeWidth = 130f;
 
     public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
     {
@@ -22,6 +22,7 @@ public class StateRequirementDrawer : PropertyDrawer
         SerializedProperty objIdProp = property.FindPropertyRelative("objectId");
         SerializedProperty stateIdProp = property.FindPropertyRelative("stateId");
         SerializedProperty invertedProp = property.FindPropertyRelative("requireNotDone");
+        SerializedProperty gateProp = property.FindPropertyRelative("gate");
 
         // Reset indent so the row stays on a single line in nested lists.
         int prevIndent = EditorGUI.indentLevel;
@@ -51,12 +52,24 @@ public class StateRequirementDrawer : PropertyDrawer
         string[] stateIds = PuzzleEditorHelper.GetStateIds(objIdProp.stringValue);
         PuzzleEditorHelper.StringPopupField(r, stateIdProp, stateIds, "(none)");
 
-        // ---- Mode popup: Done / Not Done ----
+        // ---- Mode popup: Done / Not Done, with optional "(gate)" variants.
+        // A gate requirement is MANDATORY (must always be met regardless of
+        // the state's Required Count) and does NOT count toward the count
+        // milestone. Use it for trigger flags like "lose_pending".
         r.x += fieldWidth + Spacing; r.width = ModeWidth;
-        int modeIdx = invertedProp != null && invertedProp.boolValue ? 1 : 0;
-        int newMode = EditorGUI.Popup(r, modeIdx, new[] { "is Done", "is Not Done" });
-        if (invertedProp != null && newMode != modeIdx)
-            invertedProp.boolValue = (newMode == 1);
+        bool inv = invertedProp != null && invertedProp.boolValue;
+        bool gate = gateProp != null && gateProp.boolValue;
+        int modeIdx = (gate ? 2 : 0) + (inv ? 1 : 0);
+        // 0: is Done, 1: is Not Done, 2: is Done (gate), 3: is Not Done (gate)
+        int newMode = EditorGUI.Popup(r, modeIdx, new[]
+        {
+            "is Done", "is Not Done", "is Done (gate)", "is Not Done (gate)"
+        });
+        if (newMode != modeIdx)
+        {
+            if (invertedProp != null) invertedProp.boolValue = (newMode & 1) != 0;
+            if (gateProp != null) gateProp.boolValue = (newMode & 2) != 0;
+        }
 
         EditorGUI.indentLevel = prevIndent;
         EditorGUI.EndProperty();

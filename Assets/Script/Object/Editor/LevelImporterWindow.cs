@@ -1175,6 +1175,10 @@ public class LevelImporterWindow : EditorWindow
                 SerializedProperty invProp = reqProp.FindPropertyRelative("requireNotDone");
                 if (invProp != null)
                     invProp.boolValue = reqsJson[r]["requireNotDone"]?.Value<bool>() ?? false;
+
+                SerializedProperty gateProp = reqProp.FindPropertyRelative("gate");
+                if (gateProp != null)
+                    gateProp.boolValue = reqsJson[r]["gate"]?.Value<bool>() ?? false;
             }
         }
 
@@ -1380,6 +1384,9 @@ public class LevelImporterWindow : EditorWindow
                         SerializedProperty inv = gProp.FindPropertyRelative("requireNotDone");
                         if (inv != null)
                             inv.boolValue = guardsJson[g]["requireNotDone"]?.Value<bool>() ?? false;
+                        SerializedProperty gateP = gProp.FindPropertyRelative("gate");
+                        if (gateP != null)
+                            gateP.boolValue = guardsJson[g]["gate"]?.Value<bool>() ?? false;
                     }
                 }
                 break;

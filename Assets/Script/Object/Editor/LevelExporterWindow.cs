@@ -961,6 +961,7 @@ public class LevelExporterWindow : EditorWindow
                     objectId = EmptyToNull(r.objectId),
                     stateId = EmptyToNull(r.stateId),
                     requireNotDone = r.requireNotDone,
+                    gate = r.gate,
                 });
             }
         }
@@ -1059,6 +1060,7 @@ public class LevelExporterWindow : EditorWindow
                             objectId = req.objectId,
                             stateId = EmptyToNull(req.stateId),
                             requireNotDone = req.requireNotDone,
+                            gate = req.gate,
                         });
                     }
                 }
@@ -1560,6 +1562,9 @@ public class LevelExporterWindow : EditorWindow
         public string objectId;
         public string stateId;
         public bool requireNotDone;
+        // Mandatory gate: must be met regardless of requiredCount; doesn't
+        // count toward the milestone. Omitted from JSON when false.
+        public bool gate;
     }
 
     private class StateActionJson

@@ -20,9 +20,8 @@
       "sortOrder": 6,
       "collider": {
         "type": "box",
-        "width": 323.368469,
-        "height": 704.336853,
-        "offsetY": 1.20464128E-05
+        "width": 100.000023,
+        "height": 99.99999
       },
       "data": {
         "initStateId": "init",
@@ -248,13 +247,11 @@
               {
                 "type": "PlaySFX",
                 "duration": 0.0,
-                "actionTargetId": "tocnam",
                 "sfxClip": "assets/levels/lv4/sounds/tocnam_success.mp3"
               },
               {
                 "type": "PlaySFX",
                 "duration": 0.0,
-                "actionTargetId": "tocnam",
                 "sfxClip": "assets/levels/lv4/sounds/water.mp3"
               },
               {
@@ -302,13 +299,11 @@
               {
                 "type": "PlaySFX",
                 "duration": 0.0,
-                "actionTargetId": "damnam",
                 "sfxClip": "assets/levels/lv4/sounds/vaynam_success.mp3"
               },
               {
                 "type": "PlaySFX",
                 "duration": 0.0,
-                "actionTargetId": "damnam",
                 "sfxClip": "assets/levels/lv4/sounds/water.mp3"
               },
               {
@@ -350,7 +345,6 @@
               {
                 "type": "PlaySFX",
                 "duration": 0.0,
-                "actionTargetId": "namtatnuoc",
                 "sfxClip": "assets/levels/lv4/sounds/tatnuoc_success.mp3"
               },
               {
@@ -609,8 +603,8 @@
       "sortOrder": 20,
       "collider": {
         "type": "box",
-        "width": 87.91578,
-        "height": 131.368423
+        "width": 100.000008,
+        "height": 99.99999
       },
       "data": {
         "initStateId": "init",
@@ -682,14 +676,12 @@
                 "type": "PlaySFX",
                 "runInParallel": true,
                 "duration": 0.5,
-                "actionTargetId": "tocdai",
                 "sfxClip": "assets/levels/lv4/sounds/tocnu_success.mp3"
               },
               {
                 "type": "PlaySFX",
                 "runInParallel": true,
                 "duration": 0.5,
-                "actionTargetId": "tocdai",
                 "sfxClip": "assets/levels/lv4/sounds/water.mp3"
               },
               {
@@ -736,13 +728,11 @@
               {
                 "type": "PlaySFX",
                 "duration": 0.0,
-                "actionTargetId": "ao",
                 "sfxClip": "assets/levels/lv4/sounds/aonu_success.mp3"
               },
               {
                 "type": "PlaySFX",
                 "duration": 0.0,
-                "actionTargetId": "ao",
                 "sfxClip": "assets/levels/lv4/sounds/water.mp3"
               },
               {
@@ -789,13 +779,11 @@
               {
                 "type": "PlaySFX",
                 "duration": 0.0,
-                "actionTargetId": "tui",
                 "sfxClip": "assets/levels/lv4/sounds/tuinu_success.mp3"
               },
               {
                 "type": "PlaySFX",
                 "duration": 0.0,
-                "actionTargetId": "tui",
                 "sfxClip": "assets/levels/lv4/sounds/water.mp3"
               },
               {
@@ -907,13 +895,11 @@
               {
                 "type": "PlaySFX",
                 "duration": 0.0,
-                "actionTargetId": "sieunhan2",
                 "sfxClip": "assets/levels/lv4/sounds/onggiacoido_success.mp3"
               },
               {
                 "type": "PlaySFX",
                 "duration": 0.0,
-                "actionTargetId": "sieunhan2",
                 "sfxClip": "assets/levels/lv4/sounds/water.mp3"
               },
               {
@@ -957,13 +943,11 @@
               },
               {
                 "type": "Wait",
-                "duration": 1.0,
-                "actionTargetId": "sieunhan2"
+                "duration": 1.0
               },
               {
                 "type": "ActivateState",
                 "duration": 0.0,
-                "actionTargetId": "sieunhan2",
                 "activateTargetObjectId": "sieunhan2",
                 "activateStateId": "fly"
               }
@@ -981,7 +965,6 @@
               {
                 "type": "PlaySFX",
                 "duration": 0.0,
-                "actionTargetId": "doonggia",
                 "sfxClip": "assets/levels/lv4/sounds/onggia_lose.mp3"
               },
               {
@@ -1274,7 +1257,6 @@
               {
                 "type": "PlaySFX",
                 "duration": 0.0,
-                "actionTargetId": "caube",
                 "sfxClip": "assets/levels/lv4/sounds/may_success.mp3"
               },
               {
@@ -1291,8 +1273,7 @@
               },
               {
                 "type": "Wait",
-                "duration": 1.5,
-                "actionTargetId": "caube"
+                "duration": 1.5
               },
               {
                 "type": "Disappear",
@@ -1386,7 +1367,8 @@
         "x": 85.8947449,
         "y": 251.621063
       },
-      "sortOrder": 15
+      "sortOrder": 15,
+      "dropZones": []
     },
     {
       "objectId": "keo1",
@@ -1398,7 +1380,8 @@
         "x": -382.484222,
         "y": -171.284225
       },
-      "sortOrder": 31
+      "sortOrder": 31,
+      "dropZones": []
     },
     {
       "objectId": "doonggia",
@@ -1410,7 +1393,8 @@
         "x": 267.7895,
         "y": 30.3157921
       },
-      "sortOrder": 7
+      "sortOrder": 7,
+      "dropZones": []
     },
     {
       "objectId": "tui2",
@@ -1421,7 +1405,8 @@
         "x": 162.99791,
         "y": -92.4631653
       },
-      "sortOrder": 18
+      "sortOrder": 18,
+      "dropZones": []
     },
     {
       "objectId": "tui",
@@ -1433,7 +1418,8 @@
         "x": 162.99791,
         "y": -92.4631653
       },
-      "sortOrder": 18
+      "sortOrder": 18,
+      "dropZones": []
     },
     {
       "objectId": "bg",
@@ -1442,7 +1428,8 @@
       "initSpineLoop": false,
       "position": {
         "y": 24.2526321
-      }
+      },
+      "dropZones": []
     },
     {
       "objectId": "thuyentop",
@@ -1453,7 +1440,8 @@
         "x": -5.55789471,
         "y": -214.231583
       },
-      "sortOrder": 38
+      "sortOrder": 38,
+      "dropZones": []
     },
     {
       "objectId": "zz",
@@ -1464,7 +1452,8 @@
         "x": -351.1579,
         "y": -232.926331
       },
-      "sortOrder": 34
+      "sortOrder": 34,
+      "dropZones": []
     },
     {
       "objectId": "damnam",
@@ -1476,7 +1465,8 @@
         "x": -113.178955,
         "y": 47.49474
       },
-      "sortOrder": 22
+      "sortOrder": 22,
+      "dropZones": []
     },
     {
       "objectId": "tocnam",
@@ -1488,7 +1478,8 @@
         "x": -106.105263,
         "y": 335.494751
       },
-      "sortOrder": 22
+      "sortOrder": 22,
+      "dropZones": []
     },
     {
       "objectId": "namtatnuoc",
@@ -1497,7 +1488,8 @@
       "spineBasePath": "assets/levels/lv4/anim/Nam_TatNuoc",
       "initSpineLoop": true,
       "position": {},
-      "sortOrder": 38
+      "sortOrder": 38,
+      "dropZones": []
     },
     {
       "objectId": "dosieunhan",
@@ -1509,7 +1501,8 @@
         "x": 267.7895,
         "y": 84.88421
       },
-      "sortOrder": 7
+      "sortOrder": 7,
+      "dropZones": []
     },
     {
       "objectId": "keo2",
@@ -1521,7 +1514,8 @@
         "x": 38.905262,
         "y": -319.326324
       },
-      "sortOrder": 40
+      "sortOrder": 40,
+      "dropZones": []
     },
     {
       "objectId": "ao",
@@ -1533,7 +1527,8 @@
         "x": 95.64986,
         "y": 120.645645
       },
-      "sortOrder": 15
+      "sortOrder": 15,
+      "dropZones": []
     },
     {
       "objectId": "song",
@@ -1542,10 +1537,24 @@
       "initSpineAnim": "Song2_idle",
       "initSpineLoop": true,
       "position": {},
-      "sortOrder": 42
+      "sortOrder": 42,
+      "dropZones": []
     }
   ],
   "dropZones": [
+    {
+      "zoneId": "bangkeo_drop",
+      "sortOrder": 5,
+      "position": {
+        "x": -383.8725,
+        "y": -168.554291
+      },
+      "size": {
+        "x": 70.48176,
+        "y": 59.01776
+      },
+      "shape": "box"
+    },
     {
       "zoneId": "bangkeo_drop",
       "sortOrder": 5,

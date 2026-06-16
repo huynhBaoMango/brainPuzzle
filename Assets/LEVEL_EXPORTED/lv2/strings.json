@@ -98,5 +98,10 @@
     "key": "couple_success",
     "en": "My lost lover",
     "vn": "Người yêu thất lạc của ta"
+  },
+  {
+    "key": "des",
+    "en": "Banish all ghosts from the flight!",
+    "vn": "Đuổi hết ma khỏi chuyến bay!"
   }
 ]

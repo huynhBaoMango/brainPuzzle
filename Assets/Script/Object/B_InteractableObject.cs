@@ -832,7 +832,15 @@ public class B_InteractableObject : MonoBehaviour
             if (string.IsNullOrEmpty(req.objectId)) continue;
 
             bool isMet = IsRequirementSatisfied(req, countMode);
-            if (countMode)
+
+            if (req.gate)
+            {
+                // Mandatory: must always be met, regardless of mode. Does NOT
+                // count toward requiredCount (so the milestone is purely over
+                // the non-gate requirements).
+                if (!isMet) return false;
+            }
+            else if (countMode)
             {
                 if (isMet) met++;
             }

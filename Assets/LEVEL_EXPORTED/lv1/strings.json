@@ -1,147 +1,127 @@
 [
   {
-    "key": "thuoc_success",
-    "en": "The baby is feeling better",
-    "vn": "Em bé đã khỏe hơn"
+    "key": "tit",
+    "en": "Stuck together",
+    "vn": "Dính vào nhau"
   },
   {
-    "key": "cuaso_success",
-    "en": "The wind no longer blows into the house",
-    "vn": "Gió không lùa vào nhà nữa"
+    "key": "des",
+    "en": "Find a way to separate them",
+    "vn": "Tìm cách để gỡ họ ra khỏi nhau"
   },
   {
-    "key": "sannha_success",
-    "en": "The house is less shabby",
-    "vn": "Căn nhà đỡ tồi tàn hơn"
+    "key": "lose_bang_s",
+    "en": "It's hopeless!",
+    "vn": "Hết cứu!"
   },
   {
-    "key": "spawnthuoc_success",
-    "en": "Buy medicine for the baby",
-    "vn": "Mua thuốc cho em bé"
+    "key": "lose_bang_h",
+    "en": "Don't drag ice posters on them",
+    "vn": "Đừng kéo poster băng vào họ"
   },
   {
-    "key": "nen_success",
-    "en": "This light is brighter",
-    "vn": "Đèn này sáng hơn"
+    "key": "lose_day_s",
+    "en": "Now they're stuck even tighter!",
+    "vn": "Sao lại còn trói chặt thêm chứ!"
   },
   {
-    "key": "lua_success",
-    "en": "This one is safer",
-    "vn": "Cái này an toàn hơn"
+    "key": "lose_day_h",
+    "en": "Don't drag the rope on them",
+    "vn": "Đừng kéo dây thừng vào họ"
   },
   {
-    "key": "choi_success",
-    "en": "Cleaning the house is less tiring",
-    "vn": "Dọn nhà đỡ mệt hơn"
+    "key": "ao_s",
+    "en": "Borrow some sweat from the muscle guy",
+    "vn": "Mượn một ít mồ hôi của anh trai cơ bắp"
   },
   {
-    "key": "tu_success",
-    "en": "This cabinet can hold more",
-    "vn": "Tủ này chứa được nhiều hơn"
+    "key": "ao_h",
+    "en": "Drag the man behind them into them",
+    "vn": "Kéo người đàn ông phía sau vào họ"
   },
   {
-    "key": "giuong_success",
-    "en": "This bed is more comfortable",
-    "vn": "Giường này thoải mái hơn"
+    "key": "chim_s",
+    "en": "(Let me help)",
+    "vn": "(Để ta giúp một tay)"
   },
   {
-    "key": "thungcarton_success",
-    "en": "Decorate your home with a touch of nature",
-    "vn": "Trang trí nhà với chút thiên nhiên"
+    "key": "chim_h",
+    "en": "Drag the bird into them",
+    "vn": "Kéo con chim vào họ"
   },
   {
-    "key": "cogai_success",
-    "en": "No more wearing ripped clothes",
-    "vn": "Không phải mặc đồ rách nữa"
+    "key": "keo_s",
+    "en": "",
+    "vn": ""
   },
   {
-    "key": "cogai_hint",
-    "en": "Drag money into the girl",
-    "vn": "Kéo tiền vào cô gái"
+    "key": "keo_h",
+    "en": "Drag the scissors lying on the floor at them",
+    "vn": "Kéo cái kéo nằm trên sàn vào họ"
   },
   {
-    "key": "choi_hint",
-    "en": "Drag the money onto the broom",
-    "vn": "Kéo tiền vào chổi"
+    "key": "cam_s",
+    "en": "Orange juice would probably help",
+    "vn": "Nước cam có lẽ sẽ có ích"
   },
   {
-    "key": "nen_hint",
-    "en": "Drag the money to the candle on the wall",
-    "vn": "Kéo tiền vào nến trên tường"
+    "key": "cam_h",
+    "en": "Drag the orange on the fruit plate to them",
+    "vn": "Kéo trái cam trên dĩa trái cây vào họ"
   },
   {
-    "key": "spawnthuoc_hint",
-    "en": "Drag money into new locker",
-    "vn": "Kéo tiền vào tủ mới"
+    "key": "tu_h",
+    "en": "Tap on the cabinet in the right corner",
+    "vn": "Bấm vào tủ ở góc phải"
   },
   {
-    "key": "embechan_lose_hint",
-    "en": "Do not cover the baby with a blanket when it is wet",
-    "vn": "Không đắp chăn em bé khi bị ướt"
+    "key": "cua_s",
+    "en": "Sunlight will melt the glue",
+    "vn": "Ánh nắng sẽ làm tan chảy keo"
   },
   {
-    "key": "sannha_hint",
-    "en": "Drag money to the floor",
-    "vn": "Kéo tiền vào sàn nhà"
+    "key": "cua_h",
+    "en": "Tap on the glass door in the back",
+    "vn": "Bấm vào cửa kính ở phía sau"
   },
   {
-    "key": "lua_hint",
-    "en": "Drag money into the fire",
-    "vn": "Kéo tiền vào đống lửa"
+    "key": "chainuoc_s",
+    "en": "",
+    "vn": ""
   },
   {
-    "key": "giuong_hint",
-    "en": "Drag money into bed",
-    "vn": "Kéo tiền vào giường"
+    "key": "chainuoc_h",
+    "en": "Drag the water bottle at them",
+    "vn": "Kéo chai nước vào họ"
   },
   {
-    "key": "thungcarton_hint",
-    "en": "Drag the money into the box",
-    "vn": "Kéo tiền vào thùng carton"
+    "key": "maysay_s",
+    "en": "",
+    "vn": ""
   },
   {
-    "key": "cuaso_hint",
-    "en": "Drag the money into the window",
-    "vn": "Kéo tiền vào cửa sổ"
+    "key": "maysay_h",
+    "en": "Drag the dryer on them",
+    "vn": "Kéo máy sấy vào họ"
   },
   {
-    "key": "tucu_hint",
-    "en": "Drag money into the locker",
-    "vn": "Kéo tiền vào tủ"
+    "key": "binhxit_s",
+    "en": "Alcohol dissolves glue",
+    "vn": "Cồn làm tan được keo"
   },
   {
-    "key": "title",
-    "en": "Shabby house",
-    "vn": "Căn nhà tồi tàn"
+    "key": "binhxit_h",
+    "en": "Drag the spray on them",
+    "vn": "Kéo bình xịt vào họ"
   },
   {
-    "key": "khan_success",
-    "en": "The baby is no longer wet",
-    "vn": "Em bé không còn ướt nữa rồi"
+    "key": "intro",
+    "en": "Help, we're stuck together!",
+    "vn": "Cứu với, chúng tôi bị dính vào nhau rồi!"
   },
   {
-    "key": "khan_sannha_failed",
-    "en": "There's still too much water",
-    "vn": "Nước vẫn còn nhiều quá"
-  },
-  {
-    "key": "khan_hint",
-    "en": "Pull the towel to the bed to wipe",
-    "vn": "Kéo khăn vào giường để lau"
-  },
-  {
-    "key": "embechan_success",
-    "en": "The baby is no longer cold",
-    "vn": "Em bé không còn lạnh nữa"
-  },
-  {
-    "key": "embechan_hint",
-    "en": "Pull money into the baby",
-    "vn": "Kéo tiền vào em bé"
-  },
-  {
-    "key": "embechan_lose",
-    "en": "The baby's condition got worse",
-    "vn": "Tình trạng em bé đã tệ hơn"
+    "key": "win",
+    "en": "Finally, we're free!",
+    "vn": "Cuối cùng cũng gỡ ra được rồi"
   }
 ]

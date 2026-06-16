@@ -50,7 +50,8 @@ public class StateActionDrawer : PropertyDrawer
         if (type == StateActionType.MoveTo
             || type == StateActionType.Disappear
             || type == StateActionType.Appear
-            || type == StateActionType.DoAnimation)
+            || type == StateActionType.DoAnimation
+            || type == StateActionType.ScaleTo)
         {
             DrawField(ref y, position, property, "actionTarget", "Target Object (optional)", draw);
         }

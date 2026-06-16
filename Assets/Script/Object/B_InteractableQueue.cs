@@ -373,6 +373,19 @@ public class B_InteractableQueue : MonoBehaviour
             member.transform.DOMove(dest, shiftDuration).SetEase(shiftEase);
         else
             member.transform.position = dest;
+
+        if(visualMode == VisualMode.Sprite)
+        {
+            member.GetComponent<SpriteRenderer>().sortingOrder = sortOrder + members.Count + 1;
+        }
+        else
+        {
+            member.GetComponent<MeshRenderer>().sortingOrder = sortOrder + members.Count + 1;
+        }
+
+        //TEMP SOLUTION
+        StartCoroutine(ShiftUp());
+        
     }
 
     /// <summary>
