@@ -1140,10 +1140,27 @@ public class LevelExporterWindow : EditorWindow
     }
 
     /// <summary>
-    /// Resolve a MoveTo's Transform reference into the JSON equivalent:
-    ///   - If it's a B_DropZone, write objectId (of its parent) + zoneId.
-    ///   - Else if it has a B_InteractableObject, write its objectId.
-    ///   - Otherwise, write the absolute world position.
+    /// Resolve a MoveTo's Transform reference into the JSON equivalent. Order
+    /// matters — we prefer reference-by-id over literal positions because the
+    /// Unity runtime reads <c>a.moveTarget.position</c> LIVE every frame, so
+    /// the tween chases whatever the target's current world position is. A
+    /// literal position is a snapshot at export time and goes stale the
+    /// moment the target moves (e.g. a static GO that's also a queue tail
+    /// follower shifting up as members are served).
+    ///
+    /// Branches:
+    ///   1. <see cref="B_DropZone"/> — write zoneId (+ parent interactable's objectId).
+    ///   2. <see cref="B_InteractableObject"/> — write its objectId.
+    ///   3. <see cref="B_StaticObject"/> with a non-empty objectId — write its
+    ///      objectId via the same <c>moveTargetObjectId</c> field. The LibGDX
+    ///      runtime checks both registries when resolving the id, so this is
+    ///      a single-field reference, not a new schema. Fixes the
+    ///      "static GO that moves at runtime" case (queue tail followers,
+    ///      animated statics, etc.) where a literal snapshot would lie.
+    ///   4. Anything else — fall back to a literal world position + rotation.
+    ///      Plain Transforms have no stable id to reference, so the snapshot
+    ///      is the best we can do; the importer recreates a <c>_moveAnchor</c>
+    ///      at that pose.
     /// </summary>
     private void FillMoveTarget(StateActionJson j, Transform target)
     {
@@ -1162,6 +1179,16 @@ public class LevelExporterWindow : EditorWindow
         if (obj != null)
         {
             j.moveTargetObjectId = obj.ObjectId;
+            return;
+        }
+
+        // Static object reference — uses the same moveTargetObjectId field as
+        // interactable, so runtimes (Unity importer + LibGDX) resolve by id
+        // and read the live transform position instead of a stale snapshot.
+        B_StaticObject sobj = target.GetComponent<B_StaticObject>();
+        if (sobj != null && !string.IsNullOrEmpty(sobj.ObjectId))
+        {
+            j.moveTargetObjectId = sobj.ObjectId;
             return;
         }
 
