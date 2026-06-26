@@ -4815,7 +4815,7 @@ Transform:
   m_GameObject: {fileID: 1161594230}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5, y: 4.95, z: 0}
+  m_LocalPosition: {x: 0.08, y: 4.95, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4870,12 +4870,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7020775560802394758, guid: 156f4934d88b92a419a79db74a52cdb6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 156f4934d88b92a419a79db74a52cdb6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 7.76, y: 4.69}
+  m_Size: {x: 10.82, y: 4.69}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -4895,7 +4895,7 @@ MonoBehaviour:
   objectId: dantuong
   data:
     initStateId: init
-    initSprite: {fileID: 7020775560802394758, guid: 156f4934d88b92a419a79db74a52cdb6, type: 3}
+    initSprite: {fileID: 21300000, guid: 156f4934d88b92a419a79db74a52cdb6, type: 3}
     initSpineAnim: 
     initSpineLoop: 1
     initSFX: {fileID: 0}
@@ -5037,8 +5037,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 7.76, y: 4.69}
-    newSize: {x: 7.76, y: 4.69}
+    oldSize: {x: 10.82, y: 4.69}
+    newSize: {x: 10.82, y: 4.69}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -8890,11 +8890,11 @@ MonoBehaviour:
       hintMessageKey: 
       repeatable: 0
       isDone: 0
-    - stateId: win
+    - stateId: win_pending
       dragSprite: {fileID: 0}
       stateSprite: {fileID: 0}
-      stateSpineAnim: ba_ngu_ngon
-      stateSpineLoop: 1
+      stateSpineAnim: 
+      stateSpineLoop: 0
       stateSFX: {fileID: 0}
       trigger: 7
       requiredZoneId: 
@@ -8939,6 +8939,72 @@ MonoBehaviour:
         stateId: used
         requireNotDone: 0
         gate: 0
+      requiredCount: 0
+      actions:
+      - type: 0
+        runInParallel: 0
+        actionTarget: {fileID: 0}
+        duration: 3
+        moveTarget: {fileID: 0}
+        ease: 0
+        rotateToMatchTarget: 0
+        scaleTarget: 0
+        fadeOut: 0
+        destroyOnDisappear: 0
+        fadeIn: 0
+        spineAnim: 
+        spineLoop: 0
+        activateTarget: {fileID: 0}
+        activateStateId: 
+        chainGuards: []
+        queueTarget: {fileID: 0}
+        queueServeStateId: 
+        sfxClip: {fileID: 0}
+        skinTarget: {fileID: 0}
+        skinName: 
+        skinOp: 0
+        boneSource: {fileID: 0}
+        boneName: 
+        keepBoneOffset: 0
+      - type: 5
+        runInParallel: 0
+        actionTarget: {fileID: 0}
+        duration: 3
+        moveTarget: {fileID: 0}
+        ease: 0
+        rotateToMatchTarget: 0
+        scaleTarget: 0
+        fadeOut: 0
+        destroyOnDisappear: 0
+        fadeIn: 0
+        spineAnim: 
+        spineLoop: 0
+        activateTarget: {fileID: 2066051659}
+        activateStateId: win
+        chainGuards: []
+        queueTarget: {fileID: 0}
+        queueServeStateId: 
+        sfxClip: {fileID: 0}
+        skinTarget: {fileID: 0}
+        skinName: 
+        skinOp: 0
+        boneSource: {fileID: 0}
+        boneName: 
+        keepBoneOffset: 0
+      successMessageKey: 
+      failMessageKey: 
+      hintMessageKey: 
+      repeatable: 0
+      isDone: 0
+    - stateId: win
+      dragSprite: {fileID: 0}
+      stateSprite: {fileID: 0}
+      stateSpineAnim: ba_ngu_ngon
+      stateSpineLoop: 1
+      stateSFX: {fileID: 8300000, guid: 057aaeb03b80aa742ab9a31883b79e9c, type: 3}
+      trigger: 0
+      requiredZoneId: 
+      requirements: []
       requiredCount: 0
       actions:
       - type: 0

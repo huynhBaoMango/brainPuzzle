@@ -107,6 +107,37 @@ public class B_InteractableGroup : MonoBehaviour
     private void Awake()
     {
         ApplyVisualModeToMembers();
+        ApplyInitToMembers();
+    }
+
+    /// <summary>
+    /// Pushes the group's <c>data.init*</c> visuals onto every member at
+    /// runtime — the group itself has no renderer/skeleton, so the init
+    /// fields described on its ObjectData are descriptive only and need to
+    /// be applied to each member's renderer / skeleton.
+    /// </summary>
+    private void ApplyInitToMembers()
+    {
+        if (data == null || members == null) return;
+        for (int i = 0; i < members.Count; i++)
+        {
+            GameObject m = members[i];
+            if (m == null) continue;
+
+            if (visualMode == VisualMode.Spine)
+            {
+                var skel = m.GetComponent<Spine.Unity.SkeletonAnimation>();
+                if (skel != null && !string.IsNullOrEmpty(data.initSpineAnim))
+                    B_InteractableObject.PlaySpineAnim(
+                        skel, data.initSpineAnim, data.initSpineLoop);
+            }
+            else
+            {
+                var sr = m.GetComponent<SpriteRenderer>();
+                if (sr != null && data.initSprite != null)
+                    sr.sprite = data.initSprite;
+            }
+        }
     }
 
     public bool HasAvailableMembers()
@@ -405,13 +436,13 @@ public class B_InteractableGroup : MonoBehaviour
 
             B_InteractableObject.PlaySFXSafe(s.stateSFX);
 
+            // Fire message BEFORE actions so it's visible during the chain.
+            if (!string.IsNullOrEmpty(s.successMessageKey))
+                B_InteractableObject.OnShowMessage?.Invoke(s.successMessageKey);
+
             // Run actions on the child.
             if (s.actions != null && s.actions.Count > 0)
                 yield return RunActions(s.actions);
-
-            // Show success message + fire hook + Unity event.
-            if (!string.IsNullOrEmpty(s.successMessageKey))
-                B_InteractableObject.OnShowMessage?.Invoke(s.successMessageKey);
 
             // Consume the child — remove from list.
             if (activeChild != null)

@@ -146,10 +146,49 @@ public class B_InteractableQueue : MonoBehaviour
     private void Awake()
     {
         ApplyVisualModeToMembers();
+        ApplyInitToMembers();
         CleanNulls();
         CaptureFollowerOffsets();
         if (snapMembersToSlotsOnStart) SnapToSlots();
         if (!string.IsNullOrEmpty(queueId)) registry[queueId] = this;
+    }
+
+    /// <summary>
+    /// Pushes the queue's <c>data.init*</c> visuals onto every member at
+    /// runtime. The queue itself has no renderer/skeleton — its init fields
+    /// are descriptive only and need to be applied to each member so they
+    /// share the same starting pose. Mirrors what the importer does at edit
+    /// time, but this path also handles scenes the designer authored directly
+    /// (no import involved).
+    /// </summary>
+    private void ApplyInitToMembers()
+    {
+        if (data == null || members == null) return;
+        for (int i = 0; i < members.Count; i++)
+            ApplyInitToOne(members[i]);
+        // Tail followers usually have their own authored anim, so we don't
+        // push the queue's init onto them — they keep what they were set up
+        // with (their own SkeletonAnimation inspector values or whatever the
+        // top-level interactable they reference uses).
+    }
+
+    private void ApplyInitToOne(GameObject m)
+    {
+        if (m == null) return;
+
+        if (visualMode == VisualMode.Spine)
+        {
+            var skel = m.GetComponent<Spine.Unity.SkeletonAnimation>();
+            if (skel != null && !string.IsNullOrEmpty(data.initSpineAnim))
+                B_InteractableObject.PlaySpineAnim(
+                    skel, data.initSpineAnim, data.initSpineLoop);
+        }
+        else
+        {
+            var sr = m.GetComponent<SpriteRenderer>();
+            if (sr != null && data.initSprite != null)
+                sr.sprite = data.initSprite;
+        }
     }
 
     private void CaptureFollowerOffsets()
@@ -374,13 +413,18 @@ public class B_InteractableQueue : MonoBehaviour
         else
             member.transform.position = dest;
 
-        if(visualMode == VisualMode.Sprite)
+        // Runtime-added members aren't in the JSON, so they need a sortingOrder
+        // assigned at AppendMember time. Layered above the existing tail so the
+        // newcomer cascades on top.
+        if (visualMode == VisualMode.Sprite)
         {
-            member.GetComponent<SpriteRenderer>().sortingOrder = sortOrder + members.Count + 1;
+            var sr = member.GetComponent<SpriteRenderer>();
+            if (sr != null) sr.sortingOrder = sortOrder + members.Count + 1;
         }
         else
         {
-            member.GetComponent<MeshRenderer>().sortingOrder = sortOrder + members.Count + 1;
+            var mr = member.GetComponent<MeshRenderer>();
+            if (mr != null) mr.sortingOrder = sortOrder + members.Count + 1;
         }
 
         //TEMP SOLUTION
@@ -451,14 +495,15 @@ public class B_InteractableQueue : MonoBehaviour
 
             B_InteractableObject.PlaySFXSafe(s.stateSFX);
 
+            // Fire message BEFORE actions so it's visible during the chain.
+            if (!string.IsNullOrEmpty(s.successMessageKey))
+                B_InteractableObject.OnShowMessage?.Invoke(s.successMessageKey);
+
             // Run actions on the head — ShiftUp waits for this to finish,
             // including any actions flagged runInParallel (RunActions drains
             // pending coroutines before returning).
             if (s.actions != null && s.actions.Count > 0)
                 yield return RunActions(s.actions, head);
-
-            if (!string.IsNullOrEmpty(s.successMessageKey))
-                B_InteractableObject.OnShowMessage?.Invoke(s.successMessageKey);
 
             // Mark this state as done so other objects can check it via
             // StateRequirement.objectId = <queueId>, stateId = <this state>.

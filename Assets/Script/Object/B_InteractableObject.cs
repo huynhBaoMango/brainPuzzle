@@ -944,10 +944,13 @@ public class B_InteractableObject : MonoBehaviour
 
             s.isDone = true;
 
+            // Fire the success message BEFORE running actions so the toast
+            // is visible during the whole chain (and the UI's own hold-then-
+            // fade timer starts at state activation, not at chain finish).
+            ShowMessage(s.successMessageKey);
+
             if (s.actions != null && s.actions.Count > 0)
                 yield return RunActions(s.actions);
-
-            ShowMessage(s.successMessageKey);
 
         }
         finally

@@ -210,7 +210,7 @@ MonoBehaviour:
       dragSprite: {fileID: 0}
       stateSprite: {fileID: 0}
       stateSpineAnim: Na8_k_ao
-      stateSpineLoop: 0
+      stateSpineLoop: 1
       stateSFX: {fileID: 8300000, guid: c810a1ddd8df27a4b897d5152c25cb77, type: 3}
       trigger: 2
       requiredZoneId: couple
@@ -7868,7 +7868,7 @@ MonoBehaviour:
   startHidden: 1
   visualMode: 1
   skeleton: {fileID: 1563948213}
-  initSpineAnim: 
+  initSpineAnim: maysay
   initSpineLoop: 1
 --- !u!114 &1563948213
 MonoBehaviour:

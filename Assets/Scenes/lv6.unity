@@ -721,7 +721,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 9c6fa808829405d4e8f8975ec2fb3285, type: 3}
       trigger: 2
       requiredZoneId: binhhoa
       requirements: []
@@ -991,7 +991,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 4ea0bc0a54bf0ba4a86535c217cfba43, type: 3}
       trigger: 2
       requiredZoneId: vai
       requirements:
@@ -1624,7 +1624,7 @@ MonoBehaviour:
       actions:
       - type: 3
         runInParallel: 0
-        actionTarget: {fileID: 1857051482}
+        actionTarget: {fileID: 793691706}
         duration: 0
         moveTarget: {fileID: 0}
         ease: 0
@@ -2414,7 +2414,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 6ebddb5f3d8b9ab42818525bb8a31f13, type: 3}
       trigger: 2
       requiredZoneId: outsidedrop
       requirements: []
@@ -2862,7 +2862,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &501506289
 Transform:
   m_ObjectHideFlags: 0
@@ -4021,6 +4021,10 @@ MonoBehaviour:
     targetId: goi
     stateId: used
     target: {fileID: 0}
+  - type: 0
+    targetId: lolem
+    stateId: win
+    target: {fileID: 0}
   loseConditions:
   - type: 0
     targetId: vay
@@ -4113,14 +4117,17 @@ MonoBehaviour:
     en: Don't wear a new dress without showering
     vn: "\u0110\u1EEBng m\u1EB7c v\xE1y m\u1EDBi khi ch\u01B0a t\u1EAFm"
   - key: dighe_lose
-    en: You can't go anywhere!
+    en: You will not go anywhere!
     vn: "Ng\u01B0\u01A1i kh\xF4ng \u0111\u01B0\u1EE3c \u0111i \u0111\xE2u h\u1EBFt!"
   - key: dighe_lose_h
     en: Don't touch the stepmother's painting on the wall
     vn: "\u0110\u1EEBng \u0111\u1ED9ng v\xE0o tranh d\xEC gh\u1EBB tr\xEAn t\u01B0\u1EDDng"
   - key: bangdo_s
-    en: 
-    vn: 
+    en: Hair must be neat and tidy
+    vn: "T\xF3c ph\u1EA3i th\u1EADt g\u1ECDn g\xE0ng"
+  - key: giay_s
+    en: These shoes match the dress really well
+    vn: "\u0110\xF4i gi\xE0y n\xE0y th\u1EADt ph\xF9 h\u1EE3p v\u1EDBi b\u1ED9 v\xE1y"
 --- !u!4 &654973720
 Transform:
   m_ObjectHideFlags: 0
@@ -4665,7 +4672,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &761180240
 Transform:
   m_ObjectHideFlags: 0
@@ -4753,6 +4760,178 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::B_StaticObject
   objectId: bgwin
+  startHidden: 1
+  visualMode: 0
+  skeleton: {fileID: 0}
+  initSpineAnim: 
+  initSpineLoop: 1
+--- !u!1 &793691706
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 793691707}
+  - component: {fileID: 793691708}
+  - component: {fileID: 793691711}
+  - component: {fileID: 793691710}
+  - component: {fileID: 793691709}
+  m_Layer: 0
+  m_Name: nhatam
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &793691707
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793691706}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.52, y: 2.36, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2020072905}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &793691708
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793691706}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 10
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 21300000, guid: fb154ab66d5d5444f86a4244d66e90ae, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 3.24, y: 6.63}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
+--- !u!114 &793691709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793691706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 365d044aa4a03c4489ae7ae897726ed3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::B_DropZone
+  zoneId: nhatam
+  sortOrder: 11
+--- !u!61 &793691710
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793691706}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.24, y: 6.63}
+    newSize: {x: 3.24, y: 6.63}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 3.24, y: 6.63}
+  m_EdgeRadius: 0
+--- !u!114 &793691711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793691706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c70d691408201f14089a1282d5faedf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::B_StaticObject
+  objectId: nhatam
   startHidden: 1
   visualMode: 0
   skeleton: {fileID: 0}
@@ -4986,7 +5165,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 36b030b55d3ab334a8150cf68e27b920, type: 3}
       trigger: 2
       requiredZoneId: lolem
       requirements:
@@ -6289,7 +6468,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 322be53005de9874eb14a46bf351af61, type: 3}
       trigger: 2
       requiredZoneId: lolem
       requirements:
@@ -6338,7 +6517,7 @@ MonoBehaviour:
         spineAnim: 
         spineLoop: 0
         activateTarget: {fileID: 1277341965}
-        activateStateId: vay
+        activateStateId: vay_thua
         chainGuards: []
         queueTarget: {fileID: 0}
         queueServeStateId: 
@@ -7302,7 +7481,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 31
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 2103287352147947331, guid: 5cd915c0e0b3a1a47a6daa0e9ef2d645, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5cd915c0e0b3a1a47a6daa0e9ef2d645, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7324,7 +7503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c70d691408201f14089a1282d5faedf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::B_StaticObject
-  objectId: hopgiay
+  objectId: hopgiay2
   startHidden: 1
   visualMode: 0
   skeleton: {fileID: 0}
@@ -7492,7 +7671,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 054c1f7d97ad4174cb578eb249e7d298, type: 3}
       trigger: 3
       requiredZoneId: 
       requirements:
@@ -7604,7 +7783,7 @@ MonoBehaviour:
         keepBoneOffset: 0
       - type: 0
         runInParallel: 0
-        actionTarget: {fileID: 1857051482}
+        actionTarget: {fileID: 0}
         duration: 0.3
         moveTarget: {fileID: 1625337913}
         ease: 0
@@ -7654,7 +7833,7 @@ MonoBehaviour:
         keepBoneOffset: 0
       - type: 2
         runInParallel: 0
-        actionTarget: {fileID: 1857051482}
+        actionTarget: {fileID: 793691706}
         duration: 0
         moveTarget: {fileID: 1625337913}
         ease: 0
@@ -7679,7 +7858,7 @@ MonoBehaviour:
         keepBoneOffset: 0
       - type: 0
         runInParallel: 0
-        actionTarget: {fileID: 1857051482}
+        actionTarget: {fileID: 0}
         duration: 2
         moveTarget: {fileID: 1625337913}
         ease: 0
@@ -7729,7 +7908,7 @@ MonoBehaviour:
         keepBoneOffset: 0
       - type: 3
         runInParallel: 0
-        actionTarget: {fileID: 1857051482}
+        actionTarget: {fileID: 793691706}
         duration: 0
         moveTarget: {fileID: 1625337913}
         ease: 0
@@ -7779,7 +7958,7 @@ MonoBehaviour:
         keepBoneOffset: 0
       - type: 0
         runInParallel: 0
-        actionTarget: {fileID: 1857051482}
+        actionTarget: {fileID: 0}
         duration: 0.5
         moveTarget: {fileID: 1625337913}
         ease: 0
@@ -7928,6 +8107,22 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: LoLem3
       stateSpineLoop: 1
+      stateSFX: {fileID: 8300000, guid: d21abc98d8e4d4f4f8503919b955b6ff, type: 3}
+      trigger: 0
+      requiredZoneId: 
+      requirements: []
+      requiredCount: 0
+      actions: []
+      successMessageKey: 
+      failMessageKey: 
+      hintMessageKey: 
+      repeatable: 0
+      isDone: 0
+    - stateId: vay_thua
+      dragSprite: {fileID: 0}
+      stateSprite: {fileID: 0}
+      stateSpineAnim: LoLem3
+      stateSpineLoop: 1
       stateSFX: {fileID: 0}
       trigger: 0
       requiredZoneId: 
@@ -7944,7 +8139,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: LoLem4
       stateSpineLoop: 1
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 757c96744cda5e44dba1bf7609239b9e, type: 3}
       trigger: 0
       requiredZoneId: 
       requirements: []
@@ -7960,7 +8155,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 8b921117e4be1f44dbcaeb05e0a0c76b, type: 3}
       trigger: 0
       requiredZoneId: 
       requirements:
@@ -8020,7 +8215,7 @@ MonoBehaviour:
         boneSource: {fileID: 0}
         boneName: 
         keepBoneOffset: 0
-      successMessageKey: 
+      successMessageKey: giay_s
       failMessageKey: 
       hintMessageKey: 
       repeatable: 0
@@ -8142,7 +8337,32 @@ MonoBehaviour:
         boneSource: {fileID: 0}
         boneName: 
         keepBoneOffset: 0
-      successMessageKey: win
+      - type: 5
+        runInParallel: 0
+        actionTarget: {fileID: 0}
+        duration: 2
+        moveTarget: {fileID: 0}
+        ease: 0
+        rotateToMatchTarget: 0
+        scaleTarget: 0
+        fadeOut: 0
+        destroyOnDisappear: 0
+        fadeIn: 0
+        spineAnim: 
+        spineLoop: 0
+        activateTarget: {fileID: 1277341965}
+        activateStateId: win
+        chainGuards: []
+        queueTarget: {fileID: 0}
+        queueServeStateId: 
+        sfxClip: {fileID: 0}
+        skinTarget: {fileID: 0}
+        skinName: 
+        skinOp: 0
+        boneSource: {fileID: 0}
+        boneName: 
+        keepBoneOffset: 0
+      successMessageKey: 
       failMessageKey: 
       hintMessageKey: 
       repeatable: 0
@@ -8153,11 +8373,61 @@ MonoBehaviour:
       stateSpineAnim: 
       stateSpineLoop: 0
       stateSFX: {fileID: 0}
-      trigger: 7
+      trigger: 0
       requiredZoneId: 
       requirements: []
       requiredCount: 0
       actions:
+      - type: 0
+        runInParallel: 0
+        actionTarget: {fileID: 761180239}
+        duration: 1
+        moveTarget: {fileID: 0}
+        ease: 0
+        rotateToMatchTarget: 0
+        scaleTarget: 0
+        fadeOut: 0
+        destroyOnDisappear: 0
+        fadeIn: 1
+        spineAnim: 
+        spineLoop: 0
+        activateTarget: {fileID: 0}
+        activateStateId: 
+        chainGuards: []
+        queueTarget: {fileID: 0}
+        queueServeStateId: 
+        sfxClip: {fileID: 0}
+        skinTarget: {fileID: 0}
+        skinName: 
+        skinOp: 0
+        boneSource: {fileID: 0}
+        boneName: 
+        keepBoneOffset: 0
+      - type: 7
+        runInParallel: 0
+        actionTarget: {fileID: 761180239}
+        duration: 0
+        moveTarget: {fileID: 0}
+        ease: 0
+        rotateToMatchTarget: 0
+        scaleTarget: 0
+        fadeOut: 0
+        destroyOnDisappear: 0
+        fadeIn: 1
+        spineAnim: 
+        spineLoop: 0
+        activateTarget: {fileID: 0}
+        activateStateId: 
+        chainGuards: []
+        queueTarget: {fileID: 0}
+        queueServeStateId: 
+        sfxClip: {fileID: 8300000, guid: 596dd167ba4c1af4f885fab7582ffd83, type: 3}
+        skinTarget: {fileID: 0}
+        skinName: 
+        skinOp: 0
+        boneSource: {fileID: 0}
+        boneName: 
+        keepBoneOffset: 0
       - type: 3
         runInParallel: 1
         actionTarget: {fileID: 761180239}
@@ -8233,7 +8503,7 @@ MonoBehaviour:
         boneSource: {fileID: 0}
         boneName: 
         keepBoneOffset: 0
-      successMessageKey: 
+      successMessageKey: win
       failMessageKey: 
       hintMessageKey: 
       repeatable: 0
@@ -9508,178 +9778,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2020072905}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -93.02}
---- !u!1 &1857051482
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1857051483}
-  - component: {fileID: 1857051485}
-  - component: {fileID: 1857051484}
-  - component: {fileID: 1857051487}
-  - component: {fileID: 1857051486}
-  m_Layer: 0
-  m_Name: nhatam_0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1857051483
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1857051482}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.51, y: 2.39, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2020072905}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1857051484
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1857051482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c70d691408201f14089a1282d5faedf5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::B_StaticObject
-  objectId: nhatam
-  startHidden: 1
-  visualMode: 0
-  skeleton: {fileID: 0}
-  initSpineAnim: 
-  initSpineLoop: 1
---- !u!212 &1857051485
-SpriteRenderer:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1857051482}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 10
-  m_MaskInteraction: 0
-  m_Sprite: {fileID: -2032770022005093724, guid: fb154ab66d5d5444f86a4244d66e90ae, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 3.28, y: 6.7}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_SpriteSortPoint: 0
---- !u!114 &1857051486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1857051482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 365d044aa4a03c4489ae7ae897726ed3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::B_DropZone
-  zoneId: nhatam
-  sortOrder: 11
---- !u!61 &1857051487
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1857051482}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.28, y: 6.7}
-    newSize: {x: 3.28, y: 6.7}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 3.28, y: 6.7}
-  m_EdgeRadius: 0
 --- !u!1 &1864446942
 GameObject:
   m_ObjectHideFlags: 0
@@ -10397,7 +10495,7 @@ Transform:
   - {fileID: 867680915}
   - {fileID: 845281467}
   - {fileID: 455111277}
-  - {fileID: 1857051483}
+  - {fileID: 793691707}
   - {fileID: 353671436}
   - {fileID: 1506476960}
   - {fileID: 505870804}
@@ -10660,7 +10758,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::B_DropZone
   zoneId: vai
-  sortOrder: 14
+  sortOrder: 20
 --- !u!61 &2135325363
 BoxCollider2D:
   m_ObjectHideFlags: 0

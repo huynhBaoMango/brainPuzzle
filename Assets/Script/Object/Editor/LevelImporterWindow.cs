@@ -1754,23 +1754,66 @@ public class LevelImporterWindow : EditorWindow
     /// stay blank on next Play. Tail followers are NOT touched here; they
     /// keep their own authored animation.
     /// </summary>
-    private static void ApplyParentInitAnim(GameObject memberGo, JToken parent)
+    /// <summary>
+    /// Applies the parent queue/group's <c>data.init*</c> visuals onto a
+    /// member. The queue/group itself has no renderer/skeleton — its init
+    /// fields are descriptive only and need to be pushed onto each member at
+    /// import time. Handles BOTH Spine (init anim + loop) and Sprite (init
+    /// sprite) modes. No-op for missing components / missing init fields.
+    /// </summary>
+    private void ApplyParentInitAnim(GameObject memberGo, JToken parent)
     {
         if (memberGo == null || parent == null) return;
-        var skel = memberGo.GetComponent<Spine.Unity.SkeletonAnimation>();
-        if (skel == null) return;
         JToken data = parent["data"];
         if (data == null) return;
-        string anim = data["initSpineAnim"]?.Value<string>();
-        if (string.IsNullOrEmpty(anim)) return;
-        bool loop = data["initSpineLoop"]?.Value<bool>() ?? true;
 
-        SerializedObject sso = new SerializedObject(skel);
-        SerializedProperty animProp = sso.FindProperty("_animationName");
-        if (animProp != null) animProp.stringValue = anim;
-        SerializedProperty loopProp = sso.FindProperty("loop");
-        if (loopProp != null) loopProp.boolValue = loop;
-        sso.ApplyModifiedPropertiesWithoutUndo();
+        // Spine path: set _animationName + loop on the member's SkeletonAnimation.
+        var skel = memberGo.GetComponent<Spine.Unity.SkeletonAnimation>();
+        if (skel != null)
+        {
+            string anim = data["initSpineAnim"]?.Value<string>();
+            if (!string.IsNullOrEmpty(anim))
+            {
+                bool loop = data["initSpineLoop"]?.Value<bool>() ?? true;
+
+                SerializedObject sso = new SerializedObject(skel);
+                SerializedProperty animProp = sso.FindProperty("_animationName");
+                if (animProp != null) animProp.stringValue = anim;
+                SerializedProperty loopProp = sso.FindProperty("loop");
+                if (loopProp != null) loopProp.boolValue = loop;
+                sso.ApplyModifiedPropertiesWithoutUndo();
+
+                // Re-run Initialize so the new _animationName/loop actually
+                // take effect: AddSpineComponent already called Initialize
+                // once with the default values (empty anim, loop=false), and
+                // SkeletonAnimation skips re-init when already valid. Force-
+                // overwrite to play the looped anim in the editor preview
+                // AND make the next Play start from the same state.
+                skel.Initialize(true);
+                EditorUtility.SetDirty(skel);
+            }
+        }
+
+        // Sprite path: write the parent's initSprite onto the member's
+        // SpriteRenderer. Use whatever the member already had as a fallback
+        // (the member's own JSON `sprite` field still loaded its sprite in
+        // the queue/group spawn loop — this only overrides when the parent
+        // specified one).
+        var sr = memberGo.GetComponent<SpriteRenderer>();
+        if (sr != null)
+        {
+            string spritePath = data["initSprite"]?.Value<string>();
+            if (!string.IsNullOrEmpty(spritePath))
+            {
+                string resolved = ResolveImportPath(spritePath);
+                Sprite sprite = LoadOrFixSprite(resolved, 100f);
+                if (sprite != null)
+                {
+                    sr.sprite = sprite;
+                    EditorUtility.SetDirty(sr);
+                }
+            }
+        }
     }
 
     private static void ApplyInitialSkins(GameObject go, JToken json)
