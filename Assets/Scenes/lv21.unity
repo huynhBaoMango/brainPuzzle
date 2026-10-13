@@ -5016,7 +5016,7 @@ MonoBehaviour:
         spineAnim: 
         spineLoop: 0
         activateTarget: {fileID: 1129830465}
-        activateStateId: 
+        activateStateId: manhinh
         chainGuards: []
         queueTarget: {fileID: 0}
         queueServeStateId: 
@@ -5737,7 +5737,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: ee1f0d5df05318b41832d7c604105192, type: 3}
       trigger: 0
       requiredZoneId: 
       requirements: []
@@ -5778,7 +5778,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: ef1ff1c9573adf14db6a903681f2d6e9, type: 3}
       trigger: 0
       requiredZoneId: 
       requirements: []
@@ -5819,7 +5819,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: Cogai_danlen
       stateSpineLoop: 1
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: b180b05f1a28a9b4d87cba8e06c37a66, type: 3}
       trigger: 0
       requiredZoneId: 
       requirements: []
@@ -5913,7 +5913,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: Cogai_antraicay
       stateSpineLoop: 1
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 806488de2a91dcb42a4e731b32659bbb, type: 3}
       trigger: 0
       requiredZoneId: 
       requirements: []
@@ -6007,7 +6007,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: Cogai_vui
       stateSpineLoop: 1
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: c97d9d79981b78e4e8ba2a2b506b2584, type: 3}
       trigger: 0
       requiredZoneId: 
       requirements: []
@@ -6176,7 +6176,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: Cogai_nhintrai
       stateSpineLoop: 1
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 7c02dc5bb52652d40b895096a4781c28, type: 3}
       trigger: 0
       requiredZoneId: 
       requirements: []
@@ -6320,7 +6320,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 2543e4dd4ea07af44a8fe8b563e03571, type: 3}
       trigger: 0
       requiredZoneId: 
       requirements: []
@@ -6514,7 +6514,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: e83e79356585f4f4cb680e880c66e1a9, type: 3}
       trigger: 0
       requiredZoneId: 
       requirements: []
@@ -6708,7 +6708,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: Cogai_matxa
       stateSpineLoop: 1
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 2a83ac42119c405408534f36d0196efb, type: 3}
       trigger: 1
       requiredZoneId: 
       requirements: []
@@ -6802,7 +6802,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: Cogai_met2
       stateSpineLoop: 1
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 87c983042ec44f2428c80431242352c0, type: 3}
       trigger: 0
       requiredZoneId: 
       requirements: []
@@ -7955,6 +7955,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MessageDisplay
   messageText: {fileID: 1653825933}
+  holdSeconds: 2
+  fadeSeconds: 0.5
 --- !u!1 &1439523714
 GameObject:
   m_ObjectHideFlags: 0
@@ -9744,7 +9746,7 @@ MonoBehaviour:
     target: {fileID: 0}
   - type: 0
     targetId: cogai
-    stateId: matxa
+    stateId: win
     target: {fileID: 0}
   loseConditions: []
   timeLimit: 0

@@ -899,7 +899,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 2bb3ec4b893ed494d9cfc82d1aba7373, type: 3}
       trigger: 1
       requiredZoneId: 
       requirements:
@@ -1267,7 +1267,7 @@ MonoBehaviour:
       stateSprite: {fileID: 4472534838153687464, guid: cb6904bfdc5395a4e975a3ecb6ffc666, type: 3}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: b727492b7c759a94b81698f8bf9f399f, type: 3}
       trigger: 1
       requiredZoneId: 
       requirements: []
@@ -3985,7 +3985,7 @@ Transform:
   m_GameObject: {fileID: 1007440850}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.929, y: 1.979, z: 0}
+  m_LocalPosition: {x: -2.944, y: 1.99, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4006,7 +4006,7 @@ MonoBehaviour:
   objectId: mattre
   data:
     initStateId: init
-    initSprite: {fileID: -2234918620890488403, guid: a327c2f4c244f0445ac4e83b430b7c64, type: 3}
+    initSprite: {fileID: 21300000, guid: a327c2f4c244f0445ac4e83b430b7c64, type: 3}
     initSpineAnim: 
     initSpineLoop: 1
     initSFX: {fileID: 0}
@@ -4098,8 +4098,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.84, y: 1.08}
-    newSize: {x: 0.84, y: 1.08}
+    oldSize: {x: 1, y: 1.14}
+    newSize: {x: 1, y: 1.14}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -4155,12 +4155,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 18
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2234918620890488403, guid: a327c2f4c244f0445ac4e83b430b7c64, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a327c2f4c244f0445ac4e83b430b7c64, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.84, y: 1.08}
+  m_Size: {x: 1, y: 1.14}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -4697,7 +4697,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 0b319e9ff7f59c5469a7f03cdfb697f6, type: 3}
       trigger: 0
       requiredZoneId: 
       requirements: []
@@ -4763,12 +4763,41 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 6ca18ae1070fb084291480832faf9f20, type: 3}
       trigger: 0
       requiredZoneId: 
       requirements: []
       requiredCount: 0
       actions:
+      - type: 7
+        runInParallel: 0
+        actionTarget: {fileID: 0}
+        duration: 0
+        moveTarget: {fileID: 0}
+        ease: 0
+        rotateToMatchTarget: 0
+        scaleTarget: 0
+        fadeOut: 0
+        destroyOnDisappear: 0
+        fadeIn: 0
+        spineAnim: 
+        spineLoop: 0
+        activateTarget: {fileID: 1025725698}
+        activateStateId: hat_koao
+        chainGuards:
+        - objectId: namInteract
+          stateId: ao
+          requireNotDone: 1
+          gate: 0
+        queueTarget: {fileID: 551510392}
+        queueServeStateId: oi
+        sfxClip: {fileID: 8300000, guid: d6f54c18b21baf24da233383368cd68b, type: 3}
+        skinTarget: {fileID: 0}
+        skinName: 
+        skinOp: 0
+        boneSource: {fileID: 0}
+        boneName: 
+        keepBoneOffset: 0
       - type: 5
         runInParallel: 0
         actionTarget: {fileID: 0}
@@ -4866,7 +4895,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 0fc2f21b1867ab441a50468ab997dd7f, type: 3}
       trigger: 0
       requiredZoneId: 
       requirements: []
@@ -4916,6 +4945,31 @@ MonoBehaviour:
         queueTarget: {fileID: 0}
         queueServeStateId: 
         sfxClip: {fileID: 0}
+        skinTarget: {fileID: 0}
+        skinName: 
+        skinOp: 0
+        boneSource: {fileID: 0}
+        boneName: 
+        keepBoneOffset: 0
+      - type: 7
+        runInParallel: 0
+        actionTarget: {fileID: 466400426}
+        duration: 0
+        moveTarget: {fileID: 1558627926}
+        ease: 27
+        rotateToMatchTarget: 0
+        scaleTarget: 0
+        fadeOut: 0
+        destroyOnDisappear: 0
+        fadeIn: 0
+        spineAnim: Na_Win
+        spineLoop: 0
+        activateTarget: {fileID: 0}
+        activateStateId: 
+        chainGuards: []
+        queueTarget: {fileID: 0}
+        queueServeStateId: 
+        sfxClip: {fileID: 8300000, guid: f7480e43f28f8694193fa3982e3a9789, type: 3}
         skinTarget: {fileID: 0}
         skinName: 
         skinOp: 0
@@ -5007,12 +5061,37 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: d680fa7fd42fb664cb44e8ad443122a7, type: 3}
       trigger: 0
       requiredZoneId: 
       requirements: []
       requiredCount: 0
       actions:
+      - type: 7
+        runInParallel: 0
+        actionTarget: {fileID: 1654761582}
+        duration: 0
+        moveTarget: {fileID: 820740671}
+        ease: 0
+        rotateToMatchTarget: 1
+        scaleTarget: 0
+        fadeOut: 0
+        destroyOnDisappear: 0
+        fadeIn: 0
+        spineAnim: Na_Win
+        spineLoop: 0
+        activateTarget: {fileID: 0}
+        activateStateId: 
+        chainGuards: []
+        queueTarget: {fileID: 0}
+        queueServeStateId: 
+        sfxClip: {fileID: 8300000, guid: f7480e43f28f8694193fa3982e3a9789, type: 3}
+        skinTarget: {fileID: 0}
+        skinName: 
+        skinOp: 0
+        boneSource: {fileID: 0}
+        boneName: 
+        keepBoneOffset: 0
       - type: 1
         runInParallel: 0
         actionTarget: {fileID: 1654761582}
@@ -5098,7 +5177,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 1b255ea4f42439d47b84cb3cff7a1cfe, type: 3}
       trigger: 0
       requiredZoneId: 
       requirements: []
@@ -5189,7 +5268,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: eca9af8b6509cdb45a10a2a3e7dc3f30, type: 3}
       trigger: 0
       requiredZoneId: 
       requirements: []
@@ -5271,7 +5350,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 45b23aeb0e7b6514d82a71f8f6ff18f7, type: 3}
       trigger: 0
       requiredZoneId: 
       requirements: []
@@ -5387,6 +5466,31 @@ MonoBehaviour:
         queueTarget: {fileID: 551510392}
         queueServeStateId: oi
         sfxClip: {fileID: 0}
+        skinTarget: {fileID: 0}
+        skinName: 
+        skinOp: 0
+        boneSource: {fileID: 0}
+        boneName: 
+        keepBoneOffset: 0
+      - type: 7
+        runInParallel: 0
+        actionTarget: {fileID: 466400426}
+        duration: 0
+        moveTarget: {fileID: 2137320488}
+        ease: 0
+        rotateToMatchTarget: 1
+        scaleTarget: 0
+        fadeOut: 0
+        destroyOnDisappear: 0
+        fadeIn: 0
+        spineAnim: Na_Win
+        spineLoop: 1
+        activateTarget: {fileID: 0}
+        activateStateId: 
+        chainGuards: []
+        queueTarget: {fileID: 551510392}
+        queueServeStateId: oi
+        sfxClip: {fileID: 8300000, guid: 8874d53b861426445acfb34914e8036e, type: 3}
         skinTarget: {fileID: 0}
         skinName: 
         skinOp: 0
@@ -6092,7 +6196,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 21
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 8834126694109852354, guid: 9c62fa74bee48344299e675adc506a9d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9c62fa74bee48344299e675adc506a9d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6117,7 +6221,7 @@ MonoBehaviour:
   objectId: aovest
   data:
     initStateId: init
-    initSprite: {fileID: 8834126694109852354, guid: 9c62fa74bee48344299e675adc506a9d, type: 3}
+    initSprite: {fileID: 21300000, guid: 9c62fa74bee48344299e675adc506a9d, type: 3}
     initSpineAnim: 
     initSpineLoop: 1
     initSFX: {fileID: 0}
@@ -6519,12 +6623,37 @@ MonoBehaviour:
       stateSprite: {fileID: -8493726683949202257, guid: fac190299b88e2040ad234c3a9b1379f, type: 3}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 5fc4f78385833ec4dbba92c03458f4d0, type: 3}
       trigger: 1
       requiredZoneId: 
       requirements: []
       requiredCount: 0
       actions:
+      - type: 7
+        runInParallel: 0
+        actionTarget: {fileID: 137859236}
+        duration: 0
+        moveTarget: {fileID: 0}
+        ease: 0
+        rotateToMatchTarget: 0
+        scaleTarget: 0
+        fadeOut: 1
+        destroyOnDisappear: 0
+        fadeIn: 1
+        spineAnim: 
+        spineLoop: 0
+        activateTarget: {fileID: 1025725698}
+        activateStateId: chiakhoa
+        chainGuards: []
+        queueTarget: {fileID: 0}
+        queueServeStateId: 
+        sfxClip: {fileID: 8300000, guid: 9ca7e891b8a900245a6b30ee8272e558, type: 3}
+        skinTarget: {fileID: 0}
+        skinName: 
+        skinOp: 0
+        boneSource: {fileID: 466400426}
+        boneName: bone11
+        keepBoneOffset: 1
       - type: 0
         runInParallel: 0
         actionTarget: {fileID: 0}
@@ -8628,7 +8757,7 @@ Transform:
   m_GameObject: {fileID: 1654761582}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.981, y: 2.22, z: 0}
+  m_LocalPosition: {x: -2.981, y: 2.209, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8683,7 +8812,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 26
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 1693020476259512959, guid: 5da27147148df074bb47d6d6e2df9309, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5da27147148df074bb47d6d6e2df9309, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8708,7 +8837,7 @@ MonoBehaviour:
   objectId: toc
   data:
     initStateId: init
-    initSprite: {fileID: 1693020476259512959, guid: 5da27147148df074bb47d6d6e2df9309, type: 3}
+    initSprite: {fileID: 21300000, guid: 5da27147148df074bb47d6d6e2df9309, type: 3}
     initSpineAnim: 
     initSpineLoop: 1
     initSFX: {fileID: 0}
@@ -9973,7 +10102,7 @@ Transform:
   m_GameObject: {fileID: 1919641410}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.832, y: 0.629, z: 0}
+  m_LocalPosition: {x: -2.832, y: 0.561, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10028,7 +10157,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 18
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -6927127074466954148, guid: 6550fa7dfd063b24a848c8961e7af47b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6550fa7dfd063b24a848c8961e7af47b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10053,7 +10182,7 @@ MonoBehaviour:
   objectId: aovest2
   data:
     initStateId: init
-    initSprite: {fileID: -6927127074466954148, guid: 6550fa7dfd063b24a848c8961e7af47b, type: 3}
+    initSprite: {fileID: 21300000, guid: 6550fa7dfd063b24a848c8961e7af47b, type: 3}
     initSpineAnim: 
     initSpineLoop: 1
     initSFX: {fileID: 0}
@@ -10449,7 +10578,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 220f373cefc8d9744b9cee111eff3fd5, type: 3}
       trigger: 2
       requiredZoneId: namDrop
       requirements: []

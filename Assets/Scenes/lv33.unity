@@ -1039,7 +1039,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 179b1f8b7598f9b44b36dc4e9d86178b, type: 3}
       trigger: 2
       requiredZoneId: randrop
       requirements: []
@@ -2096,7 +2096,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: f4b79d3933587944eae97b744db6db4a, type: 3}
       trigger: 2
       requiredZoneId: dadieudrop
       requirements: []
@@ -2779,7 +2779,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 8eb706283e0cbcb4483e7c53c3e662b4, type: 3}
       trigger: 2
       requiredZoneId: gautrucdrop
       requirements: []
@@ -4904,7 +4904,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 1c3929a5b270eda49b9e7f562821f321, type: 3}
       trigger: 2
       requiredZoneId: sutudrop
       requirements: []
@@ -5428,7 +5428,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: b6f5503bca5fae641ad8597de6a49068, type: 3}
       trigger: 2
       requiredZoneId: baodrop
       requirements: []
@@ -6136,7 +6136,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: e42355b6fde151548afa0d636dda577d, type: 3}
       trigger: 2
       requiredZoneId: biencaheodrop
       requirements: []
@@ -6753,7 +6753,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 4d35714bb8f6e504cbe43b0253c8b493, type: 3}
       trigger: 2
       requiredZoneId: domdomdrop
       requirements: []
@@ -7689,7 +7689,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 145e17f5fdea532459ec79b14ac4a09d, type: 3}
       trigger: 2
       requiredZoneId: khidrop
       requirements: []
@@ -8197,7 +8197,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: a17f0831237ca5340b9629b8d15a6476, type: 3}
       trigger: 0
       requiredZoneId: 
       requirements: []
@@ -8213,7 +8213,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: d7613c34874cdf6408f372867c6ffffc, type: 3}
       trigger: 0
       requiredZoneId: 
       requirements: []
@@ -8229,7 +8229,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: c5efe4db279ca064c8a867b7d1085ec4, type: 3}
       trigger: 0
       requiredZoneId: 
       requirements: []
@@ -8245,7 +8245,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 6b8e623482fff8744899084252aec7a3, type: 3}
       trigger: 0
       requiredZoneId: 
       requirements: []
@@ -8261,7 +8261,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 6d833ccef794c0444b6cb1f7a0a25a70, type: 3}
       trigger: 0
       requiredZoneId: 
       requirements: []
@@ -8277,7 +8277,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: f308af7e1ae25de449ae5092525c31b4, type: 3}
       trigger: 0
       requiredZoneId: 
       requirements: []
@@ -8293,7 +8293,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 13d76816eb1362844b418c1cadc328fb, type: 3}
       trigger: 0
       requiredZoneId: 
       requirements: []
@@ -8309,7 +8309,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 3f5ef2f9a3e550747be5f7fc091df844, type: 3}
       trigger: 0
       requiredZoneId: 
       requirements: []
@@ -8325,7 +8325,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: bb19ccff394b716469d541dccd8c4fdf, type: 3}
       trigger: 0
       requiredZoneId: 
       requirements: []
@@ -8341,7 +8341,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: caa14ab58dcc6ad4f83c8af1731c2999, type: 3}
       trigger: 0
       requiredZoneId: 
       requirements: []
@@ -8719,7 +8719,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: d4d5c7b255a071d43926fdee15426487, type: 3}
       trigger: 2
       requiredZoneId: thodrop
       requirements: []
@@ -10642,6 +10642,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MessageDisplay
   messageText: {fileID: 1653825933}
+  holdSeconds: 2
+  fadeSeconds: 0.5
 --- !u!1 &1448034261
 GameObject:
   m_ObjectHideFlags: 0
@@ -12350,7 +12352,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 3c30f2527e2b10944a2262441cd11bfe, type: 3}
       trigger: 2
       requiredZoneId: ruadrop
       requirements: []

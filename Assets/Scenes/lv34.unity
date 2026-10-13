@@ -280,7 +280,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: Trai_BienMat
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 7818103de6a43a143a4f18055d7dfda4, type: 3}
       trigger: 2
       requiredZoneId: ketudrop
       requirements:
@@ -1673,7 +1673,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: f6ea065170abdec42a1cdc85f96df328, type: 3}
       trigger: 2
       requiredZoneId: mangnhendrop
       requirements: []
@@ -2199,6 +2199,31 @@ MonoBehaviour:
       - type: 3
         runInParallel: 0
         actionTarget: {fileID: 1646694215}
+        duration: 0
+        moveTarget: {fileID: 0}
+        ease: 0
+        rotateToMatchTarget: 0
+        scaleTarget: 0
+        fadeOut: 0
+        destroyOnDisappear: 0
+        fadeIn: 0
+        spineAnim: Nu_vui
+        spineLoop: 1
+        activateTarget: {fileID: 0}
+        activateStateId: 
+        chainGuards: []
+        queueTarget: {fileID: 0}
+        queueServeStateId: 
+        sfxClip: {fileID: 0}
+        skinTarget: {fileID: 0}
+        skinName: 
+        skinOp: 0
+        boneSource: {fileID: 0}
+        boneName: 
+        keepBoneOffset: 0
+      - type: 3
+        runInParallel: 0
+        actionTarget: {fileID: 1191529292}
         duration: 0
         moveTarget: {fileID: 0}
         ease: 0
@@ -3608,7 +3633,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 92390f8602c4ea04ebafba5b3beeefb9, type: 3}
       trigger: 2
       requiredZoneId: thungracdrop
       requirements: []
@@ -3976,7 +4001,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 92390f8602c4ea04ebafba5b3beeefb9, type: 3}
       trigger: 2
       requiredZoneId: thungracdrop
       requirements: []
@@ -4424,16 +4449,13 @@ MonoBehaviour:
     vn: "M\u1EB9 v\u1EC1"
   - key: des
     en: Clean the house before mom comes in
-    vn: "D\u1ECDn nh\xE0 ts\u1EA1ch s\u1EBD tr\u01B0\u1EDBc khi m\u1EB9 v\xE0o nh\xE0"
+    vn: "D\u1ECDn nh\xE0 s\u1EA1ch s\u1EBD tr\u01B0\u1EDBc khi m\u1EB9 v\xE0o nh\xE0"
   - key: rac3_s
     en: Throw it all in the trash
     vn: "Nh\xE9t h\u1EBFt v\xE0o th\xF9ng r\xE1c"
   - key: rac3_h
     en: Drag the trash on the chair to the trash can
     vn: "K\xE9o \u0111\u1ED1ng r\xE1c tr\xEAn gh\u1EBF v\xE0o th\xF9ng r\xE1c"
-  - key: mayhut_s
-    en: 
-    vn: 
   - key: mayhut_h
     en: Drag the vacuum cleaner into the pile of dust on the floor
     vn: "K\xE9o m\xE1y h\xFAt b\u1EE5i v\xE0o \u0111\u1ED1ng b\u1EE5i tr\xEAn s\xE0n"
@@ -4468,7 +4490,7 @@ MonoBehaviour:
     en: Drag the spray bottle to the area where the odor is
     vn: "K\xE9o b\xECnh x\u1ECBt v\xE0o ch\u1ED7 c\xF3 m\xF9i h\xF4i"
   - key: choilongga_s
-    en: Be ready to clean up cobwebs on the ceiling
+    en: Also, clean the cobwebs on the ceiling
     vn: "S\u1EB5n ti\u1EC7n d\u1ECDn m\u1EA1ng nh\u1EC7n tr\xEAn tr\u1EA7n"
   - key: choilongga_h
     en: Drag the feather duster into the spider web
@@ -4587,6 +4609,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MessageDisplay
   messageText: {fileID: 1653825933}
+  holdSeconds: 2
+  fadeSeconds: 0.5
 --- !u!1 &1448034261
 GameObject:
   m_ObjectHideFlags: 0
@@ -5336,7 +5360,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 92390f8602c4ea04ebafba5b3beeefb9, type: 3}
       trigger: 2
       requiredZoneId: thungracdrop
       requirements: []
@@ -5982,7 +6006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::B_StaticObject
   objectId: me2
-  startHidden: 0
+  startHidden: 1
   visualMode: 1
   skeleton: {fileID: 1646694218}
   initSpineAnim: Me_Ve_Vui
@@ -6342,7 +6366,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 05bff09ebc6eba345be3eaee53c1bd33, type: 3}
       trigger: 2
       requiredZoneId: buidrop
       requirements:
@@ -6764,7 +6788,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 92390f8602c4ea04ebafba5b3beeefb9, type: 3}
       trigger: 2
       requiredZoneId: thungracdrop
       requirements: []
@@ -7022,7 +7046,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 6b5e6b25f7992d14687a8d14fe1760ac, type: 3}
       trigger: 2
       requiredZoneId: hoidrop
       requirements:
@@ -7076,6 +7100,31 @@ MonoBehaviour:
         queueTarget: {fileID: 0}
         queueServeStateId: 
         sfxClip: {fileID: 0}
+        skinTarget: {fileID: 0}
+        skinName: 
+        skinOp: 0
+        boneSource: {fileID: 0}
+        boneName: 
+        keepBoneOffset: 0
+      - type: 7
+        runInParallel: 0
+        actionTarget: {fileID: 0}
+        duration: 0
+        moveTarget: {fileID: 0}
+        ease: 0
+        rotateToMatchTarget: 0
+        scaleTarget: 0
+        fadeOut: 0
+        destroyOnDisappear: 0
+        fadeIn: 0
+        spineAnim: 
+        spineLoop: 0
+        activateTarget: {fileID: 0}
+        activateStateId: 
+        chainGuards: []
+        queueTarget: {fileID: 0}
+        queueServeStateId: 
+        sfxClip: {fileID: 8300000, guid: 75094124d71e74845b6daf8a079e12ae, type: 3}
         skinTarget: {fileID: 0}
         skinName: 
         skinOp: 0
@@ -8015,7 +8064,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 9bcb1500ae8e2ea4aa13055131fa0052, type: 3}
       trigger: 2
       requiredZoneId: meodrop
       requirements: []

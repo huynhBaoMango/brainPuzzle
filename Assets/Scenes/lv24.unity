@@ -1258,7 +1258,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 9304c90a52d29df4a9af3d1ad47baaf1, type: 3}
       trigger: 2
       requiredZoneId: lohongDrop
       requirements: []
@@ -1384,7 +1384,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: c3a47801505b8034ea4bcdc939b91ba8, type: 3}
       trigger: 2
       requiredZoneId: lohongDrop
       requirements: []
@@ -2033,7 +2033,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 8231a176f10cd7f4b9e95b87c4d93df4, type: 3}
       trigger: 2
       requiredZoneId: lohongDrop
       requirements: []
@@ -2570,7 +2570,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 0ca966668988b764fbbf94e85170fa9f, type: 3}
       trigger: 2
       requiredZoneId: lohongDrop
       requirements: []
@@ -2696,7 +2696,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 5e91b3d6666e68b469f56cf07a02be7d, type: 3}
       trigger: 2
       requiredZoneId: lohongDrop
       requirements: []
@@ -3666,6 +3666,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MessageDisplay
   messageText: {fileID: 1653825933}
+  holdSeconds: 2
+  fadeSeconds: 0.5
 --- !u!1 &1448034261
 GameObject:
   m_ObjectHideFlags: 0
@@ -3817,7 +3819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c70d691408201f14089a1282d5faedf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::B_StaticObject
-  objectId: keo2
+  objectId: keo502_2
   startHidden: 1
   visualMode: 0
   skeleton: {fileID: 0}
@@ -4036,6 +4038,10 @@ MonoBehaviour:
   - type: 0
     targetId: linhkien
     stateId: used
+    target: {fileID: 0}
+  - type: 0
+    targetId: cogai
+    stateId: win
     target: {fileID: 0}
   loseConditions: []
   timeLimit: 90
@@ -4378,7 +4384,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: e54b4d074f2d3b241ac32c038cfda8c9, type: 3}
       trigger: 2
       requiredZoneId: lohongDrop
       requirements: []
@@ -5119,7 +5125,7 @@ Transform:
   m_GameObject: {fileID: 1965518259}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.355, y: -2.955, z: 0}
+  m_LocalPosition: {x: -4.04, y: -2.955, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5209,7 +5215,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 9989cb5d31750314c8d0f643ca39cd7a, type: 3}
       trigger: 2
       requiredZoneId: lohongDrop
       requirements: []
@@ -5448,7 +5454,7 @@ MonoBehaviour:
   visualMode: 0
   spriteRenderer: {fileID: 1965518261}
   skeleton: {fileID: 0}
-  startHidden: 0
+  startHidden: 1
   tapMaxDistance: 0.2
   tapMaxDuration: 0.3
   swipeMinDistance: 1
@@ -5727,7 +5733,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: c92e3bdad594be341b200898335c72e5, type: 3}
       trigger: 2
       requiredZoneId: lohongDrop
       requirements: []

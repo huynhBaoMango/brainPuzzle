@@ -488,7 +488,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: fb2bbc3703c22204395f60c4164949df, type: 3}
       trigger: 2
       requiredZoneId: bienDrop
       requirements:
@@ -608,7 +608,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: fb2bbc3703c22204395f60c4164949df, type: 3}
       trigger: 2
       requiredZoneId: bienDrop
       requirements:
@@ -1111,7 +1111,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 17
+  m_SortingOrder: 9
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &220795819
@@ -1253,7 +1253,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 174c18c8725905240b0d2185d5bf9b6c, type: 3}
       trigger: 7
       requiredZoneId: 
       requirements:
@@ -2014,7 +2014,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 1f3913f22c568924585080692f1131c5, type: 3}
       trigger: 2
       requiredZoneId: bepdrop
       requirements: []
@@ -2039,6 +2039,31 @@ MonoBehaviour:
         queueTarget: {fileID: 0}
         queueServeStateId: 
         sfxClip: {fileID: 0}
+        skinTarget: {fileID: 0}
+        skinName: 
+        skinOp: 0
+        boneSource: {fileID: 0}
+        boneName: 
+        keepBoneOffset: 0
+      - type: 7
+        runInParallel: 0
+        actionTarget: {fileID: 0}
+        duration: 0
+        moveTarget: {fileID: 0}
+        ease: 0
+        rotateToMatchTarget: 0
+        scaleTarget: 0
+        fadeOut: 0
+        destroyOnDisappear: 0
+        fadeIn: 0
+        spineAnim: 
+        spineLoop: 0
+        activateTarget: {fileID: 0}
+        activateStateId: 
+        chainGuards: []
+        queueTarget: {fileID: 0}
+        queueServeStateId: 
+        sfxClip: {fileID: 8300000, guid: 4eb7d6620bdfbda4f849d0086fb800a5, type: 3}
         skinTarget: {fileID: 0}
         skinName: 
         skinOp: 0
@@ -2494,7 +2519,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: b4c8bf553a7637f40ae2988d100cf970, type: 3}
       trigger: 2
       requiredZoneId: bepdrop
       requirements: []
@@ -2519,6 +2544,31 @@ MonoBehaviour:
         queueTarget: {fileID: 0}
         queueServeStateId: 
         sfxClip: {fileID: 0}
+        skinTarget: {fileID: 0}
+        skinName: 
+        skinOp: 0
+        boneSource: {fileID: 0}
+        boneName: 
+        keepBoneOffset: 0
+      - type: 7
+        runInParallel: 0
+        actionTarget: {fileID: 0}
+        duration: 0
+        moveTarget: {fileID: 0}
+        ease: 0
+        rotateToMatchTarget: 0
+        scaleTarget: 0
+        fadeOut: 0
+        destroyOnDisappear: 0
+        fadeIn: 0
+        spineAnim: 
+        spineLoop: 0
+        activateTarget: {fileID: 0}
+        activateStateId: 
+        chainGuards: []
+        queueTarget: {fileID: 0}
+        queueServeStateId: 
+        sfxClip: {fileID: 8300000, guid: 4eb7d6620bdfbda4f849d0086fb800a5, type: 3}
         skinTarget: {fileID: 0}
         skinName: 
         skinOp: 0
@@ -3601,7 +3651,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: b5bc5ed16b589f0428437100a3bf4f77, type: 3}
       trigger: 2
       requiredZoneId: bepdrop
       requirements: []
@@ -3626,6 +3676,31 @@ MonoBehaviour:
         queueTarget: {fileID: 0}
         queueServeStateId: 
         sfxClip: {fileID: 0}
+        skinTarget: {fileID: 0}
+        skinName: 
+        skinOp: 0
+        boneSource: {fileID: 0}
+        boneName: 
+        keepBoneOffset: 0
+      - type: 7
+        runInParallel: 0
+        actionTarget: {fileID: 0}
+        duration: 0
+        moveTarget: {fileID: 0}
+        ease: 0
+        rotateToMatchTarget: 0
+        scaleTarget: 0
+        fadeOut: 0
+        destroyOnDisappear: 0
+        fadeIn: 0
+        spineAnim: 
+        spineLoop: 0
+        activateTarget: {fileID: 0}
+        activateStateId: 
+        chainGuards: []
+        queueTarget: {fileID: 0}
+        queueServeStateId: 
+        sfxClip: {fileID: 8300000, guid: 4eb7d6620bdfbda4f849d0086fb800a5, type: 3}
         skinTarget: {fileID: 0}
         skinName: 
         skinOp: 0
@@ -4021,7 +4096,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 0258196d2245a184aab384bcf6b98fba, type: 3}
       trigger: 2
       requiredZoneId: bepdrop
       requirements: []
@@ -4046,6 +4121,31 @@ MonoBehaviour:
         queueTarget: {fileID: 0}
         queueServeStateId: 
         sfxClip: {fileID: 0}
+        skinTarget: {fileID: 0}
+        skinName: 
+        skinOp: 0
+        boneSource: {fileID: 0}
+        boneName: 
+        keepBoneOffset: 0
+      - type: 7
+        runInParallel: 0
+        actionTarget: {fileID: 0}
+        duration: 0
+        moveTarget: {fileID: 0}
+        ease: 0
+        rotateToMatchTarget: 0
+        scaleTarget: 0
+        fadeOut: 0
+        destroyOnDisappear: 0
+        fadeIn: 0
+        spineAnim: 
+        spineLoop: 0
+        activateTarget: {fileID: 0}
+        activateStateId: 
+        chainGuards: []
+        queueTarget: {fileID: 0}
+        queueServeStateId: 
+        sfxClip: {fileID: 8300000, guid: 4eb7d6620bdfbda4f849d0086fb800a5, type: 3}
         skinTarget: {fileID: 0}
         skinName: 
         skinOp: 0
@@ -4254,7 +4354,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 6f9a7f014a61cd94fbb0c07c3f3de788, type: 3}
       trigger: 2
       requiredZoneId: bepdrop
       requirements: []
@@ -4279,6 +4379,31 @@ MonoBehaviour:
         queueTarget: {fileID: 0}
         queueServeStateId: 
         sfxClip: {fileID: 0}
+        skinTarget: {fileID: 0}
+        skinName: 
+        skinOp: 0
+        boneSource: {fileID: 0}
+        boneName: 
+        keepBoneOffset: 0
+      - type: 7
+        runInParallel: 0
+        actionTarget: {fileID: 0}
+        duration: 0
+        moveTarget: {fileID: 0}
+        ease: 0
+        rotateToMatchTarget: 0
+        scaleTarget: 0
+        fadeOut: 0
+        destroyOnDisappear: 0
+        fadeIn: 0
+        spineAnim: 
+        spineLoop: 0
+        activateTarget: {fileID: 0}
+        activateStateId: 
+        chainGuards: []
+        queueTarget: {fileID: 0}
+        queueServeStateId: 
+        sfxClip: {fileID: 8300000, guid: 4eb7d6620bdfbda4f849d0086fb800a5, type: 3}
         skinTarget: {fileID: 0}
         skinName: 
         skinOp: 0
@@ -4674,7 +4799,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: a3e865d65ebd2c04b84f681a3a3a9f13, type: 3}
       trigger: 2
       requiredZoneId: bepdrop
       requirements: []
@@ -4699,6 +4824,31 @@ MonoBehaviour:
         queueTarget: {fileID: 0}
         queueServeStateId: 
         sfxClip: {fileID: 0}
+        skinTarget: {fileID: 0}
+        skinName: 
+        skinOp: 0
+        boneSource: {fileID: 0}
+        boneName: 
+        keepBoneOffset: 0
+      - type: 7
+        runInParallel: 0
+        actionTarget: {fileID: 0}
+        duration: 0
+        moveTarget: {fileID: 0}
+        ease: 0
+        rotateToMatchTarget: 0
+        scaleTarget: 0
+        fadeOut: 0
+        destroyOnDisappear: 0
+        fadeIn: 0
+        spineAnim: 
+        spineLoop: 0
+        activateTarget: {fileID: 0}
+        activateStateId: 
+        chainGuards: []
+        queueTarget: {fileID: 0}
+        queueServeStateId: 
+        sfxClip: {fileID: 8300000, guid: 4eb7d6620bdfbda4f849d0086fb800a5, type: 3}
         skinTarget: {fileID: 0}
         skinName: 
         skinOp: 0
@@ -4907,7 +5057,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 7412cb6e579a8ea469701eef959235a9, type: 3}
       trigger: 2
       requiredZoneId: hoDrop
       requirements: []
@@ -5637,7 +5787,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: a1ea8b36c33b7d14e843bcdb95053c87, type: 3}
       trigger: 2
       requiredZoneId: bepdrop
       requirements: []
@@ -5662,6 +5812,31 @@ MonoBehaviour:
         queueTarget: {fileID: 0}
         queueServeStateId: 
         sfxClip: {fileID: 0}
+        skinTarget: {fileID: 0}
+        skinName: 
+        skinOp: 0
+        boneSource: {fileID: 0}
+        boneName: 
+        keepBoneOffset: 0
+      - type: 7
+        runInParallel: 0
+        actionTarget: {fileID: 1957775673}
+        duration: 0
+        moveTarget: {fileID: 0}
+        ease: 0
+        rotateToMatchTarget: 0
+        scaleTarget: 0
+        fadeOut: 0
+        destroyOnDisappear: 0
+        fadeIn: 1
+        spineAnim: 
+        spineLoop: 0
+        activateTarget: {fileID: 0}
+        activateStateId: 
+        chainGuards: []
+        queueTarget: {fileID: 0}
+        queueServeStateId: 
+        sfxClip: {fileID: 8300000, guid: 4eb7d6620bdfbda4f849d0086fb800a5, type: 3}
         skinTarget: {fileID: 0}
         skinName: 
         skinOp: 0
@@ -6208,6 +6383,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MessageDisplay
   messageText: {fileID: 1653825933}
+  holdSeconds: 2
+  fadeSeconds: 0.5
 --- !u!1 &1395859149
 GameObject:
   m_ObjectHideFlags: 0
@@ -6593,7 +6770,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: bc8246d83b284944f8841b3c83c84554, type: 3}
       trigger: 2
       requiredZoneId: bepdrop
       requirements: []
@@ -6618,6 +6795,31 @@ MonoBehaviour:
         queueTarget: {fileID: 0}
         queueServeStateId: 
         sfxClip: {fileID: 0}
+        skinTarget: {fileID: 0}
+        skinName: 
+        skinOp: 0
+        boneSource: {fileID: 0}
+        boneName: 
+        keepBoneOffset: 0
+      - type: 7
+        runInParallel: 0
+        actionTarget: {fileID: 0}
+        duration: 0
+        moveTarget: {fileID: 0}
+        ease: 0
+        rotateToMatchTarget: 0
+        scaleTarget: 0
+        fadeOut: 0
+        destroyOnDisappear: 0
+        fadeIn: 0
+        spineAnim: 
+        spineLoop: 0
+        activateTarget: {fileID: 0}
+        activateStateId: 
+        chainGuards: []
+        queueTarget: {fileID: 0}
+        queueServeStateId: 
+        sfxClip: {fileID: 8300000, guid: 4eb7d6620bdfbda4f849d0086fb800a5, type: 3}
         skinTarget: {fileID: 0}
         skinName: 
         skinOp: 0
@@ -7640,7 +7842,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 3a971def210e1c547b07a6d3caa04511, type: 3}
       trigger: 2
       requiredZoneId: bepdrop
       requirements: []
@@ -8588,7 +8790,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 353a834dd0ea1a04f9b9162f1b1b413f, type: 3}
       trigger: 2
       requiredZoneId: bepdrop
       requirements: []
@@ -8613,6 +8815,31 @@ MonoBehaviour:
         queueTarget: {fileID: 0}
         queueServeStateId: 
         sfxClip: {fileID: 0}
+        skinTarget: {fileID: 0}
+        skinName: 
+        skinOp: 0
+        boneSource: {fileID: 0}
+        boneName: 
+        keepBoneOffset: 0
+      - type: 7
+        runInParallel: 0
+        actionTarget: {fileID: 0}
+        duration: 0
+        moveTarget: {fileID: 0}
+        ease: 0
+        rotateToMatchTarget: 0
+        scaleTarget: 0
+        fadeOut: 0
+        destroyOnDisappear: 0
+        fadeIn: 0
+        spineAnim: 
+        spineLoop: 0
+        activateTarget: {fileID: 0}
+        activateStateId: 
+        chainGuards: []
+        queueTarget: {fileID: 0}
+        queueServeStateId: 
+        sfxClip: {fileID: 8300000, guid: 4eb7d6620bdfbda4f849d0086fb800a5, type: 3}
         skinTarget: {fileID: 0}
         skinName: 
         skinOp: 0

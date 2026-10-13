@@ -602,6 +602,99 @@ MonoBehaviour:
   skeleton: {fileID: 0}
   initSpineAnim: 
   initSpineLoop: 1
+--- !u!1 &241601912
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 241601913}
+  - component: {fileID: 241601916}
+  - component: {fileID: 241601914}
+  m_Layer: 0
+  m_Name: hoa1 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &241601913
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241601912}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.54, y: -1.01, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 937046863}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &241601914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241601912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 365d044aa4a03c4489ae7ae897726ed3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::B_DropZone
+  zoneId: hoa
+  sortOrder: 26
+--- !u!61 &241601916
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241601912}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.06, y: 1.51}
+    newSize: {x: 1.06, y: 1.51}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.06, y: 1.51}
+  m_EdgeRadius: 0
 --- !u!1 &394746917
 GameObject:
   m_ObjectHideFlags: 0
@@ -1550,7 +1643,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 0f9f6ed9a92fcfb42be92f3526961bed, type: 3}
       trigger: 2
       requiredZoneId: dan
       requirements: []
@@ -1916,6 +2009,31 @@ MonoBehaviour:
       requirements: []
       requiredCount: 0
       actions:
+      - type: 2
+        runInParallel: 0
+        actionTarget: {fileID: 0}
+        duration: 0
+        moveTarget: {fileID: 0}
+        ease: 0
+        rotateToMatchTarget: 0
+        scaleTarget: 0
+        fadeOut: 0
+        destroyOnDisappear: 0
+        fadeIn: 1
+        spineAnim: 
+        spineLoop: 0
+        activateTarget: {fileID: 0}
+        activateStateId: 
+        chainGuards: []
+        queueTarget: {fileID: 0}
+        queueServeStateId: 
+        sfxClip: {fileID: 0}
+        skinTarget: {fileID: 0}
+        skinName: 
+        skinOp: 0
+        boneSource: {fileID: 0}
+        boneName: 
+        keepBoneOffset: 0
       - type: 3
         runInParallel: 0
         actionTarget: {fileID: 1191055091}
@@ -2894,7 +3012,6 @@ GameObject:
   - component: {fileID: 909528745}
   - component: {fileID: 909528747}
   - component: {fileID: 909528746}
-  - component: {fileID: 909528748}
   m_Layer: 0
   m_Name: hoa1
   m_TagString: Untagged
@@ -2966,7 +3083,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 25
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7632921392889380862, guid: a86c722ed2f5a13458370980b044f1d4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a86c722ed2f5a13458370980b044f1d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2991,7 +3108,7 @@ MonoBehaviour:
   objectId: hoa
   data:
     initStateId: init
-    initSprite: {fileID: 7632921392889380862, guid: a86c722ed2f5a13458370980b044f1d4, type: 3}
+    initSprite: {fileID: 21300000, guid: a86c722ed2f5a13458370980b044f1d4, type: 3}
     initSpineAnim: 
     initSpineLoop: 1
     initSFX: {fileID: 0}
@@ -3091,20 +3208,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.06, y: 1.51}
   m_EdgeRadius: 0
---- !u!114 &909528748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 909528743}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 365d044aa4a03c4489ae7ae897726ed3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::B_DropZone
-  zoneId: hoa
-  sortOrder: 26
 --- !u!1 &937046862
 GameObject:
   m_ObjectHideFlags: 0
@@ -3159,6 +3262,7 @@ Transform:
   - {fileID: 1981369455}
   - {fileID: 1084640032}
   - {fileID: 909528744}
+  - {fileID: 241601913}
   - {fileID: 1993509808}
   - {fileID: 763209211}
   - {fileID: 1191055092}
@@ -3640,7 +3744,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: Nu_win
       stateSpineLoop: 1
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 49c6c082708ebf6488d1336821377dc3, type: 3}
       trigger: 1
       requiredZoneId: 
       requirements:
@@ -3694,6 +3798,31 @@ MonoBehaviour:
         queueTarget: {fileID: 0}
         queueServeStateId: 
         sfxClip: {fileID: 0}
+        skinTarget: {fileID: 0}
+        skinName: 
+        skinOp: 0
+        boneSource: {fileID: 0}
+        boneName: 
+        keepBoneOffset: 0
+      - type: 7
+        runInParallel: 0
+        actionTarget: {fileID: 0}
+        duration: 0
+        moveTarget: {fileID: 0}
+        ease: 0
+        rotateToMatchTarget: 0
+        scaleTarget: 0
+        fadeOut: 0
+        destroyOnDisappear: 0
+        fadeIn: 0
+        spineAnim: 
+        spineLoop: 0
+        activateTarget: {fileID: 1024820738}
+        activateStateId: win
+        chainGuards: []
+        queueTarget: {fileID: 0}
+        queueServeStateId: 
+        sfxClip: {fileID: 8300000, guid: a768e6259fbb8944e8bcb0db9a48db9c, type: 3}
         skinTarget: {fileID: 0}
         skinName: 
         skinOp: 0
@@ -3974,6 +4103,10 @@ MonoBehaviour:
     stateId: used
     target: {fileID: 0}
   - type: 0
+    targetId: hoa2
+    stateId: used
+    target: {fileID: 0}
+  - type: 0
     targetId: quasoi
     stateId: used
     target: {fileID: 0}
@@ -4037,6 +4170,15 @@ MonoBehaviour:
   - key: la_h
     en: Drag the vines from the tree onto the cello
     vn: "K\xE9o d\xE2y leo tr\xEAn c\xE2y v\xE0o c\xE2y \u0111\xE0n cello"
+  - key: nhan_s
+    en: Give her the ring, squirrel!
+    vn: "\u0110\u01B0a cho c\xF4 \u1EA5y chi\u1EBFc nh\u1EABn \u0111i s\xF3c!"
+  - key: quasoi_h
+    en: Drag the acorn to the squirrel
+    vn: "K\xE9o qu\u1EA3 s\u1ED3i v\xE0o con s\xF3c"
+  - key: ruybang_h
+    en: Drag the pink ribbon onto the flower
+    vn: "K\xE9o d\u1EA3i ruy b\u0103ng h\u1ED3ng v\xE0o b\xF4ng hoa"
 --- !u!4 &1071200550
 Transform:
   m_ObjectHideFlags: 0
@@ -5230,7 +5372,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 5bffa567509e0a140a16afb3ae621193, type: 3}
       trigger: 0
       requiredZoneId: 
       requirements: []
@@ -5511,7 +5653,7 @@ MonoBehaviour:
         boneSource: {fileID: 0}
         boneName: 
         keepBoneOffset: 0
-      successMessageKey: 
+      successMessageKey: nhan_s
       failMessageKey: 
       hintMessageKey: 
       repeatable: 0
@@ -5899,7 +6041,7 @@ MonoBehaviour:
         keepBoneOffset: 0
       successMessageKey: 
       failMessageKey: 
-      hintMessageKey: 
+      hintMessageKey: quasoi_h
       repeatable: 0
       isDone: 0
   visualMode: 0
@@ -6077,6 +6219,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MessageDisplay
   messageText: {fileID: 1653825933}
+  holdSeconds: 2
+  fadeSeconds: 0.5
 --- !u!1 &1448034261
 GameObject:
   m_ObjectHideFlags: 0
@@ -6283,7 +6427,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 14d01e5c74f6b344ea4881b4acffb62b, type: 3}
       trigger: 2
       requiredZoneId: dan
       requirements: []
@@ -7202,7 +7346,7 @@ MonoBehaviour:
         keepBoneOffset: 0
       successMessageKey: 
       failMessageKey: 
-      hintMessageKey: 
+      hintMessageKey: ruybang_h
       repeatable: 0
       isDone: 0
   visualMode: 0
@@ -7640,7 +7784,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: e69b9e9ab207eea4cbcf5cedf2a4f9f9, type: 3}
       trigger: 2
       requiredZoneId: dan
       requirements: []
@@ -9723,7 +9867,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 741d6de7c8838e54582ce464db23a765, type: 3}
       trigger: 2
       requiredZoneId: cogai
       requirements: []
@@ -10624,7 +10768,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 74ec33b0fb548b84b8cd2ce65abe7dbe, type: 3}
       trigger: 2
       requiredZoneId: dan
       requirements: []

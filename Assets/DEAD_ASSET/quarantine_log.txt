@@ -1,0 +1,1526 @@
+
+=== 2026-07-02 14:42:12   moved=0 failed=408 ===
+FAILED Assets/LevelAssets/lv6/images/BG3.png  (Cannot move asset from Assets/LevelAssets/lv6/images/BG3.png to Assets/DEAD_ASSET/lv6/images/BG3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv6/images/body_2.png  (Cannot move asset from Assets/LevelAssets/lv6/images/body_2.png to Assets/DEAD_ASSET/lv6/images/body_2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv6/images/cogai_thua.png  (Cannot move asset from Assets/LevelAssets/lv6/images/cogai_thua.png to Assets/DEAD_ASSET/lv6/images/cogai_thua.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv6/images/cogai_thua2.png  (Cannot move asset from Assets/LevelAssets/lv6/images/cogai_thua2.png to Assets/DEAD_ASSET/lv6/images/cogai_thua2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv6/images/cogai_thua3.png  (Cannot move asset from Assets/LevelAssets/lv6/images/cogai_thua3.png to Assets/DEAD_ASSET/lv6/images/cogai_thua3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv6/images/day.png  (Cannot move asset from Assets/LevelAssets/lv6/images/day.png to Assets/DEAD_ASSET/lv6/images/day.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv6/images/dua_fx.png  (Cannot move asset from Assets/LevelAssets/lv6/images/dua_fx.png to Assets/DEAD_ASSET/lv6/images/dua_fx.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv6/images/head.png  (Cannot move asset from Assets/LevelAssets/lv6/images/head.png to Assets/DEAD_ASSET/lv6/images/head.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv6/images/head_2.png  (Cannot move asset from Assets/LevelAssets/lv6/images/head_2.png to Assets/DEAD_ASSET/lv6/images/head_2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv6/images/key1.png  (Cannot move asset from Assets/LevelAssets/lv6/images/key1.png to Assets/DEAD_ASSET/lv6/images/key1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv6/images/key2.png  (Cannot move asset from Assets/LevelAssets/lv6/images/key2.png to Assets/DEAD_ASSET/lv6/images/key2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv6/images/khoi_fx.png  (Cannot move asset from Assets/LevelAssets/lv6/images/khoi_fx.png to Assets/DEAD_ASSET/lv6/images/khoi_fx.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv6/images/la╠âie.png  (Cannot move asset from Assets/LevelAssets/lv6/images/la╠âie.png to Assets/DEAD_ASSET/lv6/images/la╠âie.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv6/images/lãie.png  (Cannot move asset from Assets/LevelAssets/lv6/images/lãie.png to Assets/DEAD_ASSET/lv6/images/lãie.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv6/images/mockhoa.png  (Cannot move asset from Assets/LevelAssets/lv6/images/mockhoa.png to Assets/DEAD_ASSET/lv6/images/mockhoa.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv6/images/nguago_2.png  (Cannot move asset from Assets/LevelAssets/lv6/images/nguago_2.png to Assets/DEAD_ASSET/lv6/images/nguago_2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv6/images/nhanvat1.png  (Cannot move asset from Assets/LevelAssets/lv6/images/nhanvat1.png to Assets/DEAD_ASSET/lv6/images/nhanvat1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv6/images/nuochoa_fx.png  (Cannot move asset from Assets/LevelAssets/lv6/images/nuochoa_fx.png to Assets/DEAD_ASSET/lv6/images/nuochoa_fx.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv7/images/anphomai1.png  (Cannot move asset from Assets/LevelAssets/lv7/images/anphomai1.png to Assets/DEAD_ASSET/lv7/images/anphomai1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv7/images/anphomai2.png  (Cannot move asset from Assets/LevelAssets/lv7/images/anphomai2.png to Assets/DEAD_ASSET/lv7/images/anphomai2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv7/images/anpizza1.png  (Cannot move asset from Assets/LevelAssets/lv7/images/anpizza1.png to Assets/DEAD_ASSET/lv7/images/anpizza1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv7/images/anpizza2.png  (Cannot move asset from Assets/LevelAssets/lv7/images/anpizza2.png to Assets/DEAD_ASSET/lv7/images/anpizza2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv7/images/binh2.png  (Cannot move asset from Assets/LevelAssets/lv7/images/binh2.png to Assets/DEAD_ASSET/lv7/images/binh2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv7/images/bon2.png  (Cannot move asset from Assets/LevelAssets/lv7/images/bon2.png to Assets/DEAD_ASSET/lv7/images/bon2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv7/images/bon3.png  (Cannot move asset from Assets/LevelAssets/lv7/images/bon3.png to Assets/DEAD_ASSET/lv7/images/bon3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv7/images/bon4.png  (Cannot move asset from Assets/LevelAssets/lv7/images/bon4.png to Assets/DEAD_ASSET/lv7/images/bon4.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv7/images/bong3.png  (Cannot move asset from Assets/LevelAssets/lv7/images/bong3.png to Assets/DEAD_ASSET/lv7/images/bong3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv7/images/nam6mui.png  (Cannot move asset from Assets/LevelAssets/lv7/images/nam6mui.png to Assets/DEAD_ASSET/lv7/images/nam6mui.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv7/images/namcuoi1.png  (Cannot move asset from Assets/LevelAssets/lv7/images/namcuoi1.png to Assets/DEAD_ASSET/lv7/images/namcuoi1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv7/images/namcuoi2.png  (Cannot move asset from Assets/LevelAssets/lv7/images/namcuoi2.png to Assets/DEAD_ASSET/lv7/images/namcuoi2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv7/images/namgong1.png  (Cannot move asset from Assets/LevelAssets/lv7/images/namgong1.png to Assets/DEAD_ASSET/lv7/images/namgong1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv7/images/namgong2.png  (Cannot move asset from Assets/LevelAssets/lv7/images/namgong2.png to Assets/DEAD_ASSET/lv7/images/namgong2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv7/images/namkhoc1.png  (Cannot move asset from Assets/LevelAssets/lv7/images/namkhoc1.png to Assets/DEAD_ASSET/lv7/images/namkhoc1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv7/images/namkhoc2.png  (Cannot move asset from Assets/LevelAssets/lv7/images/namkhoc2.png to Assets/DEAD_ASSET/lv7/images/namkhoc2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv7/images/nuocbinh2.png  (Cannot move asset from Assets/LevelAssets/lv7/images/nuocbinh2.png to Assets/DEAD_ASSET/lv7/images/nuocbinh2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv7/images/saurieng2.png  (Cannot move asset from Assets/LevelAssets/lv7/images/saurieng2.png to Assets/DEAD_ASSET/lv7/images/saurieng2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv7/images/xo2.png  (Cannot move asset from Assets/LevelAssets/lv7/images/xo2.png to Assets/DEAD_ASSET/lv7/images/xo2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv8/images/bac1.png  (Cannot move asset from Assets/LevelAssets/lv8/images/bac1.png to Assets/DEAD_ASSET/lv8/images/bac1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv8/images/bac2.png  (Cannot move asset from Assets/LevelAssets/lv8/images/bac2.png to Assets/DEAD_ASSET/lv8/images/bac2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv8/images/ban1.png  (Cannot move asset from Assets/LevelAssets/lv8/images/ban1.png to Assets/DEAD_ASSET/lv8/images/ban1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv8/images/beda.png  (Cannot move asset from Assets/LevelAssets/lv8/images/beda.png to Assets/DEAD_ASSET/lv8/images/beda.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv8/images/BG.png  (Cannot move asset from Assets/LevelAssets/lv8/images/BG.png to Assets/DEAD_ASSET/lv8/images/BG.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv8/images/boicanh1.png  (Cannot move asset from Assets/LevelAssets/lv8/images/boicanh1.png to Assets/DEAD_ASSET/lv8/images/boicanh1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv8/images/kinhlup1.png  (Cannot move asset from Assets/LevelAssets/lv8/images/kinhlup1.png to Assets/DEAD_ASSET/lv8/images/kinhlup1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv8/images/kinhlup2.png  (Cannot move asset from Assets/LevelAssets/lv8/images/kinhlup2.png to Assets/DEAD_ASSET/lv8/images/kinhlup2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv8/images/kyhieu.png  (Cannot move asset from Assets/LevelAssets/lv8/images/kyhieu.png to Assets/DEAD_ASSET/lv8/images/kyhieu.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv8/images/Layer 17.png  (Cannot move asset from Assets/LevelAssets/lv8/images/Layer 17.png to Assets/DEAD_ASSET/lv8/images/Layer 17.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv8/images/ly1.png  (Cannot move asset from Assets/LevelAssets/lv8/images/ly1.png to Assets/DEAD_ASSET/lv8/images/ly1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv8/images/ly2.png  (Cannot move asset from Assets/LevelAssets/lv8/images/ly2.png to Assets/DEAD_ASSET/lv8/images/ly2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv8/images/ly3.png  (Cannot move asset from Assets/LevelAssets/lv8/images/ly3.png to Assets/DEAD_ASSET/lv8/images/ly3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv8/images/ly4.png  (Cannot move asset from Assets/LevelAssets/lv8/images/ly4.png to Assets/DEAD_ASSET/lv8/images/ly4.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv8/images/ly4_top.png  (Cannot move asset from Assets/LevelAssets/lv8/images/ly4_top.png to Assets/DEAD_ASSET/lv8/images/ly4_top.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv8/images/ly5.png  (Cannot move asset from Assets/LevelAssets/lv8/images/ly5.png to Assets/DEAD_ASSET/lv8/images/ly5.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv8/images/ly5_top.png  (Cannot move asset from Assets/LevelAssets/lv8/images/ly5_top.png to Assets/DEAD_ASSET/lv8/images/ly5_top.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv8/images/ly6.png  (Cannot move asset from Assets/LevelAssets/lv8/images/ly6.png to Assets/DEAD_ASSET/lv8/images/ly6.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv8/images/ly7.png  (Cannot move asset from Assets/LevelAssets/lv8/images/ly7.png to Assets/DEAD_ASSET/lv8/images/ly7.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv8/images/ly8.png  (Cannot move asset from Assets/LevelAssets/lv8/images/ly8.png to Assets/DEAD_ASSET/lv8/images/ly8.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv8/images/ly9.png  (Cannot move asset from Assets/LevelAssets/lv8/images/ly9.png to Assets/DEAD_ASSET/lv8/images/ly9.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv8/images/ly9_2.png  (Cannot move asset from Assets/LevelAssets/lv8/images/ly9_2.png to Assets/DEAD_ASSET/lv8/images/ly9_2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv8/images/nam1.png  (Cannot move asset from Assets/LevelAssets/lv8/images/nam1.png to Assets/DEAD_ASSET/lv8/images/nam1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv8/images/nam2.png  (Cannot move asset from Assets/LevelAssets/lv8/images/nam2.png to Assets/DEAD_ASSET/lv8/images/nam2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv8/images/nam2_2.png  (Cannot move asset from Assets/LevelAssets/lv8/images/nam2_2.png to Assets/DEAD_ASSET/lv8/images/nam2_2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv8/images/nam3.png  (Cannot move asset from Assets/LevelAssets/lv8/images/nam3.png to Assets/DEAD_ASSET/lv8/images/nam3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv8/images/tao1.png  (Cannot move asset from Assets/LevelAssets/lv8/images/tao1.png to Assets/DEAD_ASSET/lv8/images/tao1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv8/images/tao2.png  (Cannot move asset from Assets/LevelAssets/lv8/images/tao2.png to Assets/DEAD_ASSET/lv8/images/tao2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv8/images/thang1.png  (Cannot move asset from Assets/LevelAssets/lv8/images/thang1.png to Assets/DEAD_ASSET/lv8/images/thang1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv8/images/thang2.png  (Cannot move asset from Assets/LevelAssets/lv8/images/thang2.png to Assets/DEAD_ASSET/lv8/images/thang2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv8/images/toc.png  (Cannot move asset from Assets/LevelAssets/lv8/images/toc.png to Assets/DEAD_ASSET/lv8/images/toc.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv8/images/toc1.png  (Cannot move asset from Assets/LevelAssets/lv8/images/toc1.png to Assets/DEAD_ASSET/lv8/images/toc1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv9/images/bang2.png  (Cannot move asset from Assets/LevelAssets/lv9/images/bang2.png to Assets/DEAD_ASSET/lv9/images/bang2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv9/images/bg2.png  (Cannot move asset from Assets/LevelAssets/lv9/images/bg2.png to Assets/DEAD_ASSET/lv9/images/bg2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv9/images/cay4.png  (Cannot move asset from Assets/LevelAssets/lv9/images/cay4.png to Assets/DEAD_ASSET/lv9/images/cay4.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv9/images/chay.png  (Cannot move asset from Assets/LevelAssets/lv9/images/chay.png to Assets/DEAD_ASSET/lv9/images/chay.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv9/images/cogai.png  (Cannot move asset from Assets/LevelAssets/lv9/images/cogai.png to Assets/DEAD_ASSET/lv9/images/cogai.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv9/images/gach3.png  (Cannot move asset from Assets/LevelAssets/lv9/images/gach3.png to Assets/DEAD_ASSET/lv9/images/gach3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv9/images/mua.png  (Cannot move asset from Assets/LevelAssets/lv9/images/mua.png to Assets/DEAD_ASSET/lv9/images/mua.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv9/images/mua2.png  (Cannot move asset from Assets/LevelAssets/lv9/images/mua2.png to Assets/DEAD_ASSET/lv9/images/mua2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv9/images/rem2.png  (Cannot move asset from Assets/LevelAssets/lv9/images/rem2.png to Assets/DEAD_ASSET/lv9/images/rem2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv9/images/taxi2.png  (Cannot move asset from Assets/LevelAssets/lv9/images/taxi2.png to Assets/DEAD_ASSET/lv9/images/taxi2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv9/images/taxi3.png  (Cannot move asset from Assets/LevelAssets/lv9/images/taxi3.png to Assets/DEAD_ASSET/lv9/images/taxi3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv9/images/taxi4.png  (Cannot move asset from Assets/LevelAssets/lv9/images/taxi4.png to Assets/DEAD_ASSET/lv9/images/taxi4.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv9/images/taxi5.png  (Cannot move asset from Assets/LevelAssets/lv9/images/taxi5.png to Assets/DEAD_ASSET/lv9/images/taxi5.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv9/images/thay3.png  (Cannot move asset from Assets/LevelAssets/lv9/images/thay3.png to Assets/DEAD_ASSET/lv9/images/thay3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv9/images/thungrac2.png  (Cannot move asset from Assets/LevelAssets/lv9/images/thungrac2.png to Assets/DEAD_ASSET/lv9/images/thungrac2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv9/images/trai1.png  (Cannot move asset from Assets/LevelAssets/lv9/images/trai1.png to Assets/DEAD_ASSET/lv9/images/trai1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv9/images/trai2.png  (Cannot move asset from Assets/LevelAssets/lv9/images/trai2.png to Assets/DEAD_ASSET/lv9/images/trai2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv9/images/uot.png  (Cannot move asset from Assets/LevelAssets/lv9/images/uot.png to Assets/DEAD_ASSET/lv9/images/uot.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv9/images/zen2.png  (Cannot move asset from Assets/LevelAssets/lv9/images/zen2.png to Assets/DEAD_ASSET/lv9/images/zen2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv9/images/ô2.png  (Cannot move asset from Assets/LevelAssets/lv9/images/ô2.png to Assets/DEAD_ASSET/lv9/images/ô2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv10/images/anhxin2.png  (Cannot move asset from Assets/LevelAssets/lv10/images/anhxin2.png to Assets/DEAD_ASSET/lv10/images/anhxin2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv10/images/anxin1.png  (Cannot move asset from Assets/LevelAssets/lv10/images/anxin1.png to Assets/DEAD_ASSET/lv10/images/anxin1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv10/images/bocmui1.png  (Cannot move asset from Assets/LevelAssets/lv10/images/bocmui1.png to Assets/DEAD_ASSET/lv10/images/bocmui1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv10/images/bocmui2.png  (Cannot move asset from Assets/LevelAssets/lv10/images/bocmui2.png to Assets/DEAD_ASSET/lv10/images/bocmui2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv10/images/bua2.png  (Cannot move asset from Assets/LevelAssets/lv10/images/bua2.png to Assets/DEAD_ASSET/lv10/images/bua2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv10/images/ca 2.png  (Cannot move asset from Assets/LevelAssets/lv10/images/ca 2.png to Assets/DEAD_ASSET/lv10/images/ca 2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv10/images/ca.png  (Cannot move asset from Assets/LevelAssets/lv10/images/ca.png to Assets/DEAD_ASSET/lv10/images/ca.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv10/images/ca1.png  (Cannot move asset from Assets/LevelAssets/lv10/images/ca1.png to Assets/DEAD_ASSET/lv10/images/ca1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv10/images/ca2.png  (Cannot move asset from Assets/LevelAssets/lv10/images/ca2.png to Assets/DEAD_ASSET/lv10/images/ca2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv10/images/caube1.png  (Cannot move asset from Assets/LevelAssets/lv10/images/caube1.png to Assets/DEAD_ASSET/lv10/images/caube1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv10/images/caube2.png  (Cannot move asset from Assets/LevelAssets/lv10/images/caube2.png to Assets/DEAD_ASSET/lv10/images/caube2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv10/images/cogai.png  (Cannot move asset from Assets/LevelAssets/lv10/images/cogai.png to Assets/DEAD_ASSET/lv10/images/cogai.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv10/images/nu1.png  (Cannot move asset from Assets/LevelAssets/lv10/images/nu1.png to Assets/DEAD_ASSET/lv10/images/nu1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv10/images/nu2.png  (Cannot move asset from Assets/LevelAssets/lv10/images/nu2.png to Assets/DEAD_ASSET/lv10/images/nu2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv10/images/nv1.png  (Cannot move asset from Assets/LevelAssets/lv10/images/nv1.png to Assets/DEAD_ASSET/lv10/images/nv1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv10/images/nv2.png  (Cannot move asset from Assets/LevelAssets/lv10/images/nv2.png to Assets/DEAD_ASSET/lv10/images/nv2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv10/images/songbocmui.png  (Cannot move asset from Assets/LevelAssets/lv10/images/songbocmui.png to Assets/DEAD_ASSET/lv10/images/songbocmui.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv10/images/songdo.png  (Cannot move asset from Assets/LevelAssets/lv10/images/songdo.png to Assets/DEAD_ASSET/lv10/images/songdo.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv10/images/tao1.png  (Cannot move asset from Assets/LevelAssets/lv10/images/tao1.png to Assets/DEAD_ASSET/lv10/images/tao1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv10/images/tao2.png  (Cannot move asset from Assets/LevelAssets/lv10/images/tao2.png to Assets/DEAD_ASSET/lv10/images/tao2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv10/images/thua.png  (Cannot move asset from Assets/LevelAssets/lv10/images/thua.png to Assets/DEAD_ASSET/lv10/images/thua.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv10/images/thua2.png  (Cannot move asset from Assets/LevelAssets/lv10/images/thua2.png to Assets/DEAD_ASSET/lv10/images/thua2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv10/images/toc1.png  (Cannot move asset from Assets/LevelAssets/lv10/images/toc1.png to Assets/DEAD_ASSET/lv10/images/toc1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv10/images/tocngan.png  (Cannot move asset from Assets/LevelAssets/lv10/images/tocngan.png to Assets/DEAD_ASSET/lv10/images/tocngan.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv14/images/amthanh.png  (Cannot move asset from Assets/LevelAssets/lv14/images/amthanh.png to Assets/DEAD_ASSET/lv14/images/amthanh.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv14/images/chu.png  (Cannot move asset from Assets/LevelAssets/lv14/images/chu.png to Assets/DEAD_ASSET/lv14/images/chu.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv14/images/den2.png  (Cannot move asset from Assets/LevelAssets/lv14/images/den2.png to Assets/DEAD_ASSET/lv14/images/den2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv14/images/den3.png  (Cannot move asset from Assets/LevelAssets/lv14/images/den3.png to Assets/DEAD_ASSET/lv14/images/den3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv14/images/ghe.png  (Cannot move asset from Assets/LevelAssets/lv14/images/ghe.png to Assets/DEAD_ASSET/lv14/images/ghe.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv14/images/meo.png  (Cannot move asset from Assets/LevelAssets/lv14/images/meo.png to Assets/DEAD_ASSET/lv14/images/meo.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv14/images/non1.png  (Cannot move asset from Assets/LevelAssets/lv14/images/non1.png to Assets/DEAD_ASSET/lv14/images/non1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv14/images/non2.png  (Cannot move asset from Assets/LevelAssets/lv14/images/non2.png to Assets/DEAD_ASSET/lv14/images/non2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv17/images/binhnuoc2.png  (Cannot move asset from Assets/LevelAssets/lv17/images/binhnuoc2.png to Assets/DEAD_ASSET/lv17/images/binhnuoc2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv17/images/liquid2.png  (Cannot move asset from Assets/LevelAssets/lv17/images/liquid2.png to Assets/DEAD_ASSET/lv17/images/liquid2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv17/images/lua_fx.png  (Cannot move asset from Assets/LevelAssets/lv17/images/lua_fx.png to Assets/DEAD_ASSET/lv17/images/lua_fx.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv17/images/noi.png  (Cannot move asset from Assets/LevelAssets/lv17/images/noi.png to Assets/DEAD_ASSET/lv17/images/noi.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv17/images/phuthuy.png  (Cannot move asset from Assets/LevelAssets/lv17/images/phuthuy.png to Assets/DEAD_ASSET/lv17/images/phuthuy.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv18/images/balo2.png  (Cannot move asset from Assets/LevelAssets/lv18/images/balo2.png to Assets/DEAD_ASSET/lv18/images/balo2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv18/images/chamthan.png  (Cannot move asset from Assets/LevelAssets/lv18/images/chamthan.png to Assets/DEAD_ASSET/lv18/images/chamthan.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv18/images/chuot1.png  (Cannot move asset from Assets/LevelAssets/lv18/images/chuot1.png to Assets/DEAD_ASSET/lv18/images/chuot1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv18/images/chuot3.png  (Cannot move asset from Assets/LevelAssets/lv18/images/chuot3.png to Assets/DEAD_ASSET/lv18/images/chuot3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv18/images/chuot3_fx.png  (Cannot move asset from Assets/LevelAssets/lv18/images/chuot3_fx.png to Assets/DEAD_ASSET/lv18/images/chuot3_fx.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv18/images/gai1.png  (Cannot move asset from Assets/LevelAssets/lv18/images/gai1.png to Assets/DEAD_ASSET/lv18/images/gai1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv18/images/gai1_top.png  (Cannot move asset from Assets/LevelAssets/lv18/images/gai1_top.png to Assets/DEAD_ASSET/lv18/images/gai1_top.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv18/images/gai2.png  (Cannot move asset from Assets/LevelAssets/lv18/images/gai2.png to Assets/DEAD_ASSET/lv18/images/gai2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv18/images/gai3.png  (Cannot move asset from Assets/LevelAssets/lv18/images/gai3.png to Assets/DEAD_ASSET/lv18/images/gai3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv18/images/hieuung.png  (Cannot move asset from Assets/LevelAssets/lv18/images/hieuung.png to Assets/DEAD_ASSET/lv18/images/hieuung.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv18/images/ma1.png  (Cannot move asset from Assets/LevelAssets/lv18/images/ma1.png to Assets/DEAD_ASSET/lv18/images/ma1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv18/images/ma_icon.png  (Cannot move asset from Assets/LevelAssets/lv18/images/ma_icon.png to Assets/DEAD_ASSET/lv18/images/ma_icon.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv18/images/nam1-b.png  (Cannot move asset from Assets/LevelAssets/lv18/images/nam1-b.png to Assets/DEAD_ASSET/lv18/images/nam1-b.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv18/images/nam1.png  (Cannot move asset from Assets/LevelAssets/lv18/images/nam1.png to Assets/DEAD_ASSET/lv18/images/nam1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv18/images/nam2-b.png  (Cannot move asset from Assets/LevelAssets/lv18/images/nam2-b.png to Assets/DEAD_ASSET/lv18/images/nam2-b.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv18/images/nam2.png  (Cannot move asset from Assets/LevelAssets/lv18/images/nam2.png to Assets/DEAD_ASSET/lv18/images/nam2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv18/images/thanchet2.png  (Cannot move asset from Assets/LevelAssets/lv18/images/thanchet2.png to Assets/DEAD_ASSET/lv18/images/thanchet2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv18/images/thanchet3.png  (Cannot move asset from Assets/LevelAssets/lv18/images/thanchet3.png to Assets/DEAD_ASSET/lv18/images/thanchet3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv19/images/cho1.png  (Cannot move asset from Assets/LevelAssets/lv19/images/cho1.png to Assets/DEAD_ASSET/lv19/images/cho1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv19/images/cho2.png  (Cannot move asset from Assets/LevelAssets/lv19/images/cho2.png to Assets/DEAD_ASSET/lv19/images/cho2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv19/images/cuu1.png  (Cannot move asset from Assets/LevelAssets/lv19/images/cuu1.png to Assets/DEAD_ASSET/lv19/images/cuu1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv19/images/cuu2.png  (Cannot move asset from Assets/LevelAssets/lv19/images/cuu2.png to Assets/DEAD_ASSET/lv19/images/cuu2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv19/images/khan.png  (Cannot move asset from Assets/LevelAssets/lv19/images/khan.png to Assets/DEAD_ASSET/lv19/images/khan.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv19/images/nv1.png  (Cannot move asset from Assets/LevelAssets/lv19/images/nv1.png to Assets/DEAD_ASSET/lv19/images/nv1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv19/images/nv2.png  (Cannot move asset from Assets/LevelAssets/lv19/images/nv2.png to Assets/DEAD_ASSET/lv19/images/nv2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv19/images/nv3.png  (Cannot move asset from Assets/LevelAssets/lv19/images/nv3.png to Assets/DEAD_ASSET/lv19/images/nv3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv19/images/ong.png  (Cannot move asset from Assets/LevelAssets/lv19/images/ong.png to Assets/DEAD_ASSET/lv19/images/ong.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv19/images/ongomkhan.png  (Cannot move asset from Assets/LevelAssets/lv19/images/ongomkhan.png to Assets/DEAD_ASSET/lv19/images/ongomkhan.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/1.png  (Cannot move asset from Assets/LevelAssets/lv20/images/1.png to Assets/DEAD_ASSET/lv20/images/1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/10.png  (Cannot move asset from Assets/LevelAssets/lv20/images/10.png to Assets/DEAD_ASSET/lv20/images/10.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/11.png  (Cannot move asset from Assets/LevelAssets/lv20/images/11.png to Assets/DEAD_ASSET/lv20/images/11.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/12.png  (Cannot move asset from Assets/LevelAssets/lv20/images/12.png to Assets/DEAD_ASSET/lv20/images/12.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/13.png  (Cannot move asset from Assets/LevelAssets/lv20/images/13.png to Assets/DEAD_ASSET/lv20/images/13.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/14.png  (Cannot move asset from Assets/LevelAssets/lv20/images/14.png to Assets/DEAD_ASSET/lv20/images/14.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/15.png  (Cannot move asset from Assets/LevelAssets/lv20/images/15.png to Assets/DEAD_ASSET/lv20/images/15.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/16.png  (Cannot move asset from Assets/LevelAssets/lv20/images/16.png to Assets/DEAD_ASSET/lv20/images/16.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/2 nam.png  (Cannot move asset from Assets/LevelAssets/lv20/images/2 nam.png to Assets/DEAD_ASSET/lv20/images/2 nam.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/2.png  (Cannot move asset from Assets/LevelAssets/lv20/images/2.png to Assets/DEAD_ASSET/lv20/images/2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/3.png  (Cannot move asset from Assets/LevelAssets/lv20/images/3.png to Assets/DEAD_ASSET/lv20/images/3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/4.png  (Cannot move asset from Assets/LevelAssets/lv20/images/4.png to Assets/DEAD_ASSET/lv20/images/4.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/5.png  (Cannot move asset from Assets/LevelAssets/lv20/images/5.png to Assets/DEAD_ASSET/lv20/images/5.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/6.png  (Cannot move asset from Assets/LevelAssets/lv20/images/6.png to Assets/DEAD_ASSET/lv20/images/6.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/7.png  (Cannot move asset from Assets/LevelAssets/lv20/images/7.png to Assets/DEAD_ASSET/lv20/images/7.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/8.png  (Cannot move asset from Assets/LevelAssets/lv20/images/8.png to Assets/DEAD_ASSET/lv20/images/8.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/9.png  (Cannot move asset from Assets/LevelAssets/lv20/images/9.png to Assets/DEAD_ASSET/lv20/images/9.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/anhsangmt.png  (Cannot move asset from Assets/LevelAssets/lv20/images/anhsangmt.png to Assets/DEAD_ASSET/lv20/images/anhsangmt.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/ao.png  (Cannot move asset from Assets/LevelAssets/lv20/images/ao.png to Assets/DEAD_ASSET/lv20/images/ao.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/bang2.png  (Cannot move asset from Assets/LevelAssets/lv20/images/bang2.png to Assets/DEAD_ASSET/lv20/images/bang2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/chainuoc2.png  (Cannot move asset from Assets/LevelAssets/lv20/images/chainuoc2.png to Assets/DEAD_ASSET/lv20/images/chainuoc2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/chim1.png  (Cannot move asset from Assets/LevelAssets/lv20/images/chim1.png to Assets/DEAD_ASSET/lv20/images/chim1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/chim2.png  (Cannot move asset from Assets/LevelAssets/lv20/images/chim2.png to Assets/DEAD_ASSET/lv20/images/chim2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/con2.png  (Cannot move asset from Assets/LevelAssets/lv20/images/con2.png to Assets/DEAD_ASSET/lv20/images/con2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/conxit.png  (Cannot move asset from Assets/LevelAssets/lv20/images/conxit.png to Assets/DEAD_ASSET/lv20/images/conxit.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/day2.png  (Cannot move asset from Assets/LevelAssets/lv20/images/day2.png to Assets/DEAD_ASSET/lv20/images/day2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/gio.png  (Cannot move asset from Assets/LevelAssets/lv20/images/gio.png to Assets/DEAD_ASSET/lv20/images/gio.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/Layer 1.png  (Cannot move asset from Assets/LevelAssets/lv20/images/Layer 1.png to Assets/DEAD_ASSET/lv20/images/Layer 1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/maysay2.png  (Cannot move asset from Assets/LevelAssets/lv20/images/maysay2.png to Assets/DEAD_ASSET/lv20/images/maysay2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/nuoc.png  (Cannot move asset from Assets/LevelAssets/lv20/images/nuoc.png to Assets/DEAD_ASSET/lv20/images/nuoc.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/nv3_1.png  (Cannot move asset from Assets/LevelAssets/lv20/images/nv3_1.png to Assets/DEAD_ASSET/lv20/images/nv3_1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/nv3_2.png  (Cannot move asset from Assets/LevelAssets/lv20/images/nv3_2.png to Assets/DEAD_ASSET/lv20/images/nv3_2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/nv3_ao1.png  (Cannot move asset from Assets/LevelAssets/lv20/images/nv3_ao1.png to Assets/DEAD_ASSET/lv20/images/nv3_ao1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/nv3_ao2.png  (Cannot move asset from Assets/LevelAssets/lv20/images/nv3_ao2.png to Assets/DEAD_ASSET/lv20/images/nv3_ao2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/Rectangle 1 copy.png  (Cannot move asset from Assets/LevelAssets/lv20/images/Rectangle 1 copy.png to Assets/DEAD_ASSET/lv20/images/Rectangle 1 copy.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/ta1.png  (Cannot move asset from Assets/LevelAssets/lv20/images/ta1.png to Assets/DEAD_ASSET/lv20/images/ta1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv20/images/ta2.png  (Cannot move asset from Assets/LevelAssets/lv20/images/ta2.png to Assets/DEAD_ASSET/lv20/images/ta2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv21/images/cat.png  (Cannot move asset from Assets/LevelAssets/lv21/images/cat.png to Assets/DEAD_ASSET/lv21/images/cat.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv21/images/cat_sleep.png  (Cannot move asset from Assets/LevelAssets/lv21/images/cat_sleep.png to Assets/DEAD_ASSET/lv21/images/cat_sleep.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv21/images/cogai_an.png  (Cannot move asset from Assets/LevelAssets/lv21/images/cogai_an.png to Assets/DEAD_ASSET/lv21/images/cogai_an.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv21/images/cogai_cat.png  (Cannot move asset from Assets/LevelAssets/lv21/images/cogai_cat.png to Assets/DEAD_ASSET/lv21/images/cogai_cat.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv21/images/cogai_len.png  (Cannot move asset from Assets/LevelAssets/lv21/images/cogai_len.png to Assets/DEAD_ASSET/lv21/images/cogai_len.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv21/images/cogai_mat1.png  (Cannot move asset from Assets/LevelAssets/lv21/images/cogai_mat1.png to Assets/DEAD_ASSET/lv21/images/cogai_mat1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv21/images/cogai_mat2.png  (Cannot move asset from Assets/LevelAssets/lv21/images/cogai_mat2.png to Assets/DEAD_ASSET/lv21/images/cogai_mat2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv21/images/cogai_matxa.png  (Cannot move asset from Assets/LevelAssets/lv21/images/cogai_matxa.png to Assets/DEAD_ASSET/lv21/images/cogai_matxa.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv21/images/cogai_met.png  (Cannot move asset from Assets/LevelAssets/lv21/images/cogai_met.png to Assets/DEAD_ASSET/lv21/images/cogai_met.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv21/images/cogai_nhin.png  (Cannot move asset from Assets/LevelAssets/lv21/images/cogai_nhin.png to Assets/DEAD_ASSET/lv21/images/cogai_nhin.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv21/images/cogai_saulung.png  (Cannot move asset from Assets/LevelAssets/lv21/images/cogai_saulung.png to Assets/DEAD_ASSET/lv21/images/cogai_saulung.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv21/images/cogai_vui.png  (Cannot move asset from Assets/LevelAssets/lv21/images/cogai_vui.png to Assets/DEAD_ASSET/lv21/images/cogai_vui.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv21/images/heart.png  (Cannot move asset from Assets/LevelAssets/lv21/images/heart.png to Assets/DEAD_ASSET/lv21/images/heart.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv21/images/heart100.png  (Cannot move asset from Assets/LevelAssets/lv21/images/heart100.png to Assets/DEAD_ASSET/lv21/images/heart100.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv21/images/heart30.png  (Cannot move asset from Assets/LevelAssets/lv21/images/heart30.png to Assets/DEAD_ASSET/lv21/images/heart30.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv21/images/heart80.png  (Cannot move asset from Assets/LevelAssets/lv21/images/heart80.png to Assets/DEAD_ASSET/lv21/images/heart80.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv21/images/mattraitim.png  (Cannot move asset from Assets/LevelAssets/lv21/images/mattraitim.png to Assets/DEAD_ASSET/lv21/images/mattraitim.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv21/images/met_fx.png  (Cannot move asset from Assets/LevelAssets/lv21/images/met_fx.png to Assets/DEAD_ASSET/lv21/images/met_fx.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv21/images/mieng.png  (Cannot move asset from Assets/LevelAssets/lv21/images/mieng.png to Assets/DEAD_ASSET/lv21/images/mieng.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv21/images/thang.png  (Cannot move asset from Assets/LevelAssets/lv21/images/thang.png to Assets/DEAD_ASSET/lv21/images/thang.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv21/images/tongtai.png  (Cannot move asset from Assets/LevelAssets/lv21/images/tongtai.png to Assets/DEAD_ASSET/lv21/images/tongtai.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv22/images/caykho.png  (Cannot move asset from Assets/LevelAssets/lv22/images/caykho.png to Assets/DEAD_ASSET/lv22/images/caykho.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv22/images/chamthan.png  (Cannot move asset from Assets/LevelAssets/lv22/images/chamthan.png to Assets/DEAD_ASSET/lv22/images/chamthan.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv22/images/cogai1.png  (Cannot move asset from Assets/LevelAssets/lv22/images/cogai1.png to Assets/DEAD_ASSET/lv22/images/cogai1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv22/images/cogai2.png  (Cannot move asset from Assets/LevelAssets/lv22/images/cogai2.png to Assets/DEAD_ASSET/lv22/images/cogai2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv22/images/cogai3.png  (Cannot move asset from Assets/LevelAssets/lv22/images/cogai3.png to Assets/DEAD_ASSET/lv22/images/cogai3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv22/images/cogai7.png  (Cannot move asset from Assets/LevelAssets/lv22/images/cogai7.png to Assets/DEAD_ASSET/lv22/images/cogai7.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv22/images/dan2.png  (Cannot move asset from Assets/LevelAssets/lv22/images/dan2.png to Assets/DEAD_ASSET/lv22/images/dan2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv22/images/daykeo.png  (Cannot move asset from Assets/LevelAssets/lv22/images/daykeo.png to Assets/DEAD_ASSET/lv22/images/daykeo.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv22/images/gocua_fx.png  (Cannot move asset from Assets/LevelAssets/lv22/images/gocua_fx.png to Assets/DEAD_ASSET/lv22/images/gocua_fx.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv22/images/heart.png  (Cannot move asset from Assets/LevelAssets/lv22/images/heart.png to Assets/DEAD_ASSET/lv22/images/heart.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv22/images/hieuungdan.png  (Cannot move asset from Assets/LevelAssets/lv22/images/hieuungdan.png to Assets/DEAD_ASSET/lv22/images/hieuungdan.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv22/images/meo.png  (Cannot move asset from Assets/LevelAssets/lv22/images/meo.png to Assets/DEAD_ASSET/lv22/images/meo.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv22/images/meo2.png  (Cannot move asset from Assets/LevelAssets/lv22/images/meo2.png to Assets/DEAD_ASSET/lv22/images/meo2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv22/images/soc2.png  (Cannot move asset from Assets/LevelAssets/lv22/images/soc2.png to Assets/DEAD_ASSET/lv22/images/soc2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv22/images/soc5.png  (Cannot move asset from Assets/LevelAssets/lv22/images/soc5.png to Assets/DEAD_ASSET/lv22/images/soc5.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv22/images/soc_ngu.png  (Cannot move asset from Assets/LevelAssets/lv22/images/soc_ngu.png to Assets/DEAD_ASSET/lv22/images/soc_ngu.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv22/images/tay.png  (Cannot move asset from Assets/LevelAssets/lv22/images/tay.png to Assets/DEAD_ASSET/lv22/images/tay.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv22/images/tay_gocua.png  (Cannot move asset from Assets/LevelAssets/lv22/images/tay_gocua.png to Assets/DEAD_ASSET/lv22/images/tay_gocua.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv22/images/trai1.png  (Cannot move asset from Assets/LevelAssets/lv22/images/trai1.png to Assets/DEAD_ASSET/lv22/images/trai1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv22/images/trai2.png  (Cannot move asset from Assets/LevelAssets/lv22/images/trai2.png to Assets/DEAD_ASSET/lv22/images/trai2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv22/images/trai_hon.png  (Cannot move asset from Assets/LevelAssets/lv22/images/trai_hon.png to Assets/DEAD_ASSET/lv22/images/trai_hon.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv23/images/aoxanh2.png  (Cannot move asset from Assets/LevelAssets/lv23/images/aoxanh2.png to Assets/DEAD_ASSET/lv23/images/aoxanh2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv23/images/bang2.png  (Cannot move asset from Assets/LevelAssets/lv23/images/bang2.png to Assets/DEAD_ASSET/lv23/images/bang2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv23/images/bus.png  (Cannot move asset from Assets/LevelAssets/lv23/images/bus.png to Assets/DEAD_ASSET/lv23/images/bus.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv23/images/canhsat.png  (Cannot move asset from Assets/LevelAssets/lv23/images/canhsat.png to Assets/DEAD_ASSET/lv23/images/canhsat.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv23/images/khanchoang2.png  (Cannot move asset from Assets/LevelAssets/lv23/images/khanchoang2.png to Assets/DEAD_ASSET/lv23/images/khanchoang2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv23/images/khanchoang3.png  (Cannot move asset from Assets/LevelAssets/lv23/images/khanchoang3.png to Assets/DEAD_ASSET/lv23/images/khanchoang3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv23/images/nu.png  (Cannot move asset from Assets/LevelAssets/lv23/images/nu.png to Assets/DEAD_ASSET/lv23/images/nu.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv23/images/nu_1.png  (Cannot move asset from Assets/LevelAssets/lv23/images/nu_1.png to Assets/DEAD_ASSET/lv23/images/nu_1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv23/images/nv.png  (Cannot move asset from Assets/LevelAssets/lv23/images/nv.png to Assets/DEAD_ASSET/lv23/images/nv.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv23/images/taxi.png  (Cannot move asset from Assets/LevelAssets/lv23/images/taxi.png to Assets/DEAD_ASSET/lv23/images/taxi.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv23/images/taxi4.png  (Cannot move asset from Assets/LevelAssets/lv23/images/taxi4.png to Assets/DEAD_ASSET/lv23/images/taxi4.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv23/images/tocgia2.png  (Cannot move asset from Assets/LevelAssets/lv23/images/tocgia2.png to Assets/DEAD_ASSET/lv23/images/tocgia2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv23/images/vang2.png  (Cannot move asset from Assets/LevelAssets/lv23/images/vang2.png to Assets/DEAD_ASSET/lv23/images/vang2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv24/images/cogai1.png  (Cannot move asset from Assets/LevelAssets/lv24/images/cogai1.png to Assets/DEAD_ASSET/lv24/images/cogai1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv24/images/cogai2.png  (Cannot move asset from Assets/LevelAssets/lv24/images/cogai2.png to Assets/DEAD_ASSET/lv24/images/cogai2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv24/images/cogai3.png  (Cannot move asset from Assets/LevelAssets/lv24/images/cogai3.png to Assets/DEAD_ASSET/lv24/images/cogai3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv24/images/cogai4.png  (Cannot move asset from Assets/LevelAssets/lv24/images/cogai4.png to Assets/DEAD_ASSET/lv24/images/cogai4.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv24/images/Layer 23.png  (Cannot move asset from Assets/LevelAssets/lv24/images/Layer 23.png to Assets/DEAD_ASSET/lv24/images/Layer 23.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv24/images/nuoc1_fx.png  (Cannot move asset from Assets/LevelAssets/lv24/images/nuoc1_fx.png to Assets/DEAD_ASSET/lv24/images/nuoc1_fx.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv24/images/nuoc2_fx.png  (Cannot move asset from Assets/LevelAssets/lv24/images/nuoc2_fx.png to Assets/DEAD_ASSET/lv24/images/nuoc2_fx.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv25/images/7up2.png  (Cannot move asset from Assets/LevelAssets/lv25/images/7up2.png to Assets/DEAD_ASSET/lv25/images/7up2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv25/images/bong2.png  (Cannot move asset from Assets/LevelAssets/lv25/images/bong2.png to Assets/DEAD_ASSET/lv25/images/bong2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv25/images/bong3.png  (Cannot move asset from Assets/LevelAssets/lv25/images/bong3.png to Assets/DEAD_ASSET/lv25/images/bong3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv25/images/buocdi.png  (Cannot move asset from Assets/LevelAssets/lv25/images/buocdi.png to Assets/DEAD_ASSET/lv25/images/buocdi.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv25/images/chim2.png  (Cannot move asset from Assets/LevelAssets/lv25/images/chim2.png to Assets/DEAD_ASSET/lv25/images/chim2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv25/images/chim3.png  (Cannot move asset from Assets/LevelAssets/lv25/images/chim3.png to Assets/DEAD_ASSET/lv25/images/chim3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv25/images/khanchoang2.png  (Cannot move asset from Assets/LevelAssets/lv25/images/khanchoang2.png to Assets/DEAD_ASSET/lv25/images/khanchoang2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv25/images/lua2.png  (Cannot move asset from Assets/LevelAssets/lv25/images/lua2.png to Assets/DEAD_ASSET/lv25/images/lua2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv25/images/nv.png  (Cannot move asset from Assets/LevelAssets/lv25/images/nv.png to Assets/DEAD_ASSET/lv25/images/nv.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv26/images/nv1.png  (Cannot move asset from Assets/LevelAssets/lv26/images/nv1.png to Assets/DEAD_ASSET/lv26/images/nv1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv26/images/nv2.png  (Cannot move asset from Assets/LevelAssets/lv26/images/nv2.png to Assets/DEAD_ASSET/lv26/images/nv2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv26/images/nv3.png  (Cannot move asset from Assets/LevelAssets/lv26/images/nv3.png to Assets/DEAD_ASSET/lv26/images/nv3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv26/images/nvn1.png  (Cannot move asset from Assets/LevelAssets/lv26/images/nvn1.png to Assets/DEAD_ASSET/lv26/images/nvn1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv26/images/nvn2.png  (Cannot move asset from Assets/LevelAssets/lv26/images/nvn2.png to Assets/DEAD_ASSET/lv26/images/nvn2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv33/images/bao1.png  (Cannot move asset from Assets/LevelAssets/lv33/images/bao1.png to Assets/DEAD_ASSET/lv33/images/bao1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv33/images/bao2.png  (Cannot move asset from Assets/LevelAssets/lv33/images/bao2.png to Assets/DEAD_ASSET/lv33/images/bao2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv33/images/ca1.png  (Cannot move asset from Assets/LevelAssets/lv33/images/ca1.png to Assets/DEAD_ASSET/lv33/images/ca1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv33/images/ca2.png  (Cannot move asset from Assets/LevelAssets/lv33/images/ca2.png to Assets/DEAD_ASSET/lv33/images/ca2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv33/images/ca3.png  (Cannot move asset from Assets/LevelAssets/lv33/images/ca3.png to Assets/DEAD_ASSET/lv33/images/ca3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv33/images/codadieu.png  (Cannot move asset from Assets/LevelAssets/lv33/images/codadieu.png to Assets/DEAD_ASSET/lv33/images/codadieu.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv33/images/dadieu.png  (Cannot move asset from Assets/LevelAssets/lv33/images/dadieu.png to Assets/DEAD_ASSET/lv33/images/dadieu.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv33/images/domdom1.png  (Cannot move asset from Assets/LevelAssets/lv33/images/domdom1.png to Assets/DEAD_ASSET/lv33/images/domdom1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv33/images/domdom2.png  (Cannot move asset from Assets/LevelAssets/lv33/images/domdom2.png to Assets/DEAD_ASSET/lv33/images/domdom2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv33/images/failed.png  (Cannot move asset from Assets/LevelAssets/lv33/images/failed.png to Assets/DEAD_ASSET/lv33/images/failed.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv33/images/gau1.png  (Cannot move asset from Assets/LevelAssets/lv33/images/gau1.png to Assets/DEAD_ASSET/lv33/images/gau1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv33/images/gau2.png  (Cannot move asset from Assets/LevelAssets/lv33/images/gau2.png to Assets/DEAD_ASSET/lv33/images/gau2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv33/images/khi.png  (Cannot move asset from Assets/LevelAssets/lv33/images/khi.png to Assets/DEAD_ASSET/lv33/images/khi.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv33/images/khi2.png  (Cannot move asset from Assets/LevelAssets/lv33/images/khi2.png to Assets/DEAD_ASSET/lv33/images/khi2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv33/images/mairua.png  (Cannot move asset from Assets/LevelAssets/lv33/images/mairua.png to Assets/DEAD_ASSET/lv33/images/mairua.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv33/images/nv1.png  (Cannot move asset from Assets/LevelAssets/lv33/images/nv1.png to Assets/DEAD_ASSET/lv33/images/nv1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv33/images/nv2.png  (Cannot move asset from Assets/LevelAssets/lv33/images/nv2.png to Assets/DEAD_ASSET/lv33/images/nv2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv33/images/ran.png  (Cannot move asset from Assets/LevelAssets/lv33/images/ran.png to Assets/DEAD_ASSET/lv33/images/ran.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv33/images/ran2.png  (Cannot move asset from Assets/LevelAssets/lv33/images/ran2.png to Assets/DEAD_ASSET/lv33/images/ran2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv33/images/rua1.png  (Cannot move asset from Assets/LevelAssets/lv33/images/rua1.png to Assets/DEAD_ASSET/lv33/images/rua1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv33/images/rua2.png  (Cannot move asset from Assets/LevelAssets/lv33/images/rua2.png to Assets/DEAD_ASSET/lv33/images/rua2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv33/images/sutu1.png  (Cannot move asset from Assets/LevelAssets/lv33/images/sutu1.png to Assets/DEAD_ASSET/lv33/images/sutu1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv33/images/sutu2.png  (Cannot move asset from Assets/LevelAssets/lv33/images/sutu2.png to Assets/DEAD_ASSET/lv33/images/sutu2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv33/images/tho.png  (Cannot move asset from Assets/LevelAssets/lv33/images/tho.png to Assets/DEAD_ASSET/lv33/images/tho.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv34/images/!!!.png  (Cannot move asset from Assets/LevelAssets/lv34/images/!!!.png to Assets/DEAD_ASSET/lv34/images/!!!.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv34/images/body.png  (Cannot move asset from Assets/LevelAssets/lv34/images/body.png to Assets/DEAD_ASSET/lv34/images/body.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv34/images/co.png  (Cannot move asset from Assets/LevelAssets/lv34/images/co.png to Assets/DEAD_ASSET/lv34/images/co.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv34/images/cogai2.png  (Cannot move asset from Assets/LevelAssets/lv34/images/cogai2.png to Assets/DEAD_ASSET/lv34/images/cogai2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv34/images/cogai4.png  (Cannot move asset from Assets/LevelAssets/lv34/images/cogai4.png to Assets/DEAD_ASSET/lv34/images/cogai4.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv34/images/cogai5.png  (Cannot move asset from Assets/LevelAssets/lv34/images/cogai5.png to Assets/DEAD_ASSET/lv34/images/cogai5.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv34/images/khoi_fx.png  (Cannot move asset from Assets/LevelAssets/lv34/images/khoi_fx.png to Assets/DEAD_ASSET/lv34/images/khoi_fx.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv34/images/lua.png  (Cannot move asset from Assets/LevelAssets/lv34/images/lua.png to Assets/DEAD_ASSET/lv34/images/lua.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv34/images/me.png  (Cannot move asset from Assets/LevelAssets/lv34/images/me.png to Assets/DEAD_ASSET/lv34/images/me.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv34/images/me1.png  (Cannot move asset from Assets/LevelAssets/lv34/images/me1.png to Assets/DEAD_ASSET/lv34/images/me1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv34/images/me2.png  (Cannot move asset from Assets/LevelAssets/lv34/images/me2.png to Assets/DEAD_ASSET/lv34/images/me2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv34/images/meo1.png  (Cannot move asset from Assets/LevelAssets/lv34/images/meo1.png to Assets/DEAD_ASSET/lv34/images/meo1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv34/images/meo2.png  (Cannot move asset from Assets/LevelAssets/lv34/images/meo2.png to Assets/DEAD_ASSET/lv34/images/meo2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv34/images/meo3.png  (Cannot move asset from Assets/LevelAssets/lv34/images/meo3.png to Assets/DEAD_ASSET/lv34/images/meo3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv34/images/thungrac1.png  (Cannot move asset from Assets/LevelAssets/lv34/images/thungrac1.png to Assets/DEAD_ASSET/lv34/images/thungrac1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv34/images/tiaxit.png  (Cannot move asset from Assets/LevelAssets/lv34/images/tiaxit.png to Assets/DEAD_ASSET/lv34/images/tiaxit.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv34/images/trai.png  (Cannot move asset from Assets/LevelAssets/lv34/images/trai.png to Assets/DEAD_ASSET/lv34/images/trai.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv34/images/xitphong2.png  (Cannot move asset from Assets/LevelAssets/lv34/images/xitphong2.png to Assets/DEAD_ASSET/lv34/images/xitphong2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv35/images/failed2.png  (Cannot move asset from Assets/LevelAssets/lv35/images/failed2.png to Assets/DEAD_ASSET/lv35/images/failed2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv35/images/failed3.png  (Cannot move asset from Assets/LevelAssets/lv35/images/failed3.png to Assets/DEAD_ASSET/lv35/images/failed3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv35/images/failed_nu.png  (Cannot move asset from Assets/LevelAssets/lv35/images/failed_nu.png to Assets/DEAD_ASSET/lv35/images/failed_nu.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv35/images/hattay.png  (Cannot move asset from Assets/LevelAssets/lv35/images/hattay.png to Assets/DEAD_ASSET/lv35/images/hattay.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv35/images/nam.png  (Cannot move asset from Assets/LevelAssets/lv35/images/nam.png to Assets/DEAD_ASSET/lv35/images/nam.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv35/images/nu.png  (Cannot move asset from Assets/LevelAssets/lv35/images/nu.png to Assets/DEAD_ASSET/lv35/images/nu.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv35/images/nu2.png  (Cannot move asset from Assets/LevelAssets/lv35/images/nu2.png to Assets/DEAD_ASSET/lv35/images/nu2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv35/images/nu3.png  (Cannot move asset from Assets/LevelAssets/lv35/images/nu3.png to Assets/DEAD_ASSET/lv35/images/nu3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv35/images/nuoc.png  (Cannot move asset from Assets/LevelAssets/lv35/images/nuoc.png to Assets/DEAD_ASSET/lv35/images/nuoc.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv35/images/nv1.png  (Cannot move asset from Assets/LevelAssets/lv35/images/nv1.png to Assets/DEAD_ASSET/lv35/images/nv1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv35/images/nv2.png  (Cannot move asset from Assets/LevelAssets/lv35/images/nv2.png to Assets/DEAD_ASSET/lv35/images/nv2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv35/images/nv3.png  (Cannot move asset from Assets/LevelAssets/lv35/images/nv3.png to Assets/DEAD_ASSET/lv35/images/nv3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv35/images/nv4.png  (Cannot move asset from Assets/LevelAssets/lv35/images/nv4.png to Assets/DEAD_ASSET/lv35/images/nv4.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv35/images/oto.png  (Cannot move asset from Assets/LevelAssets/lv35/images/oto.png to Assets/DEAD_ASSET/lv35/images/oto.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv35/images/taynv.png  (Cannot move asset from Assets/LevelAssets/lv35/images/taynv.png to Assets/DEAD_ASSET/lv35/images/taynv.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv36/images/amthanh.png  (Cannot move asset from Assets/LevelAssets/lv36/images/amthanh.png to Assets/DEAD_ASSET/lv36/images/amthanh.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv36/images/bangkeo2.png  (Cannot move asset from Assets/LevelAssets/lv36/images/bangkeo2.png to Assets/DEAD_ASSET/lv36/images/bangkeo2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv36/images/cogai1.png  (Cannot move asset from Assets/LevelAssets/lv36/images/cogai1.png to Assets/DEAD_ASSET/lv36/images/cogai1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv36/images/cogai_final.png  (Cannot move asset from Assets/LevelAssets/lv36/images/cogai_final.png to Assets/DEAD_ASSET/lv36/images/cogai_final.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv36/images/cogai_fx.png  (Cannot move asset from Assets/LevelAssets/lv36/images/cogai_fx.png to Assets/DEAD_ASSET/lv36/images/cogai_fx.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv36/images/cogai_ngu2.png  (Cannot move asset from Assets/LevelAssets/lv36/images/cogai_ngu2.png to Assets/DEAD_ASSET/lv36/images/cogai_ngu2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv36/images/cuatu1.png  (Cannot move asset from Assets/LevelAssets/lv36/images/cuatu1.png to Assets/DEAD_ASSET/lv36/images/cuatu1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv36/images/cuatu2.png  (Cannot move asset from Assets/LevelAssets/lv36/images/cuatu2.png to Assets/DEAD_ASSET/lv36/images/cuatu2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv36/images/Layer 19.png  (Cannot move asset from Assets/LevelAssets/lv36/images/Layer 19.png to Assets/DEAD_ASSET/lv36/images/Layer 19.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv36/images/manhinh1.png  (Cannot move asset from Assets/LevelAssets/lv36/images/manhinh1.png to Assets/DEAD_ASSET/lv36/images/manhinh1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv36/images/manhinh2.png  (Cannot move asset from Assets/LevelAssets/lv36/images/manhinh2.png to Assets/DEAD_ASSET/lv36/images/manhinh2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv36/images/password.png  (Cannot move asset from Assets/LevelAssets/lv36/images/password.png to Assets/DEAD_ASSET/lv36/images/password.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv36/images/password2.png  (Cannot move asset from Assets/LevelAssets/lv36/images/password2.png to Assets/DEAD_ASSET/lv36/images/password2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv36/images/tu.png  (Cannot move asset from Assets/LevelAssets/lv36/images/tu.png to Assets/DEAD_ASSET/lv36/images/tu.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv37/images/chim3.png  (Cannot move asset from Assets/LevelAssets/lv37/images/chim3.png to Assets/DEAD_ASSET/lv37/images/chim3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv37/images/chim4.png  (Cannot move asset from Assets/LevelAssets/lv37/images/chim4.png to Assets/DEAD_ASSET/lv37/images/chim4.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv37/images/nam.png  (Cannot move asset from Assets/LevelAssets/lv37/images/nam.png to Assets/DEAD_ASSET/lv37/images/nam.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv37/images/nam2.png  (Cannot move asset from Assets/LevelAssets/lv37/images/nam2.png to Assets/DEAD_ASSET/lv37/images/nam2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv37/images/nu.png  (Cannot move asset from Assets/LevelAssets/lv37/images/nu.png to Assets/DEAD_ASSET/lv37/images/nu.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv38/images/cogai1.png  (Cannot move asset from Assets/LevelAssets/lv38/images/cogai1.png to Assets/DEAD_ASSET/lv38/images/cogai1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv38/images/cogai3.png  (Cannot move asset from Assets/LevelAssets/lv38/images/cogai3.png to Assets/DEAD_ASSET/lv38/images/cogai3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv38/images/cuongthi1.png  (Cannot move asset from Assets/LevelAssets/lv38/images/cuongthi1.png to Assets/DEAD_ASSET/lv38/images/cuongthi1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv38/images/cuongthi2.png  (Cannot move asset from Assets/LevelAssets/lv38/images/cuongthi2.png to Assets/DEAD_ASSET/lv38/images/cuongthi2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv38/images/cuongthi3.png  (Cannot move asset from Assets/LevelAssets/lv38/images/cuongthi3.png to Assets/DEAD_ASSET/lv38/images/cuongthi3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv38/images/cuongthi4.png  (Cannot move asset from Assets/LevelAssets/lv38/images/cuongthi4.png to Assets/DEAD_ASSET/lv38/images/cuongthi4.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv38/images/lua.png  (Cannot move asset from Assets/LevelAssets/lv38/images/lua.png to Assets/DEAD_ASSET/lv38/images/lua.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv38/images/nguoisoi1.png  (Cannot move asset from Assets/LevelAssets/lv38/images/nguoisoi1.png to Assets/DEAD_ASSET/lv38/images/nguoisoi1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv38/images/nguoisoi3.png  (Cannot move asset from Assets/LevelAssets/lv38/images/nguoisoi3.png to Assets/DEAD_ASSET/lv38/images/nguoisoi3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv38/images/quangia1.png  (Cannot move asset from Assets/LevelAssets/lv38/images/quangia1.png to Assets/DEAD_ASSET/lv38/images/quangia1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv38/images/quangia2.png  (Cannot move asset from Assets/LevelAssets/lv38/images/quangia2.png to Assets/DEAD_ASSET/lv38/images/quangia2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv39/images/ly2_1.png  (Cannot move asset from Assets/LevelAssets/lv39/images/ly2_1.png to Assets/DEAD_ASSET/lv39/images/ly2_1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv39/images/ly2_2.png  (Cannot move asset from Assets/LevelAssets/lv39/images/ly2_2.png to Assets/DEAD_ASSET/lv39/images/ly2_2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv39/images/ly3.png  (Cannot move asset from Assets/LevelAssets/lv39/images/ly3.png to Assets/DEAD_ASSET/lv39/images/ly3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv39/images/ly3_1.png  (Cannot move asset from Assets/LevelAssets/lv39/images/ly3_1.png to Assets/DEAD_ASSET/lv39/images/ly3_1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv39/images/ly3_2.png  (Cannot move asset from Assets/LevelAssets/lv39/images/ly3_2.png to Assets/DEAD_ASSET/lv39/images/ly3_2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv39/images/ly3_3.png  (Cannot move asset from Assets/LevelAssets/lv39/images/ly3_3.png to Assets/DEAD_ASSET/lv39/images/ly3_3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv40/images/gio.png  (Cannot move asset from Assets/LevelAssets/lv40/images/gio.png to Assets/DEAD_ASSET/lv40/images/gio.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv40/images/meo2.png  (Cannot move asset from Assets/LevelAssets/lv40/images/meo2.png to Assets/DEAD_ASSET/lv40/images/meo2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv41/images/cho1.png  (Cannot move asset from Assets/LevelAssets/lv41/images/cho1.png to Assets/DEAD_ASSET/lv41/images/cho1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv41/images/cho2.png  (Cannot move asset from Assets/LevelAssets/lv41/images/cho2.png to Assets/DEAD_ASSET/lv41/images/cho2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv41/images/cho3.png  (Cannot move asset from Assets/LevelAssets/lv41/images/cho3.png to Assets/DEAD_ASSET/lv41/images/cho3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv41/images/cho4.png  (Cannot move asset from Assets/LevelAssets/lv41/images/cho4.png to Assets/DEAD_ASSET/lv41/images/cho4.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv41/images/cho5.png  (Cannot move asset from Assets/LevelAssets/lv41/images/cho5.png to Assets/DEAD_ASSET/lv41/images/cho5.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv41/images/cogai6.png  (Cannot move asset from Assets/LevelAssets/lv41/images/cogai6.png to Assets/DEAD_ASSET/lv41/images/cogai6.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv41/images/cogai_thua.png  (Cannot move asset from Assets/LevelAssets/lv41/images/cogai_thua.png to Assets/DEAD_ASSET/lv41/images/cogai_thua.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv41/images/dien1.png  (Cannot move asset from Assets/LevelAssets/lv41/images/dien1.png to Assets/DEAD_ASSET/lv41/images/dien1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv41/images/dien2.png  (Cannot move asset from Assets/LevelAssets/lv41/images/dien2.png to Assets/DEAD_ASSET/lv41/images/dien2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv41/images/giaohang.png  (Cannot move asset from Assets/LevelAssets/lv41/images/giaohang.png to Assets/DEAD_ASSET/lv41/images/giaohang.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv41/images/hieuung_cogai.png  (Cannot move asset from Assets/LevelAssets/lv41/images/hieuung_cogai.png to Assets/DEAD_ASSET/lv41/images/hieuung_cogai.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv41/images/khoi.png  (Cannot move asset from Assets/LevelAssets/lv41/images/khoi.png to Assets/DEAD_ASSET/lv41/images/khoi.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv41/images/mubaohiem.png  (Cannot move asset from Assets/LevelAssets/lv41/images/mubaohiem.png to Assets/DEAD_ASSET/lv41/images/mubaohiem.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv41/images/tay.png  (Cannot move asset from Assets/LevelAssets/lv41/images/tay.png to Assets/DEAD_ASSET/lv41/images/tay.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv41/images/tho cat toc.png  (Cannot move asset from Assets/LevelAssets/lv41/images/tho cat toc.png to Assets/DEAD_ASSET/lv41/images/tho cat toc.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv41/images/toc_bachtuot.png  (Cannot move asset from Assets/LevelAssets/lv41/images/toc_bachtuot.png to Assets/DEAD_ASSET/lv41/images/toc_bachtuot.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv41/images/toc_fx.png  (Cannot move asset from Assets/LevelAssets/lv41/images/toc_fx.png to Assets/DEAD_ASSET/lv41/images/toc_fx.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv41/images/toc_maybay.png  (Cannot move asset from Assets/LevelAssets/lv41/images/toc_maybay.png to Assets/DEAD_ASSET/lv41/images/toc_maybay.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv41/images/xuong.png  (Cannot move asset from Assets/LevelAssets/lv41/images/xuong.png to Assets/DEAD_ASSET/lv41/images/xuong.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv42/images/banh xe1.png  (Cannot move asset from Assets/LevelAssets/lv42/images/banh xe1.png to Assets/DEAD_ASSET/lv42/images/banh xe1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv42/images/banhxe 2.png  (Cannot move asset from Assets/LevelAssets/lv42/images/banhxe 2.png to Assets/DEAD_ASSET/lv42/images/banhxe 2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv42/images/bg.png  (Cannot move asset from Assets/LevelAssets/lv42/images/bg.png to Assets/DEAD_ASSET/lv42/images/bg.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv42/images/da2.png  (Cannot move asset from Assets/LevelAssets/lv42/images/da2.png to Assets/DEAD_ASSET/lv42/images/da2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv42/images/dau.png  (Cannot move asset from Assets/LevelAssets/lv42/images/dau.png to Assets/DEAD_ASSET/lv42/images/dau.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv42/images/nv1.png  (Cannot move asset from Assets/LevelAssets/lv42/images/nv1.png to Assets/DEAD_ASSET/lv42/images/nv1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv42/images/nv1_1.png  (Cannot move asset from Assets/LevelAssets/lv42/images/nv1_1.png to Assets/DEAD_ASSET/lv42/images/nv1_1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv42/images/nv2.png  (Cannot move asset from Assets/LevelAssets/lv42/images/nv2.png to Assets/DEAD_ASSET/lv42/images/nv2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv42/images/nv2_1.png  (Cannot move asset from Assets/LevelAssets/lv42/images/nv2_1.png to Assets/DEAD_ASSET/lv42/images/nv2_1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv42/images/po1.png  (Cannot move asset from Assets/LevelAssets/lv42/images/po1.png to Assets/DEAD_ASSET/lv42/images/po1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv42/images/tenlua.png  (Cannot move asset from Assets/LevelAssets/lv42/images/tenlua.png to Assets/DEAD_ASSET/lv42/images/tenlua.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv42/images/tenlua2.png  (Cannot move asset from Assets/LevelAssets/lv42/images/tenlua2.png to Assets/DEAD_ASSET/lv42/images/tenlua2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv42/images/xelua.png  (Cannot move asset from Assets/LevelAssets/lv42/images/xelua.png to Assets/DEAD_ASSET/lv42/images/xelua.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv42/images/xelua2.png  (Cannot move asset from Assets/LevelAssets/lv42/images/xelua2.png to Assets/DEAD_ASSET/lv42/images/xelua2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv42/images/xe_1.png  (Cannot move asset from Assets/LevelAssets/lv42/images/xe_1.png to Assets/DEAD_ASSET/lv42/images/xe_1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv43/images/ban1.png  (Cannot move asset from Assets/LevelAssets/lv43/images/ban1.png to Assets/DEAD_ASSET/lv43/images/ban1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv43/images/ban2.png  (Cannot move asset from Assets/LevelAssets/lv43/images/ban2.png to Assets/DEAD_ASSET/lv43/images/ban2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv43/images/ban3.png  (Cannot move asset from Assets/LevelAssets/lv43/images/ban3.png to Assets/DEAD_ASSET/lv43/images/ban3.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv43/images/codau1.png  (Cannot move asset from Assets/LevelAssets/lv43/images/codau1.png to Assets/DEAD_ASSET/lv43/images/codau1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv43/images/codau2.png  (Cannot move asset from Assets/LevelAssets/lv43/images/codau2.png to Assets/DEAD_ASSET/lv43/images/codau2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv43/images/cogai1.png  (Cannot move asset from Assets/LevelAssets/lv43/images/cogai1.png to Assets/DEAD_ASSET/lv43/images/cogai1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv43/images/cogai2.png  (Cannot move asset from Assets/LevelAssets/lv43/images/cogai2.png to Assets/DEAD_ASSET/lv43/images/cogai2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv43/images/nam1.png  (Cannot move asset from Assets/LevelAssets/lv43/images/nam1.png to Assets/DEAD_ASSET/lv43/images/nam1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv43/images/nam2.png  (Cannot move asset from Assets/LevelAssets/lv43/images/nam2.png to Assets/DEAD_ASSET/lv43/images/nam2.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv43/images/re1.png  (Cannot move asset from Assets/LevelAssets/lv43/images/re1.png to Assets/DEAD_ASSET/lv43/images/re1.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv43/images/toc.png  (Cannot move asset from Assets/LevelAssets/lv43/images/toc.png to Assets/DEAD_ASSET/lv43/images/toc.png: Parent directory is not in asset database)
+FAILED Assets/LevelAssets/lv43/images/vochong.png  (Cannot move asset from Assets/LevelAssets/lv43/images/vochong.png to Assets/DEAD_ASSET/lv43/images/vochong.png: Parent directory is not in asset database)
+
+=== REPAIR 2026-07-02 15:06:49   passes=2   filesMoved=0   foldersRemoved=704 ===
+REMOVED Assets/DEAD_ASSET/lv10/images 10
+REMOVED Assets/DEAD_ASSET/lv10/images 11
+REMOVED Assets/DEAD_ASSET/lv10/images 12
+REMOVED Assets/DEAD_ASSET/lv10/images 13
+REMOVED Assets/DEAD_ASSET/lv10/images 14
+REMOVED Assets/DEAD_ASSET/lv10/images 15
+REMOVED Assets/DEAD_ASSET/lv10/images 16
+REMOVED Assets/DEAD_ASSET/lv10/images 17
+REMOVED Assets/DEAD_ASSET/lv10/images 18
+REMOVED Assets/DEAD_ASSET/lv10/images 19
+REMOVED Assets/DEAD_ASSET/lv10/images 20
+REMOVED Assets/DEAD_ASSET/lv10/images 21
+REMOVED Assets/DEAD_ASSET/lv10/images 22
+REMOVED Assets/DEAD_ASSET/lv10/images 23
+REMOVED Assets/DEAD_ASSET/lv18/images 10
+REMOVED Assets/DEAD_ASSET/lv18/images 11
+REMOVED Assets/DEAD_ASSET/lv18/images 12
+REMOVED Assets/DEAD_ASSET/lv18/images 13
+REMOVED Assets/DEAD_ASSET/lv18/images 14
+REMOVED Assets/DEAD_ASSET/lv18/images 15
+REMOVED Assets/DEAD_ASSET/lv18/images 16
+REMOVED Assets/DEAD_ASSET/lv18/images 17
+REMOVED Assets/DEAD_ASSET/lv20/images 10
+REMOVED Assets/DEAD_ASSET/lv20/images 11
+REMOVED Assets/DEAD_ASSET/lv20/images 12
+REMOVED Assets/DEAD_ASSET/lv20/images 13
+REMOVED Assets/DEAD_ASSET/lv20/images 14
+REMOVED Assets/DEAD_ASSET/lv20/images 15
+REMOVED Assets/DEAD_ASSET/lv20/images 16
+REMOVED Assets/DEAD_ASSET/lv20/images 17
+REMOVED Assets/DEAD_ASSET/lv20/images 18
+REMOVED Assets/DEAD_ASSET/lv20/images 19
+REMOVED Assets/DEAD_ASSET/lv20/images 20
+REMOVED Assets/DEAD_ASSET/lv20/images 21
+REMOVED Assets/DEAD_ASSET/lv20/images 22
+REMOVED Assets/DEAD_ASSET/lv20/images 23
+REMOVED Assets/DEAD_ASSET/lv20/images 24
+REMOVED Assets/DEAD_ASSET/lv20/images 25
+REMOVED Assets/DEAD_ASSET/lv20/images 26
+REMOVED Assets/DEAD_ASSET/lv20/images 27
+REMOVED Assets/DEAD_ASSET/lv20/images 28
+REMOVED Assets/DEAD_ASSET/lv20/images 29
+REMOVED Assets/DEAD_ASSET/lv20/images 30
+REMOVED Assets/DEAD_ASSET/lv20/images 31
+REMOVED Assets/DEAD_ASSET/lv20/images 32
+REMOVED Assets/DEAD_ASSET/lv20/images 33
+REMOVED Assets/DEAD_ASSET/lv20/images 34
+REMOVED Assets/DEAD_ASSET/lv20/images 35
+REMOVED Assets/DEAD_ASSET/lv20/images 36
+REMOVED Assets/DEAD_ASSET/lv21/images 10
+REMOVED Assets/DEAD_ASSET/lv21/images 11
+REMOVED Assets/DEAD_ASSET/lv21/images 12
+REMOVED Assets/DEAD_ASSET/lv21/images 13
+REMOVED Assets/DEAD_ASSET/lv21/images 14
+REMOVED Assets/DEAD_ASSET/lv21/images 15
+REMOVED Assets/DEAD_ASSET/lv21/images 16
+REMOVED Assets/DEAD_ASSET/lv21/images 17
+REMOVED Assets/DEAD_ASSET/lv21/images 18
+REMOVED Assets/DEAD_ASSET/lv21/images 19
+REMOVED Assets/DEAD_ASSET/lv21/images 20
+REMOVED Assets/DEAD_ASSET/lv22/images 10
+REMOVED Assets/DEAD_ASSET/lv22/images 11
+REMOVED Assets/DEAD_ASSET/lv22/images 12
+REMOVED Assets/DEAD_ASSET/lv22/images 13
+REMOVED Assets/DEAD_ASSET/lv22/images 14
+REMOVED Assets/DEAD_ASSET/lv22/images 15
+REMOVED Assets/DEAD_ASSET/lv22/images 16
+REMOVED Assets/DEAD_ASSET/lv22/images 17
+REMOVED Assets/DEAD_ASSET/lv22/images 18
+REMOVED Assets/DEAD_ASSET/lv22/images 19
+REMOVED Assets/DEAD_ASSET/lv22/images 20
+REMOVED Assets/DEAD_ASSET/lv23/images 10
+REMOVED Assets/DEAD_ASSET/lv23/images 11
+REMOVED Assets/DEAD_ASSET/lv23/images 12
+REMOVED Assets/DEAD_ASSET/lv33/images 10
+REMOVED Assets/DEAD_ASSET/lv33/images 11
+REMOVED Assets/DEAD_ASSET/lv33/images 12
+REMOVED Assets/DEAD_ASSET/lv33/images 13
+REMOVED Assets/DEAD_ASSET/lv33/images 14
+REMOVED Assets/DEAD_ASSET/lv33/images 15
+REMOVED Assets/DEAD_ASSET/lv33/images 16
+REMOVED Assets/DEAD_ASSET/lv33/images 17
+REMOVED Assets/DEAD_ASSET/lv33/images 18
+REMOVED Assets/DEAD_ASSET/lv33/images 19
+REMOVED Assets/DEAD_ASSET/lv33/images 20
+REMOVED Assets/DEAD_ASSET/lv33/images 21
+REMOVED Assets/DEAD_ASSET/lv33/images 22
+REMOVED Assets/DEAD_ASSET/lv33/images 23
+REMOVED Assets/DEAD_ASSET/lv34/images 10
+REMOVED Assets/DEAD_ASSET/lv34/images 11
+REMOVED Assets/DEAD_ASSET/lv34/images 12
+REMOVED Assets/DEAD_ASSET/lv34/images 13
+REMOVED Assets/DEAD_ASSET/lv34/images 14
+REMOVED Assets/DEAD_ASSET/lv34/images 15
+REMOVED Assets/DEAD_ASSET/lv34/images 16
+REMOVED Assets/DEAD_ASSET/lv34/images 17
+REMOVED Assets/DEAD_ASSET/lv35/images 10
+REMOVED Assets/DEAD_ASSET/lv35/images 11
+REMOVED Assets/DEAD_ASSET/lv35/images 12
+REMOVED Assets/DEAD_ASSET/lv35/images 13
+REMOVED Assets/DEAD_ASSET/lv35/images 14
+REMOVED Assets/DEAD_ASSET/lv36/images 10
+REMOVED Assets/DEAD_ASSET/lv36/images 11
+REMOVED Assets/DEAD_ASSET/lv36/images 12
+REMOVED Assets/DEAD_ASSET/lv36/images 13
+REMOVED Assets/DEAD_ASSET/lv38/images 10
+REMOVED Assets/DEAD_ASSET/lv41/images 10
+REMOVED Assets/DEAD_ASSET/lv41/images 11
+REMOVED Assets/DEAD_ASSET/lv41/images 12
+REMOVED Assets/DEAD_ASSET/lv41/images 13
+REMOVED Assets/DEAD_ASSET/lv41/images 14
+REMOVED Assets/DEAD_ASSET/lv41/images 15
+REMOVED Assets/DEAD_ASSET/lv41/images 16
+REMOVED Assets/DEAD_ASSET/lv41/images 17
+REMOVED Assets/DEAD_ASSET/lv41/images 18
+REMOVED Assets/DEAD_ASSET/lv42/images 10
+REMOVED Assets/DEAD_ASSET/lv42/images 11
+REMOVED Assets/DEAD_ASSET/lv42/images 12
+REMOVED Assets/DEAD_ASSET/lv42/images 13
+REMOVED Assets/DEAD_ASSET/lv42/images 14
+REMOVED Assets/DEAD_ASSET/lv43/images 10
+REMOVED Assets/DEAD_ASSET/lv43/images 11
+REMOVED Assets/DEAD_ASSET/lv10/images 1
+REMOVED Assets/DEAD_ASSET/lv10/images 2
+REMOVED Assets/DEAD_ASSET/lv10/images 3
+REMOVED Assets/DEAD_ASSET/lv10/images 4
+REMOVED Assets/DEAD_ASSET/lv10/images 5
+REMOVED Assets/DEAD_ASSET/lv10/images 6
+REMOVED Assets/DEAD_ASSET/lv10/images 7
+REMOVED Assets/DEAD_ASSET/lv10/images 8
+REMOVED Assets/DEAD_ASSET/lv10/images 9
+REMOVED Assets/DEAD_ASSET/lv14/images 1
+REMOVED Assets/DEAD_ASSET/lv14/images 2
+REMOVED Assets/DEAD_ASSET/lv14/images 3
+REMOVED Assets/DEAD_ASSET/lv14/images 4
+REMOVED Assets/DEAD_ASSET/lv14/images 5
+REMOVED Assets/DEAD_ASSET/lv14/images 6
+REMOVED Assets/DEAD_ASSET/lv14/images 7
+REMOVED Assets/DEAD_ASSET/lv17/images 1
+REMOVED Assets/DEAD_ASSET/lv17/images 2
+REMOVED Assets/DEAD_ASSET/lv17/images 3
+REMOVED Assets/DEAD_ASSET/lv17/images 4
+REMOVED Assets/DEAD_ASSET/lv18/images 1
+REMOVED Assets/DEAD_ASSET/lv18/images 2
+REMOVED Assets/DEAD_ASSET/lv18/images 3
+REMOVED Assets/DEAD_ASSET/lv18/images 4
+REMOVED Assets/DEAD_ASSET/lv18/images 5
+REMOVED Assets/DEAD_ASSET/lv18/images 6
+REMOVED Assets/DEAD_ASSET/lv18/images 7
+REMOVED Assets/DEAD_ASSET/lv18/images 8
+REMOVED Assets/DEAD_ASSET/lv18/images 9
+REMOVED Assets/DEAD_ASSET/lv19/images 1
+REMOVED Assets/DEAD_ASSET/lv19/images 2
+REMOVED Assets/DEAD_ASSET/lv19/images 3
+REMOVED Assets/DEAD_ASSET/lv19/images 4
+REMOVED Assets/DEAD_ASSET/lv19/images 5
+REMOVED Assets/DEAD_ASSET/lv19/images 6
+REMOVED Assets/DEAD_ASSET/lv19/images 7
+REMOVED Assets/DEAD_ASSET/lv19/images 8
+REMOVED Assets/DEAD_ASSET/lv19/images 9
+REMOVED Assets/DEAD_ASSET/lv20/images 1
+REMOVED Assets/DEAD_ASSET/lv20/images 2
+REMOVED Assets/DEAD_ASSET/lv20/images 3
+REMOVED Assets/DEAD_ASSET/lv20/images 4
+REMOVED Assets/DEAD_ASSET/lv20/images 5
+REMOVED Assets/DEAD_ASSET/lv20/images 6
+REMOVED Assets/DEAD_ASSET/lv20/images 7
+REMOVED Assets/DEAD_ASSET/lv20/images 8
+REMOVED Assets/DEAD_ASSET/lv20/images 9
+REMOVED Assets/DEAD_ASSET/lv21/images 1
+REMOVED Assets/DEAD_ASSET/lv21/images 2
+REMOVED Assets/DEAD_ASSET/lv21/images 3
+REMOVED Assets/DEAD_ASSET/lv21/images 4
+REMOVED Assets/DEAD_ASSET/lv21/images 5
+REMOVED Assets/DEAD_ASSET/lv21/images 6
+REMOVED Assets/DEAD_ASSET/lv21/images 7
+REMOVED Assets/DEAD_ASSET/lv21/images 8
+REMOVED Assets/DEAD_ASSET/lv21/images 9
+REMOVED Assets/DEAD_ASSET/lv22/images 1
+REMOVED Assets/DEAD_ASSET/lv22/images 2
+REMOVED Assets/DEAD_ASSET/lv22/images 3
+REMOVED Assets/DEAD_ASSET/lv22/images 4
+REMOVED Assets/DEAD_ASSET/lv22/images 5
+REMOVED Assets/DEAD_ASSET/lv22/images 6
+REMOVED Assets/DEAD_ASSET/lv22/images 7
+REMOVED Assets/DEAD_ASSET/lv22/images 8
+REMOVED Assets/DEAD_ASSET/lv22/images 9
+REMOVED Assets/DEAD_ASSET/lv23/images 1
+REMOVED Assets/DEAD_ASSET/lv23/images 2
+REMOVED Assets/DEAD_ASSET/lv23/images 3
+REMOVED Assets/DEAD_ASSET/lv23/images 4
+REMOVED Assets/DEAD_ASSET/lv23/images 5
+REMOVED Assets/DEAD_ASSET/lv23/images 6
+REMOVED Assets/DEAD_ASSET/lv23/images 7
+REMOVED Assets/DEAD_ASSET/lv23/images 8
+REMOVED Assets/DEAD_ASSET/lv23/images 9
+REMOVED Assets/DEAD_ASSET/lv24/images 1
+REMOVED Assets/DEAD_ASSET/lv24/images 2
+REMOVED Assets/DEAD_ASSET/lv24/images 3
+REMOVED Assets/DEAD_ASSET/lv24/images 4
+REMOVED Assets/DEAD_ASSET/lv24/images 5
+REMOVED Assets/DEAD_ASSET/lv24/images 6
+REMOVED Assets/DEAD_ASSET/lv25/images 1
+REMOVED Assets/DEAD_ASSET/lv25/images 2
+REMOVED Assets/DEAD_ASSET/lv25/images 3
+REMOVED Assets/DEAD_ASSET/lv25/images 4
+REMOVED Assets/DEAD_ASSET/lv25/images 5
+REMOVED Assets/DEAD_ASSET/lv25/images 6
+REMOVED Assets/DEAD_ASSET/lv25/images 7
+REMOVED Assets/DEAD_ASSET/lv25/images 8
+REMOVED Assets/DEAD_ASSET/lv26/images 1
+REMOVED Assets/DEAD_ASSET/lv26/images 2
+REMOVED Assets/DEAD_ASSET/lv26/images 3
+REMOVED Assets/DEAD_ASSET/lv26/images 4
+REMOVED Assets/DEAD_ASSET/lv33/images 1
+REMOVED Assets/DEAD_ASSET/lv33/images 2
+REMOVED Assets/DEAD_ASSET/lv33/images 3
+REMOVED Assets/DEAD_ASSET/lv33/images 4
+REMOVED Assets/DEAD_ASSET/lv33/images 5
+REMOVED Assets/DEAD_ASSET/lv33/images 6
+REMOVED Assets/DEAD_ASSET/lv33/images 7
+REMOVED Assets/DEAD_ASSET/lv33/images 8
+REMOVED Assets/DEAD_ASSET/lv33/images 9
+REMOVED Assets/DEAD_ASSET/lv34/images 1
+REMOVED Assets/DEAD_ASSET/lv34/images 2
+REMOVED Assets/DEAD_ASSET/lv34/images 3
+REMOVED Assets/DEAD_ASSET/lv34/images 4
+REMOVED Assets/DEAD_ASSET/lv34/images 5
+REMOVED Assets/DEAD_ASSET/lv34/images 6
+REMOVED Assets/DEAD_ASSET/lv34/images 7
+REMOVED Assets/DEAD_ASSET/lv34/images 8
+REMOVED Assets/DEAD_ASSET/lv34/images 9
+REMOVED Assets/DEAD_ASSET/lv35/images 1
+REMOVED Assets/DEAD_ASSET/lv35/images 2
+REMOVED Assets/DEAD_ASSET/lv35/images 3
+REMOVED Assets/DEAD_ASSET/lv35/images 4
+REMOVED Assets/DEAD_ASSET/lv35/images 5
+REMOVED Assets/DEAD_ASSET/lv35/images 6
+REMOVED Assets/DEAD_ASSET/lv35/images 7
+REMOVED Assets/DEAD_ASSET/lv35/images 8
+REMOVED Assets/DEAD_ASSET/lv35/images 9
+REMOVED Assets/DEAD_ASSET/lv36/images 1
+REMOVED Assets/DEAD_ASSET/lv36/images 2
+REMOVED Assets/DEAD_ASSET/lv36/images 3
+REMOVED Assets/DEAD_ASSET/lv36/images 4
+REMOVED Assets/DEAD_ASSET/lv36/images 5
+REMOVED Assets/DEAD_ASSET/lv36/images 6
+REMOVED Assets/DEAD_ASSET/lv36/images 7
+REMOVED Assets/DEAD_ASSET/lv36/images 8
+REMOVED Assets/DEAD_ASSET/lv36/images 9
+REMOVED Assets/DEAD_ASSET/lv37/images 1
+REMOVED Assets/DEAD_ASSET/lv37/images 2
+REMOVED Assets/DEAD_ASSET/lv37/images 3
+REMOVED Assets/DEAD_ASSET/lv37/images 4
+REMOVED Assets/DEAD_ASSET/lv38/images 1
+REMOVED Assets/DEAD_ASSET/lv38/images 2
+REMOVED Assets/DEAD_ASSET/lv38/images 3
+REMOVED Assets/DEAD_ASSET/lv38/images 4
+REMOVED Assets/DEAD_ASSET/lv38/images 5
+REMOVED Assets/DEAD_ASSET/lv38/images 6
+REMOVED Assets/DEAD_ASSET/lv38/images 7
+REMOVED Assets/DEAD_ASSET/lv38/images 8
+REMOVED Assets/DEAD_ASSET/lv38/images 9
+REMOVED Assets/DEAD_ASSET/lv39/images 1
+REMOVED Assets/DEAD_ASSET/lv39/images 2
+REMOVED Assets/DEAD_ASSET/lv39/images 3
+REMOVED Assets/DEAD_ASSET/lv39/images 4
+REMOVED Assets/DEAD_ASSET/lv39/images 5
+REMOVED Assets/DEAD_ASSET/lv40/images 1
+REMOVED Assets/DEAD_ASSET/lv41/images 1
+REMOVED Assets/DEAD_ASSET/lv41/images 2
+REMOVED Assets/DEAD_ASSET/lv41/images 3
+REMOVED Assets/DEAD_ASSET/lv41/images 4
+REMOVED Assets/DEAD_ASSET/lv41/images 5
+REMOVED Assets/DEAD_ASSET/lv41/images 6
+REMOVED Assets/DEAD_ASSET/lv41/images 7
+REMOVED Assets/DEAD_ASSET/lv41/images 8
+REMOVED Assets/DEAD_ASSET/lv41/images 9
+REMOVED Assets/DEAD_ASSET/lv42/images 1
+REMOVED Assets/DEAD_ASSET/lv42/images 2
+REMOVED Assets/DEAD_ASSET/lv42/images 3
+REMOVED Assets/DEAD_ASSET/lv42/images 4
+REMOVED Assets/DEAD_ASSET/lv42/images 5
+REMOVED Assets/DEAD_ASSET/lv42/images 6
+REMOVED Assets/DEAD_ASSET/lv42/images 7
+REMOVED Assets/DEAD_ASSET/lv42/images 8
+REMOVED Assets/DEAD_ASSET/lv42/images 9
+REMOVED Assets/DEAD_ASSET/lv43/images 1
+REMOVED Assets/DEAD_ASSET/lv43/images 2
+REMOVED Assets/DEAD_ASSET/lv43/images 3
+REMOVED Assets/DEAD_ASSET/lv43/images 4
+REMOVED Assets/DEAD_ASSET/lv43/images 5
+REMOVED Assets/DEAD_ASSET/lv43/images 6
+REMOVED Assets/DEAD_ASSET/lv43/images 7
+REMOVED Assets/DEAD_ASSET/lv43/images 8
+REMOVED Assets/DEAD_ASSET/lv43/images 9
+REMOVED Assets/DEAD_ASSET/lv6/images 10
+REMOVED Assets/DEAD_ASSET/lv6/images 11
+REMOVED Assets/DEAD_ASSET/lv6/images 12
+REMOVED Assets/DEAD_ASSET/lv6/images 13
+REMOVED Assets/DEAD_ASSET/lv6/images 14
+REMOVED Assets/DEAD_ASSET/lv6/images 15
+REMOVED Assets/DEAD_ASSET/lv6/images 16
+REMOVED Assets/DEAD_ASSET/lv6/images 17
+REMOVED Assets/DEAD_ASSET/lv7/images 10
+REMOVED Assets/DEAD_ASSET/lv7/images 11
+REMOVED Assets/DEAD_ASSET/lv7/images 12
+REMOVED Assets/DEAD_ASSET/lv7/images 13
+REMOVED Assets/DEAD_ASSET/lv7/images 14
+REMOVED Assets/DEAD_ASSET/lv7/images 15
+REMOVED Assets/DEAD_ASSET/lv7/images 16
+REMOVED Assets/DEAD_ASSET/lv7/images 17
+REMOVED Assets/DEAD_ASSET/lv7/images 18
+REMOVED Assets/DEAD_ASSET/lv8/images 10
+REMOVED Assets/DEAD_ASSET/lv8/images 11
+REMOVED Assets/DEAD_ASSET/lv8/images 12
+REMOVED Assets/DEAD_ASSET/lv8/images 13
+REMOVED Assets/DEAD_ASSET/lv8/images 14
+REMOVED Assets/DEAD_ASSET/lv8/images 15
+REMOVED Assets/DEAD_ASSET/lv8/images 16
+REMOVED Assets/DEAD_ASSET/lv8/images 17
+REMOVED Assets/DEAD_ASSET/lv8/images 18
+REMOVED Assets/DEAD_ASSET/lv8/images 19
+REMOVED Assets/DEAD_ASSET/lv8/images 20
+REMOVED Assets/DEAD_ASSET/lv8/images 21
+REMOVED Assets/DEAD_ASSET/lv8/images 22
+REMOVED Assets/DEAD_ASSET/lv8/images 23
+REMOVED Assets/DEAD_ASSET/lv8/images 24
+REMOVED Assets/DEAD_ASSET/lv8/images 25
+REMOVED Assets/DEAD_ASSET/lv8/images 26
+REMOVED Assets/DEAD_ASSET/lv8/images 27
+REMOVED Assets/DEAD_ASSET/lv8/images 28
+REMOVED Assets/DEAD_ASSET/lv8/images 29
+REMOVED Assets/DEAD_ASSET/lv8/images 30
+REMOVED Assets/DEAD_ASSET/lv8/images 31
+REMOVED Assets/DEAD_ASSET/lv9/images 10
+REMOVED Assets/DEAD_ASSET/lv9/images 11
+REMOVED Assets/DEAD_ASSET/lv9/images 12
+REMOVED Assets/DEAD_ASSET/lv9/images 13
+REMOVED Assets/DEAD_ASSET/lv9/images 14
+REMOVED Assets/DEAD_ASSET/lv9/images 15
+REMOVED Assets/DEAD_ASSET/lv9/images 16
+REMOVED Assets/DEAD_ASSET/lv9/images 17
+REMOVED Assets/DEAD_ASSET/lv9/images 18
+REMOVED Assets/DEAD_ASSET/lv9/images 19
+REMOVED Assets/DEAD_ASSET/lv6/images 1
+REMOVED Assets/DEAD_ASSET/lv6/images 2
+REMOVED Assets/DEAD_ASSET/lv6/images 3
+REMOVED Assets/DEAD_ASSET/lv6/images 4
+REMOVED Assets/DEAD_ASSET/lv6/images 5
+REMOVED Assets/DEAD_ASSET/lv6/images 6
+REMOVED Assets/DEAD_ASSET/lv6/images 7
+REMOVED Assets/DEAD_ASSET/lv6/images 8
+REMOVED Assets/DEAD_ASSET/lv6/images 9
+REMOVED Assets/DEAD_ASSET/lv7/images 1
+REMOVED Assets/DEAD_ASSET/lv7/images 2
+REMOVED Assets/DEAD_ASSET/lv7/images 3
+REMOVED Assets/DEAD_ASSET/lv7/images 4
+REMOVED Assets/DEAD_ASSET/lv7/images 5
+REMOVED Assets/DEAD_ASSET/lv7/images 6
+REMOVED Assets/DEAD_ASSET/lv7/images 7
+REMOVED Assets/DEAD_ASSET/lv7/images 8
+REMOVED Assets/DEAD_ASSET/lv7/images 9
+REMOVED Assets/DEAD_ASSET/lv8/images 1
+REMOVED Assets/DEAD_ASSET/lv8/images 2
+REMOVED Assets/DEAD_ASSET/lv8/images 3
+REMOVED Assets/DEAD_ASSET/lv8/images 4
+REMOVED Assets/DEAD_ASSET/lv8/images 5
+REMOVED Assets/DEAD_ASSET/lv8/images 6
+REMOVED Assets/DEAD_ASSET/lv8/images 7
+REMOVED Assets/DEAD_ASSET/lv8/images 8
+REMOVED Assets/DEAD_ASSET/lv8/images 9
+REMOVED Assets/DEAD_ASSET/lv9/images 1
+REMOVED Assets/DEAD_ASSET/lv9/images 2
+REMOVED Assets/DEAD_ASSET/lv9/images 3
+REMOVED Assets/DEAD_ASSET/lv9/images 4
+REMOVED Assets/DEAD_ASSET/lv9/images 5
+REMOVED Assets/DEAD_ASSET/lv9/images 6
+REMOVED Assets/DEAD_ASSET/lv9/images 7
+REMOVED Assets/DEAD_ASSET/lv9/images 8
+REMOVED Assets/DEAD_ASSET/lv9/images 9
+REMOVED Assets/DEAD_ASSET/lv10 10
+REMOVED Assets/DEAD_ASSET/lv10 11
+REMOVED Assets/DEAD_ASSET/lv10 12
+REMOVED Assets/DEAD_ASSET/lv10 13
+REMOVED Assets/DEAD_ASSET/lv10 14
+REMOVED Assets/DEAD_ASSET/lv10 15
+REMOVED Assets/DEAD_ASSET/lv10 16
+REMOVED Assets/DEAD_ASSET/lv10 17
+REMOVED Assets/DEAD_ASSET/lv10 18
+REMOVED Assets/DEAD_ASSET/lv10 19
+REMOVED Assets/DEAD_ASSET/lv10 20
+REMOVED Assets/DEAD_ASSET/lv10 21
+REMOVED Assets/DEAD_ASSET/lv10 22
+REMOVED Assets/DEAD_ASSET/lv10 23
+REMOVED Assets/DEAD_ASSET/lv18 10
+REMOVED Assets/DEAD_ASSET/lv18 11
+REMOVED Assets/DEAD_ASSET/lv18 12
+REMOVED Assets/DEAD_ASSET/lv18 13
+REMOVED Assets/DEAD_ASSET/lv18 14
+REMOVED Assets/DEAD_ASSET/lv18 15
+REMOVED Assets/DEAD_ASSET/lv18 16
+REMOVED Assets/DEAD_ASSET/lv18 17
+REMOVED Assets/DEAD_ASSET/lv20 10
+REMOVED Assets/DEAD_ASSET/lv20 11
+REMOVED Assets/DEAD_ASSET/lv20 12
+REMOVED Assets/DEAD_ASSET/lv20 13
+REMOVED Assets/DEAD_ASSET/lv20 14
+REMOVED Assets/DEAD_ASSET/lv20 15
+REMOVED Assets/DEAD_ASSET/lv20 16
+REMOVED Assets/DEAD_ASSET/lv20 17
+REMOVED Assets/DEAD_ASSET/lv20 18
+REMOVED Assets/DEAD_ASSET/lv20 19
+REMOVED Assets/DEAD_ASSET/lv20 20
+REMOVED Assets/DEAD_ASSET/lv20 21
+REMOVED Assets/DEAD_ASSET/lv20 22
+REMOVED Assets/DEAD_ASSET/lv20 23
+REMOVED Assets/DEAD_ASSET/lv20 24
+REMOVED Assets/DEAD_ASSET/lv20 25
+REMOVED Assets/DEAD_ASSET/lv20 26
+REMOVED Assets/DEAD_ASSET/lv20 27
+REMOVED Assets/DEAD_ASSET/lv20 28
+REMOVED Assets/DEAD_ASSET/lv20 29
+REMOVED Assets/DEAD_ASSET/lv20 30
+REMOVED Assets/DEAD_ASSET/lv20 31
+REMOVED Assets/DEAD_ASSET/lv20 32
+REMOVED Assets/DEAD_ASSET/lv20 33
+REMOVED Assets/DEAD_ASSET/lv20 34
+REMOVED Assets/DEAD_ASSET/lv20 35
+REMOVED Assets/DEAD_ASSET/lv20 36
+REMOVED Assets/DEAD_ASSET/lv21 10
+REMOVED Assets/DEAD_ASSET/lv21 11
+REMOVED Assets/DEAD_ASSET/lv21 12
+REMOVED Assets/DEAD_ASSET/lv21 13
+REMOVED Assets/DEAD_ASSET/lv21 14
+REMOVED Assets/DEAD_ASSET/lv21 15
+REMOVED Assets/DEAD_ASSET/lv21 16
+REMOVED Assets/DEAD_ASSET/lv21 17
+REMOVED Assets/DEAD_ASSET/lv21 18
+REMOVED Assets/DEAD_ASSET/lv21 19
+REMOVED Assets/DEAD_ASSET/lv21 20
+REMOVED Assets/DEAD_ASSET/lv22 10
+REMOVED Assets/DEAD_ASSET/lv22 11
+REMOVED Assets/DEAD_ASSET/lv22 12
+REMOVED Assets/DEAD_ASSET/lv22 13
+REMOVED Assets/DEAD_ASSET/lv22 14
+REMOVED Assets/DEAD_ASSET/lv22 15
+REMOVED Assets/DEAD_ASSET/lv22 16
+REMOVED Assets/DEAD_ASSET/lv22 17
+REMOVED Assets/DEAD_ASSET/lv22 18
+REMOVED Assets/DEAD_ASSET/lv22 19
+REMOVED Assets/DEAD_ASSET/lv22 20
+REMOVED Assets/DEAD_ASSET/lv23 10
+REMOVED Assets/DEAD_ASSET/lv23 11
+REMOVED Assets/DEAD_ASSET/lv23 12
+REMOVED Assets/DEAD_ASSET/lv33 10
+REMOVED Assets/DEAD_ASSET/lv33 11
+REMOVED Assets/DEAD_ASSET/lv33 12
+REMOVED Assets/DEAD_ASSET/lv33 13
+REMOVED Assets/DEAD_ASSET/lv33 14
+REMOVED Assets/DEAD_ASSET/lv33 15
+REMOVED Assets/DEAD_ASSET/lv33 16
+REMOVED Assets/DEAD_ASSET/lv33 17
+REMOVED Assets/DEAD_ASSET/lv33 18
+REMOVED Assets/DEAD_ASSET/lv33 19
+REMOVED Assets/DEAD_ASSET/lv33 20
+REMOVED Assets/DEAD_ASSET/lv33 21
+REMOVED Assets/DEAD_ASSET/lv33 22
+REMOVED Assets/DEAD_ASSET/lv33 23
+REMOVED Assets/DEAD_ASSET/lv34 10
+REMOVED Assets/DEAD_ASSET/lv34 11
+REMOVED Assets/DEAD_ASSET/lv34 12
+REMOVED Assets/DEAD_ASSET/lv34 13
+REMOVED Assets/DEAD_ASSET/lv34 14
+REMOVED Assets/DEAD_ASSET/lv34 15
+REMOVED Assets/DEAD_ASSET/lv34 16
+REMOVED Assets/DEAD_ASSET/lv34 17
+REMOVED Assets/DEAD_ASSET/lv35 10
+REMOVED Assets/DEAD_ASSET/lv35 11
+REMOVED Assets/DEAD_ASSET/lv35 12
+REMOVED Assets/DEAD_ASSET/lv35 13
+REMOVED Assets/DEAD_ASSET/lv35 14
+REMOVED Assets/DEAD_ASSET/lv36 10
+REMOVED Assets/DEAD_ASSET/lv36 11
+REMOVED Assets/DEAD_ASSET/lv36 12
+REMOVED Assets/DEAD_ASSET/lv36 13
+REMOVED Assets/DEAD_ASSET/lv38 10
+REMOVED Assets/DEAD_ASSET/lv41 10
+REMOVED Assets/DEAD_ASSET/lv41 11
+REMOVED Assets/DEAD_ASSET/lv41 12
+REMOVED Assets/DEAD_ASSET/lv41 13
+REMOVED Assets/DEAD_ASSET/lv41 14
+REMOVED Assets/DEAD_ASSET/lv41 15
+REMOVED Assets/DEAD_ASSET/lv41 16
+REMOVED Assets/DEAD_ASSET/lv41 17
+REMOVED Assets/DEAD_ASSET/lv41 18
+REMOVED Assets/DEAD_ASSET/lv42 10
+REMOVED Assets/DEAD_ASSET/lv42 11
+REMOVED Assets/DEAD_ASSET/lv42 12
+REMOVED Assets/DEAD_ASSET/lv42 13
+REMOVED Assets/DEAD_ASSET/lv42 14
+REMOVED Assets/DEAD_ASSET/lv43 10
+REMOVED Assets/DEAD_ASSET/lv43 11
+REMOVED Assets/DEAD_ASSET/lv10 1
+REMOVED Assets/DEAD_ASSET/lv10 2
+REMOVED Assets/DEAD_ASSET/lv10 3
+REMOVED Assets/DEAD_ASSET/lv10 4
+REMOVED Assets/DEAD_ASSET/lv10 5
+REMOVED Assets/DEAD_ASSET/lv10 6
+REMOVED Assets/DEAD_ASSET/lv10 7
+REMOVED Assets/DEAD_ASSET/lv10 8
+REMOVED Assets/DEAD_ASSET/lv10 9
+REMOVED Assets/DEAD_ASSET/lv14 1
+REMOVED Assets/DEAD_ASSET/lv14 2
+REMOVED Assets/DEAD_ASSET/lv14 3
+REMOVED Assets/DEAD_ASSET/lv14 4
+REMOVED Assets/DEAD_ASSET/lv14 5
+REMOVED Assets/DEAD_ASSET/lv14 6
+REMOVED Assets/DEAD_ASSET/lv14 7
+REMOVED Assets/DEAD_ASSET/lv17 1
+REMOVED Assets/DEAD_ASSET/lv17 2
+REMOVED Assets/DEAD_ASSET/lv17 3
+REMOVED Assets/DEAD_ASSET/lv17 4
+REMOVED Assets/DEAD_ASSET/lv18 1
+REMOVED Assets/DEAD_ASSET/lv18 2
+REMOVED Assets/DEAD_ASSET/lv18 3
+REMOVED Assets/DEAD_ASSET/lv18 4
+REMOVED Assets/DEAD_ASSET/lv18 5
+REMOVED Assets/DEAD_ASSET/lv18 6
+REMOVED Assets/DEAD_ASSET/lv18 7
+REMOVED Assets/DEAD_ASSET/lv18 8
+REMOVED Assets/DEAD_ASSET/lv18 9
+REMOVED Assets/DEAD_ASSET/lv19 1
+REMOVED Assets/DEAD_ASSET/lv19 2
+REMOVED Assets/DEAD_ASSET/lv19 3
+REMOVED Assets/DEAD_ASSET/lv19 4
+REMOVED Assets/DEAD_ASSET/lv19 5
+REMOVED Assets/DEAD_ASSET/lv19 6
+REMOVED Assets/DEAD_ASSET/lv19 7
+REMOVED Assets/DEAD_ASSET/lv19 8
+REMOVED Assets/DEAD_ASSET/lv19 9
+REMOVED Assets/DEAD_ASSET/lv20 1
+REMOVED Assets/DEAD_ASSET/lv20 2
+REMOVED Assets/DEAD_ASSET/lv20 3
+REMOVED Assets/DEAD_ASSET/lv20 4
+REMOVED Assets/DEAD_ASSET/lv20 5
+REMOVED Assets/DEAD_ASSET/lv20 6
+REMOVED Assets/DEAD_ASSET/lv20 7
+REMOVED Assets/DEAD_ASSET/lv20 8
+REMOVED Assets/DEAD_ASSET/lv20 9
+REMOVED Assets/DEAD_ASSET/lv21 1
+REMOVED Assets/DEAD_ASSET/lv21 2
+REMOVED Assets/DEAD_ASSET/lv21 3
+REMOVED Assets/DEAD_ASSET/lv21 4
+REMOVED Assets/DEAD_ASSET/lv21 5
+REMOVED Assets/DEAD_ASSET/lv21 6
+REMOVED Assets/DEAD_ASSET/lv21 7
+REMOVED Assets/DEAD_ASSET/lv21 8
+REMOVED Assets/DEAD_ASSET/lv21 9
+REMOVED Assets/DEAD_ASSET/lv22 1
+REMOVED Assets/DEAD_ASSET/lv22 2
+REMOVED Assets/DEAD_ASSET/lv22 3
+REMOVED Assets/DEAD_ASSET/lv22 4
+REMOVED Assets/DEAD_ASSET/lv22 5
+REMOVED Assets/DEAD_ASSET/lv22 6
+REMOVED Assets/DEAD_ASSET/lv22 7
+REMOVED Assets/DEAD_ASSET/lv22 8
+REMOVED Assets/DEAD_ASSET/lv22 9
+REMOVED Assets/DEAD_ASSET/lv23 1
+REMOVED Assets/DEAD_ASSET/lv23 2
+REMOVED Assets/DEAD_ASSET/lv23 3
+REMOVED Assets/DEAD_ASSET/lv23 4
+REMOVED Assets/DEAD_ASSET/lv23 5
+REMOVED Assets/DEAD_ASSET/lv23 6
+REMOVED Assets/DEAD_ASSET/lv23 7
+REMOVED Assets/DEAD_ASSET/lv23 8
+REMOVED Assets/DEAD_ASSET/lv23 9
+REMOVED Assets/DEAD_ASSET/lv24 1
+REMOVED Assets/DEAD_ASSET/lv24 2
+REMOVED Assets/DEAD_ASSET/lv24 3
+REMOVED Assets/DEAD_ASSET/lv24 4
+REMOVED Assets/DEAD_ASSET/lv24 5
+REMOVED Assets/DEAD_ASSET/lv24 6
+REMOVED Assets/DEAD_ASSET/lv25 1
+REMOVED Assets/DEAD_ASSET/lv25 2
+REMOVED Assets/DEAD_ASSET/lv25 3
+REMOVED Assets/DEAD_ASSET/lv25 4
+REMOVED Assets/DEAD_ASSET/lv25 5
+REMOVED Assets/DEAD_ASSET/lv25 6
+REMOVED Assets/DEAD_ASSET/lv25 7
+REMOVED Assets/DEAD_ASSET/lv25 8
+REMOVED Assets/DEAD_ASSET/lv26 1
+REMOVED Assets/DEAD_ASSET/lv26 2
+REMOVED Assets/DEAD_ASSET/lv26 3
+REMOVED Assets/DEAD_ASSET/lv26 4
+REMOVED Assets/DEAD_ASSET/lv33 1
+REMOVED Assets/DEAD_ASSET/lv33 2
+REMOVED Assets/DEAD_ASSET/lv33 3
+REMOVED Assets/DEAD_ASSET/lv33 4
+REMOVED Assets/DEAD_ASSET/lv33 5
+REMOVED Assets/DEAD_ASSET/lv33 6
+REMOVED Assets/DEAD_ASSET/lv33 7
+REMOVED Assets/DEAD_ASSET/lv33 8
+REMOVED Assets/DEAD_ASSET/lv33 9
+REMOVED Assets/DEAD_ASSET/lv34 1
+REMOVED Assets/DEAD_ASSET/lv34 2
+REMOVED Assets/DEAD_ASSET/lv34 3
+REMOVED Assets/DEAD_ASSET/lv34 4
+REMOVED Assets/DEAD_ASSET/lv34 5
+REMOVED Assets/DEAD_ASSET/lv34 6
+REMOVED Assets/DEAD_ASSET/lv34 7
+REMOVED Assets/DEAD_ASSET/lv34 8
+REMOVED Assets/DEAD_ASSET/lv34 9
+REMOVED Assets/DEAD_ASSET/lv35 1
+REMOVED Assets/DEAD_ASSET/lv35 2
+REMOVED Assets/DEAD_ASSET/lv35 3
+REMOVED Assets/DEAD_ASSET/lv35 4
+REMOVED Assets/DEAD_ASSET/lv35 5
+REMOVED Assets/DEAD_ASSET/lv35 6
+REMOVED Assets/DEAD_ASSET/lv35 7
+REMOVED Assets/DEAD_ASSET/lv35 8
+REMOVED Assets/DEAD_ASSET/lv35 9
+REMOVED Assets/DEAD_ASSET/lv36 1
+REMOVED Assets/DEAD_ASSET/lv36 2
+REMOVED Assets/DEAD_ASSET/lv36 3
+REMOVED Assets/DEAD_ASSET/lv36 4
+REMOVED Assets/DEAD_ASSET/lv36 5
+REMOVED Assets/DEAD_ASSET/lv36 6
+REMOVED Assets/DEAD_ASSET/lv36 7
+REMOVED Assets/DEAD_ASSET/lv36 8
+REMOVED Assets/DEAD_ASSET/lv36 9
+REMOVED Assets/DEAD_ASSET/lv37 1
+REMOVED Assets/DEAD_ASSET/lv37 2
+REMOVED Assets/DEAD_ASSET/lv37 3
+REMOVED Assets/DEAD_ASSET/lv37 4
+REMOVED Assets/DEAD_ASSET/lv38 1
+REMOVED Assets/DEAD_ASSET/lv38 2
+REMOVED Assets/DEAD_ASSET/lv38 3
+REMOVED Assets/DEAD_ASSET/lv38 4
+REMOVED Assets/DEAD_ASSET/lv38 5
+REMOVED Assets/DEAD_ASSET/lv38 6
+REMOVED Assets/DEAD_ASSET/lv38 7
+REMOVED Assets/DEAD_ASSET/lv38 8
+REMOVED Assets/DEAD_ASSET/lv38 9
+REMOVED Assets/DEAD_ASSET/lv39 1
+REMOVED Assets/DEAD_ASSET/lv39 2
+REMOVED Assets/DEAD_ASSET/lv39 3
+REMOVED Assets/DEAD_ASSET/lv39 4
+REMOVED Assets/DEAD_ASSET/lv39 5
+REMOVED Assets/DEAD_ASSET/lv40 1
+REMOVED Assets/DEAD_ASSET/lv41 1
+REMOVED Assets/DEAD_ASSET/lv41 2
+REMOVED Assets/DEAD_ASSET/lv41 3
+REMOVED Assets/DEAD_ASSET/lv41 4
+REMOVED Assets/DEAD_ASSET/lv41 5
+REMOVED Assets/DEAD_ASSET/lv41 6
+REMOVED Assets/DEAD_ASSET/lv41 7
+REMOVED Assets/DEAD_ASSET/lv41 8
+REMOVED Assets/DEAD_ASSET/lv41 9
+REMOVED Assets/DEAD_ASSET/lv42 1
+REMOVED Assets/DEAD_ASSET/lv42 2
+REMOVED Assets/DEAD_ASSET/lv42 3
+REMOVED Assets/DEAD_ASSET/lv42 4
+REMOVED Assets/DEAD_ASSET/lv42 5
+REMOVED Assets/DEAD_ASSET/lv42 6
+REMOVED Assets/DEAD_ASSET/lv42 7
+REMOVED Assets/DEAD_ASSET/lv42 8
+REMOVED Assets/DEAD_ASSET/lv42 9
+REMOVED Assets/DEAD_ASSET/lv43 1
+REMOVED Assets/DEAD_ASSET/lv43 2
+REMOVED Assets/DEAD_ASSET/lv43 3
+REMOVED Assets/DEAD_ASSET/lv43 4
+REMOVED Assets/DEAD_ASSET/lv43 5
+REMOVED Assets/DEAD_ASSET/lv43 6
+REMOVED Assets/DEAD_ASSET/lv43 7
+REMOVED Assets/DEAD_ASSET/lv43 8
+REMOVED Assets/DEAD_ASSET/lv43 9
+REMOVED Assets/DEAD_ASSET/lv8 24
+REMOVED Assets/DEAD_ASSET/lv8 25
+REMOVED Assets/DEAD_ASSET/lv8 26
+REMOVED Assets/DEAD_ASSET/lv8 27
+REMOVED Assets/DEAD_ASSET/lv8 28
+REMOVED Assets/DEAD_ASSET/lv8 29
+REMOVED Assets/DEAD_ASSET/lv8 30
+REMOVED Assets/DEAD_ASSET/lv8 31
+REMOVED Assets/DEAD_ASSET/lv9 10
+REMOVED Assets/DEAD_ASSET/lv9 11
+REMOVED Assets/DEAD_ASSET/lv9 12
+REMOVED Assets/DEAD_ASSET/lv9 13
+REMOVED Assets/DEAD_ASSET/lv9 14
+REMOVED Assets/DEAD_ASSET/lv9 15
+REMOVED Assets/DEAD_ASSET/lv9 16
+REMOVED Assets/DEAD_ASSET/lv9 17
+REMOVED Assets/DEAD_ASSET/lv9 18
+REMOVED Assets/DEAD_ASSET/lv9 19
+REMOVED Assets/DEAD_ASSET/lv9 1
+REMOVED Assets/DEAD_ASSET/lv9 2
+REMOVED Assets/DEAD_ASSET/lv9 3
+REMOVED Assets/DEAD_ASSET/lv9 4
+REMOVED Assets/DEAD_ASSET/lv9 5
+REMOVED Assets/DEAD_ASSET/lv9 6
+REMOVED Assets/DEAD_ASSET/lv9 7
+REMOVED Assets/DEAD_ASSET/lv9 8
+REMOVED Assets/DEAD_ASSET/lv9 9
+
+=== 2026-07-02 15:09:50   moved=408 failed=0 ===
+Assets/LevelAssets/lv6/images/BG3.png  ->  Assets/DEAD_ASSET/lv6/images/BG3.png
+Assets/LevelAssets/lv6/images/body_2.png  ->  Assets/DEAD_ASSET/lv6/images/body_2.png
+Assets/LevelAssets/lv6/images/cogai_thua.png  ->  Assets/DEAD_ASSET/lv6/images/cogai_thua.png
+Assets/LevelAssets/lv6/images/cogai_thua2.png  ->  Assets/DEAD_ASSET/lv6/images/cogai_thua2.png
+Assets/LevelAssets/lv6/images/cogai_thua3.png  ->  Assets/DEAD_ASSET/lv6/images/cogai_thua3.png
+Assets/LevelAssets/lv6/images/day.png  ->  Assets/DEAD_ASSET/lv6/images/day.png
+Assets/LevelAssets/lv6/images/dua_fx.png  ->  Assets/DEAD_ASSET/lv6/images/dua_fx.png
+Assets/LevelAssets/lv6/images/head.png  ->  Assets/DEAD_ASSET/lv6/images/head.png
+Assets/LevelAssets/lv6/images/head_2.png  ->  Assets/DEAD_ASSET/lv6/images/head_2.png
+Assets/LevelAssets/lv6/images/key1.png  ->  Assets/DEAD_ASSET/lv6/images/key1.png
+Assets/LevelAssets/lv6/images/key2.png  ->  Assets/DEAD_ASSET/lv6/images/key2.png
+Assets/LevelAssets/lv6/images/khoi_fx.png  ->  Assets/DEAD_ASSET/lv6/images/khoi_fx.png
+Assets/LevelAssets/lv6/images/la╠âie.png  ->  Assets/DEAD_ASSET/lv6/images/la╠âie.png
+Assets/LevelAssets/lv6/images/lãie.png  ->  Assets/DEAD_ASSET/lv6/images/lãie.png
+Assets/LevelAssets/lv6/images/mockhoa.png  ->  Assets/DEAD_ASSET/lv6/images/mockhoa.png
+Assets/LevelAssets/lv6/images/nguago_2.png  ->  Assets/DEAD_ASSET/lv6/images/nguago_2.png
+Assets/LevelAssets/lv6/images/nhanvat1.png  ->  Assets/DEAD_ASSET/lv6/images/nhanvat1.png
+Assets/LevelAssets/lv6/images/nuochoa_fx.png  ->  Assets/DEAD_ASSET/lv6/images/nuochoa_fx.png
+Assets/LevelAssets/lv7/images/anphomai1.png  ->  Assets/DEAD_ASSET/lv7/images/anphomai1.png
+Assets/LevelAssets/lv7/images/anphomai2.png  ->  Assets/DEAD_ASSET/lv7/images/anphomai2.png
+Assets/LevelAssets/lv7/images/anpizza1.png  ->  Assets/DEAD_ASSET/lv7/images/anpizza1.png
+Assets/LevelAssets/lv7/images/anpizza2.png  ->  Assets/DEAD_ASSET/lv7/images/anpizza2.png
+Assets/LevelAssets/lv7/images/binh2.png  ->  Assets/DEAD_ASSET/lv7/images/binh2.png
+Assets/LevelAssets/lv7/images/bon2.png  ->  Assets/DEAD_ASSET/lv7/images/bon2.png
+Assets/LevelAssets/lv7/images/bon3.png  ->  Assets/DEAD_ASSET/lv7/images/bon3.png
+Assets/LevelAssets/lv7/images/bon4.png  ->  Assets/DEAD_ASSET/lv7/images/bon4.png
+Assets/LevelAssets/lv7/images/bong3.png  ->  Assets/DEAD_ASSET/lv7/images/bong3.png
+Assets/LevelAssets/lv7/images/nam6mui.png  ->  Assets/DEAD_ASSET/lv7/images/nam6mui.png
+Assets/LevelAssets/lv7/images/namcuoi1.png  ->  Assets/DEAD_ASSET/lv7/images/namcuoi1.png
+Assets/LevelAssets/lv7/images/namcuoi2.png  ->  Assets/DEAD_ASSET/lv7/images/namcuoi2.png
+Assets/LevelAssets/lv7/images/namgong1.png  ->  Assets/DEAD_ASSET/lv7/images/namgong1.png
+Assets/LevelAssets/lv7/images/namgong2.png  ->  Assets/DEAD_ASSET/lv7/images/namgong2.png
+Assets/LevelAssets/lv7/images/namkhoc1.png  ->  Assets/DEAD_ASSET/lv7/images/namkhoc1.png
+Assets/LevelAssets/lv7/images/namkhoc2.png  ->  Assets/DEAD_ASSET/lv7/images/namkhoc2.png
+Assets/LevelAssets/lv7/images/nuocbinh2.png  ->  Assets/DEAD_ASSET/lv7/images/nuocbinh2.png
+Assets/LevelAssets/lv7/images/saurieng2.png  ->  Assets/DEAD_ASSET/lv7/images/saurieng2.png
+Assets/LevelAssets/lv7/images/xo2.png  ->  Assets/DEAD_ASSET/lv7/images/xo2.png
+Assets/LevelAssets/lv8/images/bac1.png  ->  Assets/DEAD_ASSET/lv8/images/bac1.png
+Assets/LevelAssets/lv8/images/bac2.png  ->  Assets/DEAD_ASSET/lv8/images/bac2.png
+Assets/LevelAssets/lv8/images/ban1.png  ->  Assets/DEAD_ASSET/lv8/images/ban1.png
+Assets/LevelAssets/lv8/images/beda.png  ->  Assets/DEAD_ASSET/lv8/images/beda.png
+Assets/LevelAssets/lv8/images/BG.png  ->  Assets/DEAD_ASSET/lv8/images/BG.png
+Assets/LevelAssets/lv8/images/boicanh1.png  ->  Assets/DEAD_ASSET/lv8/images/boicanh1.png
+Assets/LevelAssets/lv8/images/kinhlup1.png  ->  Assets/DEAD_ASSET/lv8/images/kinhlup1.png
+Assets/LevelAssets/lv8/images/kinhlup2.png  ->  Assets/DEAD_ASSET/lv8/images/kinhlup2.png
+Assets/LevelAssets/lv8/images/kyhieu.png  ->  Assets/DEAD_ASSET/lv8/images/kyhieu.png
+Assets/LevelAssets/lv8/images/Layer 17.png  ->  Assets/DEAD_ASSET/lv8/images/Layer 17.png
+Assets/LevelAssets/lv8/images/ly1.png  ->  Assets/DEAD_ASSET/lv8/images/ly1.png
+Assets/LevelAssets/lv8/images/ly2.png  ->  Assets/DEAD_ASSET/lv8/images/ly2.png
+Assets/LevelAssets/lv8/images/ly3.png  ->  Assets/DEAD_ASSET/lv8/images/ly3.png
+Assets/LevelAssets/lv8/images/ly4.png  ->  Assets/DEAD_ASSET/lv8/images/ly4.png
+Assets/LevelAssets/lv8/images/ly4_top.png  ->  Assets/DEAD_ASSET/lv8/images/ly4_top.png
+Assets/LevelAssets/lv8/images/ly5.png  ->  Assets/DEAD_ASSET/lv8/images/ly5.png
+Assets/LevelAssets/lv8/images/ly5_top.png  ->  Assets/DEAD_ASSET/lv8/images/ly5_top.png
+Assets/LevelAssets/lv8/images/ly6.png  ->  Assets/DEAD_ASSET/lv8/images/ly6.png
+Assets/LevelAssets/lv8/images/ly7.png  ->  Assets/DEAD_ASSET/lv8/images/ly7.png
+Assets/LevelAssets/lv8/images/ly8.png  ->  Assets/DEAD_ASSET/lv8/images/ly8.png
+Assets/LevelAssets/lv8/images/ly9.png  ->  Assets/DEAD_ASSET/lv8/images/ly9.png
+Assets/LevelAssets/lv8/images/ly9_2.png  ->  Assets/DEAD_ASSET/lv8/images/ly9_2.png
+Assets/LevelAssets/lv8/images/nam1.png  ->  Assets/DEAD_ASSET/lv8/images/nam1.png
+Assets/LevelAssets/lv8/images/nam2.png  ->  Assets/DEAD_ASSET/lv8/images/nam2.png
+Assets/LevelAssets/lv8/images/nam2_2.png  ->  Assets/DEAD_ASSET/lv8/images/nam2_2.png
+Assets/LevelAssets/lv8/images/nam3.png  ->  Assets/DEAD_ASSET/lv8/images/nam3.png
+Assets/LevelAssets/lv8/images/tao1.png  ->  Assets/DEAD_ASSET/lv8/images/tao1.png
+Assets/LevelAssets/lv8/images/tao2.png  ->  Assets/DEAD_ASSET/lv8/images/tao2.png
+Assets/LevelAssets/lv8/images/thang1.png  ->  Assets/DEAD_ASSET/lv8/images/thang1.png
+Assets/LevelAssets/lv8/images/thang2.png  ->  Assets/DEAD_ASSET/lv8/images/thang2.png
+Assets/LevelAssets/lv8/images/toc.png  ->  Assets/DEAD_ASSET/lv8/images/toc.png
+Assets/LevelAssets/lv8/images/toc1.png  ->  Assets/DEAD_ASSET/lv8/images/toc1.png
+Assets/LevelAssets/lv9/images/bang2.png  ->  Assets/DEAD_ASSET/lv9/images/bang2.png
+Assets/LevelAssets/lv9/images/bg2.png  ->  Assets/DEAD_ASSET/lv9/images/bg2.png
+Assets/LevelAssets/lv9/images/cay4.png  ->  Assets/DEAD_ASSET/lv9/images/cay4.png
+Assets/LevelAssets/lv9/images/chay.png  ->  Assets/DEAD_ASSET/lv9/images/chay.png
+Assets/LevelAssets/lv9/images/cogai.png  ->  Assets/DEAD_ASSET/lv9/images/cogai.png
+Assets/LevelAssets/lv9/images/gach3.png  ->  Assets/DEAD_ASSET/lv9/images/gach3.png
+Assets/LevelAssets/lv9/images/mua.png  ->  Assets/DEAD_ASSET/lv9/images/mua.png
+Assets/LevelAssets/lv9/images/mua2.png  ->  Assets/DEAD_ASSET/lv9/images/mua2.png
+Assets/LevelAssets/lv9/images/rem2.png  ->  Assets/DEAD_ASSET/lv9/images/rem2.png
+Assets/LevelAssets/lv9/images/taxi2.png  ->  Assets/DEAD_ASSET/lv9/images/taxi2.png
+Assets/LevelAssets/lv9/images/taxi3.png  ->  Assets/DEAD_ASSET/lv9/images/taxi3.png
+Assets/LevelAssets/lv9/images/taxi4.png  ->  Assets/DEAD_ASSET/lv9/images/taxi4.png
+Assets/LevelAssets/lv9/images/taxi5.png  ->  Assets/DEAD_ASSET/lv9/images/taxi5.png
+Assets/LevelAssets/lv9/images/thay3.png  ->  Assets/DEAD_ASSET/lv9/images/thay3.png
+Assets/LevelAssets/lv9/images/thungrac2.png  ->  Assets/DEAD_ASSET/lv9/images/thungrac2.png
+Assets/LevelAssets/lv9/images/trai1.png  ->  Assets/DEAD_ASSET/lv9/images/trai1.png
+Assets/LevelAssets/lv9/images/trai2.png  ->  Assets/DEAD_ASSET/lv9/images/trai2.png
+Assets/LevelAssets/lv9/images/uot.png  ->  Assets/DEAD_ASSET/lv9/images/uot.png
+Assets/LevelAssets/lv9/images/zen2.png  ->  Assets/DEAD_ASSET/lv9/images/zen2.png
+Assets/LevelAssets/lv9/images/ô2.png  ->  Assets/DEAD_ASSET/lv9/images/ô2.png
+Assets/LevelAssets/lv10/images/anhxin2.png  ->  Assets/DEAD_ASSET/lv10/images/anhxin2.png
+Assets/LevelAssets/lv10/images/anxin1.png  ->  Assets/DEAD_ASSET/lv10/images/anxin1.png
+Assets/LevelAssets/lv10/images/bocmui1.png  ->  Assets/DEAD_ASSET/lv10/images/bocmui1.png
+Assets/LevelAssets/lv10/images/bocmui2.png  ->  Assets/DEAD_ASSET/lv10/images/bocmui2.png
+Assets/LevelAssets/lv10/images/bua2.png  ->  Assets/DEAD_ASSET/lv10/images/bua2.png
+Assets/LevelAssets/lv10/images/ca 2.png  ->  Assets/DEAD_ASSET/lv10/images/ca 2.png
+Assets/LevelAssets/lv10/images/ca.png  ->  Assets/DEAD_ASSET/lv10/images/ca.png
+Assets/LevelAssets/lv10/images/ca1.png  ->  Assets/DEAD_ASSET/lv10/images/ca1.png
+Assets/LevelAssets/lv10/images/ca2.png  ->  Assets/DEAD_ASSET/lv10/images/ca2.png
+Assets/LevelAssets/lv10/images/caube1.png  ->  Assets/DEAD_ASSET/lv10/images/caube1.png
+Assets/LevelAssets/lv10/images/caube2.png  ->  Assets/DEAD_ASSET/lv10/images/caube2.png
+Assets/LevelAssets/lv10/images/cogai.png  ->  Assets/DEAD_ASSET/lv10/images/cogai.png
+Assets/LevelAssets/lv10/images/nu1.png  ->  Assets/DEAD_ASSET/lv10/images/nu1.png
+Assets/LevelAssets/lv10/images/nu2.png  ->  Assets/DEAD_ASSET/lv10/images/nu2.png
+Assets/LevelAssets/lv10/images/nv1.png  ->  Assets/DEAD_ASSET/lv10/images/nv1.png
+Assets/LevelAssets/lv10/images/nv2.png  ->  Assets/DEAD_ASSET/lv10/images/nv2.png
+Assets/LevelAssets/lv10/images/songbocmui.png  ->  Assets/DEAD_ASSET/lv10/images/songbocmui.png
+Assets/LevelAssets/lv10/images/songdo.png  ->  Assets/DEAD_ASSET/lv10/images/songdo.png
+Assets/LevelAssets/lv10/images/tao1.png  ->  Assets/DEAD_ASSET/lv10/images/tao1.png
+Assets/LevelAssets/lv10/images/tao2.png  ->  Assets/DEAD_ASSET/lv10/images/tao2.png
+Assets/LevelAssets/lv10/images/thua.png  ->  Assets/DEAD_ASSET/lv10/images/thua.png
+Assets/LevelAssets/lv10/images/thua2.png  ->  Assets/DEAD_ASSET/lv10/images/thua2.png
+Assets/LevelAssets/lv10/images/toc1.png  ->  Assets/DEAD_ASSET/lv10/images/toc1.png
+Assets/LevelAssets/lv10/images/tocngan.png  ->  Assets/DEAD_ASSET/lv10/images/tocngan.png
+Assets/LevelAssets/lv14/images/amthanh.png  ->  Assets/DEAD_ASSET/lv14/images/amthanh.png
+Assets/LevelAssets/lv14/images/chu.png  ->  Assets/DEAD_ASSET/lv14/images/chu.png
+Assets/LevelAssets/lv14/images/den2.png  ->  Assets/DEAD_ASSET/lv14/images/den2.png
+Assets/LevelAssets/lv14/images/den3.png  ->  Assets/DEAD_ASSET/lv14/images/den3.png
+Assets/LevelAssets/lv14/images/ghe.png  ->  Assets/DEAD_ASSET/lv14/images/ghe.png
+Assets/LevelAssets/lv14/images/meo.png  ->  Assets/DEAD_ASSET/lv14/images/meo.png
+Assets/LevelAssets/lv14/images/non1.png  ->  Assets/DEAD_ASSET/lv14/images/non1.png
+Assets/LevelAssets/lv14/images/non2.png  ->  Assets/DEAD_ASSET/lv14/images/non2.png
+Assets/LevelAssets/lv17/images/binhnuoc2.png  ->  Assets/DEAD_ASSET/lv17/images/binhnuoc2.png
+Assets/LevelAssets/lv17/images/liquid2.png  ->  Assets/DEAD_ASSET/lv17/images/liquid2.png
+Assets/LevelAssets/lv17/images/lua_fx.png  ->  Assets/DEAD_ASSET/lv17/images/lua_fx.png
+Assets/LevelAssets/lv17/images/noi.png  ->  Assets/DEAD_ASSET/lv17/images/noi.png
+Assets/LevelAssets/lv17/images/phuthuy.png  ->  Assets/DEAD_ASSET/lv17/images/phuthuy.png
+Assets/LevelAssets/lv18/images/balo2.png  ->  Assets/DEAD_ASSET/lv18/images/balo2.png
+Assets/LevelAssets/lv18/images/chamthan.png  ->  Assets/DEAD_ASSET/lv18/images/chamthan.png
+Assets/LevelAssets/lv18/images/chuot1.png  ->  Assets/DEAD_ASSET/lv18/images/chuot1.png
+Assets/LevelAssets/lv18/images/chuot3.png  ->  Assets/DEAD_ASSET/lv18/images/chuot3.png
+Assets/LevelAssets/lv18/images/chuot3_fx.png  ->  Assets/DEAD_ASSET/lv18/images/chuot3_fx.png
+Assets/LevelAssets/lv18/images/gai1.png  ->  Assets/DEAD_ASSET/lv18/images/gai1.png
+Assets/LevelAssets/lv18/images/gai1_top.png  ->  Assets/DEAD_ASSET/lv18/images/gai1_top.png
+Assets/LevelAssets/lv18/images/gai2.png  ->  Assets/DEAD_ASSET/lv18/images/gai2.png
+Assets/LevelAssets/lv18/images/gai3.png  ->  Assets/DEAD_ASSET/lv18/images/gai3.png
+Assets/LevelAssets/lv18/images/hieuung.png  ->  Assets/DEAD_ASSET/lv18/images/hieuung.png
+Assets/LevelAssets/lv18/images/ma1.png  ->  Assets/DEAD_ASSET/lv18/images/ma1.png
+Assets/LevelAssets/lv18/images/ma_icon.png  ->  Assets/DEAD_ASSET/lv18/images/ma_icon.png
+Assets/LevelAssets/lv18/images/nam1-b.png  ->  Assets/DEAD_ASSET/lv18/images/nam1-b.png
+Assets/LevelAssets/lv18/images/nam1.png  ->  Assets/DEAD_ASSET/lv18/images/nam1.png
+Assets/LevelAssets/lv18/images/nam2-b.png  ->  Assets/DEAD_ASSET/lv18/images/nam2-b.png
+Assets/LevelAssets/lv18/images/nam2.png  ->  Assets/DEAD_ASSET/lv18/images/nam2.png
+Assets/LevelAssets/lv18/images/thanchet2.png  ->  Assets/DEAD_ASSET/lv18/images/thanchet2.png
+Assets/LevelAssets/lv18/images/thanchet3.png  ->  Assets/DEAD_ASSET/lv18/images/thanchet3.png
+Assets/LevelAssets/lv19/images/cho1.png  ->  Assets/DEAD_ASSET/lv19/images/cho1.png
+Assets/LevelAssets/lv19/images/cho2.png  ->  Assets/DEAD_ASSET/lv19/images/cho2.png
+Assets/LevelAssets/lv19/images/cuu1.png  ->  Assets/DEAD_ASSET/lv19/images/cuu1.png
+Assets/LevelAssets/lv19/images/cuu2.png  ->  Assets/DEAD_ASSET/lv19/images/cuu2.png
+Assets/LevelAssets/lv19/images/khan.png  ->  Assets/DEAD_ASSET/lv19/images/khan.png
+Assets/LevelAssets/lv19/images/nv1.png  ->  Assets/DEAD_ASSET/lv19/images/nv1.png
+Assets/LevelAssets/lv19/images/nv2.png  ->  Assets/DEAD_ASSET/lv19/images/nv2.png
+Assets/LevelAssets/lv19/images/nv3.png  ->  Assets/DEAD_ASSET/lv19/images/nv3.png
+Assets/LevelAssets/lv19/images/ong.png  ->  Assets/DEAD_ASSET/lv19/images/ong.png
+Assets/LevelAssets/lv19/images/ongomkhan.png  ->  Assets/DEAD_ASSET/lv19/images/ongomkhan.png
+Assets/LevelAssets/lv20/images/1.png  ->  Assets/DEAD_ASSET/lv20/images/1.png
+Assets/LevelAssets/lv20/images/10.png  ->  Assets/DEAD_ASSET/lv20/images/10.png
+Assets/LevelAssets/lv20/images/11.png  ->  Assets/DEAD_ASSET/lv20/images/11.png
+Assets/LevelAssets/lv20/images/12.png  ->  Assets/DEAD_ASSET/lv20/images/12.png
+Assets/LevelAssets/lv20/images/13.png  ->  Assets/DEAD_ASSET/lv20/images/13.png
+Assets/LevelAssets/lv20/images/14.png  ->  Assets/DEAD_ASSET/lv20/images/14.png
+Assets/LevelAssets/lv20/images/15.png  ->  Assets/DEAD_ASSET/lv20/images/15.png
+Assets/LevelAssets/lv20/images/16.png  ->  Assets/DEAD_ASSET/lv20/images/16.png
+Assets/LevelAssets/lv20/images/2 nam.png  ->  Assets/DEAD_ASSET/lv20/images/2 nam.png
+Assets/LevelAssets/lv20/images/2.png  ->  Assets/DEAD_ASSET/lv20/images/2.png
+Assets/LevelAssets/lv20/images/3.png  ->  Assets/DEAD_ASSET/lv20/images/3.png
+Assets/LevelAssets/lv20/images/4.png  ->  Assets/DEAD_ASSET/lv20/images/4.png
+Assets/LevelAssets/lv20/images/5.png  ->  Assets/DEAD_ASSET/lv20/images/5.png
+Assets/LevelAssets/lv20/images/6.png  ->  Assets/DEAD_ASSET/lv20/images/6.png
+Assets/LevelAssets/lv20/images/7.png  ->  Assets/DEAD_ASSET/lv20/images/7.png
+Assets/LevelAssets/lv20/images/8.png  ->  Assets/DEAD_ASSET/lv20/images/8.png
+Assets/LevelAssets/lv20/images/9.png  ->  Assets/DEAD_ASSET/lv20/images/9.png
+Assets/LevelAssets/lv20/images/anhsangmt.png  ->  Assets/DEAD_ASSET/lv20/images/anhsangmt.png
+Assets/LevelAssets/lv20/images/ao.png  ->  Assets/DEAD_ASSET/lv20/images/ao.png
+Assets/LevelAssets/lv20/images/bang2.png  ->  Assets/DEAD_ASSET/lv20/images/bang2.png
+Assets/LevelAssets/lv20/images/chainuoc2.png  ->  Assets/DEAD_ASSET/lv20/images/chainuoc2.png
+Assets/LevelAssets/lv20/images/chim1.png  ->  Assets/DEAD_ASSET/lv20/images/chim1.png
+Assets/LevelAssets/lv20/images/chim2.png  ->  Assets/DEAD_ASSET/lv20/images/chim2.png
+Assets/LevelAssets/lv20/images/con2.png  ->  Assets/DEAD_ASSET/lv20/images/con2.png
+Assets/LevelAssets/lv20/images/conxit.png  ->  Assets/DEAD_ASSET/lv20/images/conxit.png
+Assets/LevelAssets/lv20/images/day2.png  ->  Assets/DEAD_ASSET/lv20/images/day2.png
+Assets/LevelAssets/lv20/images/gio.png  ->  Assets/DEAD_ASSET/lv20/images/gio.png
+Assets/LevelAssets/lv20/images/Layer 1.png  ->  Assets/DEAD_ASSET/lv20/images/Layer 1.png
+Assets/LevelAssets/lv20/images/maysay2.png  ->  Assets/DEAD_ASSET/lv20/images/maysay2.png
+Assets/LevelAssets/lv20/images/nuoc.png  ->  Assets/DEAD_ASSET/lv20/images/nuoc.png
+Assets/LevelAssets/lv20/images/nv3_1.png  ->  Assets/DEAD_ASSET/lv20/images/nv3_1.png
+Assets/LevelAssets/lv20/images/nv3_2.png  ->  Assets/DEAD_ASSET/lv20/images/nv3_2.png
+Assets/LevelAssets/lv20/images/nv3_ao1.png  ->  Assets/DEAD_ASSET/lv20/images/nv3_ao1.png
+Assets/LevelAssets/lv20/images/nv3_ao2.png  ->  Assets/DEAD_ASSET/lv20/images/nv3_ao2.png
+Assets/LevelAssets/lv20/images/Rectangle 1 copy.png  ->  Assets/DEAD_ASSET/lv20/images/Rectangle 1 copy.png
+Assets/LevelAssets/lv20/images/ta1.png  ->  Assets/DEAD_ASSET/lv20/images/ta1.png
+Assets/LevelAssets/lv20/images/ta2.png  ->  Assets/DEAD_ASSET/lv20/images/ta2.png
+Assets/LevelAssets/lv21/images/cat.png  ->  Assets/DEAD_ASSET/lv21/images/cat.png
+Assets/LevelAssets/lv21/images/cat_sleep.png  ->  Assets/DEAD_ASSET/lv21/images/cat_sleep.png
+Assets/LevelAssets/lv21/images/cogai_an.png  ->  Assets/DEAD_ASSET/lv21/images/cogai_an.png
+Assets/LevelAssets/lv21/images/cogai_cat.png  ->  Assets/DEAD_ASSET/lv21/images/cogai_cat.png
+Assets/LevelAssets/lv21/images/cogai_len.png  ->  Assets/DEAD_ASSET/lv21/images/cogai_len.png
+Assets/LevelAssets/lv21/images/cogai_mat1.png  ->  Assets/DEAD_ASSET/lv21/images/cogai_mat1.png
+Assets/LevelAssets/lv21/images/cogai_mat2.png  ->  Assets/DEAD_ASSET/lv21/images/cogai_mat2.png
+Assets/LevelAssets/lv21/images/cogai_matxa.png  ->  Assets/DEAD_ASSET/lv21/images/cogai_matxa.png
+Assets/LevelAssets/lv21/images/cogai_met.png  ->  Assets/DEAD_ASSET/lv21/images/cogai_met.png
+Assets/LevelAssets/lv21/images/cogai_nhin.png  ->  Assets/DEAD_ASSET/lv21/images/cogai_nhin.png
+Assets/LevelAssets/lv21/images/cogai_saulung.png  ->  Assets/DEAD_ASSET/lv21/images/cogai_saulung.png
+Assets/LevelAssets/lv21/images/cogai_vui.png  ->  Assets/DEAD_ASSET/lv21/images/cogai_vui.png
+Assets/LevelAssets/lv21/images/heart.png  ->  Assets/DEAD_ASSET/lv21/images/heart.png
+Assets/LevelAssets/lv21/images/heart100.png  ->  Assets/DEAD_ASSET/lv21/images/heart100.png
+Assets/LevelAssets/lv21/images/heart30.png  ->  Assets/DEAD_ASSET/lv21/images/heart30.png
+Assets/LevelAssets/lv21/images/heart80.png  ->  Assets/DEAD_ASSET/lv21/images/heart80.png
+Assets/LevelAssets/lv21/images/mattraitim.png  ->  Assets/DEAD_ASSET/lv21/images/mattraitim.png
+Assets/LevelAssets/lv21/images/met_fx.png  ->  Assets/DEAD_ASSET/lv21/images/met_fx.png
+Assets/LevelAssets/lv21/images/mieng.png  ->  Assets/DEAD_ASSET/lv21/images/mieng.png
+Assets/LevelAssets/lv21/images/thang.png  ->  Assets/DEAD_ASSET/lv21/images/thang.png
+Assets/LevelAssets/lv21/images/tongtai.png  ->  Assets/DEAD_ASSET/lv21/images/tongtai.png
+Assets/LevelAssets/lv22/images/caykho.png  ->  Assets/DEAD_ASSET/lv22/images/caykho.png
+Assets/LevelAssets/lv22/images/chamthan.png  ->  Assets/DEAD_ASSET/lv22/images/chamthan.png
+Assets/LevelAssets/lv22/images/cogai1.png  ->  Assets/DEAD_ASSET/lv22/images/cogai1.png
+Assets/LevelAssets/lv22/images/cogai2.png  ->  Assets/DEAD_ASSET/lv22/images/cogai2.png
+Assets/LevelAssets/lv22/images/cogai3.png  ->  Assets/DEAD_ASSET/lv22/images/cogai3.png
+Assets/LevelAssets/lv22/images/cogai7.png  ->  Assets/DEAD_ASSET/lv22/images/cogai7.png
+Assets/LevelAssets/lv22/images/dan2.png  ->  Assets/DEAD_ASSET/lv22/images/dan2.png
+Assets/LevelAssets/lv22/images/daykeo.png  ->  Assets/DEAD_ASSET/lv22/images/daykeo.png
+Assets/LevelAssets/lv22/images/gocua_fx.png  ->  Assets/DEAD_ASSET/lv22/images/gocua_fx.png
+Assets/LevelAssets/lv22/images/heart.png  ->  Assets/DEAD_ASSET/lv22/images/heart.png
+Assets/LevelAssets/lv22/images/hieuungdan.png  ->  Assets/DEAD_ASSET/lv22/images/hieuungdan.png
+Assets/LevelAssets/lv22/images/meo.png  ->  Assets/DEAD_ASSET/lv22/images/meo.png
+Assets/LevelAssets/lv22/images/meo2.png  ->  Assets/DEAD_ASSET/lv22/images/meo2.png
+Assets/LevelAssets/lv22/images/soc2.png  ->  Assets/DEAD_ASSET/lv22/images/soc2.png
+Assets/LevelAssets/lv22/images/soc5.png  ->  Assets/DEAD_ASSET/lv22/images/soc5.png
+Assets/LevelAssets/lv22/images/soc_ngu.png  ->  Assets/DEAD_ASSET/lv22/images/soc_ngu.png
+Assets/LevelAssets/lv22/images/tay.png  ->  Assets/DEAD_ASSET/lv22/images/tay.png
+Assets/LevelAssets/lv22/images/tay_gocua.png  ->  Assets/DEAD_ASSET/lv22/images/tay_gocua.png
+Assets/LevelAssets/lv22/images/trai1.png  ->  Assets/DEAD_ASSET/lv22/images/trai1.png
+Assets/LevelAssets/lv22/images/trai2.png  ->  Assets/DEAD_ASSET/lv22/images/trai2.png
+Assets/LevelAssets/lv22/images/trai_hon.png  ->  Assets/DEAD_ASSET/lv22/images/trai_hon.png
+Assets/LevelAssets/lv23/images/aoxanh2.png  ->  Assets/DEAD_ASSET/lv23/images/aoxanh2.png
+Assets/LevelAssets/lv23/images/bang2.png  ->  Assets/DEAD_ASSET/lv23/images/bang2.png
+Assets/LevelAssets/lv23/images/bus.png  ->  Assets/DEAD_ASSET/lv23/images/bus.png
+Assets/LevelAssets/lv23/images/canhsat.png  ->  Assets/DEAD_ASSET/lv23/images/canhsat.png
+Assets/LevelAssets/lv23/images/khanchoang2.png  ->  Assets/DEAD_ASSET/lv23/images/khanchoang2.png
+Assets/LevelAssets/lv23/images/khanchoang3.png  ->  Assets/DEAD_ASSET/lv23/images/khanchoang3.png
+Assets/LevelAssets/lv23/images/nu.png  ->  Assets/DEAD_ASSET/lv23/images/nu.png
+Assets/LevelAssets/lv23/images/nu_1.png  ->  Assets/DEAD_ASSET/lv23/images/nu_1.png
+Assets/LevelAssets/lv23/images/nv.png  ->  Assets/DEAD_ASSET/lv23/images/nv.png
+Assets/LevelAssets/lv23/images/taxi.png  ->  Assets/DEAD_ASSET/lv23/images/taxi.png
+Assets/LevelAssets/lv23/images/taxi4.png  ->  Assets/DEAD_ASSET/lv23/images/taxi4.png
+Assets/LevelAssets/lv23/images/tocgia2.png  ->  Assets/DEAD_ASSET/lv23/images/tocgia2.png
+Assets/LevelAssets/lv23/images/vang2.png  ->  Assets/DEAD_ASSET/lv23/images/vang2.png
+Assets/LevelAssets/lv24/images/cogai1.png  ->  Assets/DEAD_ASSET/lv24/images/cogai1.png
+Assets/LevelAssets/lv24/images/cogai2.png  ->  Assets/DEAD_ASSET/lv24/images/cogai2.png
+Assets/LevelAssets/lv24/images/cogai3.png  ->  Assets/DEAD_ASSET/lv24/images/cogai3.png
+Assets/LevelAssets/lv24/images/cogai4.png  ->  Assets/DEAD_ASSET/lv24/images/cogai4.png
+Assets/LevelAssets/lv24/images/Layer 23.png  ->  Assets/DEAD_ASSET/lv24/images/Layer 23.png
+Assets/LevelAssets/lv24/images/nuoc1_fx.png  ->  Assets/DEAD_ASSET/lv24/images/nuoc1_fx.png
+Assets/LevelAssets/lv24/images/nuoc2_fx.png  ->  Assets/DEAD_ASSET/lv24/images/nuoc2_fx.png
+Assets/LevelAssets/lv25/images/7up2.png  ->  Assets/DEAD_ASSET/lv25/images/7up2.png
+Assets/LevelAssets/lv25/images/bong2.png  ->  Assets/DEAD_ASSET/lv25/images/bong2.png
+Assets/LevelAssets/lv25/images/bong3.png  ->  Assets/DEAD_ASSET/lv25/images/bong3.png
+Assets/LevelAssets/lv25/images/buocdi.png  ->  Assets/DEAD_ASSET/lv25/images/buocdi.png
+Assets/LevelAssets/lv25/images/chim2.png  ->  Assets/DEAD_ASSET/lv25/images/chim2.png
+Assets/LevelAssets/lv25/images/chim3.png  ->  Assets/DEAD_ASSET/lv25/images/chim3.png
+Assets/LevelAssets/lv25/images/khanchoang2.png  ->  Assets/DEAD_ASSET/lv25/images/khanchoang2.png
+Assets/LevelAssets/lv25/images/lua2.png  ->  Assets/DEAD_ASSET/lv25/images/lua2.png
+Assets/LevelAssets/lv25/images/nv.png  ->  Assets/DEAD_ASSET/lv25/images/nv.png
+Assets/LevelAssets/lv26/images/nv1.png  ->  Assets/DEAD_ASSET/lv26/images/nv1.png
+Assets/LevelAssets/lv26/images/nv2.png  ->  Assets/DEAD_ASSET/lv26/images/nv2.png
+Assets/LevelAssets/lv26/images/nv3.png  ->  Assets/DEAD_ASSET/lv26/images/nv3.png
+Assets/LevelAssets/lv26/images/nvn1.png  ->  Assets/DEAD_ASSET/lv26/images/nvn1.png
+Assets/LevelAssets/lv26/images/nvn2.png  ->  Assets/DEAD_ASSET/lv26/images/nvn2.png
+Assets/LevelAssets/lv33/images/bao1.png  ->  Assets/DEAD_ASSET/lv33/images/bao1.png
+Assets/LevelAssets/lv33/images/bao2.png  ->  Assets/DEAD_ASSET/lv33/images/bao2.png
+Assets/LevelAssets/lv33/images/ca1.png  ->  Assets/DEAD_ASSET/lv33/images/ca1.png
+Assets/LevelAssets/lv33/images/ca2.png  ->  Assets/DEAD_ASSET/lv33/images/ca2.png
+Assets/LevelAssets/lv33/images/ca3.png  ->  Assets/DEAD_ASSET/lv33/images/ca3.png
+Assets/LevelAssets/lv33/images/codadieu.png  ->  Assets/DEAD_ASSET/lv33/images/codadieu.png
+Assets/LevelAssets/lv33/images/dadieu.png  ->  Assets/DEAD_ASSET/lv33/images/dadieu.png
+Assets/LevelAssets/lv33/images/domdom1.png  ->  Assets/DEAD_ASSET/lv33/images/domdom1.png
+Assets/LevelAssets/lv33/images/domdom2.png  ->  Assets/DEAD_ASSET/lv33/images/domdom2.png
+Assets/LevelAssets/lv33/images/failed.png  ->  Assets/DEAD_ASSET/lv33/images/failed.png
+Assets/LevelAssets/lv33/images/gau1.png  ->  Assets/DEAD_ASSET/lv33/images/gau1.png
+Assets/LevelAssets/lv33/images/gau2.png  ->  Assets/DEAD_ASSET/lv33/images/gau2.png
+Assets/LevelAssets/lv33/images/khi.png  ->  Assets/DEAD_ASSET/lv33/images/khi.png
+Assets/LevelAssets/lv33/images/khi2.png  ->  Assets/DEAD_ASSET/lv33/images/khi2.png
+Assets/LevelAssets/lv33/images/mairua.png  ->  Assets/DEAD_ASSET/lv33/images/mairua.png
+Assets/LevelAssets/lv33/images/nv1.png  ->  Assets/DEAD_ASSET/lv33/images/nv1.png
+Assets/LevelAssets/lv33/images/nv2.png  ->  Assets/DEAD_ASSET/lv33/images/nv2.png
+Assets/LevelAssets/lv33/images/ran.png  ->  Assets/DEAD_ASSET/lv33/images/ran.png
+Assets/LevelAssets/lv33/images/ran2.png  ->  Assets/DEAD_ASSET/lv33/images/ran2.png
+Assets/LevelAssets/lv33/images/rua1.png  ->  Assets/DEAD_ASSET/lv33/images/rua1.png
+Assets/LevelAssets/lv33/images/rua2.png  ->  Assets/DEAD_ASSET/lv33/images/rua2.png
+Assets/LevelAssets/lv33/images/sutu1.png  ->  Assets/DEAD_ASSET/lv33/images/sutu1.png
+Assets/LevelAssets/lv33/images/sutu2.png  ->  Assets/DEAD_ASSET/lv33/images/sutu2.png
+Assets/LevelAssets/lv33/images/tho.png  ->  Assets/DEAD_ASSET/lv33/images/tho.png
+Assets/LevelAssets/lv34/images/!!!.png  ->  Assets/DEAD_ASSET/lv34/images/!!!.png
+Assets/LevelAssets/lv34/images/body.png  ->  Assets/DEAD_ASSET/lv34/images/body.png
+Assets/LevelAssets/lv34/images/co.png  ->  Assets/DEAD_ASSET/lv34/images/co.png
+Assets/LevelAssets/lv34/images/cogai2.png  ->  Assets/DEAD_ASSET/lv34/images/cogai2.png
+Assets/LevelAssets/lv34/images/cogai4.png  ->  Assets/DEAD_ASSET/lv34/images/cogai4.png
+Assets/LevelAssets/lv34/images/cogai5.png  ->  Assets/DEAD_ASSET/lv34/images/cogai5.png
+Assets/LevelAssets/lv34/images/khoi_fx.png  ->  Assets/DEAD_ASSET/lv34/images/khoi_fx.png
+Assets/LevelAssets/lv34/images/lua.png  ->  Assets/DEAD_ASSET/lv34/images/lua.png
+Assets/LevelAssets/lv34/images/me.png  ->  Assets/DEAD_ASSET/lv34/images/me.png
+Assets/LevelAssets/lv34/images/me1.png  ->  Assets/DEAD_ASSET/lv34/images/me1.png
+Assets/LevelAssets/lv34/images/me2.png  ->  Assets/DEAD_ASSET/lv34/images/me2.png
+Assets/LevelAssets/lv34/images/meo1.png  ->  Assets/DEAD_ASSET/lv34/images/meo1.png
+Assets/LevelAssets/lv34/images/meo2.png  ->  Assets/DEAD_ASSET/lv34/images/meo2.png
+Assets/LevelAssets/lv34/images/meo3.png  ->  Assets/DEAD_ASSET/lv34/images/meo3.png
+Assets/LevelAssets/lv34/images/thungrac1.png  ->  Assets/DEAD_ASSET/lv34/images/thungrac1.png
+Assets/LevelAssets/lv34/images/tiaxit.png  ->  Assets/DEAD_ASSET/lv34/images/tiaxit.png
+Assets/LevelAssets/lv34/images/trai.png  ->  Assets/DEAD_ASSET/lv34/images/trai.png
+Assets/LevelAssets/lv34/images/xitphong2.png  ->  Assets/DEAD_ASSET/lv34/images/xitphong2.png
+Assets/LevelAssets/lv35/images/failed2.png  ->  Assets/DEAD_ASSET/lv35/images/failed2.png
+Assets/LevelAssets/lv35/images/failed3.png  ->  Assets/DEAD_ASSET/lv35/images/failed3.png
+Assets/LevelAssets/lv35/images/failed_nu.png  ->  Assets/DEAD_ASSET/lv35/images/failed_nu.png
+Assets/LevelAssets/lv35/images/hattay.png  ->  Assets/DEAD_ASSET/lv35/images/hattay.png
+Assets/LevelAssets/lv35/images/nam.png  ->  Assets/DEAD_ASSET/lv35/images/nam.png
+Assets/LevelAssets/lv35/images/nu.png  ->  Assets/DEAD_ASSET/lv35/images/nu.png
+Assets/LevelAssets/lv35/images/nu2.png  ->  Assets/DEAD_ASSET/lv35/images/nu2.png
+Assets/LevelAssets/lv35/images/nu3.png  ->  Assets/DEAD_ASSET/lv35/images/nu3.png
+Assets/LevelAssets/lv35/images/nuoc.png  ->  Assets/DEAD_ASSET/lv35/images/nuoc.png
+Assets/LevelAssets/lv35/images/nv1.png  ->  Assets/DEAD_ASSET/lv35/images/nv1.png
+Assets/LevelAssets/lv35/images/nv2.png  ->  Assets/DEAD_ASSET/lv35/images/nv2.png
+Assets/LevelAssets/lv35/images/nv3.png  ->  Assets/DEAD_ASSET/lv35/images/nv3.png
+Assets/LevelAssets/lv35/images/nv4.png  ->  Assets/DEAD_ASSET/lv35/images/nv4.png
+Assets/LevelAssets/lv35/images/oto.png  ->  Assets/DEAD_ASSET/lv35/images/oto.png
+Assets/LevelAssets/lv35/images/taynv.png  ->  Assets/DEAD_ASSET/lv35/images/taynv.png
+Assets/LevelAssets/lv36/images/amthanh.png  ->  Assets/DEAD_ASSET/lv36/images/amthanh.png
+Assets/LevelAssets/lv36/images/bangkeo2.png  ->  Assets/DEAD_ASSET/lv36/images/bangkeo2.png
+Assets/LevelAssets/lv36/images/cogai1.png  ->  Assets/DEAD_ASSET/lv36/images/cogai1.png
+Assets/LevelAssets/lv36/images/cogai_final.png  ->  Assets/DEAD_ASSET/lv36/images/cogai_final.png
+Assets/LevelAssets/lv36/images/cogai_fx.png  ->  Assets/DEAD_ASSET/lv36/images/cogai_fx.png
+Assets/LevelAssets/lv36/images/cogai_ngu2.png  ->  Assets/DEAD_ASSET/lv36/images/cogai_ngu2.png
+Assets/LevelAssets/lv36/images/cuatu1.png  ->  Assets/DEAD_ASSET/lv36/images/cuatu1.png
+Assets/LevelAssets/lv36/images/cuatu2.png  ->  Assets/DEAD_ASSET/lv36/images/cuatu2.png
+Assets/LevelAssets/lv36/images/Layer 19.png  ->  Assets/DEAD_ASSET/lv36/images/Layer 19.png
+Assets/LevelAssets/lv36/images/manhinh1.png  ->  Assets/DEAD_ASSET/lv36/images/manhinh1.png
+Assets/LevelAssets/lv36/images/manhinh2.png  ->  Assets/DEAD_ASSET/lv36/images/manhinh2.png
+Assets/LevelAssets/lv36/images/password.png  ->  Assets/DEAD_ASSET/lv36/images/password.png
+Assets/LevelAssets/lv36/images/password2.png  ->  Assets/DEAD_ASSET/lv36/images/password2.png
+Assets/LevelAssets/lv36/images/tu.png  ->  Assets/DEAD_ASSET/lv36/images/tu.png
+Assets/LevelAssets/lv37/images/chim3.png  ->  Assets/DEAD_ASSET/lv37/images/chim3.png
+Assets/LevelAssets/lv37/images/chim4.png  ->  Assets/DEAD_ASSET/lv37/images/chim4.png
+Assets/LevelAssets/lv37/images/nam.png  ->  Assets/DEAD_ASSET/lv37/images/nam.png
+Assets/LevelAssets/lv37/images/nam2.png  ->  Assets/DEAD_ASSET/lv37/images/nam2.png
+Assets/LevelAssets/lv37/images/nu.png  ->  Assets/DEAD_ASSET/lv37/images/nu.png
+Assets/LevelAssets/lv38/images/cogai1.png  ->  Assets/DEAD_ASSET/lv38/images/cogai1.png
+Assets/LevelAssets/lv38/images/cogai3.png  ->  Assets/DEAD_ASSET/lv38/images/cogai3.png
+Assets/LevelAssets/lv38/images/cuongthi1.png  ->  Assets/DEAD_ASSET/lv38/images/cuongthi1.png
+Assets/LevelAssets/lv38/images/cuongthi2.png  ->  Assets/DEAD_ASSET/lv38/images/cuongthi2.png
+Assets/LevelAssets/lv38/images/cuongthi3.png  ->  Assets/DEAD_ASSET/lv38/images/cuongthi3.png
+Assets/LevelAssets/lv38/images/cuongthi4.png  ->  Assets/DEAD_ASSET/lv38/images/cuongthi4.png
+Assets/LevelAssets/lv38/images/lua.png  ->  Assets/DEAD_ASSET/lv38/images/lua.png
+Assets/LevelAssets/lv38/images/nguoisoi1.png  ->  Assets/DEAD_ASSET/lv38/images/nguoisoi1.png
+Assets/LevelAssets/lv38/images/nguoisoi3.png  ->  Assets/DEAD_ASSET/lv38/images/nguoisoi3.png
+Assets/LevelAssets/lv38/images/quangia1.png  ->  Assets/DEAD_ASSET/lv38/images/quangia1.png
+Assets/LevelAssets/lv38/images/quangia2.png  ->  Assets/DEAD_ASSET/lv38/images/quangia2.png
+Assets/LevelAssets/lv39/images/ly2_1.png  ->  Assets/DEAD_ASSET/lv39/images/ly2_1.png
+Assets/LevelAssets/lv39/images/ly2_2.png  ->  Assets/DEAD_ASSET/lv39/images/ly2_2.png
+Assets/LevelAssets/lv39/images/ly3.png  ->  Assets/DEAD_ASSET/lv39/images/ly3.png
+Assets/LevelAssets/lv39/images/ly3_1.png  ->  Assets/DEAD_ASSET/lv39/images/ly3_1.png
+Assets/LevelAssets/lv39/images/ly3_2.png  ->  Assets/DEAD_ASSET/lv39/images/ly3_2.png
+Assets/LevelAssets/lv39/images/ly3_3.png  ->  Assets/DEAD_ASSET/lv39/images/ly3_3.png
+Assets/LevelAssets/lv40/images/gio.png  ->  Assets/DEAD_ASSET/lv40/images/gio.png
+Assets/LevelAssets/lv40/images/meo2.png  ->  Assets/DEAD_ASSET/lv40/images/meo2.png
+Assets/LevelAssets/lv41/images/cho1.png  ->  Assets/DEAD_ASSET/lv41/images/cho1.png
+Assets/LevelAssets/lv41/images/cho2.png  ->  Assets/DEAD_ASSET/lv41/images/cho2.png
+Assets/LevelAssets/lv41/images/cho3.png  ->  Assets/DEAD_ASSET/lv41/images/cho3.png
+Assets/LevelAssets/lv41/images/cho4.png  ->  Assets/DEAD_ASSET/lv41/images/cho4.png
+Assets/LevelAssets/lv41/images/cho5.png  ->  Assets/DEAD_ASSET/lv41/images/cho5.png
+Assets/LevelAssets/lv41/images/cogai6.png  ->  Assets/DEAD_ASSET/lv41/images/cogai6.png
+Assets/LevelAssets/lv41/images/cogai_thua.png  ->  Assets/DEAD_ASSET/lv41/images/cogai_thua.png
+Assets/LevelAssets/lv41/images/dien1.png  ->  Assets/DEAD_ASSET/lv41/images/dien1.png
+Assets/LevelAssets/lv41/images/dien2.png  ->  Assets/DEAD_ASSET/lv41/images/dien2.png
+Assets/LevelAssets/lv41/images/giaohang.png  ->  Assets/DEAD_ASSET/lv41/images/giaohang.png
+Assets/LevelAssets/lv41/images/hieuung_cogai.png  ->  Assets/DEAD_ASSET/lv41/images/hieuung_cogai.png
+Assets/LevelAssets/lv41/images/khoi.png  ->  Assets/DEAD_ASSET/lv41/images/khoi.png
+Assets/LevelAssets/lv41/images/mubaohiem.png  ->  Assets/DEAD_ASSET/lv41/images/mubaohiem.png
+Assets/LevelAssets/lv41/images/tay.png  ->  Assets/DEAD_ASSET/lv41/images/tay.png
+Assets/LevelAssets/lv41/images/tho cat toc.png  ->  Assets/DEAD_ASSET/lv41/images/tho cat toc.png
+Assets/LevelAssets/lv41/images/toc_bachtuot.png  ->  Assets/DEAD_ASSET/lv41/images/toc_bachtuot.png
+Assets/LevelAssets/lv41/images/toc_fx.png  ->  Assets/DEAD_ASSET/lv41/images/toc_fx.png
+Assets/LevelAssets/lv41/images/toc_maybay.png  ->  Assets/DEAD_ASSET/lv41/images/toc_maybay.png
+Assets/LevelAssets/lv41/images/xuong.png  ->  Assets/DEAD_ASSET/lv41/images/xuong.png
+Assets/LevelAssets/lv42/images/banh xe1.png  ->  Assets/DEAD_ASSET/lv42/images/banh xe1.png
+Assets/LevelAssets/lv42/images/banhxe 2.png  ->  Assets/DEAD_ASSET/lv42/images/banhxe 2.png
+Assets/LevelAssets/lv42/images/bg.png  ->  Assets/DEAD_ASSET/lv42/images/bg.png
+Assets/LevelAssets/lv42/images/da2.png  ->  Assets/DEAD_ASSET/lv42/images/da2.png
+Assets/LevelAssets/lv42/images/dau.png  ->  Assets/DEAD_ASSET/lv42/images/dau.png
+Assets/LevelAssets/lv42/images/nv1.png  ->  Assets/DEAD_ASSET/lv42/images/nv1.png
+Assets/LevelAssets/lv42/images/nv1_1.png  ->  Assets/DEAD_ASSET/lv42/images/nv1_1.png
+Assets/LevelAssets/lv42/images/nv2.png  ->  Assets/DEAD_ASSET/lv42/images/nv2.png
+Assets/LevelAssets/lv42/images/nv2_1.png  ->  Assets/DEAD_ASSET/lv42/images/nv2_1.png
+Assets/LevelAssets/lv42/images/po1.png  ->  Assets/DEAD_ASSET/lv42/images/po1.png
+Assets/LevelAssets/lv42/images/tenlua.png  ->  Assets/DEAD_ASSET/lv42/images/tenlua.png
+Assets/LevelAssets/lv42/images/tenlua2.png  ->  Assets/DEAD_ASSET/lv42/images/tenlua2.png
+Assets/LevelAssets/lv42/images/xelua.png  ->  Assets/DEAD_ASSET/lv42/images/xelua.png
+Assets/LevelAssets/lv42/images/xelua2.png  ->  Assets/DEAD_ASSET/lv42/images/xelua2.png
+Assets/LevelAssets/lv42/images/xe_1.png  ->  Assets/DEAD_ASSET/lv42/images/xe_1.png
+Assets/LevelAssets/lv43/images/ban1.png  ->  Assets/DEAD_ASSET/lv43/images/ban1.png
+Assets/LevelAssets/lv43/images/ban2.png  ->  Assets/DEAD_ASSET/lv43/images/ban2.png
+Assets/LevelAssets/lv43/images/ban3.png  ->  Assets/DEAD_ASSET/lv43/images/ban3.png
+Assets/LevelAssets/lv43/images/codau1.png  ->  Assets/DEAD_ASSET/lv43/images/codau1.png
+Assets/LevelAssets/lv43/images/codau2.png  ->  Assets/DEAD_ASSET/lv43/images/codau2.png
+Assets/LevelAssets/lv43/images/cogai1.png  ->  Assets/DEAD_ASSET/lv43/images/cogai1.png
+Assets/LevelAssets/lv43/images/cogai2.png  ->  Assets/DEAD_ASSET/lv43/images/cogai2.png
+Assets/LevelAssets/lv43/images/nam1.png  ->  Assets/DEAD_ASSET/lv43/images/nam1.png
+Assets/LevelAssets/lv43/images/nam2.png  ->  Assets/DEAD_ASSET/lv43/images/nam2.png
+Assets/LevelAssets/lv43/images/re1.png  ->  Assets/DEAD_ASSET/lv43/images/re1.png
+Assets/LevelAssets/lv43/images/toc.png  ->  Assets/DEAD_ASSET/lv43/images/toc.png
+Assets/LevelAssets/lv43/images/vochong.png  ->  Assets/DEAD_ASSET/lv43/images/vochong.png

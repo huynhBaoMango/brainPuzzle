@@ -715,7 +715,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: b3007aed69dff7641b54cf5b002fe203, type: 3}
       trigger: 1
       requiredZoneId: 
       requirements: []
@@ -1749,7 +1749,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 22273feca4114244aaa2adce2cec79a1, type: 3}
       trigger: 2
       requiredZoneId: dautaydrop
       requirements: []
@@ -1840,7 +1840,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 9d5c55544fe0f454a824524ab2985212, type: 3}
       trigger: 2
       requiredZoneId: dauchandrop
       requirements: []
@@ -3477,7 +3477,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 622846405fc639745a9c2c6b6f294d71, type: 3}
       trigger: 1
       requiredZoneId: 
       requirements: []
@@ -4562,7 +4562,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 4aa9773b2b09ea548b1bce31a8ce4430, type: 3}
       trigger: 2
       requiredZoneId: cuadong
       requirements: []
@@ -4978,7 +4978,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: a892b7e650bedd24e8e3357e980fc5b2, type: 3}
       trigger: 2
       requiredZoneId: tudrop
       requirements: []
@@ -5431,7 +5431,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: c1e7fc754cd4aec479a13f17a1ace816, type: 3}
       trigger: 1
       requiredZoneId: 
       requirements: []
@@ -5853,7 +5853,7 @@ MonoBehaviour:
       stateSprite: {fileID: 0}
       stateSpineAnim: 
       stateSpineLoop: 0
-      stateSFX: {fileID: 0}
+      stateSFX: {fileID: 8300000, guid: 33fe2d4f362ec3e4daf01bfe2a8aa22d, type: 3}
       trigger: 2
       requiredZoneId: maguongdrop
       requirements: []
@@ -5878,6 +5878,31 @@ MonoBehaviour:
         queueTarget: {fileID: 0}
         queueServeStateId: 
         sfxClip: {fileID: 0}
+        skinTarget: {fileID: 0}
+        skinName: 
+        skinOp: 0
+        boneSource: {fileID: 0}
+        boneName: 
+        keepBoneOffset: 0
+      - type: 7
+        runInParallel: 0
+        actionTarget: {fileID: 994509490}
+        duration: 0
+        moveTarget: {fileID: 0}
+        ease: 0
+        rotateToMatchTarget: 0
+        scaleTarget: 0
+        fadeOut: 0
+        destroyOnDisappear: 0
+        fadeIn: 1
+        spineAnim: 
+        spineLoop: 0
+        activateTarget: {fileID: 0}
+        activateStateId: 
+        chainGuards: []
+        queueTarget: {fileID: 0}
+        queueServeStateId: 
+        sfxClip: {fileID: 8300000, guid: bec49e9cc20737c489fc3a50ecf04e7c, type: 3}
         skinTarget: {fileID: 0}
         skinName: 
         skinOp: 0

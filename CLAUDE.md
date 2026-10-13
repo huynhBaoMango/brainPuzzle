@@ -77,10 +77,12 @@ A second, mostly-independent code area. Levels are authored as Unity scene hiera
 - `B_DropZone` — drop target. Can live standalone OR nested under a static/interactable (then it's serialized inside that parent's `dropZones[]` to preserve the "one GameObject hosts both" pattern).
 - `B_SpineSkinSet` — runtime multi-skin combine for Spine. Backs the `SkinChange` action (Add/Remove/Toggle).
 - `B_LevelTimerRunner` — Play-mode helper that reads `B_LevelConfig.timeLimit` and force-activates `timeUpStateId` on expiry. Editor-only convention — not written to JSON; LibGDX runs its own countdown.
+- `B_BoneAttachment` — runtime-only marker that backs `AttachToBone` / `DetachFromBone`. Creates an anchor GO under the target skeleton with Spine-Unity's `BoneFollower`, reparents the subject under it (preserving offset), and remembers the original parent for `Detach`. Never authored, never serialized — the action recreates it every play.
+- `MessageDisplay` (`Assets/Script/MessageDisplay.cs`) — subscribes to `B_InteractableObject.OnShowMessage`. Messages fire at state **activation start** (before actions), snap alpha 1, hold `holdSeconds`, then fade over `fadeSeconds`. New messages interrupt the running hold/fade.
 
 ### StateAction system
 
-`StateAction.cs` defines 10 action types: `Wait`, `MoveTo`, `Disappear`, `Appear`, `DoAnimation`, `ActivateState` (with `chainGuards`), `AdvanceQueue`, `PlaySFX`, `SkinChange`, `ScaleTo`. Every action must be wired in **four** places — drift between them is the #1 source of round-trip bugs:
+`StateAction.cs` defines 13 action types: `Wait`, `MoveTo`, `Disappear`, `Appear`, `DoAnimation`, `ActivateState` (with `chainGuards`), `AdvanceQueue`, `PlaySFX`, `SkinChange`, `ScaleTo`, `AttachToBone`, `DetachFromBone`, `EnqueueMember`. Every action must be wired in **four** places — drift between them is the #1 source of round-trip bugs:
 
 1. `LevelExporterWindow.BuildAction` (write) — `Editor/LevelExporterWindow.cs`
 2. `LevelImporterWindow.ImportAction` (read) — `Editor/LevelImporterWindow.cs`
@@ -102,10 +104,21 @@ Accessed via `Tools/Puzzle/Level Exporter` and `Tools/Puzzle/Level Importer` men
 
 - The exporter scans `FindObjectsByType<B_*>` — but skips `B_DropZone`s nested under a static or interactable, since those go into the parent's `dropZones[]`.
 - Importer's `ClearExistingLevel` must destroy GOs referenced by queue `Members` / `TailFollowers` / group `Members` **before** destroying the queue/group, because some setups author them as top-level **siblings** (no `B_*` component) and they'd otherwise survive cleanup and duplicate on re-import.
-- Queue/group `data.initSpineAnim` lives in the JSON `data` block. The queue/group GO has no skeleton — on import the importer sets the **inspector** `_animationName` + `loop` fields on each member's `SkeletonAnimation` via `SerializedObject`. (Calling `PlaySpineAnim` alone doesn't persist; the field stays blank on next Play.)
-- Cross-object references (action targets, `timeUpTarget`, `queueEmptyTarget`) are resolved in a **second pass** via `pendingRefs`, because referenced GOs may not exist yet when their referrers are spawned.
-- `MoveTo` with no `objectId`/`zoneId` falls back to spawning a `_moveAnchor` GameObject at `moveTargetPosition`.
+- Queue/group `data.initSpineAnim` lives in the JSON `data` block. Neither the queue/group GO nor its members carry the `B_InteractableObject` init pipeline, so runtime `Awake` calls `ApplyInitToMembers` to push `data.initSpineAnim` / `initSpineLoop` / `initSprite` onto each member's renderer/skeleton. The importer does the same via `SerializedObject` (setting `_animationName` + `loop` on each member's `SkeletonAnimation`) so imported scenes look right at edit time too — plain `PlaySpineAnim` on Awake alone would leave the inspector blank next Play.
+- Cross-object references (action targets, `timeUpTarget`, `queueEmptyTarget`, `AttachToBone.boneSource`) are resolved in a **second pass** via `pendingRefs`, because referenced GOs may not exist yet when their referrers are spawned.
+- `MoveTo` with no `objectId`/`zoneId` falls back to spawning a `_moveAnchor` GameObject at `moveTargetPosition`. Rotation is written via nullable `moveTargetRotation` (only for this fallback) so `rotateToMatchTarget` has an angle to tween toward on re-import.
+- `MoveTo` targeting a `B_StaticObject` writes `moveTargetObjectId` (same field as interactable), NOT a literal position — the Unity runtime reads `moveTarget.position` live every frame, so a static that moves at runtime (queue tail follower, animated static) would tween to a stale snapshot. The importer's idMap contains both interactables and statics.
 - Coordinates are in **pixels relative to camera world position** at export time (`WorldToPx` uses `camera.position` + the configured PPU as origin). LibGDX must mirror this convention.
+
+### Milestone counting (progressive "N of M" states)
+
+`ObjectState.requiredCount` and `StateRequirement.gate` implement "fire when at least N of these requirements are met" instead of AND. Use for feed-N-then-grow patterns:
+
+- `requiredCount = 0` (default): all requirements must be met (unchanged AND).
+- `requiredCount > 0`: count how many non-gate requirements are met; fire when `met >= requiredCount`.
+- `gate = true` on a `StateRequirement`: mandatory — must be met regardless of `requiredCount`, does NOT count toward the milestone. Pin a specific trigger like `lose_pending` while letting the rest be counted.
+
+Queue-state milestones use `B_InteractableQueue.HasStateFired` (raw per-serve isDone) instead of `IsStateDone` (empty-gated). The gate/count logic in `B_InteractableObject.IsRequirementSatisfied(req, countMode)` picks the right one for you.
 
 ### Audio in level JSON
 
@@ -114,3 +127,11 @@ Accessed via `Tools/Puzzle/Level Exporter` and `Tools/Puzzle/Level Importer` men
 ### Designer-facing docs
 
 `Assets/Script/Object/HUONG_DAN.md` — Vietnamese authoring guide. Keep it brief.
+
+### Editor tools
+
+- `Tools/Puzzle/Level Exporter` — `Editor/LevelExporterWindow.cs`.
+- `Tools/Puzzle/Level Importer` — `Editor/LevelImporterWindow.cs`.
+- `Tools/Puzzle/Dedupe Level Images` — `Editor/DedupeLevelImagesWindow.cs`. For each `Assets/LevelAssets/lv{N}/images/*.{png,jpg,psd,…}` checks whether its GUID appears in `Assets/Scenes/lv{N}.unity`; unreferenced files quarantine into `Assets/DEAD_ASSET/lv{N}/images/…` (reversible via the same window's Restore).
+
+**Unity gotcha — `AssetDatabase.StartAssetEditing()` + folder creation:** inside a batch, `AssetDatabase.IsValidFolder(path)` returns stale `false` for a folder just created by `AssetDatabase.CreateFolder`. Calling CreateFolder again → Unity auto-suffixes ` 1`, ` 2`, …, silently spawning duplicate folders and scattering later `MoveAsset` results across them. Never create folders inside the batch. Pre-create every unique destination outside the batch (or skip batching entirely for a few dozen file moves — `MoveAsset` is fast enough). See the two-phase pattern in `DedupeLevelImagesWindow.MoveSelectedToDeadAsset` / `.RepairDeadAssetDupFolders`.
